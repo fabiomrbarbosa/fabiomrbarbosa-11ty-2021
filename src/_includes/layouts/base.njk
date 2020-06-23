@@ -55,7 +55,7 @@
     <footer class="site-footer">
       <div class="site-footer__inner">
         <div class="logo">
-          <a href="{{ '/' | url }}" aria-label="Home link">
+          <a href="{{ [ '/', locale ] | join | url }}" aria-label="Home link">
             {% include "inlines/images/logo.svg" | url %}
           </a>
         </div>
