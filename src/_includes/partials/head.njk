@@ -1,17 +1,36 @@
+{% set pageTitle = renderData.title or title %}
+{% set pageDescription = renderData.description
+  or description
+  or 'dict.site.subtitle' | i18n %}
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>
-  {% if renderData.title or title %}
-    {{ renderData.title or title }} |
+  {% if pageTitle %}
+    {{ pageTitle }} |
   {% endif %}
   {{ metadata.title }}
 </title>
-<meta
-  name="description"
-  content="{{ renderData.description
-  or description
-  or 'dict.site.subtitle' | i18n }}">
 
+<meta name="description" content="{{ pageDescription }}">
+{# <meta name="image" content={{socialImage}} /> #}
+
+{# OpenGraph tags #}
+<meta
+  property="og:url"
+  content="https://fabiobarbosa.net{{ page.url }}"
+/>
+<meta property="og:type" content="article" />
+<meta property="og:title" content={{ pageTitle }} />
+<meta property="og:description" content={{ pageDescription }} />
+{# <meta property="og:image" content={{socialImage}} /> #}
+
+{# Twitter Card tags #}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@fabiomrbarbosa" />
+<meta name="twitter:creator" content="@fabiomrbarbosa" />
+
+{# Assets #}
 {% set css %}
   {% include "inlines/styles/main.min.css" | url %}
 {% endset %}
@@ -25,4 +44,5 @@
 <link rel="preload" as="font" type="font/woff2"
   href="/assets/fonts/TiemposText-Semibold.woff2" crossorigin>
 
+{# RSS Feed #}
 <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
