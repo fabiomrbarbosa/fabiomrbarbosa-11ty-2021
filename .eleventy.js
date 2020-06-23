@@ -34,7 +34,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
 
   eleventyConfig.addFilter("readableDate", (dateObj, locale) => {
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).setLocale(locale).toFormat("dd MMMM yyyy");
+    // .toLocaleString returns a natural language phrase instead of just translating the month names etc.
+    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).setLocale(locale).toLocaleString(DateTime.DATE_FULL);
   });
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
