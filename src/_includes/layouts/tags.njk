@@ -1,6 +1,7 @@
 ---
 permalink: /{{ locale }}/tags/
 layout: layouts/base.njk
+translationKey: tags
 ---
 
 {% Heading {
@@ -12,8 +13,9 @@ layout: layouts/base.njk
 } %}
 
 {% for tag in collections.tagList %}
-  {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-  <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
+  {% set tagUrl %}/{{ locale }}/tags/{{ tag }}/{% endset %}
+  <a href="{{ tagUrl }}" class="tag">{{ tag }}</a>
 {% endfor %}
 
 {% endGridList %}
+

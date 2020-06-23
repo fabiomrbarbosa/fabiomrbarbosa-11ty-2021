@@ -14,8 +14,9 @@ pagination:
 layout: layouts/base.njk
 renderData:
   title: 'Tag: {{ tag }}'
-  bodyTitle: 'Tag:<br> {{ tag}}'
+  bodyTitle: 'Tag:<br> {{ tag }}'
 permalink: /{{ locale }}/tags/{{ tag }}/
+translationKey: tags
 ---
 
 {% Heading {
@@ -33,3 +34,5 @@ permalink: /{{ locale }}/tags/{{ tag }}/
   {% include "partials/postlist.njk" %}
 
 {% endGridList %}
+
+<!-- Current translationKey: {{ translationKey }} -->

@@ -4,6 +4,7 @@ title: Serviços
 publicTitle: Trabalhemos juntos.
 description: Forneço soluções de media e criatividade que ajudam a manifestar uma visão maior.
 templateClass: tmpl-page
+translationKey: services
 eleventyNavigation:
   key: Serviços
   order: 3

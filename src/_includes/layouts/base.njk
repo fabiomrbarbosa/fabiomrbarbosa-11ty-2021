@@ -43,7 +43,10 @@
 
         <div class="header__banner">
           <h1 class="link-home"><a href="{{ [ '/', locale ] | join | url }}">{{ metadata.title }}</a></h1>
-          {% include "partials/menu.njk" %}
+          <div class="header__navigation">
+            {% include "partials/menu.njk" %}
+            {% include "partials/langswitch.njk" %}
+          </div>
         </div>
       </div>
     </header>

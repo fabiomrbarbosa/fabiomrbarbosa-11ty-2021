@@ -3,6 +3,7 @@ layout: layouts/page.njk
 title: About
 publicTitle: Nice to meet you!
 description: Here's some info about me.
+translationKey: about
 templateClass: tmpl-page
 eleventyNavigation:
   key: About

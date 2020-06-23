@@ -4,6 +4,7 @@ title: Services
 publicTitle: Let's work together.
 description: I provide creative and media solutions that help you manifest the bigger picture.
 templateClass: tmpl-page
+translationKey: services
 eleventyNavigation:
   key: Services
   order: 3

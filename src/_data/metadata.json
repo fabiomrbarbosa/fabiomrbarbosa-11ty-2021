@@ -10,6 +10,16 @@
     "name": "Fábio M.R. Barbosa",
     "email": "mailto:hello@fabiobarbosa.net"
   },
+  "languages": [
+    {
+      "label": "English",
+      "code": "en"
+    },
+    {
+      "label": "Português",
+      "code": "pt"
+    }
+  ],
   "contacts": [
     {
       "name": "Email",

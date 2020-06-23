@@ -4,6 +4,7 @@ title: Acerca
 publicTitle: Muito gosto!
 description: Aqui vai alguma informação acerca de mim.
 templateClass: tmpl-page
+translationKey: about
 eleventyNavigation:
   key: Acerca
   order: 1
