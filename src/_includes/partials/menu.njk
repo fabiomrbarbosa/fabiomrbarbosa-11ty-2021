@@ -1,0 +1,10 @@
+{#- Read more about `eleventy-menuigation` at https://www.11ty.dev/docs/plugins/menuigation/ #}
+<nav class="menu">
+  <ul class="menu__list">
+    {%- for entry in collections['site_' + locale] | eleventyNavigation %}
+    <li class="menu__item{% if page.url.includes(entry.url) %} menu__item--active{% endif %}">
+      <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+    </li>
+    {%- endfor %}
+  </ul>
+</nav>

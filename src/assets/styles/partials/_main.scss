@@ -1,0 +1,28 @@
+.site-main {
+  padding-bottom: var(--size-step-5);
+
+}
+
+.tmpl-home {
+  .site-header,
+  .heading {
+    --color-fg-display: var(--color-accent);
+    --color-bg: var(--color-gray-lighter);
+    --color-link: var(--color-gray-dark);
+    --color-link-hover: var(--color-accent);
+  }
+
+
+  .logo a:focus,
+  .logo a:hover,
+  .logo a:active {
+    svg {
+      fill: var(--color-accent);
+    }
+  }
+
+  h2,h3 {
+    --color-fg-display: var(--color-accent);
+  }
+
+}

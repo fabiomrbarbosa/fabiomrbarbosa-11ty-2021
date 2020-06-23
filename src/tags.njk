@@ -1,0 +1,35 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter:
+    - all
+    - nav
+    - post
+    - posts
+    - artigos
+    - tagList
+  addAllPagesToCollections: true
+layout: layouts/home.njk
+renderData:
+  title: 'Tag: {{ tag }}'
+  bodyTitle: 'Tag:<br> {{ tag}}'
+permalink: /{{ locale }}/tags/{{ tag }}/
+---
+
+{% Heading {
+  title: renderData.bodyTitle,
+  className: 'heading--archive'
+} %}
+
+{% GridList {
+  className: 'postfeed--archive',
+  linkText: 'See all tags',
+  linkTarget: '/' + locale + '/tags/'
+} %}
+
+  {% set postlist = collections[ tag ] %}
+  {% include "partials/postlist.njk" %}
+
+{% endGridList %}

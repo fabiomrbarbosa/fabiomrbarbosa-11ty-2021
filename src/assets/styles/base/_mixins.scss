@@ -1,0 +1,38 @@
+// SASS Breakpoints
+$mobile: "max-width: 56.25rem";
+$desktop: "min-width: 56.25rem";
+
+@mixin breakpoint($bp) {
+  @media screen and ($bp) {
+    @content;
+  }
+}
+
+%container {
+  padding-left: var(--size-step-2);
+  padding-right: var(--size-step-2);
+
+  &:not(:last-child) > div {
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  @include breakpoint($desktop) {
+    padding-left: var(--size-step-4);
+    padding-right: var(--size-step-4);
+  }
+}
+
+%content {
+  margin: 0 auto;
+  max-width: var(--fluid-screen);
+  padding-top: var(--size-step-2);
+  padding-bottom: var(--size-step-2);
+}
+
+%grid {
+  @include breakpoint($desktop) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: var(--size-step-4);
+  }
+}

@@ -1,0 +1,52 @@
+.link-home {
+  font-size: var(--size-step-0);
+  line-height: var(--size-step-2);
+  margin-top: 0;
+  margin-bottom: 0;
+
+  & a[href]:not(:hover) {
+    text-decoration: none;
+  }
+}
+
+.logo {
+  flex: 1;
+
+  @include breakpoint($mobile) {
+    margin-bottom: var(--size-step-2);
+  }
+
+  a {
+    display: inline-block;
+    vertical-align: middle;
+
+    svg {
+      fill: var(--color-link);
+      transition: fill 0.3s ease;
+    }
+
+    &:focus,
+    &:hover,
+    &:active {
+      svg {
+        fill: var(--color-accent);
+      }
+    }
+  }
+
+  svg {
+    height: var(--size-step-4);
+    display: block;
+    width: auto;
+  }
+}
+
+.direct-link {
+  &:link {
+    color: var(--color-gray-light);
+  }
+  &:hover,
+  &:active {
+    color: var(--color-accent);
+  }
+}

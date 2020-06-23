@@ -1,0 +1,20 @@
+---
+layout: layouts/base.njk
+---
+
+{% Heading {
+  title: 'dict.archive.title' | i18n,
+  subtitle: 'dict.archive.subtitle' | i18n,
+  className: 'heading--archive'
+} %}
+
+{% GridList {
+  className: 'postfeed--archive'
+} %}
+
+  {% set postlist = collections["posts_" + locale] %}
+  {% include "partials/postlist.njk" %}
+
+{% endGridList %}
+
+{% include "partials/subscribe.njk" %}

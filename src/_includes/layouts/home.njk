@@ -1,0 +1,34 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-home
+permalink: /{{ locale }}/
+---
+{% Heading {
+  title: 'dict.home.welcome' | i18n,
+  subtitle: 'dict.home.title' | i18n,
+  className: 'heading--home'
+} %}
+
+
+{% GridList {
+  title: 'dict.home.contacts' | i18n,
+  className: 'contacts--home'
+} %}
+
+{% include "partials/contact.njk" %}
+
+{% endGridList %}
+
+{% GridList {
+  title: 'dict.postlist.title' | i18n,
+  linkText: 'dict.postlist.link' | i18n,
+  linkTarget: '/' + locale + '/blog/',
+  className: 'feed--home'
+} %}
+
+  {% set postlist = collections["posts_" + locale] | head(-3) %}
+  {% include "partials/postlist.njk" %}
+
+{% endGridList %}
+
+{% include "partials/subscribe.njk" %}

@@ -1,0 +1,170 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/Inter.var.woff2') format("woff2");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300 700;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Tiempos Text';
+  src: url('/assets/fonts/TiemposText-Semibold.woff2') format("woff2");
+  font-style: normal;
+  font-display: swap;
+  font-weight: bold;
+  unicode-range: U+0020-007F, U+00A0-00FF, U+20AC;
+}
+
+@font-face {
+  font-family: 'Tiempos Text';
+  src: url('/assets/fonts/TiemposText-Regular.woff2') format("woff2");
+  font-style: normal;
+  font-display: swap;
+  font-weight: normal;
+  unicode-range: U+0020-007F, U+00A0-00FF, U+20AC;
+}
+
+@font-face {
+  font-family: 'Tiempos Text';
+  src: url('/assets/fonts/TiemposText-RegularItalic.woff2') format("woff2");
+  font-style: italic;
+  font-display: swap;
+  font-weight: normal;
+  unicode-range: U+0020-007F, U+00A0-00FF, U+20AC;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--size-step-0);
+  line-height: var(--size-step-2);
+  letter-spacing: -.02rem;
+  box-sizing: border-box;
+}
+
+header,
+header > div,
+main,
+main > div,
+footer,
+footer > div {
+  background-color: var(--color-bg);
+}
+
+* {
+  color: var(--color-fg);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-fg-display);
+  font-family: var(--font-serif);
+}
+h2,
+h3 {
+  font-size: var(--size-step-0);
+  line-height: var(--size-step-2);
+  margin-top: 0;
+  margin-bottom: var(--size-step-2);
+}
+p,
+ol,
+ul {
+  line-height: var(--size-step-2);
+  margin-top: 0;
+  margin-bottom: var(--size-step-2);
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+p,
+img {
+  font-family: var(--font-serif);
+  max-width: 37.5rem; /* 600px /16 */
+}
+a {
+  transition: color 0.3s ease;
+  color: var(--color-link);
+  // &:visited {color: var(--color-link); }
+  // &:visited {color: var(--color-link-visited); }
+  &:focus,
+  &:hover,
+  &:active {color: var(--color-link-hover); }
+}
+table {
+  margin: var(--size-step-0) 0;
+}
+table td,
+table th {
+  padding-right: var(--size-step-0);
+}
+
+pre,
+code {
+  font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono",
+    "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono",
+    "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L",
+    "Courier New", Courier, monospace;
+  line-height: 1.5;
+}
+pre {
+  font-size: 14px;
+  line-height: 1.375;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  -moz-tab-size: 2;
+  -o-tab-size: 2;
+  tab-size: 2;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  padding: 1em;
+  margin: 0.5em 0;
+  background-color: #f6f6f6;
+}
+.highlight-line {
+  display: block;
+  padding: 0.125em 1em;
+  text-decoration: none; /* override del, ins, mark defaults */
+  color: inherit; /* override del, ins, mark defaults */
+}
+
+/* allow highlighting empty lines */
+.highlight-line:empty:before {
+  content: " ";
+}
+/* avoid double line breaks when using display: block; */
+.highlight-line + br {
+  display: none;
+}
+
+.highlight-line-isdir {
+  color: #b0b0b0;
+  background-color: #222;
+}
+.highlight-line-active {
+  background-color: #444;
+  background-color: hsla(0, 0%, 27%, 0.8);
+}
+.highlight-line-add {
+  background-color: #45844b;
+}
+.highlight-line-remove {
+  background-color: #902f2f;
+}

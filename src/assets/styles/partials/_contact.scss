@@ -1,0 +1,27 @@
+.contact {
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__item {
+    display: inline-block;
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: var(--size-step-2);
+    }
+
+    & a:after {
+      content: "\20\2197";
+      position: absolute;
+      top: .2rem;
+      right: -1.2rem;
+    }
+
+    & a[href]:not(:hover) {
+      text-decoration: none;
+    }
+  }
+}

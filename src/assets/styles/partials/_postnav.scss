@@ -1,0 +1,39 @@
+.postnav {
+  @extend %container;
+
+  &__inner {
+    @extend %content;
+    @extend %grid;
+  }
+
+  &__links {
+    @include breakpoint($desktop) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: var(--size-step-4);
+    }
+  }
+
+  &__link {
+    display: block;
+
+    @include breakpoint($mobile) {
+      &:not(:last-child) {
+        margin-bottom: var(--size-step-2);
+      }
+    }
+
+    &[href]:not(:hover) {
+      text-decoration: none;
+    }
+  }
+
+  &__heading,
+  &__description {
+    margin: 0;
+  }
+
+  &__heading {
+    font-weight: bold;
+  }
+}

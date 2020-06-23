@@ -1,0 +1,9 @@
+<div class="contact">
+  <ul class="contact__list">
+    {%- for entry in metadata.contacts %}
+    <li class="contact__item">
+      <a href="{{ entry.url | url }}">{{ entry.name }}</a>
+    </li>
+    {%- endfor %}
+  </ul>
+</div>

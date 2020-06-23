@@ -1,0 +1,23 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-post
+permalink: /{{ locale }}/blog/{{ page.fileSlug }}/
+---
+
+{% Heading {
+  title: title,
+  subtitle: description,
+  dateTime: date | htmlDateString,
+  dateReadable: date | readableDate,
+  className: 'heading--post'
+} %}
+
+<div class="entry-body">
+  <div class="entry-content">
+    {{ content | safe }}
+  </div>
+</div>
+
+{% include "partials/postnav.njk" %}
+
+{% include "partials/subscribe.njk" %}

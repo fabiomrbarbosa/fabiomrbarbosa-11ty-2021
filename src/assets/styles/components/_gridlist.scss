@@ -1,0 +1,38 @@
+.gridlist {
+  @extend %container;
+
+  &__inner {
+    @extend %content;
+    @extend %grid;
+
+    & .postlist {
+      // Force this in pages without titles on column 1
+      grid-column: 2/3;
+    }
+  }
+
+  &__title {
+    @include breakpoint($desktop) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    position: relative;
+    grid-column: 2/3;
+    font-weight: bold;
+    padding-top: var(--size-step-1);
+
+    &:focus,
+    &:hover,
+    &:active {
+      color: var(--color-accent);
+    }
+
+    &:after {
+      content: "\20\2192";
+      position: relative;
+      right: 0;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-page
+---
+
+{% Heading {
+  title: publicTitle,
+  subtitle: description,
+  className: 'heading--page'
+} %}
+
+<div class="entry-body">
+  <div class="entry-content">
+    {{ content | safe }}
+  </div>
+</div>

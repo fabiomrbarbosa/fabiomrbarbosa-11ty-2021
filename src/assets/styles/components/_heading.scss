@@ -1,0 +1,36 @@
+.heading {
+  @extend %container;
+  --color-bg: var(--color-accent-light);
+
+  &__content {
+    @extend %content;
+
+    @include breakpoint($desktop) {
+      padding-top: calc(var(--size-step-5) * 2);
+      & > * {
+        margin-left: calc(33.3% + var(--size-step-2));
+      }
+    }
+  }
+
+  &__title,
+  &__subtitle {
+    font-size: var(--size-step-4);
+    line-height: 1.05; // magic number
+    letter-spacing: -.1rem;
+    margin-top: 0;
+    margin-bottom: var(--size-step--2);
+  }
+
+  &__subtitle {
+    mix-blend-mode: multiply;
+  }
+
+  &__datetime {
+    font-size: var(--size-step--1);
+  }
+}
+
+body:not(.tmpl-home) .heading__content {
+  --color-border: transparent; // preferrable to overriding
+}

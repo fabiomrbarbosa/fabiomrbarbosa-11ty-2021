@@ -1,0 +1,46 @@
+.site-header {
+  @extend %container;
+  --color-bg: var(--color-accent-light);
+  --color-border: var(--color-fg);
+
+  &__inner {
+    @extend %content;
+    @extend %grid;
+    align-items: center;
+
+    // temp
+    border: none !important;
+    padding-top: 0;
+
+    @include breakpoint($mobile) {
+      display: flex;
+      flex-direction: column;
+      align-items: normal;
+
+      .logo { order: 2 };
+      .header__banner { order: 1; margin-bottom: var(--size-step-2) }
+    }
+  }
+
+  a {
+    &:focus,
+    &:hover,
+    &:active {
+      svg {
+        fill: var(--color-white);
+      }
+    }
+  }
+}
+
+.header__banner {
+  padding-top: var(--size-step-2);
+  padding-bottom: var(--size-step-2);
+  padding-left: var(--size-step-2);
+  // margin-left: calc(var(--size-step-2) * -1);
+  background-color: var(--color-gray-darker);
+  --color-link: var(--color-gray-lighter);
+  --color-link-hover: var(--color-accent);
+}
+
+

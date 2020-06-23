@@ -1,0 +1,33 @@
+.menu {
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__item {
+    display: inline-block;
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: var(--size-step--2);
+    }
+
+    & a:after {
+      content: ".";
+      position: absolute;
+      top: 0;
+      right: -.35rem;
+    }
+
+    & a:not(:hover) {
+      text-decoration: none;
+    }
+
+    &--active a {
+      font-weight: 700;
+      color: var(--color-accent);
+    }
+  }
+}

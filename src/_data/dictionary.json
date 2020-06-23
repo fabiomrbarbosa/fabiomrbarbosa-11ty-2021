@@ -1,0 +1,80 @@
+{
+  "dict": {
+    "site": {
+      "subtitle": {
+        "en": "Writer, creative consultant and digital nomad.",
+        "pt": "Escritor, consultor criativo e nómada digital."
+      }
+    },
+    "home": {
+      "welcome": {
+        "en": "Welcome!",
+        "pt": "Boas-vindas!"
+      },
+      "title": {
+        "en": "I'm a writer, creative consultant and digital nomad.",
+        "pt": "Sou um escritor, consultor criativo e nómada digital."
+      },
+      "contacts": {
+        "en": "Keep in touch.",
+        "pt": "Mantenha-se em contacto."
+      }
+    },
+    "postlist": {
+      "title": {
+        "en": "Here are my latest posts.",
+        "pt": "Leia os meus mais recentes artigos."
+      },
+      "link": {
+        "en": "View all posts",
+        "pt": "Veja todos os artigos"
+      }
+    },
+    "postnav": {
+      "title": {
+        "en": "Keep on reading.",
+        "pt": "Continue a ler."
+      },
+      "previous": {
+        "en": "Previous Post:",
+        "pt": "Artigo Anterior:"
+      },
+      "next": {
+        "en": "Next Post:",
+        "pt": "Artigo Seguinte:"
+      }
+    },
+    "archive": {
+      "permalink": {
+        "en": "/en/blog",
+        "pt": "/pt/blog"
+      },
+      "key": {
+        "en": "Writings",
+        "pt": "Artigos"
+      },
+      "title": {
+        "en": "Selected writings",
+        "pt": "Artigos seleccionados"
+      },
+      "subtitle": {
+        "en": "Thoughts and essays",
+        "pt": "Pensamentos e ensaios"
+      }
+    },
+    "subscribe": {
+      "title": {
+        "en": "Get updates in your inbox.",
+        "pt": "Receba todas as novidades por correio electrónico."
+      },
+      "body": {
+        "en": "Be the first to know about the latest posts and other resources.",
+        "pt": "Fique a saber de novos artigos e outros recursos em primeira mão."
+      },
+      "link": {
+        "en": "Sign up",
+        "pt": "Subscreva já"
+      }
+    }
+  }
+}

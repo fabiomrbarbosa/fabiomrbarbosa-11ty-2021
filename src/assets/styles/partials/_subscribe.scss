@@ -1,0 +1,27 @@
+.subscribe {
+  @extend %container;
+
+  &__inner {
+    @extend %content;
+    @extend %grid;
+  }
+
+  &__title {
+    @include breakpoint($desktop) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    --color-link-hover: var(--color-accent);
+    font-weight: bold;
+    position: relative;
+
+    &:after {
+      content: "\20\2197";
+      position: absolute;
+      top: .05rem;
+      right: -1rem;
+    }
+  }
+}
