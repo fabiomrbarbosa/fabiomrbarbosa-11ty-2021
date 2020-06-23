@@ -1,3 +1,38 @@
 [build]
   publish = "dist"
   command = "DEBUG=* npm run sass:process && eleventy"
+
+[[redirects]]
+  from = "/en"
+  to = "/en/:splat"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/pt"
+  to = "/pt/:splat"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/pt/:splat"
+  status = 302
+  force = true
+  conditions = {Language = ["pt"]}
+
+[[redirects]]
+  from = "/*"
+  to = "/en/:splat"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/en/*"
+  to = "/en/404.html"
+  status = 404
+
+[[redirects]]
+  from = "/pt/*"
+  to = "/pt/404.html"
+  status = 404
