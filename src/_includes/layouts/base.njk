@@ -73,12 +73,6 @@
     </footer>
 
     <script>
-    const userLang = navigator.languages && navigator.languages[0] ||
-      navigator.language ||
-      navigator.userLanguage;
-
-    document.cookie = `nf_lang = ${userLang};secure;samesite=strict`;
-
     function setCookie(cname, cvalue, exdays=60) {
       var d = new Date();
       d.setTime(d.getTime() + (exdays*24*60*60*1000));
