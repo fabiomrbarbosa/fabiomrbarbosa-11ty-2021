@@ -1,78 +1,19 @@
 <!doctype html>
 <html lang="{{ locale }}" dir="{{ dir }}">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-      {% if renderData.title or title %}
-        {{ renderData.title or title }} |
-      {% endif %}
-      {{ metadata.title }}
-    </title>
-    <meta
-      name="description"
-      content="{{ renderData.description
-      or description
-      or 'dict.site.subtitle' | i18n }}">
-
-    {% set css %}
-      {% include "inlines/styles/main.min.css" | url %}
-    {% endset %}
-
-    <style>{{css | safe}}</style>
-    {#<link rel="stylesheet" href="{{ '/assets/styles/main.min.css' | url }}"> #}
-
-    <link rel="icon" href="/assets/images/favicon.svg">
-    <link rel="mask-icon" href="/assets/images/favicon.svg" color="#000" />
-    <link rel="mask-icon" href="/assets/images/favicon.svg" color="#fff" media="(prefers-color-scheme: dark)" />
-
-    <link rel="preload" as="font" type="font/woff2"
-      href="/assets/fonts/TiemposText-Semibold.woff2" crossorigin>
-
-    <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+    {% include "partials/head.njk" %}
   </head>
   <body
     {% if templateClass %} class="{{ templateClass }}"{% endif %}
-    {% if color %} style="--color-accent: var(--color-{{color}}); --color-accent-light: var(--color-{{color}}-light);" {% endif %}
-  >
-    <header class="site-header">
-      <div class="site-header__inner">
-        <div class="logo">
-          <a href="{{ [ '/', locale ] | join | url }}" aria-label="Home link">
-            {% include "inlines/images/logo.svg" | url %}
-          </a>
-        </div>
+    {% if color %} style="--color-accent: var(--color-{{color}}); --color-accent-light: var(--color-{{color}}-light);" {% endif %}>
 
-        <div class="header__banner">
-          <h1 class="link-home"><a href="{{ [ '/', locale ] | join | url }}">{{ metadata.title }}</a></h1>
-          <div class="header__navigation">
-            {% include "partials/menu.njk" %}
-            {% include "partials/langswitch.njk" %}
-          </div>
-        </div>
-      </div>
-    </header>
+    {% include "partials/header.njk" %}
 
     <main class="site-main">
       {{ content | safe }}
     </main>
 
-    <footer class="site-footer">
-      <div class="site-footer__inner">
-        <div class="logo">
-          <a href="{{ [ '/', locale ] | join | url }}" aria-label="Home link">
-            {% include "inlines/images/logo.svg" | url %}
-          </a>
-        </div>
-
-        <div class="site-footer__links">
-          {% include "partials/menu.njk" %}
-          {% include "partials/contact.njk" %}
-        </div>
-
-        <p class="copyright">Fábio Barbosa &copy; 2008-2020</p>
-      </div>
-    </footer>
+    {% include "partials/footer.njk" %}
 
     <script>
     function setCookie(cname, cvalue) {

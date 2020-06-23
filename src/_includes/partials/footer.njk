@@ -1,0 +1,16 @@
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="logo">
+      <a href="{{ [ '/', locale ] | join | url }}" aria-label="Home link">
+        {% include "inlines/images/logo.svg" | url %}
+      </a>
+    </div>
+
+    <div class="site-footer__links">
+      {% include "partials/menu.njk" %}
+      {% include "partials/contact.njk" %}
+    </div>
+
+    <p class="copyright">Fábio Barbosa &copy; 2008-2020</p>
+  </div>
+</footer>

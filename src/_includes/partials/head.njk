@@ -1,0 +1,28 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  {% if renderData.title or title %}
+    {{ renderData.title or title }} |
+  {% endif %}
+  {{ metadata.title }}
+</title>
+<meta
+  name="description"
+  content="{{ renderData.description
+  or description
+  or 'dict.site.subtitle' | i18n }}">
+
+{% set css %}
+  {% include "inlines/styles/main.min.css" | url %}
+{% endset %}
+<style>{{css | safe}}</style>
+{#<link rel="stylesheet" href="{{ '/assets/styles/main.min.css' | url }}"> #}
+
+<link rel="icon" href="/assets/images/favicon.svg">
+<link rel="mask-icon" href="/assets/images/favicon.svg" color="#000" />
+<link rel="mask-icon" href="/assets/images/favicon.svg" color="#fff" media="(prefers-color-scheme: dark)" />
+
+<link rel="preload" as="font" type="font/woff2"
+  href="/assets/fonts/TiemposText-Semibold.woff2" crossorigin>
+
+<link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
