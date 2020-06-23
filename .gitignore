@@ -1,3 +1,15 @@
+# macOS in general
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Node and Eleventy specific
 dist/
 node_modules/
 package-lock.json
