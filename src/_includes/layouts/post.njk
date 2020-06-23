@@ -8,7 +8,7 @@ permalink: /{{ locale }}/blog/{{ page.fileSlug }}/
   title: title,
   subtitle: description,
   dateTime: date | htmlDateString,
-  dateReadable: date | readableDate,
+  dateReadable: date | readableDate(locale),
   className: 'heading--post'
 } %}
 

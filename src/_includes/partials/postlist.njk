@@ -6,7 +6,7 @@
 
     <a href="{{ post.url | url }}" class="postlist__link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
     {% if post.data.description %}<p class="postlist__description">{{ post.data.description }}</p>{% endif %}
-    <time class="postlist__date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+    <time class="postlist__date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate(locale) }}</time>
 
     {% for tag in post.data.tags %}
       {%- if collections.tagList.indexOf(tag) != -1 -%}
