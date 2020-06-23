@@ -23,7 +23,7 @@
   {% endfor %}
 
     <li class="langswitch__item {{ activeClass }}">
-      <a class="langswitch__link" href="{{ translatedUrl }}" title="{{ lang.label }}">{{ lang.code }}</a>
+      <a class="langswitch__link" onclick="setCookie('nf_lang', '{{ lang.code }}')" href="{{ translatedUrl }}" title="{{ lang.label }}">{{ lang.code }}</a>
     </li>
 
   {% if loop.last %}</ul>{% endif %}
