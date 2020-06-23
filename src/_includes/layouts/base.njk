@@ -22,6 +22,8 @@
     <style>{{css | safe}}</style>
     {#<link rel="stylesheet" href="{{ '/assets/styles/main.min.css' | url }}"> #}
 
+    <link rel="icon" href="/assets/images/favicon.svg">
+
     <link rel="preload" as="font" type="font/woff2"
       href="/assets/fonts/Inter.var.woff2" crossorigin>
     <link rel="preload" as="font" type="font/woff2"
@@ -73,11 +75,8 @@
     </footer>
 
     <script>
-    function setCookie(cname, cvalue, exdays=60) {
-      var d = new Date();
-      d.setTime(d.getTime() + (exdays*24*60*60*1000));
-      var expires = "expires="+ d.toUTCString();
-      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/;secure;samesite=strict";
+    function setCookie(cname, cvalue) {
+      document.cookie = cname + "=" + cvalue + ";path=/;secure;samesite=strict";
     }
     </script>
 

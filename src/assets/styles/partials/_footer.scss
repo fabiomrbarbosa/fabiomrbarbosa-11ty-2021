@@ -9,7 +9,7 @@
   &__inner {
     @extend %content;
     @extend %grid;
-    //border-top: 1px solid var(--color-gray-light);
+    border-bottom: none !important;
   }
 
   &__links {
