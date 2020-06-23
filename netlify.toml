@@ -2,17 +2,7 @@
   publish = "dist"
   command = "npm run build"
 
-[[redirects]]
-  from = "/en"
-  to = "/en/:splat"
-  status = 302
-  force = true
 
-[[redirects]]
-  from = "/pt"
-  to = "/pt/:splat"
-  status = 302
-  force = true
 
 [[redirects]]
   from = "/*"
