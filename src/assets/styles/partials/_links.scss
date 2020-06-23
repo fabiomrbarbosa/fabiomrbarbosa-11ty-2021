@@ -42,6 +42,8 @@
 }
 
 .direct-link {
+  margin-left: .25rem;
+
   &:link {
     color: var(--color-gray-light);
   }

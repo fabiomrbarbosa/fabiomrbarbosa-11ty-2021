@@ -13,3 +13,11 @@
   from = "/*"
   to = "/en/:splat"
   status = 302
+
+[[plugins]]
+  package = "netlify-plugin-minify-html"
+
+  [plugins.inputs.minifierOptions]
+    removeComments = true
+    decodeEntities = true
+    minifyJS = true
