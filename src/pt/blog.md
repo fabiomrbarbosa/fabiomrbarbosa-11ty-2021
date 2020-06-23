@@ -1,7 +1,7 @@
 ---
 layout: layouts/archive.njk
 title: Artigos
-translationKey: writings
+translationKey: writing
 eleventyNavigation:
   key: Artigos
   order: 2

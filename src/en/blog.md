@@ -1,8 +1,8 @@
 ---
 layout: layouts/archive.njk
-title: Writings
-translationKey: writings
+title: Writing
+translationKey: writing
 eleventyNavigation:
-  key: Writings
+  key: Writing
   order: 2
 ---

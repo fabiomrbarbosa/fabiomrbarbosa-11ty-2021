@@ -1,12 +1,12 @@
 ---
 layout: layouts/page.njk
-title: Acerca
+title: Quem sou
 publicTitle: Muito gosto!
 description: Aqui vai alguma informação acerca de mim.
 templateClass: tmpl-page
 translationKey: about
 eleventyNavigation:
-  key: Acerca
+  key: Quem sou
   order: 1
 color: purple
 ---
