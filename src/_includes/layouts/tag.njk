@@ -7,11 +7,11 @@ pagination:
     - all
     - nav
     - post
-    - posts
-    - artigos
+    - posts_en
+    - posts_pt
     - tagList
   addAllPagesToCollections: true
-layout: layouts/home.njk
+layout: layouts/base.njk
 renderData:
   title: 'Tag: {{ tag }}'
   bodyTitle: 'Tag:<br> {{ tag}}'
@@ -24,8 +24,8 @@ permalink: /{{ locale }}/tags/{{ tag }}/
 } %}
 
 {% GridList {
-  className: 'postfeed--archive',
-  linkText: 'See all tags',
+  className: 'tag--archive',
+  linkText: 'dict.tag.link' | i18n,
   linkTarget: '/' + locale + '/tags/'
 } %}
 
