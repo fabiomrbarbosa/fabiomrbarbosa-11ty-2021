@@ -4,6 +4,8 @@
 }
 
 .tmpl-home {
+  --color-accent: var(--color-red-dark);
+
   .site-header,
   .heading {
     --color-fg-display: var(--color-accent);
