@@ -1,6 +1,6 @@
 [build]
   publish = "dist"
-  command = "npm run sass:process && eleventy"
+  command = "npm run sass:process && npx eleventy"
 
 [[redirects]]
   from = "/en"
