@@ -35,8 +35,16 @@
   .contact__item {
     display: block;
 
-    & a:after {
-      content: '' !important;
+    & a {
+      font-weight: normal;
+
+      &:after {
+        content: '' !important;
+      }
+
+      &[href]:not(:hover) {
+        text-decoration: none;
+      }
     }
   }
 
