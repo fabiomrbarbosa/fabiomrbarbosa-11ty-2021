@@ -45,6 +45,35 @@ body {
   box-sizing: border-box;
 }
 
+body {
+  @include breakpoint($desktop) {
+    position: relative;
+    margin: 2vw;
+
+    &:before {
+      position: absolute;
+      content: '';
+      background-color: var(--color-accent);
+      width: 25vw;
+      height: 100vh;
+      top: -2vw;
+      left: -2vw;
+      z-index: -5;
+    }
+
+    &:after {
+      position: absolute;
+      content: '';
+      background-color: var(--color-gray-light);
+      width: 94vw;
+      height: 100vh;
+      bottom: -2vw;
+      right: -2vw;
+      z-index: -5;
+    }
+  }
+}
+
 header,
 header > div,
 main,
