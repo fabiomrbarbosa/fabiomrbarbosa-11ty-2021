@@ -50,6 +50,7 @@ body {
 body {
   position: relative;
   margin-top: var(--size-step-2);
+  margin-bottom: var(--size-step-2);
 
   &:before {
     position: absolute;
@@ -59,6 +60,16 @@ body {
     top: calc(var(--size-step-2) * -1);
     left: 0;
     right: var(--size-step-2);
+  }
+
+  &:after {
+    position: absolute;
+    content: '';
+    background-color: var(--color-gray-light);
+    height: var(--size-step-2);
+    bottom: calc(var(--size-step-2) * -1);
+    left: var(--size-step-2);
+    right: 0;
   }
 
   @include breakpoint($desktop) {
@@ -76,14 +87,12 @@ body {
     }
 
     &:after {
-      position: absolute;
-      content: '';
-      background-color: var(--color-gray-light);
       width: 92vw;
       height: 100vh;
       max-height: 42rem;
-      bottom: -3vw;
+      left: auto;
       right: -3vw;
+      bottom: -3vw;
       z-index: -5;
     }
   }
