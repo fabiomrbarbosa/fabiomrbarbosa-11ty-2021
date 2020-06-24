@@ -22,26 +22,39 @@
     }
   }
 
-  a {
-    &:focus,
-    &:hover,
-    &:active {
-      svg {
-        fill: var(--color-white);
+  .logo {
+    a {
+      &:focus,
+      &:hover,
+      &:active {
+        svg {
+          fill: var(--color-white);
+        }
       }
+    }
+
+    @include breakpoint($desktop) {
+      margin-top: calc(var(--size-step-5) * 3);
+      position: absolute;
     }
   }
 }
 
 .header__banner {
+  --color-link: var(--color-gray-lighter);
+  --color-link-hover: var(--color-accent);
+
   padding-top: var(--size-step-2);
   padding-bottom: var(--size-step-2);
   padding-left: var(--size-step-2);
   padding-right: var(--size-step-2);
   // margin-left: calc(var(--size-step-2) * -1);
   background-color: var(--color-gray-darker);
-  --color-link: var(--color-gray-lighter);
-  --color-link-hover: var(--color-accent);
+
+  @include breakpoint($desktop) {
+    margin-top: -2vw;
+    grid-column: 2/3;
+  }
 }
 
 .header__navigation {
