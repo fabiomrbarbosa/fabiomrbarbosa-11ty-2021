@@ -45,8 +45,9 @@ body {
   box-sizing: border-box;
 }
 
-body {
-  @include breakpoint($desktop) {
+
+@include breakpoint($desktop) {
+  body {
     position: relative;
     margin: 2vw;
 
@@ -167,19 +168,19 @@ pre {
   margin: 0.5em 0;
   background-color: #f6f6f6;
 }
-.highlight-line {
+/*.highlight-line {
   display: block;
   padding: 0.125em 1em;
   text-decoration: none; /* override del, ins, mark defaults */
-  color: inherit; /* override del, ins, mark defaults */
-}
+  /*color: inherit;
+}*/
 
 /* allow highlighting empty lines */
-.highlight-line:empty:before {
+/*.highlight-line:empty:before {
   content: " ";
 }
 /* avoid double line breaks when using display: block; */
-.highlight-line + br {
+/*.highlight-line + br {
   display: none;
 }
 
@@ -196,4 +197,4 @@ pre {
 }
 .highlight-line-remove {
   background-color: #902f2f;
-}
+}*/
