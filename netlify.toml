@@ -21,4 +21,5 @@
     collapseInlineTagWhitespace = true
     removeComments = true
     decodeEntities = true
+    minifyCSS = true
     minifyJS = true
