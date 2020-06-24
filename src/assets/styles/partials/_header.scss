@@ -18,7 +18,7 @@
       align-items: normal;
 
       .logo { order: 2 };
-      .header__banner { order: 1; margin-bottom: var(--size-step-2) }
+      .header__banner { order: 1; margin-bottom: var(--size-step-4) }
     }
   }
 
@@ -52,7 +52,7 @@
   background-color: var(--color-gray-darker);
 
   @include breakpoint($desktop) {
-    margin-top: -2vw;
+    margin-top: -3vw;
     grid-column: 2/3;
   }
 }

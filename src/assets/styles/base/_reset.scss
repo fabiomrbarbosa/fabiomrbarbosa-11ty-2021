@@ -46,19 +46,31 @@ body {
 }
 
 
-@include breakpoint($desktop) {
-  body {
-    position: relative;
-    margin: 2vw;
+body {
+  position: relative;
+  margin-top: var(--size-step-2);
+
+  &:before {
+    position: absolute;
+    content: '';
+    height: var(--size-step-2);
+    background-color: var(--color-accent);
+    top: calc(var(--size-step-2) * -1);
+    left: 0;
+    right: var(--size-step-2);
+  }
+
+  @include breakpoint($desktop) {
+    margin: 3vw;
 
     &:before {
-      position: absolute;
-      content: '';
-      background-color: var(--color-accent);
-      width: 25vw;
+      width: 33vw;
+      max-width: 22rem;
       height: 100vh;
-      top: -2vw;
-      left: -2vw;
+      max-height: 42rem;
+      top: -3vw;
+      left: -3vw;
+      right: 0;
       z-index: -5;
     }
 
@@ -66,10 +78,11 @@ body {
       position: absolute;
       content: '';
       background-color: var(--color-gray-light);
-      width: 94vw;
+      width: 92vw;
       height: 100vh;
-      bottom: -2vw;
-      right: -2vw;
+      max-height: 42rem;
+      bottom: -3vw;
+      right: -3vw;
       z-index: -5;
     }
   }
