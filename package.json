@@ -3,9 +3,9 @@
   "version": "5.0.2",
   "description": "A starter repository for a blog web site using the Eleventy static site generator.",
   "scripts": {
-    "sass:process": "sass src/assets/styles/main.scss src/_includes/inlines/styles/main.css",
-    "build": "npm run sass:process && npx eleventy",
-    "develop": "concurrently \"npm run sass:process -- --watch\" \"npx eleventy --serve\"",
+    "sass": "node-sass src/assets/styles/main.scss src/_includes/inlines/styles/main.min.css --output-style compressed",
+    "build": "npm run sass && npx eleventy",
+    "develop": "concurrently \"npm run sass -- --watch\" \"npx eleventy --serve\"",
     "serve": "eleventy --serve",
     "debug": "DEBUG=* eleventy"
   },
@@ -36,6 +36,6 @@
     "luxon": "^1.24.1",
     "markdown-it": "^11.0.0",
     "markdown-it-anchor": "^5.3.0",
-    "sass": "^1.26.9"
+    "node-sass": "^4.14.1"
   }
 }
