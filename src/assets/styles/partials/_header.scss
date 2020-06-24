@@ -34,7 +34,7 @@
     }
 
     @include breakpoint($desktop) {
-      margin-top: calc(var(--size-step-5) * 3);
+      margin-top: calc(var(--size-step-5) * 2);
       position: absolute;
     }
   }

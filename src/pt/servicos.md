@@ -1,7 +1,7 @@
 ---
 layout: layouts/page.njk
 title: Serviços
-publicTitle: Trabalhemos juntos.
+publicTitle: E que tal se trabalhássemos juntos?
 description: Forneço soluções de media e criatividade que ajudam a manifestar uma visão maior.
 templateClass: tmpl-page
 translationKey: services
