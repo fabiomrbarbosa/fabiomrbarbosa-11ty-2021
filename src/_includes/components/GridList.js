@@ -10,9 +10,10 @@ module.exports = function (
   return html`
     <div class="gridlist ${feedClass}">
       <div class="gridlist__inner">
-        ${title && `<${hx} class="gridlist__title">${title}</${hx}>`} ${content}
+        ${title && html`<${hx} class="gridlist__title">${title}</${hx}>`}
+        ${content}
         ${linkTarget &&
-        `<a class="gridlist__link" href="${linkTarget}">${linkText}</a>`}
+        html`<a class="gridlist__link" href="${linkTarget}">${linkText}</a>`}
       </div>
     </div>
   `;

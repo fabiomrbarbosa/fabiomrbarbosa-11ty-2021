@@ -32,10 +32,9 @@
 
 {# Assets #}
 {% set css %}
-  {% include "inlines/styles/main.min.css" | url %}
+  {% include "inlines/styles/main.css" | url %}
 {% endset %}
 <style>{{css | safe}}</style>
-{#<link rel="stylesheet" href="{{ '/assets/styles/main.min.css' | url }}"> #}
 
 <link rel="icon" href="/assets/images/favicon.svg">
 <link rel="mask-icon" href="/assets/images/favicon.svg" color="#000" />
