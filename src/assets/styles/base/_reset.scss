@@ -73,15 +73,15 @@ body {
   }
 
   @include breakpoint($desktop) {
-    margin: 3vw;
+    margin: var(--size-step-3);
 
     &:before {
       width: 33vw;
       max-width: 22rem;
       height: 100vh;
       max-height: 42rem;
-      top: -3vw;
-      left: -3vw;
+      top: calc(var(--size-step-3) * -1);
+      left: calc(var(--size-step-3) * -1);
       right: 0;
       z-index: -5;
     }
@@ -91,8 +91,8 @@ body {
       height: 100vh;
       max-height: 42rem;
       left: auto;
-      right: -3vw;
-      bottom: -3vw;
+      right: calc(var(--size-step-3) * -1);
+      bottom: calc(var(--size-step-3) * -1);
       z-index: -5;
     }
   }
