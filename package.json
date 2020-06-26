@@ -1,7 +1,7 @@
 {
-  "name": "eleventy-base-blog",
-  "version": "5.0.2",
-  "description": "A starter repository for a blog web site using the Eleventy static site generator.",
+  "name": "fabiomrbarbosa",
+  "version": "1.0.0",
+  "description": "Fábio M.R. Barbosa's official website, built with Eleventy, hosted on Netlify",
   "scripts": {
     "sass": "node-sass src/assets/styles/main.scss src/_includes/inlines/styles/main.min.css --output-style compressed",
     "build": "npm run sass && npx eleventy",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/11ty/eleventy-base-blog.git"
+    "url": "git://github.com/fabiomrbarbosa/fabiomrbarbosa.git"
   },
   "author": {
     "name": "Zach Leatherman",
@@ -20,9 +20,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/11ty/eleventy-base-blog/issues"
+    "url": "https://github.com/fabiomrbarbosa/fabiomrbarbosa/issues"
   },
-  "homepage": "https://github.com/11ty/eleventy-base-blog#readme",
+  "homepage": "https://github.com/fabiomrbarbosa/fabiomrbarbosa#readme",
   "devDependencies": {},
   "dependencies": {
     "@11ty/eleventy": "^0.11.0",
