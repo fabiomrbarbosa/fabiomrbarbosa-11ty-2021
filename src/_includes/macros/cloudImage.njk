@@ -1,0 +1,37 @@
+{# Auto-generate social media images from Cloudinary #}
+{# replace( '%2C%20', '%252C%20' ) is used in order to properly escape commas #}
+
+{% macro generate( pageTitle, pageDescription ) %}
+  {% set cloudName = 'https://res.cloudinary.com/fabiomrbarbosa/image/upload/' %}
+  {% set imageConfig = [
+    'w_1280',
+    'h_669',
+    'c_fill',
+    'q_auto',
+    'f_auto'
+  ] | join(',') %}
+  {% set titleConfig = [
+    '/w_760',
+    'c_fit',
+    'co_rgb:232129',
+    'g_south_west',
+    'x_480',
+    'y_254',
+    'l_text:fonts:fmrb-title.ttf_64_letter_spacing_-2_line_spacing_-10:'
+  ] | join(',') %}
+  {% set titleUrl = pageTitle | urlencode | replace( '%2C%20', '%252C%20' ) | replace( '%3F', '%253F' ) %}
+  {% set taglineConfig = [
+    '/w_760',
+    'c_fit',
+    'co_rgb:232129',
+    'g_north_west',
+    'x_480',
+    'y_445',
+    'l_text:fonts:fmrb-tagline.ttf_48_letter_spacing_-2:'
+  ] | join(',') %}
+  {% set taglineUrl = pageDescription | urlencode | replace( '%2C%20', '%252C%20' ) | replace( '%3F', '%253F' ) %}
+  {% set imagePublicID = '/socialMediaCard' %}
+
+  {{- cloudName + imageConfig + titleConfig + titleUrl + taglineConfig + taglineUrl + imagePublicID | string  -}}
+
+{% endmacro %}
