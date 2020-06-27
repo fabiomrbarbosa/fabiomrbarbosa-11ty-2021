@@ -3,10 +3,11 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const pluginEmbeds = require("eleventy-plugin-embed-everything");
+const pluginPWA = require("eleventy-plugin-pwa");
+const plugini18n = require('eleventy-plugin-i18n');
+const translations = require('./src/_data/dictionary.json');
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
-const i18n = require('eleventy-plugin-i18n');
-const translations = require('./src/_data/dictionary.json');
 
 const componentsDir = `./src/_includes/components`;
 const InlineLogo = require(`${ componentsDir }/InlineLogo.js`);
@@ -25,7 +26,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
   eleventyConfig.addPlugin(pluginEmbeds);
-  eleventyConfig.addPlugin(i18n, {
+  eleventyConfig.addPlugin(pluginPWA);
+  eleventyConfig.addPlugin(plugini18n, {
     translations,
     fallbackLocales: {
       '*': 'en'
@@ -61,6 +63,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("./src/assets/images");
   eleventyConfig.addPassthroughCopy("./src/assets/fonts");
+  eleventyConfig.addPassthroughCopy("./src/manifest.json");
 
   /* Markdown Overrides */
   // This might be useful for filtering elements in MD

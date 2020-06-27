@@ -40,3 +40,9 @@
 
 {# RSS Feed #}
 <link rel="alternate" href="{{ '/' + locale + metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+
+{# Service Worker #}
+<script>
+  if ("serviceWorker" in navigator)
+    navigator.serviceWorker.register("/service-worker.js");
+</script>
