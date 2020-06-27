@@ -3,7 +3,7 @@
     <div class="logo">
       {% set logoLocation = 'footer' %}
       <a href="{{ [ '/', locale ] | join | url }}" aria-label="Home link">
-        {% include "inlines/images/logo.njk" | url %}
+        {% Logo 'footer' %}
       </a>
     </div>
 
