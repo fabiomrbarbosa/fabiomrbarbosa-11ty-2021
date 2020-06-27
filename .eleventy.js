@@ -12,12 +12,14 @@ const componentsDir = `./src/_includes/components`;
 const InlineLogo = require(`${ componentsDir }/InlineLogo.js`);
 const Heading = require(`${ componentsDir }/Heading.js`);
 const GridList = require(`${ componentsDir }/GridList.js`);
+const ServicesList = require(`${ componentsDir }/ServicesList.js`);
 
 module.exports = function(eleventyConfig) {
 
   eleventyConfig.addShortcode('InlineLogo', InlineLogo);
   eleventyConfig.addShortcode('Heading', Heading);
   eleventyConfig.addPairedShortcode('GridList', GridList);
+  eleventyConfig.addPairedShortcode('ServicesList', ServicesList);
 
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
