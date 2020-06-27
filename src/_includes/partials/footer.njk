@@ -1,9 +1,8 @@
 <footer class="site-footer">
   <div class="site-footer__inner">
     <div class="logo">
-      {% set logoLocation = 'footer' %}
       <a href="{{ [ '/', locale ] | join | url }}" aria-label="Home link">
-        {% Logo 'footer' %}
+        {% Logo { location: 'footer' } %}
       </a>
     </div>
 

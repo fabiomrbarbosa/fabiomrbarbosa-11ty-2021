@@ -1,9 +1,8 @@
 <header class="site-header">
   <div class="site-header__inner">
     <div class="logo">
-      {% set logoLocation = 'header' %}
       <a href="{{ [ '/', locale ] | join | url }}" aria-label="Home link">
-        {% Logo 'header' %}
+        {% Logo { location: 'header' } %}
       </a>
     </div>
 
