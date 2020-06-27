@@ -23,7 +23,7 @@ I approach my work as a craft, and I believe my wide range of skills allows me t
 
 If any of this sounds good to you, how about we work together? Just send me a note.
 
-{% ServicesList %}
+<div class="services__list">
 
 ## Creative Direction & Consulting
 
@@ -40,9 +40,9 @@ If any of this sounds good to you, how about we work together? Just send me a no
 - Product development
 - Translation
 
-{% endServicesList %}
+</div>
 
-{% ServicesList %}
+<div class="services__list">
 
 ## Graphic Design & Brand Identity
 
@@ -57,9 +57,9 @@ If any of this sounds good to you, how about we work together? Just send me a no
 - Typography
 - Graphic art & illustration
 
-{% endServicesList %}
+</div>
 
-{% ServicesList %}
+<div class="services__list">
 
 ## Web Design & Development
 
@@ -79,9 +79,9 @@ If any of this sounds good to you, how about we work together? Just send me a no
 - Crossbrowser
 - HTML, CSS, JS, PHP
 
-{% endServicesList %}
+</div>
 
-{% ServicesList %}
+<div class="services__list">
 
 ## Select clients
 
@@ -106,4 +106,4 @@ If any of this sounds good to you, how about we work together? Just send me a no
 - Unilever
 - Vichy Laboratoires
 
-{% endServicesList %}
+</div>
