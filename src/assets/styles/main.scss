@@ -5,13 +5,14 @@
 @import 'base/reset';
 @import 'base/animations';
 
+@import 'layout/home';
 @import 'layout/posts';
 
 @import 'partials/links';
 @import 'partials/header';
 @import 'partials/footer';
 @import 'partials/menu'; // includes langswitch
-@import 'partials/mainbody';
+@import 'partials/main';
 @import 'partials/postlist';
 @import 'partials/postnav';
 @import 'partials/tag';
@@ -20,5 +21,6 @@
 // @import 'partials/prism';
 @import 'partials/subscribe';
 
+@import 'components/logo';
 @import 'components/heading';
 @import 'components/gridlist';

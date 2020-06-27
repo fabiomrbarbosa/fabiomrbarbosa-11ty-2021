@@ -1,7 +1,3 @@
-.site-main {
-  padding-bottom: var(--size-step-5);
-}
-
 .tmpl-home {
   .site-header,
   .heading {
@@ -11,7 +7,6 @@
     --color-link-hover: var(--color-accent);
   }
 
-
   .logo a:focus,
   .logo a:hover,
   .logo a:active {
@@ -19,5 +14,4 @@
       fill: var(--color-accent);
     }
   }
-
 }

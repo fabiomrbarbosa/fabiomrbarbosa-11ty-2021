@@ -9,38 +9,6 @@
   }
 }
 
-.logo {
-  flex: 1;
-
-  @include breakpoint($mobile) {
-    margin-bottom: var(--size-step-2);
-  }
-
-  a {
-    display: inline-block;
-    vertical-align: middle;
-
-    svg {
-      fill: var(--color-link);
-      transition: fill 0.3s ease;
-    }
-
-    &:focus,
-    &:hover,
-    &:active {
-      svg {
-        fill: var(--color-accent);
-      }
-    }
-  }
-
-  svg {
-    display: block;
-    width: 3.75rem;
-    height: auto;
-  }
-}
-
 .direct-link {
   margin-left: .25rem;
 
