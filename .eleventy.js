@@ -9,11 +9,13 @@ const i18n = require('eleventy-plugin-i18n');
 const translations = require('./src/_data/dictionary.json');
 
 const componentsDir = `./src/_includes/components`;
+const InlineLogo = require(`${ componentsDir }/InlineLogo.js`);
 const Heading = require(`${ componentsDir }/Heading.js`);
 const GridList = require(`${ componentsDir }/GridList.js`);
 
 module.exports = function(eleventyConfig) {
 
+  eleventyConfig.addShortcode('InlineLogo', InlineLogo);
   eleventyConfig.addShortcode('Heading', Heading);
   eleventyConfig.addPairedShortcode('GridList', GridList);
 
@@ -21,7 +23,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
   eleventyConfig.addPlugin(pluginEmbeds);
-
   eleventyConfig.addPlugin(i18n, {
     translations,
     fallbackLocales: {
