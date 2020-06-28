@@ -29,7 +29,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginPWA, {
     modifyUrlPrefix: {
       "": "/"
-   }
+    }
   });
   eleventyConfig.addPlugin(plugini18n, {
     translations,
