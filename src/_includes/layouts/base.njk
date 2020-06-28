@@ -1,6 +1,17 @@
 <!doctype html>
 <html lang="{{ locale }}" dir="{{ dir }}">
-  <head>{% include "partials/head.njk" %}</head>
+  <head>
+  {% include "partials/head.njk" %}
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js');
+      });
+    }
+  </script>
+
+  </head>
   <body
     {% if templateClass %} class="{{ templateClass }}"{% endif %}
     {% if color %} style="--color-accent: var(--color-{{color}}); --color-accent-light: var(--color-{{color}}-light);" {% endif %}>
@@ -12,12 +23,6 @@
     {% include "partials/footer.njk" %}
 
     <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/service-worker.js');
-      });
-    }
-
     function setCookie(cname, cvalue) {
       document.cookie = cname + "=" + cvalue + ";path=/;secure;samesite=strict";
     }
