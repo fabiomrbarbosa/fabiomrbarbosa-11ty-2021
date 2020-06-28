@@ -26,7 +26,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
   eleventyConfig.addPlugin(pluginEmbeds);
-  // eleventyConfig.addPlugin(pluginPWA);
+  eleventyConfig.addPlugin(pluginPWA);
   eleventyConfig.addPlugin(plugini18n, {
     translations,
     fallbackLocales: {
