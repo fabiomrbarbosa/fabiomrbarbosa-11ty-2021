@@ -1,11 +1,15 @@
+---
+permalink: /{{ locale }}/manifest.webmanifest
+eleventyExcludeFromCollections: true
+---
 {
   "name": "Fábio M.R. Barbosa",
   "short_name": "Fábio M.R. Barbosa",
   "theme_color": "#e4655c",
   "background_color": "#e4655c",
   "display": "minimal-ui",
-  "start_url": "/en/",
-  "scope": "/en/",
+  "start_url": "{{ locale }}",
+  "scope": "{{ locale }}",
   "icons": [
     {
       "src": "/assets/images/icon-72x72.png",
