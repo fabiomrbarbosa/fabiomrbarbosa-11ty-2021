@@ -4,7 +4,8 @@
   "theme_color": "#e4655c",
   "background_color": "#e4655c",
   "display": "browser",
-  "start_url": "/pt",
+  "start_url": "/pt/",
+  "scope": "/pt/",
   "icons": [
     {
       "src": "assets/images/icon-72x72.png",
