@@ -1,13 +1,13 @@
 <header class="site-header">
   <div class="site-header__inner">
     <div class="logo">
-      <a href="{{ [ '/', locale ] | join | url }}" aria-label="Home link">
+      <a href="{{ [ '/', locale, '/' ] | join | url }}" aria-label="Home link">
         {% InlineLogo 'header' %}
       </a>
     </div>
 
     <div class="header__banner">
-      <h1 class="link-home"><a href="{{ [ '/', locale ] | join | url }}">{{ metadata.title }}</a></h1>
+      <h1 class="link-home"><a href="{{ [ '/', locale, '/' ] | join | url }}">{{ metadata.title }}</a></h1>
       <div class="header__navigation">
         {% include "partials/menu.njk" %}
         {% include "partials/langswitch.njk" %}
