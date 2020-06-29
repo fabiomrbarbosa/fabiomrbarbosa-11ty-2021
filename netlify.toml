@@ -3,22 +3,17 @@
   command = "npm run build"
   environment = { NODE_VERSION = "14.4.0", NPM_VERSION = "6.14.5" }
 
-[[redirects]]
-  from = "/"
-  to = "/pt/"
-  status = 302
-  conditions = {Language = ["pt", "pt-PT", "pt-BR"]}
+[build.processing]
+  skip_processing = false
+
+[build.processing.html]
+  pretty_urls = true
 
 [[redirects]]
   from = "/*"
   to = "/pt/:splat"
   status = 302
   conditions = {Language = ["pt", "pt-PT", "pt-BR"]}
-
-[[redirects]]
-  from = "/"
-  to = "/en/"
-  status = 302
 
 [[redirects]]
   from = "/*"
