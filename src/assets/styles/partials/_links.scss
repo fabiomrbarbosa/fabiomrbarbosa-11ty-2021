@@ -4,8 +4,12 @@
   margin-top: 0;
   margin-bottom: 0;
 
-  & a[href]:not(:hover) {
-    text-decoration: none;
+  & a {
+    display: block;
+
+    &:not(:hover) {
+      text-decoration: none;
+    }
   }
 }
 

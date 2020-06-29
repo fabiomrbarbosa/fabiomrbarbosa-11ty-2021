@@ -12,6 +12,8 @@
     position: relative;
 
     & a {
+      display: block;
+
       &:after {
         content: ".";
         position: absolute;
