@@ -1,8 +1,8 @@
 .site-footer {
   @extend %container;
   --color-bg: var(--color-gray-darker);
-  --color-fg: var(--color-gray);
-  --color-link: var(--color-gray);
+  --color-fg: var(--color-gray-light);
+  --color-link: var(--color-gray-light);
   --color-link-hover: var(--color-accent);
   --color-border: var(--color-gray);
 
