@@ -1,5 +1,9 @@
 .subscribe {
   @extend %container;
+  --color-fg-display: var(--color-black);
+  --color-bg: var(--color-white);
+  --color-link: var(--color-fg);
+  --color-link-hover: var(--color-accent);
 
   &__inner {
     @extend %content;
@@ -7,12 +11,16 @@
   }
 
   &__title {
+    @extend %altText;
+    margin-top: .5rem;
+
     @include breakpoint($desktop) {
       margin-bottom: 0;
     }
   }
 
   &__link {
+    @extend %altText;
     --color-link-hover: var(--color-accent);
     font-weight: bold;
     position: relative;
@@ -20,8 +28,7 @@
     &:after {
       content: "\20\2197";
       position: absolute;
-      top: .05rem;
-      right: -1.25rem;
+      top: 0;
     }
   }
 }

@@ -1,10 +1,6 @@
 .logo {
   flex: 1;
 
-  @include breakpoint($mobile) {
-    margin-bottom: var(--size-step-2);
-  }
-
   a {
     display: inline-block;
     vertical-align: middle;
@@ -25,7 +21,7 @@
 
   svg {
     display: block;
-    width: 3.75rem;
+    width: 3rem;
     height: auto;
   }
 }

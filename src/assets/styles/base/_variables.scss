@@ -1,10 +1,10 @@
 :root {
   // Font families
-  --font-serif: 'Tiempos Text', Georgia, Athelas, Times, 'Times New Roman', serif;
-  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-serif: 'Calendas Plus', Georgia, Athelas, Times, 'Times New Roman', serif;
+  --font-sans: 'IBM Plex Mono', system-ui, sans-serif;
 
   // Tints
-  --color-red: #e4655c;
+  /*--color-red: #e4655c;
   --color-red-light: #f1b18b;
   --color-purple: #707aed;
   --color-purple-light: #a8cff3;
@@ -13,6 +13,16 @@
   --color-gold: #d69336;
   --color-gold-light: #ebe6ba;
 
+  --color-alt-red: #e72b41;
+  --color-alt-cyan: #30aca8;
+  --color-alt-gray-lighter: #e7e3de;
+  --color-alt-gray-light: #948c7a;
+  --color-alt-black: #0c0f14;
+  --color-alt-grayblue-light: #dadfe4;
+  --color-alt-grayblue: #7494a8;
+  --color-alt-beige-light: #eee6e3;
+  --color-alt-beige: #b4aca9;
+
   // Neutrals
   --color-white: #fff;
   --color-gray-lighter: #f5f3f2;
@@ -20,18 +30,29 @@
   --color-gray: #7b7169;
   --color-gray-dark: #35302d;
   --color-gray-darker: #23201e;
-  --color-black: #000;
+  --color-black: #000;*/
+
+  --color-black: #13111e;
+  --color-gray-dark: #2a2834;
+  --color-gray: #595861;
+  --color-gray-light: #b9b3a7;
+  --color-gray-lighter: #e7e7e8;
+  --color-white: #fbfbfb;
+  --color-gold: #bb9845;
+  --color-beige: #f0ece2;
+  --color-red: #e72b41;
+  --color-cyan: #30aca8;
 
   // Associations
-  --color-bg: var(--color-gray-lighter);
+  --color-bg: var(--color-white);
   --color-fg: var(--color-gray-dark);
   --color-fg-display: var(--color-black);
   --color-link: var(--color-gray-dark);
   // --color-link-visited: var(--color-gray-darker);
   --color-link-hover: var(--color-black);
   --color-border: var(--color-gray-light);
-  --color-accent: var(--color-red);
-  --color-accent-light: var(--color-red-light);
+  --color-accent: var(--color-gold);
+  --color-accent-light: var(--color-beige);
 
   // Generated with the help of utopia.fyi
 

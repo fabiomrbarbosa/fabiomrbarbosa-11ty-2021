@@ -1,18 +1,15 @@
 a.tag {
+  @extend %altText;
   --color-link: var(--color-black);
   --color-link-hover: var(--color-white);
 
   display: inline-block;
   vertical-align: middle;
-  text-transform: uppercase;
-  font-size: var(--size-step--2);
-  font-weight: 500;
-  padding: 0 .4rem;
+  padding: .2rem .6rem 0;
   margin-left: 0.5rem;
-  border: 2px solid var(--color-link);
+  border: .125rem solid var(--color-link);
   border-radius: 100px;
   text-decoration: none;
-  line-height: var(--size-step--1);
 
   &:focus,
   &:hover,

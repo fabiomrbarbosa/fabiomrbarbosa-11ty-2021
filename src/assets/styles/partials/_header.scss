@@ -1,65 +1,85 @@
 .site-header {
   @extend %container;
-  --color-bg: var(--color-accent-light);
-  --color-border: var(--color-fg);
+  position: absolute;
+  left: 0;
+  right: 0;
+
 
   &__inner {
     @extend %content;
-    @extend %grid;
-    align-items: center;
-
-    // temp
-    border: none !important;
-    padding-top: 0;
+    --color-border: transparent; // temp
 
     @include breakpoint($mobile) {
-      display: flex;
-      flex-direction: column;
-      align-items: normal;
+      display: grid;
+      grid-template-columns: 1fr auto auto;
+      grid-template-areas:
+        "menu . langswitch"
+        ". logo .";
+      grid-row-gap: var(--size-step-4);
 
-      .logo { order: 2 };
-      .header__banner { order: 1; margin-bottom: var(--size-step-4) }
+      .site-header__navigation {
+        display: contents;
+      }
+
+      .logo { grid-area: logo };
+      .menu { grid-area: menu };
+      .langswitch { grid-area: langswitch };
+    }
+
+    @include breakpoint($desktop) {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-column-gap: var(--size-step-4);
     }
   }
 
-  .logo {
+  &__title {
+    @extend %visuallyHidden;
+  }
+
+  &__logo {
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 390%;
+      height: 390%;
+      top: -144%;
+      left: -146%;
+      pointer-events: none;
+      background: url('/assets/images/logo_rays.svg') 50% no-repeat;
+
+      @media (prefers-reduced-motion:no-preference) {
+        transform-origin: center;
+        animation: rotating 77s linear infinite;
+      }
+    }
+
     a {
       &:focus,
       &:hover,
       &:active {
         svg {
-          fill: var(--color-white);
+          fill: var(--color-accent);
         }
       }
     }
 
     @include breakpoint($desktop) {
       position: absolute;
-      top: calc(var(--size-step-5) * 2);
+      left: calc(var(--size-step-4) * 1.6);
+      margin-top: var(--size-step-5);
+      top: 0;
+    }
+  }
+
+  &__navigation {
+    @include breakpoint($desktop) {
+      grid-column: 2/3;
+      display: flex;
+      justify-content: space-between;
     }
   }
 }
 
-.header__banner {
-  --color-link: var(--color-gray-lighter);
-  --color-link-hover: var(--color-accent);
-
-  padding-top: var(--size-step-2);
-  padding-bottom: var(--size-step-2);
-  padding-left: var(--size-step-2);
-  padding-right: var(--size-step-2);
-  // margin-left: calc(var(--size-step-2) * -1);
-  background-color: var(--color-gray-darker);
-
-  @include breakpoint($desktop) {
-    margin-top: calc(var(--size-step-3) * -1);
-    grid-column: 2/3;
-  }
-}
-
-.header__navigation {
-  @include breakpoint($desktop) {
-    display: flex;
-    justify-content: space-between;
-  }
-}

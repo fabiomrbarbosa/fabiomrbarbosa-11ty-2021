@@ -8,6 +8,7 @@
   }
 
   &__item {
+    @extend %altText;
     display: inline-block;
     position: relative;
     font-weight: bold;

@@ -1,10 +1,21 @@
 .tmpl-home {
   .site-header,
-  .heading {
-    --color-fg-display: var(--color-accent);
-    --color-bg: var(--color-gray-lighter);
-    --color-link: var(--color-gray-dark);
+  .heading,
+  .contacts--home {
+    --color-fg: var(--color-white);
+    --color-fg-display: var(--color-white);
+    --color-bg: var(--color-black);
+    --color-link: var(--color-white);
     --color-link-hover: var(--color-accent);
+    --color-border: var(--color-gray-dark);
+  }
+
+  .feed--home {
+    --color-bg: var(--color-accent-light);
+
+    .gridlist__inner {
+      border-bottom: none !important;
+    }
   }
 
   .logo a:focus,

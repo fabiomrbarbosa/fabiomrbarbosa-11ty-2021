@@ -4,9 +4,10 @@
 
   &__content {
     @extend %content;
+    padding-top: calc(var(--size-step-5) * 5);
+    padding-bottom: var(--size-step-5);
 
     @include breakpoint($desktop) {
-      padding-top: calc(var(--size-step-5) * 2);
       & > * {
         margin-left: calc(33.3% + var(--size-step-2));
       }
@@ -15,19 +16,33 @@
 
   &__title,
   &__subtitle {
-    font-size: var(--size-step-4);
-    line-height: 1.05; // magic number
-    letter-spacing: -.1rem;
+    font-family: var(--font-serif);
+    letter-spacing: -.05rem;
     margin-top: 0;
     margin-bottom: var(--size-step--2);
   }
 
+  &__title {
+    font-weight: normal;
+    font-size: var(--size-step-5);
+    line-height: 1;
+    margin-left: 10rem;
+
+    &:after {
+      content: "\2009\2009\AC";
+      display: inline-block;
+      color: var(--color-accent);
+    }
+  }
+
   &__subtitle {
-    mix-blend-mode: multiply;
+    max-width: 37.5rem;
+    font-size: var(--size-step-3);
+    line-height: 1;
   }
 
   &__datetime {
-    font-size: var(--size-step--1);
+    @extend %altText;
   }
 }
 

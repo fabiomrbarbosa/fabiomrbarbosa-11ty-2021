@@ -8,29 +8,12 @@
   }
 
   &__item {
-    display: inline-block;
-    position: relative;
-
     & a {
+      @extend %altText;
       display: block;
-
-      &:after {
-        content: ".";
-        position: absolute;
-        top: 0;
-        right: -.35rem;
-      }
 
       &:not(:hover) {
         text-decoration: none;
-      }
-    }
-
-    &:not(:last-child) {
-      margin-right: var(--size-step--2);
-
-      & a:after {
-        content: ",";
       }
     }
 
@@ -42,5 +25,8 @@
 }
 
 .langswitch {
-  text-transform: uppercase;
+  @include breakpoint($desktop) {
+    position: absolute;
+    right: var(--size-step-4);
+  }
 }

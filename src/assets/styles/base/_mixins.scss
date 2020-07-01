@@ -36,3 +36,22 @@ $desktop: "min-width: 56.25rem";
     grid-column-gap: var(--size-step-4);
   }
 }
+
+%altText {
+  font-family: var(--font-sans);
+  font-size: var(--size-step--2);
+  line-height: var(--size-step-0);
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+%visuallyHidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}

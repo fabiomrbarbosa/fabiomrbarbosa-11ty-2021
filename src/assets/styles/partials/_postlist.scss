@@ -17,16 +17,15 @@
   }
 
   &__date {
-    font-size: var(--size-step--1); /* 13px /16 */
-    color: var(--darkgray);
-    word-spacing: -0.5px;
+    @extend %altText;
   }
 
   &__link {
     --color-link-hover: var(--color-accent);
     display: block;
-    font-weight: bold;
-    margin-bottom: var(--size-step--2);
+    font-family: var(--font-serif);
+    font-size: var(--size-step-1);
+    margin-bottom: .5rem;
   }
   &__item--active &__link {
     font-weight: bold;

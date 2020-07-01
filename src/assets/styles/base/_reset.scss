@@ -1,16 +1,26 @@
 @font-face {
-  font-family: 'Inter';
-  src: url('/assets/fonts/Inter.var.woff2') format("woff2");
+  font-family: 'IBM Plex Mono';
+  src: url('/assets/fonts/IBMPlexMono_regular.woff2') format("woff2");
   font-style: normal;
   font-display: swap;
-  font-weight: 300 700;
+  font-weight: normal;
   //unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2192, U+2197, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   unicode-range: U+0020-007F, U+00A0-00FF, U+20AC, U+2192, U+2197;
 }
 
 @font-face {
-  font-family: 'Tiempos Text';
-  src: url('/assets/fonts/TiemposText-Semibold.woff2') format("woff2");
+  font-family: 'IBM Plex Mono';
+  src: url('/assets/fonts/IBMPlexMono_bold.woff2') format("woff2");
+  font-style: normal;
+  font-display: swap;
+  font-weight: bold;
+  //unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2192, U+2197, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range: U+0020-007F, U+00A0-00FF, U+20AC, U+2192, U+2197;
+}
+
+@font-face {
+  font-family: 'Calendas Plus';
+  src: url('/assets/fonts/CalendasPlus_bold.woff2') format("woff2");
   font-style: normal;
   font-display: swap;
   font-weight: bold;
@@ -18,8 +28,8 @@
 }
 
 @font-face {
-  font-family: 'Tiempos Text';
-  src: url('/assets/fonts/TiemposText-Regular.woff2') format("woff2");
+  font-family: 'Calendas Plus';
+  src: url('/assets/fonts/CalendasPlus_regular.woff2') format("woff2");
   font-style: normal;
   font-display: swap;
   font-weight: normal;
@@ -27,8 +37,8 @@
 }
 
 @font-face {
-  font-family: 'Tiempos Text';
-  src: url('/assets/fonts/TiemposText-RegularItalic.woff2') format("woff2");
+  font-family: 'Calendas Plus';
+  src: url('/assets/fonts/CalendasPlus_italic.woff2') format("woff2");
   font-style: italic;
   font-display: swap;
   font-weight: normal;
@@ -42,68 +52,13 @@ body {
   font-family: var(--font-sans);
   font-size: var(--size-step-0);
   line-height: var(--size-step-2);
-  letter-spacing: -.02rem;
+  background-color: white; // set a default for those browsers that don't
   box-sizing: border-box;
 }
 
-
-body {
-  position: relative;
-  margin-top: var(--size-step-2);
-  margin-bottom: var(--size-step-2);
-
-  &:before {
-    position: absolute;
-    content: '';
-    height: var(--size-step-2);
-    background-color: var(--color-accent);
-    top: calc(var(--size-step-2) * -1);
-    left: 0;
-    right: var(--size-step-2);
-  }
-
-  &:after {
-    position: absolute;
-    content: '';
-    background-color: var(--color-gray-light);
-    height: var(--size-step-2);
-    bottom: calc(var(--size-step-2) * -1);
-    left: var(--size-step-2);
-    right: 0;
-  }
-
-  @include breakpoint($desktop) {
-    margin: var(--size-step-3);
-
-    &:before {
-      width: 33vw;
-      max-width: 22rem;
-      height: 100vh;
-      max-height: 42rem;
-      top: calc(var(--size-step-3) * -1);
-      left: calc(var(--size-step-3) * -1);
-      right: 0;
-      z-index: -5;
-    }
-
-    &:after {
-      width: 92vw;
-      height: 100vh;
-      max-height: 42rem;
-      left: auto;
-      right: calc(var(--size-step-3) * -1);
-      bottom: calc(var(--size-step-3) * -1);
-      z-index: -5;
-    }
-  }
-}
-
-header,
-header > div,
 main,
 main > div,
-footer,
-footer > div {
+footer {
   background-color: var(--color-bg);
 }
 
@@ -123,7 +78,6 @@ h4,
 h5,
 h6 {
   color: var(--color-fg-display);
-  font-family: var(--font-serif);
 }
 h2,
 h3 {
@@ -142,11 +96,10 @@ ul {
     margin-bottom: 0;
   }
 }
-p,
-img {
+p {
   font-family: var(--font-serif);
-  max-width: 37.5rem; /* 600px /16 */
 }
+
 a {
   transition: color 0.3s ease;
   color: var(--color-link);

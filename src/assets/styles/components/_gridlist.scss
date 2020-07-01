@@ -12,12 +12,16 @@
   }
 
   &__title {
+    @extend %altText;
+    margin-top: .5rem;
+
     @include breakpoint($desktop) {
       margin-bottom: 0;
     }
   }
 
   &__link {
+    @extend %altText;
     position: relative;
     display: inline-block;
     grid-column: 2/3;
