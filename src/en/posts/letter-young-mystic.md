@@ -1,6 +1,6 @@
 ---
-title: Carta a um Jovem Místico
-description: '"Por onde começo?"'
+title: Letter to a Young Mystic
+description: '"Where do I start?"'
 date: 2016-11-03
 tags:
   - spirit
