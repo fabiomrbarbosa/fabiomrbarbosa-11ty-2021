@@ -3,7 +3,7 @@ title: Carta a um Jovem Místico
 description: '"Por onde começo?"'
 date: 2016-11-03
 tags:
-  - espiritualidade
+  - espírito
 ---
 
 Diria que prestar atenção, ou melhor, cultivar a tua atenção, é essencial. Se não o fazes ainda, começa a meditar. Faz um exercício básico de atenção plena: toma consciência da tua respiração, foca-te num ponto entre os teus olhos, na tua testa, ou onde quer que seja mais fácil para ti.
@@ -16,7 +16,7 @@ Pede, e depois escuta.
 
 Procura pela Presença no íntimo do Silêncio com o ardor de um amante. Bate à sua porta noite e dia, até ao último dos teus dias, quando finalmente te será dado acesso às câmaras interiores. Deixa-te devorar pelo amor pelo Silêncio, unicamente por causa do próprio Silêncio.
 
-Lê. Lê muito, tanto, aquilo que te deixa mais curioso como o que mais te incomoda, pois há enorme valor em pedras de tropeço.
+Lê. Lê muito, tanto aquilo que te deixa mais curioso como o que mais te incomoda, pois há enorme valor em pedras de tropeço.
 
 Mas fica avisado de que a letra da lei, e toda a prosa, é morte. Essencialmente, o que de facto procuras é um conhecimento de todas as coisas e da própria vida que deve ser da mais íntima e da maior necessidade na tua alma; se não fosse esse o caso, não sentirias semelhante desejo de o procurar. Este é um Caminho de muitas estradas, mas a Natureza é a mestre de todos. E os poetas são os seus profetas.
 
