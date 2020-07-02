@@ -1,24 +1,3 @@
-.entry-body {
-  @extend %container;
-}
-
-.entry-content {
-  @extend %content;
-  --color-link-hover: var(--color-accent);
-  padding-top: var(--size-step-5);
-  padding-bottom: var(--size-step-5);
-
-  p {
-    max-width: 37.5rem; /* 600px /16 */
-  }
-
-  @include breakpoint($desktop) {
-    > *:not(div) {
-      margin-left: calc(33.3% + var(--size-step-2));
-    }
-  }
-}
-
 .tmpl-post {
   .site-header,
   .heading {
