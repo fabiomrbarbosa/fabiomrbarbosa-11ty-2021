@@ -8,7 +8,6 @@ translationKey: about
 eleventyNavigation:
   key: Quem sou
   order: 1
-color: purple
 ---
 
 Sempre vivi entre mundos distintos: primeiro, como bilingue nativo e ilhéu, nascido nos Açores, e hoje em dia como nómada digital. Depois de ter interrompido a minha formação em Comunicação Social e Cultura, dei início à minha carreira como _podcaster_ e animador de rádio. Cinco anos mais tarde, mudei-me para Portugal Continental, e com essa mudança transitei também para o mundo do _marketing_ e da publicidade, em que tive a oportunidade de trabalhar como _web developer_, _copywriter_ e guionista, _designer_ e tradutor no eixo inglês-português.

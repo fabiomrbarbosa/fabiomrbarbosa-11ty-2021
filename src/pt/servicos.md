@@ -8,7 +8,6 @@ translationKey: services
 eleventyNavigation:
   key: Serviços
   order: 3
-color: mint
 ---
 
 Sempre me fascinei pela linguagem e pelo poder que as palavras e as imagens têm de nos interligar, não só com os seus significados, mas também uns com os outros.

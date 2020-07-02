@@ -1,9 +1,10 @@
 ---
 title: Letter to a Young Mystic
-description: '"Where do I start?"'
+description: '“Where do I start?”'
 date: 2016-11-03
 tags:
   - spirit
+translationKey: letter-young-mystic
 ---
 
 I would say that paying attention, or rather, cultivating your attention, is of essence. If you do not meditate already, start now. Take up a basic mindfulness exercise: become aware of your breath, focus on a spot between your eyes, on your forehead, or wherever it comes easier for you.
@@ -26,4 +27,4 @@ Be compassionate, especially to yourself. Know that the Soul always knows what i
 
 Always remember what made you ask, "Where do I start?" That will be the greatest and most beautiful thing you will ever come across in your path.
 
-The disquiet. The desire. The need to travel onwards.
+The disquiet. The desire. The need to keep traveling onwards.

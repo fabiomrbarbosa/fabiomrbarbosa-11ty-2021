@@ -1,9 +1,10 @@
 ---
 title: Carta a um Jovem Místico
-description: '"Por onde começo?"'
+description: '“Por onde começo?”'
 date: 2016-11-03
 tags:
   - espírito
+translationKey: letter-young-mystic
 ---
 
 Diria que prestar atenção, ou melhor, cultivar a tua atenção, é essencial. Se não o fazes ainda, começa a meditar. Faz um exercício básico de atenção plena: toma consciência da tua respiração, foca-te num ponto entre os teus olhos, na tua testa, ou onde quer que seja mais fácil para ti.

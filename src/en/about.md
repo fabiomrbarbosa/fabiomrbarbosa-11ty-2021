@@ -8,7 +8,6 @@ templateClass: tmpl-page
 eleventyNavigation:
   key: About
   order: 1
-color: purple
 ---
 
 I've always lived in between worlds: first as a native bilingual and an islander, born in the Azores, and now as a digital nomad. After dropping out of Journalism and Media Studies, I started my career as a podcaster and radio broadcaster. Five years later, I moved on to mainland Portugal, and thus to the world of marketing and advertising, where I had the chance to work as a freelance web developer, copy and scriptwriter, designer and English—Portuguese translator.

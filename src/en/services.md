@@ -8,7 +8,6 @@ translationKey: services
 eleventyNavigation:
   key: Services
   order: 3
-color: mint
 ---
 
 I am fascinated by language and the power of words and images to connect us with meaning and with each other.
