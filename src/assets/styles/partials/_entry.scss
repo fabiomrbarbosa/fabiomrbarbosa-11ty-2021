@@ -12,6 +12,10 @@
     max-width: 37.5rem; /* 600px /16 */
   }
 
+  a {
+    font-weight: bold;
+  }
+
   @include breakpoint($desktop) {
     > *:not(div) {
       margin-left: calc(33.3% + var(--size-step-2));
