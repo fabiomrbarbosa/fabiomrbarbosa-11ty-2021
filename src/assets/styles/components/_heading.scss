@@ -55,6 +55,10 @@
     font-family: var(--font-sans);
     font-size: var(--size-step-3);
     line-height: var(--size-step-4);
+
+    // temp hack
+    transform: scaleX(1.05);
+    transform-origin: left center;
   }
 
   &__datetime {
