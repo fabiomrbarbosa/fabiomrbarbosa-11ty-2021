@@ -18,20 +18,23 @@
 
   &__date {
     @extend %altText;
+    font-size: var(--size-step--2);
+    color: var(--color-gray-warm);
   }
 
   &__link {
     --color-link-hover: var(--color-accent);
-    display: block;
+    display: inline-block;
     font-family: var(--font-serif);
     font-size: var(--size-step-1);
     margin-right: .5rem;
+    margin-bottom: var(--size-step--2);
   }
   &__item--active &__link {
     font-weight: bold;
   }
 
   &__description {
-    margin-bottom: var(--size-step--2);
+    margin-bottom: 0;
   }
 }

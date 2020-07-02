@@ -1,7 +1,7 @@
 :root {
   // Font families
   --font-serif: 'Calendas Plus', Georgia, Athelas, Times, 'Times New Roman', serif;
-  --font-sans: 'IBM Plex Mono', system-ui, sans-serif;
+  --font-sans: 'IBM Plex Sans', system-ui, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
   // Tints
   /*--color-red: #e4655c;
@@ -66,6 +66,7 @@
   --color-border: var(--color-gray-light);
   --color-accent: var(--color-gold-satin);
   --color-accent-light: var(--color-beige);
+  --color-accent-dark: var(--color-metallic-sunburst);
 
   // Generated with the help of utopia.fyi
 

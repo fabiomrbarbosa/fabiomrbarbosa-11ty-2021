@@ -32,7 +32,6 @@
   &__title,
   &__subtitle {
     font-family: var(--font-serif);
-    letter-spacing: -.05rem;
     margin-top: 0;
     margin-bottom: var(--size-step--2);
   }
@@ -41,6 +40,7 @@
     font-weight: normal;
     font-size: var(--size-step-5);
     line-height: 1;
+    letter-spacing: -.05rem;
 
     &:after {
       content: "\2009\2009\AC";
@@ -53,8 +53,8 @@
   &__subtitle {
     max-width: 37.5rem;
     font-family: var(--font-sans);
-    font-size: var(--size-step-2);
-    line-height: var(--size-step-3);
+    font-size: var(--size-step-3);
+    line-height: var(--size-step-4);
   }
 
   &__datetime {

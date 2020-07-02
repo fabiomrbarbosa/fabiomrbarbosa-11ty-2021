@@ -1,7 +1,7 @@
 .site-footer {
   @extend %container;
   --color-bg: var(--color-black);
-  --color-fg: var(--color-beige);
+  --color-fg: var(--color-gray-light);
   --color-link: var(--color-accent-light);
   --color-link-hover: var(--color-accent);
   --color-border: var(--color-gray-dark);
@@ -46,9 +46,9 @@
   }
 
   .copyright {
-    @extend %altText;
     grid-column: 2/3;
     font-weight: bold;
+    font-size: var(--size-step--1);
     font-family: var(--font-sans);
     text-transform: none;
     padding-top: var(--size-step-2);
