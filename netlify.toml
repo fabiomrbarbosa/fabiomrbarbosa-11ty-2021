@@ -24,7 +24,6 @@
   package = "netlify-plugin-minify-html"
 
   [plugins.inputs.minifierOptions]
-    collapseInlineTagWhitespace = true
     removeComments = true
     decodeEntities = true
     minifyJS = true
