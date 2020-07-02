@@ -37,15 +37,20 @@
   }
 
   &__title {
+    position: relative;
     font-size: var(--size-step-4);
     line-height: 1;
     letter-spacing: -.05rem;
 
     &:after {
-      content: "\2009\2009\AC";
+      content: "\AC";
       display: inline-block;
       color: var(--color-accent);
-      font-weight: bold;
+      font-weight: 700;
+      font-size: 3.5rem;
+      position: absolute;
+      margin-left: .5rem;
+      margin-top: -.8rem;
     }
   }
 
@@ -54,6 +59,7 @@
     font-family: var(--font-sans);
     font-size: var(--size-step-3);
     line-height: var(--size-step-3);
+    letter-spacing: -.03rem;
   }
 
   &__datetime {
