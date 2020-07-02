@@ -8,10 +8,6 @@ tags:
 
 I would say that paying attention, or rather, cultivating your attention, is of essence. If you do not meditate already, start now. Take up a basic mindfulness exercise: become aware of your breath, focus on a spot between your eyes, on your forehead, or wherever it comes easier for you.
 
-With time
-
-Diria que prestar atenção, ou melhor, cultivar a tua atenção, é essencial. Se não o fazes ainda, começa a meditar. Faz um exercício básico de atenção plena: toma consciência da tua respiração, foca-te num ponto entre os teus olhos, na tua testa, ou onde quer que seja mais fácil para ti.
-
 In time, you may want to add some questions to your practice as you get more and more used to this calm and this deeper awareness. Calm and awareness usually bring forth one other. Because there is a Presence within Silence, and being conscious is the way to find it.
 
 This encounter is made of listening and demands in equal parts. We could call it "prayer". Whenever you remain in Silence, ask for your path to manifest itself; commit yourself to being open and to giving yourself to whatever it may bring you, for any path worthy of your life will surely be the greatest adventure of all, from which no one gets out alive. The truth is that you will never enter the Promised Land. However, you shall get a glimpse of it from afar, and you will be grateful for it.
