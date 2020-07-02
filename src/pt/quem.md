@@ -11,7 +11,7 @@ eleventyNavigation:
 color: purple
 ---
 
-Sempre vivi entre mundos distintos: primeiro, como ilhéu, nascido nos Açores, e hoje em dia como nómada digital. Depois de ter interrompido a minha formação em Comunicação Social e Cultura, dei início à minha carreira como _podcaster_ e animador de rádio. Cinco anos mais tarde, mudei-me para Portugal Continental, e com essa mudança transitei também para o mundo do _marketing_ e da publicidade, em que tive a oportunidade de trabalhar como um _web developer_, _copywriter_ e guionista, _designer_ e tradutor no eixo inglês-português.
+Sempre vivi entre mundos distintos: primeiro, como ilhéu, nascido nos Açores, e hoje em dia como nómada digital. Depois de ter interrompido a minha formação em Comunicação Social e Cultura, dei início à minha carreira como _podcaster_ e animador de rádio. Cinco anos mais tarde, mudei-me para Portugal Continental, e com essa mudança transitei também para o mundo do _marketing_ e da publicidade, em que tive a oportunidade de trabalhar como _web developer_, _copywriter_ e guionista, _designer_ e tradutor no eixo inglês-português.
 
 Ao longo do meu percurso profissional, desenvolvi a experiência necessária para desenvolver soluções criativas, em todas as suas etapas, para a televisão e para os meios digitais. Hoje em dia, pretendo dedicar-me a projectos sustentáveis e conscientes que pretendam contribuir para mudanças estruturais na nossa sociedade.
 
