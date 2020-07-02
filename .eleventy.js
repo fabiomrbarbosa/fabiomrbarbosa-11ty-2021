@@ -27,6 +27,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginNavigation);
   eleventyConfig.addPlugin(pluginEmbeds);
   eleventyConfig.addPlugin(pluginPWA, {
+    cleanupOutdatedCaches: true,
     modifyUrlPrefix: {
       "": "/"
     }

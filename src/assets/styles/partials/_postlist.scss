@@ -28,7 +28,7 @@
     display: inline-block;
     font-family: var(--font-serif);
     font-size: var(--size-step-1);
-    margin-bottom: var(--size-step--2);
+    font-weight: bold;
   }
   &__item--active &__link {
     font-weight: bold;

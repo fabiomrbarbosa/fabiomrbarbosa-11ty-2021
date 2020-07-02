@@ -12,6 +12,8 @@
 
   .feed--home {
     --color-bg: var(--color-accent-light);
+    padding-top: var(--size-step-2);
+    padding-bottom: var(--size-step-2);
 
     .gridlist__inner {
       border-bottom: none !important;

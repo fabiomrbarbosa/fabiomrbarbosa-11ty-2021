@@ -5,7 +5,7 @@
   &__content {
     @extend %content;
     position: relative;
-    padding-top: calc(var(--size-step-5) * 5);
+    padding-top: calc(var(--size-step-5) * 4);
     padding-bottom: var(--size-step-5);
 
     @include breakpoint($desktop) {
@@ -37,8 +37,7 @@
   }
 
   &__title {
-    font-weight: normal;
-    font-size: var(--size-step-5);
+    font-size: var(--size-step-4);
     line-height: 1;
     letter-spacing: -.05rem;
 
@@ -54,11 +53,7 @@
     max-width: 37.5rem;
     font-family: var(--font-sans);
     font-size: var(--size-step-3);
-    line-height: var(--size-step-4);
-
-    // temp hack
-    transform: scaleX(1.05);
-    transform-origin: left center;
+    line-height: var(--size-step-3);
   }
 
   &__datetime {

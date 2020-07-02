@@ -6,7 +6,7 @@
   </head>
   <body
     {% if templateClass %} class="{{ templateClass }}"{% endif %}
-    {% if color %} style="--color-accent: var(--color-{{color}}); --color-accent-light: var(--color-{{color}}-light);" {% endif %}>
+    {% if color %} style="--color-accent: var(--color-{{color}});" {% endif %}>
 
     {% include "partials/header.njk" %}
 
