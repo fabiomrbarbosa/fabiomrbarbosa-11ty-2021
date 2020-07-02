@@ -8,7 +8,6 @@
 
   &__title {
     @extend %altText;
-    margin-top: .35rem;
   }
 
   &__links {
@@ -39,6 +38,7 @@
   }
 
   &__heading {
+    @extend %altText;
     font-weight: bold;
   }
 }

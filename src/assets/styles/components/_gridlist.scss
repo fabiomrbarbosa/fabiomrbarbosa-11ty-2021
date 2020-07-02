@@ -20,14 +20,16 @@
     }
   }
 
+  &__footer {
+    grid-column: 2/3;
+    padding-top: var(--size-step-1);
+  }
+
   &__link {
     @extend %altText;
     @extend %altTextUnderline;
     position: relative;
-    display: inline-block;
-    grid-column: 2/3;
     font-weight: bold;
-    padding-top: var(--size-step-1);
 
     &:focus,
     &:hover,
@@ -37,6 +39,8 @@
 
     &:after {
       content: "\20\2192";
+      position: relative;
+      right: -.25rem;
     }
   }
 }

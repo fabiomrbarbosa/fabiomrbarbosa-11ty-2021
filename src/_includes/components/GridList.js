@@ -13,7 +13,9 @@ module.exports = function (
         ${title && html`<${hx} class="gridlist__title">${title}</${hx}>`}
         ${content}
         ${linkTarget &&
-        html`<a class="gridlist__link" href="${linkTarget}">${linkText}</a>`}
+        html`<div class="gridlist__footer">
+          <a class="gridlist__link" href="${linkTarget}">${linkText}</a>
+        </div>`}
       </div>
     </div>
   `;
