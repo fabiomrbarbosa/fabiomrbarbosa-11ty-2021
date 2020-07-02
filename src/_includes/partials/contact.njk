@@ -2,7 +2,7 @@
   <ul class="contact__list">
     {%- for entry in metadata.contacts %}
     <li class="contact__item">
-      <a href="{{ entry.url | url }}">{{ entry.name }}</a>
+      <a target="_blank" rel="noopener noreferrer" href="{{ entry.url | url }}">{{ entry.name }}</a>
     </li>
     {%- endfor %}
   </ul>
