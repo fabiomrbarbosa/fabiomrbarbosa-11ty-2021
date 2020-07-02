@@ -4,14 +4,14 @@
 
   <li class="postlist__item{% if post.url == url %} postlist__item--active{% endif %}">
 
-    <a href="{{ post.url | url }}" class="postlist__link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
-
-    {% for tag in post.data.tags %}
+   {% for tag in post.data.tags %}
       {%- if collections.tagList.indexOf(tag) != -1 -%}
       {% set tagUrl %}/{{ locale }}/tags/{{ tag }}/{% endset %}
       <a href="{{ tagUrl }}" class="tag">{{ tag }}</a>
       {%- endif -%}
     {% endfor %}
+
+    <a href="{{ post.url | url }}" class="postlist__link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
 
     {% if post.data.description %}<p class="postlist__description">{{ post.data.description }}</p>{% endif %}
     <time class="postlist__date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate(locale) }}</time>

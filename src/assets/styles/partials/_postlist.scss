@@ -22,15 +22,16 @@
 
   &__link {
     --color-link-hover: var(--color-accent);
+    display: block;
     font-family: var(--font-serif);
     font-size: var(--size-step-1);
-    margin-bottom: .5rem;
+    margin-right: .5rem;
   }
   &__item--active &__link {
     font-weight: bold;
   }
 
   &__description {
-    margin-bottom: 0;
+    margin-bottom: var(--size-step--2);
   }
 }
