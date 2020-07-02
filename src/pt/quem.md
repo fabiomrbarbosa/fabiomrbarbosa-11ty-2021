@@ -2,7 +2,7 @@
 layout: layouts/page.njk
 title: Quem sou
 publicTitle: Muito gosto!
-description: Aqui vai alguma informação acerca de mim.
+description: Fique a saber um pouco mais acerca de mim.
 templateClass: tmpl-page
 translationKey: about
 eleventyNavigation:
@@ -11,10 +11,10 @@ eleventyNavigation:
 color: purple
 ---
 
-I am a third-culture kid, an islander born in the Azores, now living as a digital nomad. After dropping out of Journalism and Media Studies, I started my career as a podcaster and radio broadcaster. Five years later, I moved on to mainland Portugal, and thus to the world of marketing and advertising, where I had the chance to work as a freelance web developer, copy and scriptwriter, designer and English—Portuguese translator.
+Sempre vivi entre mundos distintos: primeiro, como ilhéu, nascido nos Açores, e hoje em dia como nómada digital. Depois de ter interrompido a minha formação em Comunicação Social e Cultura, dei início à minha carreira como *podcaster* e animador de rádio. Cinco anos mais tarde, mudei-me para Portugal Continental, e com essa mudança transitei também para o mundo do *marketing* e da publicidade, em que tive a oportunidade de trabalhar como um *web developer*, *copywriter* e guionista, *designer* e tradutor no eixo inglês-português.
 
-In my work, I've come to develop the necessary expertise to deliver turn-key creative solutions for television and digital media. Nowadays, I intend to focus on sustainable, higher awareness projects that target structural change.
+Ao longo do meu percurso profissional, desenvolvi a experiência necessária para desenvolver soluções criativas, em todas as suas etapas, para a televisão e para os meios digitais. Hoje em dia, pretendo dedicar-me a projectos sustentáveis e conscientes que pretendam contribuir para mudanças estruturais na nossa sociedade.
 
-In my spare time, I am an amateur researcher and author in the fields of mythology and spirituality, interested in the intersection of the Perennial Wisdom and the many earth-based and mystery traditions. I have published several articles in like-minded media, in which I expound on our urgent need for a non-dualistic and empathic way of living.
+Nos meus tempos livres, sou um investigador e autor amador nas áreas da mitologia e da espiritualidade, com interesse particular na intersecção entre a Sabedoria Perene e as várias tradições mistéricas e telúricas. Publiquei vários artigos sobre o tema em meios da especialidade, nos quais me alongo acerca da necessidade urgente de abraçarmos um modo de vida empático e não-dualista.
 
-Besides that, I am also a poet, a fountain pen nerd and a budding polyglot, currently working my way through German tongue-twisters and Japanese kanji.
+Além disso, sou também um poeta, um coleccionador de canetas de aparo, um incorrigível fã eurovisivo e um poliglota em processo de formação, encontrando-me de momento a tentar desbravar os trava-línguas do idioma alemão e os kanji japoneses.
