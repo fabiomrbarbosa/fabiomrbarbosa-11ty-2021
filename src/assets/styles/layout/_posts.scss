@@ -4,6 +4,7 @@
 
 .entry-content {
   @extend %content;
+  --color-link-hover: var(--color-accent);
   padding-top: var(--size-step-5);
   padding-bottom: var(--size-step-5);
 
