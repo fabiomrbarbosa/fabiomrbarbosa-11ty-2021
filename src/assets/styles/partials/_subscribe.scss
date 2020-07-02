@@ -21,14 +21,15 @@
 
   &__link {
     @extend %altText;
+    @extend %altTextUnderline;
     --color-link-hover: var(--color-accent);
     font-weight: bold;
     position: relative;
 
     &:after {
       content: "\20\2197";
-      position: absolute;
-      top: 0;
+      position: relative;
+      right: -.25rem;
     }
   }
 }

@@ -20,6 +20,7 @@
     @extend %altText;
     font-size: var(--size-step--2);
     color: var(--color-gray-warm);
+    margin-right: .5rem;
   }
 
   &__link {
@@ -27,7 +28,6 @@
     display: inline-block;
     font-family: var(--font-serif);
     font-size: var(--size-step-1);
-    margin-right: .5rem;
     margin-bottom: var(--size-step--2);
   }
   &__item--active &__link {

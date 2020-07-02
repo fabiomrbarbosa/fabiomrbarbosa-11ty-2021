@@ -22,6 +22,7 @@
 
   &__link {
     @extend %altText;
+    @extend %altTextUnderline;
     position: relative;
     display: inline-block;
     grid-column: 2/3;
@@ -36,8 +37,6 @@
 
     &:after {
       content: "\20\2192";
-      position: relative;
-      right: 0;
     }
   }
 }

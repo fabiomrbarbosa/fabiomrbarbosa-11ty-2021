@@ -45,6 +45,15 @@ $desktop: "min-width: 56.25rem";
   letter-spacing: .1em;
 }
 
+%altTextUnderline {
+  text-decoration: none;
+  border-bottom: .15em solid var(--color-link);
+
+  &:focus,
+  &:hover,
+  &:active { border-bottom-color: var(--color-link-hover); }
+}
+
 %visuallyHidden {
 	border: 0;
 	clip: rect(0 0 0 0);

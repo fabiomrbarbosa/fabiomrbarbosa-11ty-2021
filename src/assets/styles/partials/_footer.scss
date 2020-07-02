@@ -30,18 +30,18 @@
 
     & a {
       display: block;
-
-      &[href]:not(:hover) {
-        text-decoration: none;
-      }
     }
   }
 
   .contact__item {
     font-weight: normal;
 
-    & a:after {
-      content: '' !important;
+    & a {
+      border-bottom: 0;
+
+      &:after {
+        content: "" !important;
+      }
     }
   }
 

@@ -11,10 +11,7 @@
     & a {
       @extend %altText;
       display: block;
-
-      &:not(:hover) {
-        text-decoration: none;
-      }
+      text-decoration: none;
     }
 
     &--active a {

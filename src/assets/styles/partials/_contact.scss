@@ -17,11 +17,14 @@
       margin-right: var(--size-step-2);
     }
 
-    & a:after {
-      content: "\20\2197";
-      position: absolute;
-      top: .2rem;
-      right: -1.25rem;
+    & a {
+      @extend %altTextUnderline;
+
+      &:after {
+        content: "\20\2197";
+        position: relative;
+        right: -.25rem;
+      }
     }
   }
 }
