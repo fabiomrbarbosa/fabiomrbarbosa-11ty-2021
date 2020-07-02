@@ -18,7 +18,7 @@
       position: absolute;
       content: '';
       top: calc(100% + 1px);
-      width: 7rem;
+      width: 9rem;
       height: .35rem;
       background: var(--color-accent);
       left: 0;
@@ -46,6 +46,7 @@
       content: "\2009\2009\AC";
       display: inline-block;
       color: var(--color-accent);
+      font-weight: bold;
     }
   }
 

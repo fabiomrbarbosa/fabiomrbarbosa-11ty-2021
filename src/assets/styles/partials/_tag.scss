@@ -3,14 +3,24 @@ a.tag {
   --color-link: var(--color-accent);
   --color-link-hover: var(--color-white);
   font-size: .65rem;
+  font-weight: bold;
+  line-height: 1.35;
+  margin-top: -.25em;
 
   display: inline-block;
+  position: relative;
   vertical-align: middle;
-  padding: .2rem .6rem 0;
-  margin-left: 0.5rem;
-  border: .125rem solid var(--color-link);
-  border-radius: 100px;
+  padding: .075rem .4rem 0 .85rem;
+  margin-right: 0.5rem;
+  border: 0.125rem solid var(--color-link);
+  border-radius: 8px;
   text-decoration: none;
+
+  &:before {
+    content: '#';
+    position: absolute;
+    left: .25rem;
+  }
 
   &:focus,
   &:hover,

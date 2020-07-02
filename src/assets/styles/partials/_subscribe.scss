@@ -12,7 +12,7 @@
 
   &__title {
     @extend %altText;
-    margin-top: .5rem;
+    margin-top: .35rem;
 
     @include breakpoint($desktop) {
       margin-bottom: 0;

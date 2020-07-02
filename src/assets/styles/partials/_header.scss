@@ -58,7 +58,7 @@
     @include breakpoint($desktop) {
       position: absolute;
       left: calc(var(--size-step-4) * 1.6);
-      margin-top: calc(var(--size-step-2) * 1.6);
+      margin-top: calc(var(--size-step-3) * 1.5);
       top: 0;
     }
   }

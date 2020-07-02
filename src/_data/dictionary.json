@@ -12,8 +12,8 @@
         "pt": "Boas-vindas!"
       },
       "title": {
-        "en": "I'm a writer, creative consultant and digital nomad.",
-        "pt": "Sou um escritor, consultor criativo e nómada digital."
+        "en": "My name is Fábio and I'm a writer, creative consultant and digital nomad.",
+        "pt": "Chamo-me Fábio e sou um escritor, consultor criativo e nómada digital."
       },
       "contacts": {
         "en": "Keep in touch.",
@@ -22,7 +22,7 @@
     },
     "postlist": {
       "title": {
-        "en": "Here are my latest posts.",
+        "en": "Check out my latest posts.",
         "pt": "Leia os meus mais recentes artigos."
       },
       "link": {
