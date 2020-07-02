@@ -21,7 +21,7 @@ As a consultant, I work with brands and people with a transformative vision to h
 
 I approach my work as a craft, and I believe my wide range of skills allows me to bring a more holistic point of view to any project in which I'm involved.
 
-If any of this sounds good to you, how about we work together? Just send me a note.
+If any of this sounds good to you, how about we work together? Just [send me a note](mailto:hello@fabiomrbarbosa.com).
 
 {% ServicesList %}
 
@@ -53,7 +53,6 @@ If any of this sounds good to you, how about we work together? Just send me a no
 - Print collateral design
 - Editorial design
 - Iconography
-- Illustration
 - Typography
 - Graphic art & illustration
 
@@ -75,7 +74,7 @@ If any of this sounds good to you, how about we work together? Just send me a no
 - Kirby
 - GatsbyJS
 - Jamstack
-- Responsive / mobile design
+- Responsive/mobile design
 - Crossbrowser
 - HTML, CSS, JS, PHP
 
@@ -101,6 +100,7 @@ If any of this sounds good to you, how about we work together? Just send me a no
 - RE/Max
 - Renault
 - SIC
+- Sumol + Compal
 - Turismo de Portugal
 - TVI
 - Unilever

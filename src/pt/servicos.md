@@ -11,51 +11,50 @@ eleventyNavigation:
 color: mint
 ---
 
-I am fascinated by language and the power of words and images to connect us with meaning and with each other.
+Sempre me fascinei pela linguagem e pelo poder que as palavras e as imagens têm de nos interligar, não só com os seus significados, mas também uns com os outros.
 
-Throughout the years I have had the opportunity to put that power into practice, while working with both local and international brands, either directly or as a recruited partner, on TV and digital campaigns, branded content and native advertising.
+Ao longo dos anos, tive a oportunidade de colocar esse poder em prática, ao trabalhar com marcas tanto portuguesas como internacionais, quer de forma directa quer como colaborador convidado, em campanhas para a televisão e para o digital, conteúdos de marca e publicidade nativa.
 
-I have also pitched and authored several entertainment and documentary formats for all screens, and have been asked to code, curate and manage a number of interactive media platforms.
+Também concebi e desenvolvi vários formatos de entretenimento e documentário para todos os ecrãs, e estive envolvido na programação, curadoria e gestão de diversas plataformas de media interactivos.
 
-As a consultant, I work with brands and people with a transformative vision to help them tell their story in their most authentic voice, and design immersive experiences to engage their audiences.
+Enquanto consultor, trabalho com marcas e pessoas com uma visão transformadora, de forma a ajudá-las a contarem a sua história pela sua própria voz, com autenticidade, e desenvolvo experiências envolventes adequadas a cada um dos seus públicos.
 
-I approach my work as a craft, and I believe my wide range of skills allows me to bring a more holistic point of view to any project in which I'm involved.
+Encaro o meu trabalho como uma espécie de ofício, e acredito que o meu vasto leque de competências me permite trazer um ponto de vista mais holístico a qualquer projecto em que eu esteja envolvido.
 
-If any of this sounds good to you, how about we work together? Just send me a note.
+Se aquilo que disse lhe fizer sentido, que tal trabalharmos juntos? Para isso, basta [contactar-me](mailto:hello@fabiomrbarbosa.com).
 
 {% ServicesList %}
 
-## Creative Direction & Consulting
+## Direcção e Consultoria Criativas
 
-- Art direction
-- Creative direction
-- Brand strategy
+- Direcção de arte
+- Direcção criativa
+- Estratégia de marca
 - Naming
 - Copywriting
-- Screenwriting
-- Advertising
-- Native Content (TV + Online)
-- Pitch decks & proposals
-- Social media
-- Product development
-- Translation
+- Guionismo
+- Publicidade
+- Conteúdos nativos (TV + Online)
+- Apresentações e propostas
+- Redes sociais
+- Desenvolvimento de produtos
+- Tradução
 
 {% endServicesList %}
 
 {% ServicesList %}
 
-## Graphic Design & Brand Identity
+## Design Gráfico e Identidade de Marca
 
-- Logo design
-- Visual identity design
-- Brand guidelines
-- Stationary design
-- Print collateral design
-- Editorial design
-- Iconography
-- Illustration
-- Typography
-- Graphic art & illustration
+- Design de logotipos
+- Design de identidade visual
+- Normas de marca
+- Design de estacionário
+- Design de colaterais para impressão
+- Design editorial
+- Iconografia
+- Tipografia
+- Arte gráfica e ilustração
 
 {% endServicesList %}
 
@@ -66,7 +65,7 @@ If any of this sounds good to you, how about we work together? Just send me a no
 - Web design
 - Front-end development
 - eCommerce design
-- Information architecture
+- Arquitectura de informação
 - UX / UI design
 - ReactJS/VueJS
 - SEO
@@ -75,7 +74,7 @@ If any of this sounds good to you, how about we work together? Just send me a no
 - Kirby
 - GatsbyJS
 - Jamstack
-- Responsive / mobile design
+- Responsive/mobile design
 - Crossbrowser
 - HTML, CSS, JS, PHP
 
@@ -83,7 +82,7 @@ If any of this sounds good to you, how about we work together? Just send me a no
 
 {% ServicesList %}
 
-## Select clients
+## Alguns clientes anteriores
 
 - Ageas
 - The Coca-Cola Company
@@ -101,6 +100,7 @@ If any of this sounds good to you, how about we work together? Just send me a no
 - RE/Max
 - Renault
 - SIC
+- Sumol + Compal
 - Turismo de Portugal
 - TVI
 - Unilever
