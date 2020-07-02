@@ -1,7 +1,8 @@
 a.tag {
   @extend %altText;
-  --color-link: var(--color-black);
+  --color-link: var(--color-accent);
   --color-link-hover: var(--color-white);
+  font-size: .65rem;
 
   display: inline-block;
   vertical-align: middle;

@@ -3,27 +3,16 @@
   position: absolute;
   left: 0;
   right: 0;
-
+  z-index: 12;
 
   &__inner {
     @extend %content;
     --color-border: transparent; // temp
+    padding-top: var(--size-step-3);
+    padding-bottom: var(--size-step-3);
 
     @include breakpoint($mobile) {
-      display: grid;
-      grid-template-columns: 1fr auto auto;
-      grid-template-areas:
-        "menu . langswitch"
-        ". logo .";
-      grid-row-gap: var(--size-step-4);
-
-      .site-header__navigation {
-        display: contents;
-      }
-
-      .logo { grid-area: logo };
-      .menu { grid-area: menu };
-      .langswitch { grid-area: langswitch };
+      display: flex;
     }
 
     @include breakpoint($desktop) {
@@ -40,13 +29,13 @@
   &__logo {
     position: relative;
 
-    &:after {
+    & a:after {
       content: "";
       position: absolute;
-      width: 390%;
-      height: 390%;
-      top: -144%;
-      left: -146%;
+      width: 9rem;
+      height: 9rem;
+      top: -3.35rem;
+      left: -3rem;
       pointer-events: none;
       background: url('/assets/images/logo_rays.svg') 50% no-repeat;
 
@@ -69,16 +58,18 @@
     @include breakpoint($desktop) {
       position: absolute;
       left: calc(var(--size-step-4) * 1.6);
-      margin-top: var(--size-step-5);
+      margin-top: calc(var(--size-step-2) * 1.6);
       top: 0;
     }
   }
 
   &__navigation {
+    display: flex;
+    flex: 1.5;
+    justify-content: space-between;
+
     @include breakpoint($desktop) {
       grid-column: 2/3;
-      display: flex;
-      justify-content: space-between;
     }
   }
 }

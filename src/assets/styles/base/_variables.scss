@@ -34,14 +34,27 @@
 
   --color-black: #13111e;
   --color-gray-dark: #2a2834;
-  --color-gray: #595861;
+  --color-gray: #798086;
   --color-gray-light: #b9b3a7;
-  --color-gray-lighter: #e7e7e8;
+  --color-gray-warm: #9A8873;
+  --color-gray-slate: #698996;
+  --color-gray-teal: #7a918d;
   --color-white: #fbfbfb;
   --color-gold: #bb9845;
   --color-beige: #f0ece2;
-  --color-red: #e72b41;
-  --color-cyan: #30aca8;
+  --color-red: #d7263d;
+  --color-coral: #ff6b6c;
+  --color-cardinal: #c41e3d;
+  --color-red-chinese: #a33b20;
+  --color-cyan: #2ab7ca;
+  --color-blue: #208aae;
+  --color-metallic-seaweed: #1f7a8c;
+  --color-blue-cg: #007090;
+  --color-xanadu: #7c7f65;
+  --color-copper-penny: #b76d68;
+  --color-golden-brown: #a27035;
+  --color-metallic-sunburst: #aa7D47;
+  --color-gold-satin: #c8963e;
 
   // Associations
   --color-bg: var(--color-white);
@@ -51,7 +64,7 @@
   // --color-link-visited: var(--color-gray-darker);
   --color-link-hover: var(--color-black);
   --color-border: var(--color-gray-light);
-  --color-accent: var(--color-gold);
+  --color-accent: var(--color-gold-satin);
   --color-accent-light: var(--color-beige);
 
   // Generated with the help of utopia.fyi

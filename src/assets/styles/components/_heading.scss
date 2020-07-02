@@ -4,12 +4,27 @@
 
   &__content {
     @extend %content;
+    position: relative;
     padding-top: calc(var(--size-step-5) * 5);
     padding-bottom: var(--size-step-5);
 
     @include breakpoint($desktop) {
       & > * {
         margin-left: calc(33.3% + var(--size-step-2));
+      }
+    }
+
+    &:after {
+      position: absolute;
+      content: '';
+      top: calc(100% + 1px);
+      width: 7rem;
+      height: .35rem;
+      background: var(--color-accent);
+      left: 0;
+
+      @include breakpoint($desktop) {
+        left: calc(33.3% + var(--size-step-2));
       }
     }
   }
@@ -26,7 +41,6 @@
     font-weight: normal;
     font-size: var(--size-step-5);
     line-height: 1;
-    margin-left: 10rem;
 
     &:after {
       content: "\2009\2009\AC";
@@ -37,8 +51,9 @@
 
   &__subtitle {
     max-width: 37.5rem;
-    font-size: var(--size-step-3);
-    line-height: 1;
+    font-family: var(--font-sans);
+    font-size: var(--size-step-2);
+    line-height: var(--size-step-3);
   }
 
   &__datetime {

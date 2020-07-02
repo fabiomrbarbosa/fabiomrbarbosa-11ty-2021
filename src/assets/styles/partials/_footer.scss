@@ -1,10 +1,11 @@
 .site-footer {
   @extend %container;
+  --color-accent: var(--color-blue-cg);
   --color-bg: var(--color-black);
   --color-fg: var(--color-gray);
   --color-link: var(--color-accent-light);
   --color-link-hover: var(--color-accent);
-  --color-border: var(--color-gray);
+  --color-border: var(--color-gray-dark);
 
   &__inner {
     @extend %content;
@@ -22,13 +23,6 @@
   .contact {
     flex: 1;
     margin-bottom: var(--size-step-2);
-  }
-
-  .copyright {
-    grid-column: 2/3;
-    font-weight: bold;
-    padding-top: var(--size-step-2);
-    border-top: 1px solid var(--color-border);
   }
 
   .menu__item,
@@ -50,5 +44,15 @@
     & a:after {
       content: '' !important;
     }
+  }
+
+  .copyright {
+    @extend %altText;
+    grid-column: 2/3;
+    font-weight: bold;
+    font-family: var(--font-sans);
+    text-transform: none;
+    padding-top: var(--size-step-2);
+    border-top: 1px solid var(--color-border);
   }
 }

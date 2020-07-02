@@ -16,6 +16,15 @@
     .gridlist__inner {
       border-bottom: none !important;
     }
+
+    .gridlist__link,
+    .postlist__link {
+      --color-link-hover: var(--color-metallic-sunburst);
+    }
+  }
+
+  .tag {
+    --color-link: var(--color-metallic-sunburst);
   }
 
   .logo a:focus,
