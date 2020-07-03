@@ -12,21 +12,16 @@
 
   .feed--home {
     --color-bg: var(--color-accent-light);
-    padding-top: var(--size-step-2);
-    padding-bottom: var(--size-step-2);
 
     .gridlist__inner {
       border-bottom: none !important;
+      padding-top: calc(var(--size-step-2) * 1.5);
+      padding-bottom: calc(var(--size-step-2) * 2);
     }
 
-    .gridlist__link,
-    .postlist__link {
-      --color-link-hover: var(--color-accent-dark);
+    .gridlist__link {
+      --color-link-hover: var(--color-accent);
     }
-  }
-
-  .tag {
-    --color-link: var(--color-accent-dark);
   }
 
   .logo a:focus,

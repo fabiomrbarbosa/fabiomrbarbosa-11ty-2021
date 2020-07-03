@@ -9,6 +9,6 @@
   }
 }
 
-.postfeed--archive {
-  padding-top: var(--size-step-3);
+.postfeed--archive .gridlist__inner {
+  padding-top: calc(var(--size-step-2) * 2)
 }
