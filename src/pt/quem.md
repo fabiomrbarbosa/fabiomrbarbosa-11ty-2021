@@ -16,4 +16,4 @@ Ao longo do meu percurso profissional, desenvolvi a experiência necessária par
 
 Nos meus tempos livres, sou um investigador e autor amador nas áreas da mitologia e da espiritualidade, com interesse particular na intersecção entre a Sabedoria Perene e as várias tradições mistéricas e telúricas. Publiquei vários artigos sobre o tema em meios da especialidade, nos quais me alongo acerca da necessidade urgente de abraçarmos um modo de vida empático e não-dualista.
 
-Além disso, sou também um poeta, um coleccionador de canetas de aparo, um incorrigível fã eurovisivo e um poliglota em processo de formação, encontrando-me de momento a tentar desbravar os trava-línguas do idioma alemão e os kanji japoneses.
+Além disso, sou também um poeta, um coleccionador de canetas de aparo, um incorrigível fã eurovisivo e um poliglota em processo de formação, encontrando-me de momento a tentar desbravar os trava-línguas do idioma alemão e os _kanji_ japoneses.
