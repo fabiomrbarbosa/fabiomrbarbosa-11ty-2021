@@ -11,10 +11,6 @@
     padding-top: var(--size-step-3);
     padding-bottom: var(--size-step-3);
 
-    @include breakpoint($mobile) {
-      display: flex;
-    }
-
     @include breakpoint($desktop) {
       display: grid;
       grid-template-columns: 1fr 2fr;
@@ -28,6 +24,10 @@
 
   &__logo {
     position: relative;
+
+    @include breakpoint($mobile) {
+      margin-bottom: var(--size-step-5);
+    }
 
     & a:after {
       content: "";

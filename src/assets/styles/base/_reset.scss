@@ -44,6 +44,7 @@ body {
   line-height: var(--size-step-2);
   background-color: white; // set a default for those browsers that don't
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 main,

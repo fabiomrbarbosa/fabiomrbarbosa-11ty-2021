@@ -49,7 +49,7 @@ Se aquilo que disse lhe fizer sentido, que tal trabalharmos juntos? Para isso, b
 - Design de identidade visual
 - Normas de marca
 - Design de estacionário
-- Design de colaterais para impressão
+- Design para impressão
 - Design editorial
 - Iconografia
 - Tipografia

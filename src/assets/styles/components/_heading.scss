@@ -5,7 +5,7 @@
   &__content {
     @extend %content;
     position: relative;
-    padding-top: calc(var(--size-step-5) * 4);
+    padding-top: 40vh;
     padding-bottom: var(--size-step-5);
 
     @include breakpoint($desktop) {
