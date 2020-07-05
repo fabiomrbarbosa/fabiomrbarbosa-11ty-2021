@@ -1,5 +1,7 @@
 const { DateTime } = require("luxon");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const pluginImagesResponsiver = require('eleventy-plugin-images-responsiver');
+const imagesResponsiverConfig = require('./src/_utils/imagesResponsiverConfig.js');
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const pluginEmbeds = require("eleventy-plugin-embed-everything");
@@ -8,6 +10,7 @@ const plugini18n = require('eleventy-plugin-i18n');
 const translations = require('./src/_data/dictionary.json');
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const markdownItAttributes = require('markdown-it-attrs');
 
 const componentsDir = `./src/_includes/components`;
 const InlineLogo = require(`${ componentsDir }/InlineLogo.js`);
@@ -23,6 +26,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPairedShortcode('ServicesList', ServicesList);
 
   eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(pluginImagesResponsiver, imagesResponsiverConfig);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
   eleventyConfig.addPlugin(pluginEmbeds);
@@ -64,7 +68,7 @@ module.exports = function(eleventyConfig) {
     return array.slice(0, n);
   });
 
-  eleventyConfig.addCollection("tagList", require("./src/_11ty/getTagList"));
+  eleventyConfig.addCollection("tagList", require("./src/_utils/getTagList"));
 
   eleventyConfig.addPassthroughCopy("./src/assets/images");
   eleventyConfig.addPassthroughCopy("./src/assets/fonts");
@@ -82,7 +86,7 @@ module.exports = function(eleventyConfig) {
     permalink: true,
     permalinkClass: "direct-link",
     permalinkSymbol: "#"
-  });
+  }).use(markdownItAttributes);
   eleventyConfig.setLibrary("md", markdownLibrary);
 
   return {
