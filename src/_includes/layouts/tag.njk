@@ -15,7 +15,7 @@ layout: layouts/base.njk
 renderData:
   title: 'Tag: {{ tag }}'
   bodyTitle: 'Tag:<br> {{ tag }}'
-permalink: /{{ locale }}/tags/{{ tag | urlencode }}/
+permalink: /{{ locale }}/tags/{{ tag | slug }}/
 translationKey: tags
 ---
 
