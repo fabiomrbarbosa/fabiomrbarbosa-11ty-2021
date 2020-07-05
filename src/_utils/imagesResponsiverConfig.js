@@ -74,10 +74,17 @@ module.exports = {
       loading: "lazy",
     },
   },
+  twothirds: {
+    fallbackWidth: 480,
+    minWidth: 320,
+    maxWidth: 920,
+    sizes: "(max-width: 56.25rem) 90vw, (max-width: 90rem) 66vw, 57.5rem",
+    classes: ["twothirds"],
+  },
   onethird: {
     fallbackWidth: 640,
     minWidth: 320,
-    maxWidth: 960,
+    maxWidth: 820,
     sizes: "(max-width: 56.25rem) 90vw, (max-width: 90rem) 30vw, 27.75rem",
     classes: ["onethird"],
   },
