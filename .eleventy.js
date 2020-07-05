@@ -1,67 +1,73 @@
-const { DateTime } = require("luxon");
-const pluginRss = require("@11ty/eleventy-plugin-rss");
-const pluginImagesResponsiver = require('eleventy-plugin-images-responsiver');
-const imagesResponsiverConfig = require('./src/_utils/imagesResponsiverConfig.js');
-const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const pluginNavigation = require("@11ty/eleventy-navigation");
-const pluginEmbeds = require("eleventy-plugin-embed-everything");
-const pluginPWA = require("eleventy-plugin-pwa");
-const plugini18n = require('eleventy-plugin-i18n');
-const translations = require('./src/_data/dictionary.json');
-const markdownIt = require("markdown-it");
-const markdownItAnchor = require("markdown-it-anchor");
-const markdownItAttributes = require('markdown-it-attrs');
+module.exports = function (eleventyConfig) {
+  const { DateTime } = require("luxon");
+  const pluginRss = require("@11ty/eleventy-plugin-rss");
+  const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+  const pluginNavigation = require("@11ty/eleventy-navigation");
+  const pluginEmbeds = require("eleventy-plugin-embed-everything");
+  const pluginPWA = require("eleventy-plugin-pwa");
+  const plugini18n = require("eleventy-plugin-i18n");
+  const translations = require("./src/_data/dictionary.json");
+  const markdownIt = require("markdown-it");
+  const markdownItAnchor = require("markdown-it-anchor");
+  const markdownItAttributes = require("markdown-it-attrs");
 
-const componentsDir = `./src/_includes/components`;
-const InlineLogo = require(`${ componentsDir }/InlineLogo.js`);
-const Heading = require(`${ componentsDir }/Heading.js`);
-const GridList = require(`${ componentsDir }/GridList.js`);
-const ServicesList = require(`${ componentsDir }/ServicesList.js`);
+  if (process.env.NODE_ENV === "production") {
+    const pluginImagesResponsiver = require("eleventy-plugin-images-responsiver");
+    const imagesResponsiverConfig = require("./src/_utils/imagesResponsiverConfig.js");
 
-module.exports = function(eleventyConfig) {
-
-  eleventyConfig.addShortcode('InlineLogo', InlineLogo);
-  eleventyConfig.addShortcode('Heading', Heading);
-  eleventyConfig.addPairedShortcode('GridList', GridList);
-  eleventyConfig.addPairedShortcode('ServicesList', ServicesList);
+    eleventyConfig.addPlugin(pluginImagesResponsiver, imagesResponsiverConfig);
+  }
 
   eleventyConfig.addPlugin(pluginRss);
-  eleventyConfig.addPlugin(pluginImagesResponsiver, imagesResponsiverConfig);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
   eleventyConfig.addPlugin(pluginEmbeds);
   eleventyConfig.addPlugin(pluginPWA, {
     cleanupOutdatedCaches: true,
     modifyUrlPrefix: {
-      "": "/"
-    }
+      "": "/",
+    },
   });
   eleventyConfig.addPlugin(plugini18n, {
     translations,
     fallbackLocales: {
-      '*': 'en'
-    }
+      "*": "en",
+    },
   });
 
-  eleventyConfig.setDataDeepMerge(true);
+  const componentsDir = `./src/_includes/components`;
+  const InlineLogo = require(`${componentsDir}/InlineLogo.js`);
+  const Heading = require(`${componentsDir}/Heading.js`);
+  const GridList = require(`${componentsDir}/GridList.js`);
+  const ServicesList = require(`${componentsDir}/ServicesList.js`);
 
+  eleventyConfig.addShortcode("InlineLogo", InlineLogo);
+  eleventyConfig.addShortcode("Heading", Heading);
+  eleventyConfig.addPairedShortcode("GridList", GridList);
+  eleventyConfig.addPairedShortcode("ServicesList", ServicesList);
+
+  eleventyConfig.setDataDeepMerge(true);
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
 
   eleventyConfig.addFilter("readableDate", (dateObj, locale) => {
     // .toLocaleString returns a natural language phrase instead of just translating the month names etc.
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).setLocale(locale).toLocaleString(DateTime.DATE_FULL);
+    return DateTime.fromJSDate(dateObj, { zone: "utc" })
+      .setLocale(locale)
+      .toLocaleString(DateTime.DATE_FULL);
   });
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
-  eleventyConfig.addFilter('htmlDateString', (dateObj) => {
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
+  eleventyConfig.addFilter("htmlDateString", (dateObj) => {
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
   });
 
   // Get the first `n` elements of a collection.
   eleventyConfig.addFilter("head", (array, n) => {
-    if ( !array || !array.length ) { return; }
+    if (!array || !array.length) {
+      return;
+    }
 
-    if( n < 0 ) {
+    if (n < 0) {
       return array.slice(n);
     }
 
@@ -81,21 +87,18 @@ module.exports = function(eleventyConfig) {
     breaks: true,
     linkify: true,
     typographer: true,
-    quotes: '“”‘’'
-  }).use(markdownItAnchor, {
-    permalink: true,
-    permalinkClass: "direct-link",
-    permalinkSymbol: "#"
-  }).use(markdownItAttributes);
+    quotes: "“”‘’",
+  })
+    .use(markdownItAnchor, {
+      permalink: true,
+      permalinkClass: "direct-link",
+      permalinkSymbol: "#",
+    })
+    .use(markdownItAttributes);
   eleventyConfig.setLibrary("md", markdownLibrary);
 
   return {
-    templateFormats: [
-      "md",
-      "njk",
-      "html",
-      "liquid"
-    ],
+    templateFormats: ["md", "njk", "html", "liquid"],
 
     // If your site lives in a different subdirectory, change this.
     // Leading or trailing slashes are all normalized away, so don’t worry about those.
@@ -116,7 +119,7 @@ module.exports = function(eleventyConfig) {
       input: "src",
       output: "dist",
       data: "_data",
-      includes: "_includes"
-    }
+      includes: "_includes",
+    },
   };
 };

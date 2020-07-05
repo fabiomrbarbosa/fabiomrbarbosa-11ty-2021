@@ -5,7 +5,8 @@ const md = new markdownIt();
 
 const runBeforeHook = (image, document) => {
   // TODO: get "dist/" from config
-  let srcPath = './src/';
+  let siteUrl = site.url.replace(/\/$/, "");
+  let srcPath = './src';
 
   let imageSrc = image.getAttribute('src');
   let imageUrl = '';
@@ -19,11 +20,11 @@ const runBeforeHook = (image, document) => {
     if (imageSrc[0] === '/') {
       // TODO: get "src/" from Eleventy config
       imageDimensions = imageSize('./src' + imageSrc);
-      imageUrl = site.url + imageSrc;
+      imageUrl = siteUrl + imageSrc;
     } else {
       // This is a relative URL
       imageDimensions = imageSize(srcPath + imageSrc);
-      imageUrl = site.url + imageSrc;
+      imageUrl = siteUrl + imageSrc;
     }
     image.setAttribute('width', imageDimensions.width);
     image.setAttribute('height', imageDimensions.height);
