@@ -4,7 +4,6 @@ module.exports = function (eleventyConfig) {
   const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
   const pluginNavigation = require("@11ty/eleventy-navigation");
   const pluginEmbeds = require("eleventy-plugin-embed-everything");
-  const pluginPWA = require("eleventy-plugin-pwa");
   const plugini18n = require("eleventy-plugin-i18n");
   const translations = require("./src/_data/dictionary.json");
   const markdownIt = require("markdown-it");
@@ -12,9 +11,16 @@ module.exports = function (eleventyConfig) {
   const markdownItAttributes = require("markdown-it-attrs");
 
   if (process.env.NODE_ENV === "production") {
+    const pluginPWA = require("eleventy-plugin-pwa");
     const pluginImagesResponsiver = require("eleventy-plugin-images-responsiver");
     const imagesResponsiverConfig = require("./src/_utils/imagesResponsiverConfig.js");
 
+    eleventyConfig.addPlugin(pluginPWA, {
+      cleanupOutdatedCaches: true,
+      modifyUrlPrefix: {
+        "": "/",
+      },
+    });
     eleventyConfig.addPlugin(pluginImagesResponsiver, imagesResponsiverConfig);
   }
 
@@ -22,12 +28,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
   eleventyConfig.addPlugin(pluginEmbeds);
-  eleventyConfig.addPlugin(pluginPWA, {
-    cleanupOutdatedCaches: true,
-    modifyUrlPrefix: {
-      "": "/",
-    },
-  });
   eleventyConfig.addPlugin(plugini18n, {
     translations,
     fallbackLocales: {
