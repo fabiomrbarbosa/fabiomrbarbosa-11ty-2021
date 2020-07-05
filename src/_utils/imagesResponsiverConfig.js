@@ -49,6 +49,7 @@ const runAfterHook = (image, document) => {
   figure.classList.add(...image.classList);
   // TODO: decide weither classes should be removed from the image or not
   image.classList.remove(...image.classList);
+  image.parentNode.replaceWith(...image.parentNode.childNodes);
 
   figure.appendChild(image.cloneNode(true));
 
