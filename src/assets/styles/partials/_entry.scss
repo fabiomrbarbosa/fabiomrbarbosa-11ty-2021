@@ -16,6 +16,10 @@
     font-weight: bold;
   }
 
+  figure img {
+    border: 1px solid var(--color-border);
+  }
+
   @include breakpoint($desktop) {
     > *:not(div) {
       margin-left: calc(33.3% + var(--size-step-2));

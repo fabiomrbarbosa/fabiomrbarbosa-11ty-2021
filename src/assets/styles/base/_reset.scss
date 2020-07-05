@@ -88,10 +88,12 @@ figure {
     margin-bottom: 0;
   }
 }
+
 figure {
   margin-left: 0;
   margin-right: 0;
 }
+
 p {
   font-family: var(--font-serif);
 }
@@ -99,6 +101,7 @@ p {
 img {
   width: 100%;
   height: auto;
+  vertical-align: middle;
 }
 
 a {
