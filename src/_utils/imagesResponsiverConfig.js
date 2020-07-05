@@ -37,19 +37,22 @@ const runBeforeHook = (image, document) => {
 const runAfterHook = (image, document) => {
   let imageUrl =
     image.getAttribute("data-pristine") || image.getAttribute("src");
-  let caption = image.getAttribute("title");
 
+  let caption = image.getAttribute("title");
   if (caption !== null) {
     caption = md.render(caption.trim());
   }
 
   let zoom = [...image.classList].indexOf("zoom") !== -1;
 
+  let imageParent = image.parentNode;
+  if (imageParent.tagName === "P" ) {
+    imageParent.replaceWith(...imageParent.childNodes);
+  }
+
   const figure = document.createElement("figure");
   figure.classList.add(...image.classList);
-  // TODO: decide weither classes should be removed from the image or not
   image.classList.remove(...image.classList);
-  image.parentNode.replaceWith(...image.parentNode.childNodes);
 
   figure.appendChild(image.cloneNode(true));
 
