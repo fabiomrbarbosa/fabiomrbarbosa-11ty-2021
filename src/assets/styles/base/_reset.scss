@@ -79,13 +79,18 @@ h3 {
 }
 p,
 ol,
-ul {
+ul,
+figure {
   line-height: var(--size-step-2);
   margin-top: 0;
   margin-bottom: var(--size-step-2);
   &:last-child {
     margin-bottom: 0;
   }
+}
+figure {
+  margin-left: 0;
+  margin-right: 0;
 }
 p {
   font-family: var(--font-serif);
