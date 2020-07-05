@@ -10,7 +10,7 @@ eleventyNavigation:
   order: 1
 ---
 
-![My Headshot](/assets/images/headshot.jpg)
+![Fábio Barbosa's headshot](/assets/images/headshot.jpg "Testing *Markdown* **captions**")
 
 I’ve always lived in between worlds. Firstly, as an islander, born in the Azores and raised as a native bilingual, and nowadays as a digital nomad. After dropping out of Journalism and Media Studies, I started my career as a podcaster and radio broadcaster. Five years later, I moved on to mainland Portugal, and thus to the world of marketing and advertising. There I had the chance to work as a freelance web developer, copy and scriptwriter, designer and English—Portuguese translator.
 
