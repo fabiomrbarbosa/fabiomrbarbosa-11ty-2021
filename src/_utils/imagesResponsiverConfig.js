@@ -39,7 +39,7 @@ const runAfterHook = (image, document) => {
   let caption = image.getAttribute('title');
 
   if (caption !== null) {
-    caption = md.renderInline(caption.trim());
+    caption = md.render(caption.trim());
   }
 
   let zoom = [...image.classList].indexOf('zoom') !== -1;
