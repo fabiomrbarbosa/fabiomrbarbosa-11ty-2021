@@ -46,7 +46,7 @@ const runAfterHook = (image, document) => {
   let zoom = [...image.classList].indexOf("zoom") !== -1;
 
   let imageParent = image.parentNode;
-  if (imageParent.tagName === "P" ) {
+  if (imageParent.tagName.toLowerCase() === "p" ) {
     imageParent.replaceWith(...imageParent.childNodes);
   }
 
