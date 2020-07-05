@@ -3,8 +3,7 @@ const imageSize = require("image-size");
 const markdownIt = require("markdown-it");
 const md = new markdownIt();
 
-const runBeforeHook = (image, document) => {
-  // TODO: get "dist/" from config
+const runBeforeHook = (image) => {
   let siteUrl = site.url.replace(/\/$/, "");
   let srcPath = "./src";
 
@@ -35,18 +34,13 @@ const runBeforeHook = (image, document) => {
 };
 
 const runAfterHook = (image, document) => {
-  let imageUrl =
-    image.getAttribute("data-pristine") || image.getAttribute("src");
-
   let caption = image.getAttribute("title");
   if (caption !== null) {
     caption = md.render(caption.trim());
   }
 
-  let zoom = [...image.classList].indexOf("zoom") !== -1;
-
   let imageParent = image.parentNode;
-  if (imageParent.tagName.toLowerCase() === "p" ) {
+  if (imageParent.tagName.toLowerCase() === "p") {
     imageParent.replaceWith(...imageParent.childNodes);
   }
 
@@ -56,13 +50,9 @@ const runAfterHook = (image, document) => {
 
   figure.appendChild(image.cloneNode(true));
 
-  if (caption || zoom) {
+  if (caption) {
     let figCaption = document.createElement("figcaption");
-    figCaption.innerHTML =
-      (caption ? caption : "") +
-      (zoom
-        ? `<p class="zoom">&#128269; See <a href="${imageUrl}">full size</a></p>`
-        : "");
+    figCaption.innerHTML = caption ? caption : "";
     figure.appendChild(figCaption);
   }
 
@@ -76,41 +66,19 @@ module.exports = {
       `https://res.cloudinary.com/fabiomrbarbosa/image/fetch/q_auto,f_auto,w_${width}/${src}`,
     runBefore: runBeforeHook,
     runAfter: runAfterHook,
-    fallbackWidth: 800,
-    minWidth: 360,
-    maxWidth: 1600,
-    sizes: "(max-width: 67rem) 90vw, 60rem",
+    fallbackWidth: 960,
+    minWidth: 320,
+    maxWidth: 1440,
+    sizes: "(max-width: 90rem) 90vw, 90rem",
     attributes: {
       loading: "lazy",
     },
   },
-  twothirds: {
-    fallbackWidth: 600,
-    minWidth: 240,
-    maxWidth: 1120,
-    sizes: "(max-width: 20rem) 45vw, (max-width: 67rem) 60vw, 40rem",
-    classes: ["twothirds"],
-  },
-  onehalf: {
-    fallbackWidth: 400,
-    minWidth: 180,
-    maxWidth: 800,
-    sizes: "(max-width: 67rem) 45vw, 30rem",
-    classes: ["onehalf"],
-  },
   onethird: {
-    fallbackWidth: 300,
-    minWidth: 120,
-    maxWidth: 560,
-    sizes: "(max-width: 20rem) 45vw, (max-width: 67rem) 30vw, 20rem",
-    classes: ["onethird", "right"],
-  },
-  onefourth: {
-    fallbackWidth: 200,
-    minWidth: 100,
-    maxWidth: 400,
-    sizes:
-      "(max-width: 20rem) 45vw, (max-width: 30rem) 30vw, (max-width: 67rem) 22.5vw, 15rem",
-    classes: ["onefourth", "right"],
+    fallbackWidth: 640,
+    minWidth: 320,
+    maxWidth: 960,
+    sizes: "(max-width: 56.25rem) 90vw, (max-width: 90rem) 30vw, 27.75rem",
+    classes: ["onethird"],
   },
 };

@@ -20,5 +20,11 @@
     > *:not(div) {
       margin-left: calc(33.3% + var(--size-step-2));
     }
+
+    figure.onethird {
+      margin-left: 0;
+      width: calc(33.3% - var(--size-step-1));
+      float: left;
+    }
   }
 }

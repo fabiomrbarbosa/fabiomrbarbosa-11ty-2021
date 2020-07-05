@@ -5,6 +5,8 @@ module.exports = function (eleventyConfig) {
   const pluginNavigation = require("@11ty/eleventy-navigation");
   const pluginEmbeds = require("eleventy-plugin-embed-everything");
   const plugini18n = require("eleventy-plugin-i18n");
+  const pluginImagesResponsiver = require("eleventy-plugin-images-responsiver");
+  const imagesResponsiverConfig = require("./src/_utils/imagesResponsiverConfig.js");
   const translations = require("./src/_data/dictionary.json");
   const markdownIt = require("markdown-it");
   const markdownItAnchor = require("markdown-it-anchor");
@@ -12,8 +14,6 @@ module.exports = function (eleventyConfig) {
 
   if (process.env.NODE_ENV === "production") {
     const pluginPWA = require("eleventy-plugin-pwa");
-    const pluginImagesResponsiver = require("eleventy-plugin-images-responsiver");
-    const imagesResponsiverConfig = require("./src/_utils/imagesResponsiverConfig.js");
 
     eleventyConfig.addPlugin(pluginPWA, {
       cleanupOutdatedCaches: true,
@@ -21,9 +21,9 @@ module.exports = function (eleventyConfig) {
         "": "/",
       },
     });
-    eleventyConfig.addPlugin(pluginImagesResponsiver, imagesResponsiverConfig);
   }
 
+  eleventyConfig.addPlugin(pluginImagesResponsiver, imagesResponsiverConfig);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
