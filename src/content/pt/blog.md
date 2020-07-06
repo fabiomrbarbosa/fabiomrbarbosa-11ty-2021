@@ -1,8 +1,9 @@
 ---
 layout: layouts/archive.njk
-title: Writing
+title: Artigos
 translationKey: writing
 eleventyNavigation:
-  key: Writing
+  key: Artigos
   order: 2
+permalink: /pt/blog/
 ---
