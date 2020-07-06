@@ -36,11 +36,13 @@ module.exports = function (eleventyConfig) {
   });
 
   const componentsDir = `./src/_includes/components`;
+  const CloudImage = require(`${componentsDir}/CloudImage.js`);
   const InlineLogo = require(`${componentsDir}/InlineLogo.js`);
   const Heading = require(`${componentsDir}/Heading.js`);
   const GridList = require(`${componentsDir}/GridList.js`);
   const ServicesList = require(`${componentsDir}/ServicesList.js`);
 
+  eleventyConfig.addShortcode("CloudImage", CloudImage);
   eleventyConfig.addShortcode("InlineLogo", InlineLogo);
   eleventyConfig.addShortcode("Heading", Heading);
   eleventyConfig.addPairedShortcode("GridList", GridList);

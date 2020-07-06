@@ -4,8 +4,13 @@
 {% set pageDescription = renderData.description or description or 'dict.site.subtitle' | i18n %}
 {% set pageType = 'article' if tags.includes('posts_pt' or 'posts_en') else 'website' %}
 
-{% import "../macros/cloudImage.njk" as cloudImage %}
-{% set pageImage = socialImage or cloudImage.generate( pageTitleSocial, pageDescription ) %}
+{% if socialImage %}
+  {% set pageImage = socialImage | url %}
+{% else %}
+  {% set pageImage %}
+    {% CloudImage pageTitleSocial, pageDescription %}
+  {% endset %}
+{% endif %}
 {% set pageImageAlt = socialImageAlt or pageDescription %}
 
 {# Meta tags #}
