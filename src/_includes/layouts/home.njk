@@ -15,7 +15,7 @@ permalink: /{{ locale }}/
   className: 'contacts--home'
 } %}
 
-{% include "partials/contact.njk" %}
+{%- include "partials/contact.njk" -%}
 
 {% endGridList %}
 
@@ -27,8 +27,8 @@ permalink: /{{ locale }}/
 } %}
 
   {% set postlist = collections["posts_" + locale] | head(-3) %}
-  {% include "partials/postlist.njk" %}
+  {%- include "partials/postlist.njk" -%}
 
 {% endGridList %}
 
-{% include "partials/subscribe.njk" %}
+{%- include "partials/subscribe.njk" -%}

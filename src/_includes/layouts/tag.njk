@@ -33,6 +33,6 @@ translationKey: tags
 } %}
 
   {% set postlist = collections[ tag ] %}
-  {% include "partials/postlist.njk" %}
+  {%- include "partials/postlist.njk" -%}
 
 {% endGridList %}

@@ -36,7 +36,7 @@
 <meta name="twitter:creator" content="@fabiomrbarbosa" />
 
 {# Assets #}
-{% set css %}{% include "inlines/styles/main.min.css" | url %}{% endset %}
+{% set css %}{%- include "inlines/styles/main.min.css" | url -%}{% endset %}
 <style>{{ css | safe }}</style>
 
 <link rel="icon" href="/assets/images/favicon.svg">

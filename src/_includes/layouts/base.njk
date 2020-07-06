@@ -1,18 +1,15 @@
 <!doctype html>
 <html lang="{{ locale }}" dir="{{ dir }}">
   <head>
-  {% include "partials/head.njk" %}
-
+    {%- include "partials/head.njk" -%}
   </head>
   <body
     {% if templateClass %} class="{{ templateClass }}"{% endif %}
     {% if color %} style="--color-accent: var(--color-{{color}});" {% endif %}>
 
-    {% include "partials/header.njk" %}
-
+    {%- include "partials/header.njk" -%}
     <main class="site-main">{{ content | safe }}</main>
-
-    {% include "partials/footer.njk" %}
+    {%- include "partials/footer.njk" -%}
 
     <script>
     if ("serviceWorker" in navigator){

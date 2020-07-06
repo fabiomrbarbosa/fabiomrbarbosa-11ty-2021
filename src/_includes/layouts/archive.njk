@@ -14,8 +14,8 @@ templateClass: tmpl-archive
 } %}
 
   {% set postlist = collections["posts_" + locale] %}
-  {% include "partials/postlist.njk" %}
+  {%- include "partials/postlist.njk" -%}
 
 {% endGridList %}
 
-{% include "partials/subscribe.njk" %}
+{%- include "partials/subscribe.njk" -%}
