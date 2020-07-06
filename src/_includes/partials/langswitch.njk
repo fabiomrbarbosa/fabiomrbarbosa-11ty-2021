@@ -5,10 +5,10 @@
   {%- if loop.first -%}<ul class="langswitch__list">{%- endif -%}
 
   {# set translatedUrl to the homepage of that language by default #}
-  {% set translatedUrl = "/" + lang.code + "/" %}
+  {%- set translatedUrl = "/" + lang.code + "/" -%}
 
   {# set current language class #}
-  {% set activeClass = "langswitch__item--active" if lang.code == locale else "" %}
+  {%- set activeClass = "langswitch__item--active" if lang.code == locale else "" -%}
 
   {# loop through all the content of the site #}
   {%- for item in collections.all -%}

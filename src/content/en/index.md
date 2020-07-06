@@ -1,4 +1,3 @@
 ---
 layout: layouts/home.njk
 ---
-
