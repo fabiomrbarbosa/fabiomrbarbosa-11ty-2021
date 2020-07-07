@@ -33,7 +33,6 @@
     "concurrently": "^5.2.0",
     "eleventy-plugin-embed-everything": "^1.7.0",
     "eleventy-plugin-i18n": "^0.1.0",
-    "eleventy-plugin-images-responsiver": "^1.5.3",
     "eleventy-plugin-pwa": "^1.0.8",
     "image-size": "^0.8.3",
     "luxon": "^1.24.1",
