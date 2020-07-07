@@ -13,11 +13,11 @@
   .heading {
     background-image: url('/assets/images/portal.svg');
     background-repeat: no-repeat;
-    background-position-x: right 10vw;
+    background-position-x: right;
     background-size: contain;
 
     @include breakpoint($desktop) {
-      background-position-x: left 25vw;
+      background-position-x: 25vw;
     }
   }
 
