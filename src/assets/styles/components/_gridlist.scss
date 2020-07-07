@@ -4,6 +4,7 @@
   &__inner {
     @extend %content;
     @extend %grid;
+    padding-top: calc(var(--size-step-2) * 2);
 
     & .postlist {
       // Force this in pages without titles on column 1

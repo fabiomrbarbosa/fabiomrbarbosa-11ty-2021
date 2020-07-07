@@ -1,4 +1,3 @@
-const { html } = require("common-tags");
 const md = require('markdown-it')();
 
 module.exports = function ({
@@ -10,14 +9,14 @@ module.exports = function ({
 } = {}) {
   const headingClass = className ? ` ${className}` : "";
 
-  return html`
+  return /*html*/ `
     <div class="heading ${headingClass}">
       <div class="heading__content">
         <h1 class="heading__title">${title}</h1>
         ${subtitle &&
-        html`<p class="heading__subtitle">${md.renderInline(subtitle)}</p>`}
+        /*html*/ `<p class="heading__subtitle">${md.renderInline(subtitle)}</p>`}
         ${dateTime &&
-        html`<time class="heading__datetime" datetime="${dateTime}">
+        /*html*/ `<time class="heading__datetime" datetime="${dateTime}">
           ${dateReadable}
         </time>`}
       </div>

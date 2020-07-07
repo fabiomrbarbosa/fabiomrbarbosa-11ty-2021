@@ -1,4 +1,3 @@
-const { html } = require("common-tags");
 const site = require("../../_data/metadata.json");
 const imageSize = require("image-size");
 const markdownIt = require("markdown-it");
@@ -54,24 +53,25 @@ module.exports = function ({
     imageSrcsetList.push(`${imageFetch(imageUrl, stepWidth)} ${stepWidth}w`);
   }
 
-  return html`<figure class="${imageSettings[size].classes} ${extraClass}">
+  return /*html*/ `
+  <figure class="${imageSettings[size].classes}${extraClass}">
     <img
       loading="lazy"
-      src="${imageFetch(imageUrl, imageSettings[size].fallbackWidth)}"
       alt="${alt}"
+      src="${imageFetch(imageUrl, imageSettings[size].fallbackWidth)}"
       srcset="${imageSrcsetList.join(", ")}"
       sizes="${imageSettings[size].sizes}"
       width="${imageDimensions.width}"
       height="${imageDimensions.height}"
     />
     ${(caption || attribution) &&
-    html`<figcaption>
+    /*html*/ `<figcaption>
       ${caption &&
-      html`<span class="figure__caption">
+      /*html*/ `<span class="figure__caption">
         ${md.renderInline(caption)}
       </span>`}
       ${attribution &&
-      html`<span class="figure__attribution">
+      /*html*/ `<span class="figure__attribution">
         ${md.renderInline(attribution)}
       </span>`}
     </figcaption>`}
