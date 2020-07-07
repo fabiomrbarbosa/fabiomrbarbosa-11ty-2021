@@ -12,7 +12,7 @@ permalink: /{{ locale }}/
 
 {% GridList {
   title: 'dict.home.contacts' | i18n,
-  className: 'contacts--home'
+  className: 'contacts'
 } %}
 
 {%- include "partials/contact.njk" -%}
@@ -23,7 +23,7 @@ permalink: /{{ locale }}/
   title: 'dict.postlist.title' | i18n,
   linkText: 'dict.postlist.link' | i18n,
   linkTarget: '/' + locale + '/blog/',
-  className: 'feed--home'
+  className: 'feed'
 } %}
 
   {% set postlist = collections["posts_" + locale] | head(-3) %}

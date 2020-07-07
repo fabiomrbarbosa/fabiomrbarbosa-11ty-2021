@@ -1,7 +1,7 @@
 .tmpl-home {
   .site-header,
   .heading,
-  .contacts--home {
+  .contacts {
     --color-fg: var(--color-white);
     --color-fg-display: var(--color-white);
     --color-bg: var(--color-black);
@@ -10,7 +10,18 @@
     --color-border: var(--color-gray-dark);
   }
 
-  .feed--home {
+  .heading {
+    background-image: url('/assets/images/portal.svg');
+    background-repeat: no-repeat;
+    background-position-x: right 10vw;
+    background-size: contain;
+
+    @include breakpoint($desktop) {
+      background-position-x: left 25vw;
+    }
+  }
+
+  .feed {
     --color-bg: var(--color-accent-light);
 
     .gridlist__inner {

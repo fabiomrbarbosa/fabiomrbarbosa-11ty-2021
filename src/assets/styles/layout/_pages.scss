@@ -11,3 +11,9 @@
     --color-bg: var(--color-accent-light);
   }
 }
+
+.headshot {
+  @include breakpoint($desktop) {
+    margin-top: calc(var(--size-step-5) * -2);
+  }
+}

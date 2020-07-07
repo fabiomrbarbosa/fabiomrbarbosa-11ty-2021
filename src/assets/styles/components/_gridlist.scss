@@ -4,7 +4,6 @@
   &__inner {
     @extend %content;
     @extend %grid;
-    padding-top: calc(var(--size-step-2) * 2);
 
     & .postlist {
       // Force this in pages without titles on column 1
@@ -44,4 +43,8 @@
       right: -.25rem;
     }
   }
+}
+
+.feed .gridlist__inner {
+  padding-top: calc(var(--size-step-2) * 2);
 }
