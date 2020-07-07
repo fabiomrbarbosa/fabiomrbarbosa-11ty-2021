@@ -26,6 +26,6 @@ A promessa cumprir-se-á. Tudo porque te fizeste Inverno.
 
 À saída, encontrarás um mundo muito diferente do que deixaste no fim do Verão. Poderás sentir uma certa confusão. Poderás não perceber o que foi feito dos montes que agora são vales, do firmamento que se fez oceano, ou do mar, entretanto sugado pelo céu. E o ar irrespirável, parco combustível para a chama que trazes em ti. Mas persiste. Nem o mar nem a terra nem o ar passarão enquanto a roda continuar a girar uma e outra vez, até que cada ser encontre a sua nota na Grande Canção de todas as coisas. Então saberás que nada foi por acaso na tua caminhada: o primeiro convite, os sinais, a câmara escura, a manhã seguinte.
 
-Então terás que continuar a fazer-te Inverno até que a luz se cumpra por inteiro. Pois que ela nunca tarda em chegar, e enquanto houver sombra no mundo, continuará sempre a chegar.
+Então terás que continuar a fazer-te Inverno até que a luz se cumpra por inteiro. Pois que ela nunca tarda em chegar, e enquanto houver sombra no mundo, ela continuará a regressar.
 
 A luz invicta. O Sol que em ti habita e irradia para toda a Humanidade.
