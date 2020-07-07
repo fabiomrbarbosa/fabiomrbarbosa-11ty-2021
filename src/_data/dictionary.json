@@ -2,18 +2,18 @@
   "dict": {
     "site": {
       "subtitle": {
-        "en": "Writer, creative consultant and digital nomad.",
-        "pt": "Escritor, consultor criativo e nómada digital."
+        "en": "Mystic, writer and creative consultant.",
+        "pt": "Místico, escritor e consultor criativo."
       }
     },
     "home": {
       "welcome": {
-        "en": "Welcome!",
-        "pt": "Boas-vindas!"
+        "en": "Hi! My name is Fábio.",
+        "pt": "Olá! Chamo-me Fábio."
       },
       "title": {
-        "en": "My name is Fábio M.R. Barbosa and I'm a writer, creative consultant and digital nomad.",
-        "pt": "Chamo-me Fábio M.R. Barbosa e sou um escritor, consultor criativo e nómada digital."
+        "en": "I am but a [pilgrim in the world](/en/about/). In the meantime, I also [write](/en/blog/) and work as a [creative consultant](/en/services/).",
+        "pt": "Sou apenas um [peregrino no mundo](/pt/quem-sou). De caminho, também [escrevo](/pt/blog/) e trabalho como [consultor criativo](/pt/servicos/)."
       },
       "contacts": {
         "en": "Keep in touch.",

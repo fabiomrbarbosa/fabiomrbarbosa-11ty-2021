@@ -1,7 +1,7 @@
 ---
 title: Letter to a Young Mystic
 description: '“Where do I start?”'
-date: 2016-11-03
+date: 2016-02-01
 tags:
   - spirit
 translationKey: letter-young-mystic

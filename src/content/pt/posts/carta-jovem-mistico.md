@@ -1,7 +1,7 @@
 ---
 title: Carta a um Jovem Místico
 description: '“Por onde começo?”'
-date: 2016-11-03
+date: 2016-02-01
 tags:
   - espírito
 translationKey: letter-young-mystic
