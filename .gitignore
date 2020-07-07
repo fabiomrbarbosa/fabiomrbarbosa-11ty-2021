@@ -10,6 +10,7 @@ Icon
 ._*
 
 # Node and Eleventy specific
+.env
 dist/
 node_modules/
 package-lock.json
