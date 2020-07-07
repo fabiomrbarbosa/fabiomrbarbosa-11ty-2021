@@ -34,6 +34,10 @@
     font-family: var(--font-serif);
     margin-top: 0;
     margin-bottom: var(--size-step--2);
+
+    a {
+      display: inline-block;
+    }
   }
 
   &__title {
