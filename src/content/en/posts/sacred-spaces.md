@@ -1,5 +1,5 @@
 ---
-title: The Sacred Spaces
+title: Sacred Spaces
 description: On the double movement of Initiation.
 date: 2017-06-06
 tags:

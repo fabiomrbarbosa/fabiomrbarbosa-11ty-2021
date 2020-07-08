@@ -17,7 +17,9 @@ eleventyNavigation:
   className: 'headshot'
 } %}
 
-I’ve always lived in between worlds. Firstly, as an islander, born in the Azores and raised as a native bilingual, and nowadays as a digital nomad. After dropping out of Journalism and Media Studies, I started my career as a podcaster and radio broadcaster. Five years later, I moved on to mainland Portugal, and thus to the world of marketing and advertising. There I had the chance to work as a freelance web developer, copy and scriptwriter, designer and English—Portuguese translator.
+I’ve always lived in between worlds. Firstly, as an islander, born in the Azores, in the middle of the Atlantic, in between two languages and cultures. Then, while attempting to reconcile many different careers and beliefs in a state of flux. And presently, as a digital nomad, wandering around the world without belonging anywhere.
+
+After dropping out of Journalism and Media Studies, I started my career as a podcaster and radio broadcaster. Five years later, I moved on to mainland Portugal, and thus to the world of marketing and advertising. There I had the chance to work as a freelance web developer, copy and scriptwriter, designer and English—Portuguese translator.
 
 In my work, I’ve come to develop the necessary expertise to deliver turn-key creative solutions for television and digital media. Nowadays, I intend to focus on sustainable, higher awareness projects that target structural change.
 
