@@ -1,6 +1,6 @@
 ---
 title: Os Três Reinos
-description: Como explicar o Mundo?
+description: Como explicar o Mundo? Há um número que contém a resposta.
 date: 2017-06-04
 tags:
   - espírito
