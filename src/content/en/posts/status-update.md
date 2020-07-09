@@ -1,6 +1,6 @@
 ---
 title: 'Status Update'
-description: 'Let me introduce you to this new website'
+description: 'Let me introduce you to this new website.'
 date: 2020-07-09
 tags:
   - updates
