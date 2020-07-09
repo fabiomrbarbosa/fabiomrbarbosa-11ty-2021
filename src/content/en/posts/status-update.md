@@ -3,7 +3,7 @@ title: 'Status Update'
 description: 'A manifesto to present you to this new website'
 date: 2017-07-09
 tags:
-  - actualizações
+  - updates
 translationKey: status-update
 ---
 
