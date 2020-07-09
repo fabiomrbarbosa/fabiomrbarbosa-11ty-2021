@@ -1,6 +1,6 @@
 ---
 title: 'Estado: actualizado'
-description: 'Um manifesto de apresentação deste novo *site*'
+description: 'Passemos às apresentações deste novo *site*'
 date: 2020-07-09
 tags:
   - actualizações
