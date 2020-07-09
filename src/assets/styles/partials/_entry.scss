@@ -10,6 +10,23 @@
 
   p {
     max-width: 37.5rem; /* 600px /16 */
+
+    &:first-child:first-letter {
+      color: var(--color-accent);
+      float: left;
+      font-size: 7rem;
+      line-height: calc(var(--size-step-2) * 3);
+      padding-top: .35rem;
+      padding-right: .5rem;
+    }
+
+    &:last-child:after {
+      content: '\25A0';
+      color: var(--color-accent);
+      margin-left: .25rem;
+      font-size: 130%;
+      line-height: 1;
+    }
   }
 
   a {
