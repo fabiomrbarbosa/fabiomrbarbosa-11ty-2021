@@ -1,7 +1,7 @@
 ---
 title: 'Estado: actualizado'
 description: 'Um manifesto de apresentação deste novo *site*'
-date: 2017-07-09
+date: 2020-07-09
 tags:
   - actualizações
 translationKey: status-update

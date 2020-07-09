@@ -1,7 +1,7 @@
 ---
 title: 'Status Update'
 description: 'A manifesto to present you to this new website'
-date: 2017-07-09
+date: 2020-07-09
 tags:
   - updates
 translationKey: status-update
