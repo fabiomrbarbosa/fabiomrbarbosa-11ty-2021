@@ -13,7 +13,7 @@ translationKey: tags
 } %}
 
 {% for tag in collections.tagList %}
-  {% set tagUrl %}/{{ locale }}/tags/{{ tag }}/{% endset %}
+  {% set tagUrl %}/{{ locale }}/tags/{{ tag | slug }}/{% endset %}
   <a href="{{ tagUrl }}" class="tag">{{ tag }}</a>
 {% endfor %}
 
