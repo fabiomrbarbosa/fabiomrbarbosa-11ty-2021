@@ -11,7 +11,7 @@
   p {
     max-width: 37.5rem; /* 600px /16 */
 
-    &:first-child:first-letter {
+    &:first-of-type:first-letter {
       color: var(--color-accent);
       float: left;
       font-size: 535%;
@@ -20,7 +20,7 @@
       padding-right: .5rem;
     }
 
-    &:last-child:after {
+    &:last-of-type:after {
       content: '\25A0';
       color: var(--color-accent);
       margin-left: .25rem;
