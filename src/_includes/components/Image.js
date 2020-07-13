@@ -12,7 +12,7 @@ module.exports = function ({
   className = "",
 } = {}) {
   const siteUrl = site.url;
-  const imageUrl = encodeURIComponent(siteUrl + image);
+  const imageUrl = siteUrl + image;
   const imageFetch = (src, width) =>
     `https://res.cloudinary.com/fabiomrbarbosa/image/fetch/q_auto,f_auto,w_${width}/${src}`;
   const imageDimensions = imageSize("./src/" + image);
