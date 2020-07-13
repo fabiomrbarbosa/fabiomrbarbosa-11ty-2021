@@ -12,7 +12,7 @@ module.exports = function ({
   className = "",
 } = {}) {
   const siteUrl = site.url;
-  const imageUrl = siteUrl + image;
+  const imageUrl = encodeURIComponent(siteUrl + image);
   const imageFetch = (src, width) =>
     `https://res.cloudinary.com/fabiomrbarbosa/image/fetch/q_auto,f_auto,w_${width}/${src}`;
   const imageDimensions = imageSize("./src/" + image);
@@ -64,16 +64,22 @@ module.exports = function ({
       width="${imageDimensions.width}"
       height="${imageDimensions.height}"
     />
-    ${(caption || attribution) &&
-    /*html*/ `<figcaption>
-      ${caption &&
-      /*html*/ `<span class="figure__caption">
+    ${
+      (caption || attribution) &&
+      /*html*/ `<figcaption>
+      ${
+        caption &&
+        /*html*/ `<span class="figure__caption">
         ${md.renderInline(caption)}
-      </span>`}
-      ${attribution &&
-      /*html*/ `<span class="figure__attribution">
+      </span>`
+      }
+      ${
+        attribution &&
+        /*html*/ `<span class="figure__attribution">
         ${md.renderInline(attribution)}
-      </span>`}
-    </figcaption>`}
+      </span>`
+      }
+    </figcaption>`
+    }
   </figure>`;
 };
