@@ -7,7 +7,7 @@
     @extend %grid;
     grid-row-gap: var(--size-step-3);
     position: relative;
-    padding-top: 20vh;
+    padding-top: 15vh;
     padding-bottom: var(--size-step-5);
 
     &:after {
