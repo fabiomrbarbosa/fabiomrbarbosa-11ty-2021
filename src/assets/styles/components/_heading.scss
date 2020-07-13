@@ -4,22 +4,18 @@
 
   &__content {
     @extend %content;
+    @extend %grid;
+    grid-row-gap: var(--size-step-3);
     position: relative;
-    padding-top: 40vh;
+    padding-top: 20vh;
     padding-bottom: var(--size-step-5);
-
-    @include breakpoint($desktop) {
-      & > * {
-        margin-left: calc(33.3% + var(--size-step-2));
-      }
-    }
 
     &:after {
       position: absolute;
-      content: '';
+      content: "";
       top: calc(100% + 1px);
       width: 9rem;
-      height: .35rem;
+      height: 0.35rem;
       background: var(--color-accent);
       left: 0;
 
@@ -29,11 +25,30 @@
     }
   }
 
+  @include breakpoint($mobile) {
+    &__image {
+      grid-row: 2/3;
+    }
+  }
+
+  @include breakpoint($desktop) {
+    &__image {
+      grid-column: 1/2;
+      padding-left: var(--size-step-2);
+    }
+    &__text {
+      grid-column: 2/3;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
   &__title,
   &__subtitle {
     font-family: var(--font-serif);
     margin-top: 0;
-    margin-bottom: var(--size-step--2);
+    margin-bottom: var(--size-step-0);
 
     a {
       display: inline-block;
@@ -44,7 +59,7 @@
     position: relative;
     font-size: var(--size-step-4);
     line-height: 1;
-    letter-spacing: -.05rem;
+    letter-spacing: -0.05rem;
 
     &:after {
       content: "\AC";
@@ -53,8 +68,8 @@
       font-weight: 700;
       font-size: 3.5rem;
       position: absolute;
-      margin-left: .5rem;
-      margin-top: -.8rem;
+      margin-left: 0.5rem;
+      margin-top: -0.8rem;
     }
   }
 
@@ -62,8 +77,8 @@
     max-width: 37.5rem;
     font-family: var(--font-sans);
     font-size: var(--size-step-3);
-    line-height: var(--size-step-3);
-    letter-spacing: -.03rem;
+    line-height: 1.15;
+    letter-spacing: -0.03rem;
   }
 
   &__datetime {

@@ -21,7 +21,6 @@
   .menu,
   .contact {
     flex: 1;
-    margin-bottom: var(--size-step-2);
   }
 
   .menu__item,
@@ -46,12 +45,15 @@
   }
 
   .copyright {
-    grid-column: 2/3;
     font-weight: bold;
     font-size: var(--size-step--1);
     font-family: var(--font-sans);
     text-transform: none;
     padding-top: var(--size-step-2);
     border-top: 1px solid var(--color-border);
+
+    @include breakpoint($desktop) {
+      grid-column: 2/3;
+    }
   }
 }

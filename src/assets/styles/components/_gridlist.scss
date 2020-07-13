@@ -4,25 +4,12 @@
   &__inner {
     @extend %content;
     @extend %grid;
-
-    & .postlist {
-      // Force this in pages without titles on column 1
-      grid-column: 2/3;
-    }
   }
 
   &__title {
     @extend %altText;
-    margin-top: .35rem;
-
-    @include breakpoint($desktop) {
-      margin-bottom: 0;
-    }
-  }
-
-  &__footer {
-    grid-column: 2/3;
-    padding-top: var(--size-step-1);
+    margin-top: 0.35rem;
+    margin-bottom: 0;
   }
 
   &__link {
@@ -40,7 +27,18 @@
     &:after {
       content: "\20\2192";
       position: relative;
-      right: -.25rem;
+      right: -0.25rem;
+    }
+  }
+
+  @include breakpoint($desktop) {
+    & .postlist {
+      // Force this in pages without titles on column 1
+      grid-column: 2/3;
+    }
+
+    &__footer {
+      grid-column: 2/3;
     }
   }
 }

@@ -1,9 +1,6 @@
 .site-header {
   @extend %container;
-  position: absolute;
-  left: 0;
-  right: 0;
-  z-index: 12;
+  --color-bg: var(--color-accent-light);
 
   &__inner {
     @extend %content;

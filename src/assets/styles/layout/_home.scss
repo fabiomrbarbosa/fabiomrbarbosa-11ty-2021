@@ -10,17 +10,6 @@
     --color-border: var(--color-gray-dark);
   }
 
-  .heading {
-    background-image: url('/assets/images/portal.svg');
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-size: contain;
-
-    @include breakpoint($desktop) {
-      background-position-x: 25vw;
-    }
-  }
-
   .feed {
     --color-bg: var(--color-accent-light);
 
