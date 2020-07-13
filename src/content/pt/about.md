@@ -11,7 +11,7 @@ eleventyNavigation:
 ---
 
 {% Image {
-  image: 'assets/images/headshot.jpg',
+  image: 'assets/images/main_headshot.jpg',
   alt: 'Foto profissional de Fábio Barbosa',
   size: 'onethird',
   className: 'headshot'

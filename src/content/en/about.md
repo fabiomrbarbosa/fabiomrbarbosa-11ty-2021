@@ -11,7 +11,7 @@ eleventyNavigation:
 ---
 
 {% Image {
-  image: 'assets/images/headshot.jpg',
+  image: 'assets/images/main_headshot.jpg',
   alt: "Fábio Barbosa's headshot",
   size: 'onethird',
   className: 'headshot'
