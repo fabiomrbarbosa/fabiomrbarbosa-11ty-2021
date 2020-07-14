@@ -13,8 +13,7 @@ eleventyNavigation:
 {% Image {
   image: 'assets/images/main_headshot.jpg',
   alt: 'Foto de Fábio Barbosa',
-  size: 'onethird',
-  className: 'overlay'
+  size: 'onethird'
 } %}
 
 Sempre vivi entre mundos distintos. Primeiro, como ilhéu nascido nos Açores, no meio do Atlântico, entre dois idiomas e culturas. Depois, ao tentar conciliar diversas carreiras, crenças em estado de fluidez. E hoje em dia, como nómada digital, de passagem pelo mundo sem pertencer a parte alguma.

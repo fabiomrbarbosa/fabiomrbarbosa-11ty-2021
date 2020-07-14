@@ -1,8 +1,20 @@
 @keyframes rotating {
   0% {
-    transform:rotate(0deg)
+    transform: rotate(0deg);
   }
   to {
-    transform:rotate(1turn)
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes floating {
+  from {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -21px);
+  }
+  to {
+    transform: translate(0, 0);
   }
 }

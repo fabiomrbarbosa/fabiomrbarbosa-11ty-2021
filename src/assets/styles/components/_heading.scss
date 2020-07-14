@@ -24,6 +24,14 @@
     }
   }
 
+  @media (prefers-reduced-motion:no-preference) {
+    &__image img {
+      animation: floating 3s infinite ease-in-out;
+    }
+  }
+
+
+
   &__title,
   &__subtitle {
     position: relative;
@@ -50,11 +58,13 @@
     @extend %altText;
   }
 
-
   @include breakpoint($mobile) {
     &__image {
       grid-row: 2/3;
-      max-width: 22.5rem;
+
+      img {
+        max-width: 22.5rem;
+      }
     }
   }
 

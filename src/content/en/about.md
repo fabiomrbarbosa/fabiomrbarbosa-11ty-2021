@@ -13,8 +13,7 @@ eleventyNavigation:
 {% Image {
   image: 'assets/images/main_headshot.jpg',
   alt: "Fábio Barbosa's headshot",
-  size: 'onethird',
-  className: 'overlay'
+  size: 'onethird'
 } %}
 
 I’ve always lived in between worlds. Firstly, as an islander, born in the Azores, in the middle of the Atlantic, in-between two languages and cultures. Then, while attempting to reconcile many different careers and beliefs in a state of flux. And presently, as a digital nomad, wandering around the world without belonging anywhere.
