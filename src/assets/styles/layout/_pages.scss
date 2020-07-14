@@ -13,9 +13,7 @@
 }
 
 .overlay {
-  @include breakpoint($desktop) {
-    margin-top: calc(var(--size-step-5) * -2);
-  }
+  margin-top: calc(var(--size-step-5) * -1);
 }
 
 .borderless {

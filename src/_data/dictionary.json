@@ -8,12 +8,12 @@
     },
     "home": {
       "welcome": {
-        "en": "Hi! My name is Fábio.",
-        "pt": "Olá! Eu sou o Fábio."
+        "en": "Welcome!",
+        "pt": "Boas-vindas!"
       },
       "title": {
-        "en": "I am a [pilgrim in the world](/en/about/) who also [writes](/en/blog/) and works as a [creative consultant.](/en/services/) Welcome!",
-        "pt": "Sou um [peregrino no mundo](/pt/quem-sou) que também [escreve](/pt/blog/) e trabalha como [consultor criativo.](/pt/servicos/) As boas-vindas!"
+        "en": "My name is Fábio and I am a [pilgrim in the world](/en/about/) who also [writes](/en/blog/) and works as a [creative consultant.](/en/services/)",
+        "pt": "Chamo-me Fábio e sou um [peregrino no mundo](/pt/quem-sou) que também [escreve](/pt/blog/) e trabalha como [consultor criativo.](/pt/servicos/)"
       },
       "contacts": {
         "en": "Keep in touch.",
@@ -58,8 +58,8 @@
         "pt": "Artigos seleccionados"
       },
       "subtitle": {
-        "en": "Thoughts and essays",
-        "pt": "Pensamentos e ensaios"
+        "en": "Thoughts and essays about spirit, society, the Web and other media.",
+        "pt": "Pensamentos e ensaios sobre o espírito, a sociedade, a Web e outros media."
       }
     },
     "subscribe": {

@@ -1,6 +1,7 @@
 // SASS Breakpoints
 $mobile: "max-width: 56.25rem";
 $desktop: "min-width: 56.25rem";
+$widescreen: "min-width: 100rem";
 
 @mixin breakpoint($bp) {
   @media screen and ($bp) {

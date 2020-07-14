@@ -12,7 +12,7 @@ eleventyNavigation:
 
 {% Image {
   image: 'assets/images/main_headshot.jpg',
-  alt: 'Foto profissional de Fábio Barbosa',
+  alt: 'Foto de Fábio Barbosa',
   size: 'onethird',
   className: 'overlay'
 } %}

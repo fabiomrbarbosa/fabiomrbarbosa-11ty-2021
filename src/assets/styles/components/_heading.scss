@@ -9,16 +9,12 @@
     position: relative;
     padding-bottom: var(--size-step-5);
 
-    @include breakpoint($desktop) {
-      padding-top: 20vh;
-    }
-
     &:after {
       position: absolute;
       content: "";
       top: calc(100% + 1px);
       width: 9rem;
-      height: 0.35rem;
+      height: 0.5rem;
       background: var(--color-accent);
       left: 0;
 
@@ -28,53 +24,18 @@
     }
   }
 
-  @include breakpoint($mobile) {
-    &__image {
-      grid-row: 2/3;
-      max-width: 22.5rem;
-    }
-  }
-
-  @include breakpoint($desktop) {
-    &__image {
-      grid-column: 1/2;
-      padding-left: var(--size-step-2);
-    }
-    &__text {
-      grid-column: 2/3;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-  }
-
   &__title,
   &__subtitle {
-    font-family: var(--font-serif);
+    position: relative;
     margin-top: 0;
-    margin-bottom: var(--size-step-0);
-
-    a {
-      display: inline-block;
-    }
+    margin-bottom: var(--size-step--2);
   }
 
   &__title {
-    position: relative;
-    font-size: var(--size-step-4);
+    font-family: var(--font-serif);
+    font-size: var(--size-step-5);
     line-height: 1;
     letter-spacing: -0.05rem;
-
-    &:after {
-      content: "\AC";
-      display: inline-block;
-      color: var(--color-accent);
-      font-weight: 700;
-      font-size: 3.5rem;
-      position: absolute;
-      margin-left: 0.5rem;
-      margin-top: -0.8rem;
-    }
   }
 
   &__subtitle {
@@ -87,6 +48,34 @@
 
   &__datetime {
     @extend %altText;
+  }
+
+
+  @include breakpoint($mobile) {
+    &__image {
+      grid-row: 2/3;
+      max-width: 22.5rem;
+    }
+  }
+
+  @include breakpoint($desktop) {
+    min-height: 50vh;
+    display: flex;
+
+    &__content {
+      flex: 1;
+      align-self: end;
+    }
+
+    &__image {
+      grid-column: 1/2;
+    }
+    &__text {
+      grid-column: 2/3;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 }
 
