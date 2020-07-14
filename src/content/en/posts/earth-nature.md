@@ -1,5 +1,5 @@
 ---
-title: Terra e Natureza
+title: Earth & Nature
 description: An invitation for us to become a Home.
 date: 2017-06-03
 tags:
