@@ -19,7 +19,7 @@
   &__date {
     @extend %altText;
     font-size: var(--size-step--2);
-    color: var(--color-red);
+    font-weight: bold;
     margin-right: .5rem;
   }
 
