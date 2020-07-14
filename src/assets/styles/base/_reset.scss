@@ -106,7 +106,7 @@ img {
 }
 
 a {
-  transition: color 0.3s ease, border-color 0.3s ease;
+  transition: color 0.25s ease-out, border-color 0.25s ease-out, box-shadow 0.25s ease-out;
   color: var(--color-link);
   // &:visited {color: var(--color-link); }
   // &:visited {color: var(--color-link-visited); }
