@@ -6,6 +6,12 @@
         "pt": "Místico, escritor e consultor criativo."
       }
     },
+    "feed": {
+      "reply": {
+        "en": "Reply via email",
+        "pt": "Responder via correio electrónico"
+      }
+    },
     "home": {
       "welcome": {
         "en": "Welcome!",
