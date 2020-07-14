@@ -12,10 +12,12 @@ translationKey: tags
   className: 'tags--archive'
 } %}
 
+<div class="taglist">
 {% for tag in collections.tagList %}
   {% set tagUrl %}/{{ locale }}/tags/{{ tag | slug }}/{% endset %}
   <a href="{{ tagUrl }}" class="tag">{{ tag }}</a>
 {% endfor %}
+</div>
 
 {% endGridList %}
 

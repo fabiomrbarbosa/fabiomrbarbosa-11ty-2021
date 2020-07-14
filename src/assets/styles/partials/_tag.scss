@@ -27,3 +27,7 @@ a.tag {
     background-color: var(--color-link);
   }
 }
+
+.taglist {
+  grid-column: 2/3;
+}
