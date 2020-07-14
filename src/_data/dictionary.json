@@ -58,6 +58,10 @@
         "pt": "Artigos seleccionados"
       },
       "subtitle": {
+        "en": "Thoughts and essays about Spirit, society, the Web and other media. Subscribe also the [RSS feed](/en/feed/rss.xml) and join the [newsletter.](http://eepurl.com/gNzLRz)",
+        "pt": "Pensamentos e ensaios sobre o Espírito, a sociedade, a Web e outros media. Subscreva também o [feed RSS](/pt/feed/rss.xml) e junte-se à [newsletter.](http://eepurl.com/gNzLRz)"
+      },
+      "description": {
         "en": "Thoughts and essays about Spirit, society, the Web and other media.",
         "pt": "Pensamentos e ensaios sobre o Espírito, a sociedade, a Web e outros media."
       }
