@@ -7,7 +7,7 @@ templateClass: tmpl-page
 translationKey: services
 eleventyNavigation:
   key: Serviços
-  order: 3
+  order: 2
 ---
 
 Sempre me fascinei pela linguagem e pelo poder que as palavras e as imagens têm de nos interligar, não só com os seus significados, mas também uns com os outros.

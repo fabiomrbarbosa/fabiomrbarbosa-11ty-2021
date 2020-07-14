@@ -1,4 +1,3 @@
-{#- Read more about `eleventy-menuigation` at https://www.11ty.dev/docs/plugins/menuigation/ #}
 <nav class="menu">
   <ul class="menu__list">
     {%- for entry in collections['site_' + locale] | eleventyNavigation -%}
@@ -6,5 +5,8 @@
       <a href="{{ entry.url | url }}">{{ entry.title }}</a>
     </li>
     {%- endfor -%}
+    <li class="menu__item menu__item--rss">
+      <a href="/{{ locale + metadata.feed.path }}">RSS</a>
+    </li>
   </ul>
 </nav>

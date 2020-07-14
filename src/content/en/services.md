@@ -7,7 +7,7 @@ templateClass: tmpl-page
 translationKey: services
 eleventyNavigation:
   key: Services
-  order: 3
+  order: 2
 ---
 
 I am fascinated by language and the power of words and images to connect us with meaning and with each other.
