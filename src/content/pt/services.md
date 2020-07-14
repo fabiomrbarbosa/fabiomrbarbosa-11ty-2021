@@ -10,6 +10,13 @@ eleventyNavigation:
   order: 3
 ---
 
+{% Image {
+  image: 'assets/images/heading_services.svg',
+  alt: "",
+  size: 'onethird',
+  className: 'overlay borderless'
+} %}
+
 Sempre me fascinei pela linguagem e pelo poder que as palavras e as imagens têm de nos interligar, não só com os seus significados, mas também uns com os outros.
 
 Ao longo dos anos, tive a oportunidade de colocar esse poder em prática, ao trabalhar com marcas tanto portuguesas como internacionais, quer de forma directa quer como colaborador convidado, em campanhas para a televisão e para o digital, conteúdos de marca e publicidade nativa.

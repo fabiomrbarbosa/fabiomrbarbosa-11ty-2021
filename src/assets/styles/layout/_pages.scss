@@ -12,8 +12,12 @@
   }
 }
 
-.headshot {
+.overlay {
   @include breakpoint($desktop) {
     margin-top: calc(var(--size-step-5) * -2);
   }
+}
+
+.borderless {
+  border: none;
 }

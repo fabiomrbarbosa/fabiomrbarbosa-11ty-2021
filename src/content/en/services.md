@@ -10,6 +10,13 @@ eleventyNavigation:
   order: 3
 ---
 
+{% Image {
+  image: 'assets/images/heading_services.svg',
+  alt: "",
+  size: 'onethird',
+  className: 'overlay borderless'
+} %}
+
 I am fascinated by language and the power of words and images to connect us with meaning and with each other.
 
 Throughout the years I have had the opportunity to put that power into practice, while working with both local and international brands, either directly or as a recruited partner, on TV and digital campaigns, branded content and native advertising.
