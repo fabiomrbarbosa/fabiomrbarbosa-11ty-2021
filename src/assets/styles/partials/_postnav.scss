@@ -8,6 +8,7 @@
 
   &__title {
     @extend %altText;
+    margin-bottom: 0;
   }
 
   &__links {
