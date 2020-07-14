@@ -27,6 +27,7 @@
   & a {
     text-decoration: none;
     box-shadow: inset 0 -.3rem var(--color-accent);
+    text-shadow: 3px 2px 0 var(--color-bg);
 
     &:focus,
     &:hover,
