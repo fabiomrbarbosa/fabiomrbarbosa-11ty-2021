@@ -24,7 +24,7 @@ eleventyExcludeFromCollections: true
 		<id>{{ absolutePostUrl }}</id>
 		<content type="html">
       {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}
-      {{ "<p><a href='mailto:" | e }}{{ metadata.author.email }}{{ "?subject=Re: " | e }}{{ post.data.title }}{{ "'>" | e }}{{ 'dict.feed.reply' | i18n }}{{ "</a></p>" | e }}
+      {{ "<hr/><p><a href='mailto:" | e }}{{ metadata.author.email }}{{ "?subject=Re: " | e }}{{ post.data.title }}{{ "'>" | e }}{{ 'dict.feed.reply' | i18n }}{{ "</a></p>" | e }}
     </content>
 	</entry>
 	{%- endfor %}
