@@ -54,9 +54,9 @@
 
   &__title {
     font-family: var(--font-serif);
-    font-size: var(--size-step-5);
+    font-size: calc(var(--size-step-5) * 1.25);
     line-height: 1;
-    letter-spacing: -0.05rem;
+    letter-spacing: -0.075rem;
   }
 
   &__subtitle {

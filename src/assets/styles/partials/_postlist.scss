@@ -27,7 +27,7 @@
     --color-link-hover: var(--color-accent);
     display: block;
     font-family: var(--font-serif);
-    font-size: var(--size-step-1);
+    font-size: calc(var(--size-step-1) * 1.25);
     font-weight: bold;
   }
   &__item--active &__link {

@@ -14,18 +14,25 @@
     &:first-of-type:first-letter {
       color: var(--color-accent);
       float: left;
-      font-size: 535%;
-      line-height: calc(var(--size-step-2) * 3);
-      padding-top: .35rem;
-      padding-right: .5rem;
+      margin-right: .25rem;
+
+      // Caution: here be magic numbers.
+      font-size: 500%; // Using percentages seems to be the most harmonious approach for Firefox, Chrome and Android browsers
+      margin-top: .7rem; // First we set a baseline with this value. Drop cap size works immediately on desktop FF.
+      line-height: 0.45em; // Desktop FF seems to not know what to do with this value, but it helps with Chrome
+
+      // And now let's pray that all browsers implement this as soon as possible:
+      -webkit-initial-letter: 3; // Safari seems to be fine with this regardless of previous properties.
+      initial-letter: 3;
     }
 
     &:last-of-type:after {
-      content: '\25A0';
-      color: var(--color-accent);
+      display: inline-block;
+      content: "";
+      background-color: var(--color-accent);
+      width: .5em;
+      height: .5em;
       margin-left: .25rem;
-      font-size: 130%;
-      line-height: 1;
     }
   }
 
