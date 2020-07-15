@@ -37,17 +37,14 @@
   }
 
   a {
-    font-weight: bold;
-
+    --color-link: var(--color-purple);
     &.external-link {
-      position: relative;
-      padding-right: 1rem;
       &:after {
-        position: absolute;
+        display: inline-block;
         content: "\2197";
+        font-weight: bold;
         font-family: var(--font-sans);
         font-size: 65%;
-        top: .15rem;
       }
     }
   }
