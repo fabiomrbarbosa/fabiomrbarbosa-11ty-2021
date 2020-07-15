@@ -1,6 +1,10 @@
 .services__list {
   @extend %grid;
 
+  h2 {
+    margin-bottom: 0;
+  }
+
   &:first-of-type {
     padding-top: var(--size-step-2);
     border-top: 1px solid var(--color-border);
