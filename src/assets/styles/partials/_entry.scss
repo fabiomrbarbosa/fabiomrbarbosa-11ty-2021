@@ -37,7 +37,9 @@
   }
 
   a {
-    --color-link: var(--color-purple);
+    --color-link: var(--color-accent);
+    --color-link-hover: var(--color-red);
+
     &.external-link {
       &:after {
         display: inline-block;

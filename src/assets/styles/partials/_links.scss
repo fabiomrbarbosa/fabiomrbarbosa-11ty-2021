@@ -17,10 +17,10 @@
   margin-left: .25rem;
 
   &:link {
-    color: var(--color-gray-light);
+    color: var(--color-accent);
   }
   &:hover,
   &:active {
-    color: var(--color-accent);
+    color: var(--color-red);
   }
 }
