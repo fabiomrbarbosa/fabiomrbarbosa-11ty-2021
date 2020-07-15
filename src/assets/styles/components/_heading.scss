@@ -73,7 +73,6 @@
 
   @include breakpoint($mobile) {
     &__image {
-      grid-row: 2/3;
 
       img {
         max-width: 22.5rem;
