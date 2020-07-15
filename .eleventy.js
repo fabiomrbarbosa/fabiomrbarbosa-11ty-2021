@@ -9,6 +9,7 @@ module.exports = function (eleventyConfig) {
   const markdownIt = require("markdown-it");
   const markdownItAnchor = require("markdown-it-anchor");
   const markdownItAttributes = require("markdown-it-attrs");
+  const markdownItExternalLinks = require("markdown-it-external-links");
 
   if (process.env.NODE_ENV === "production") {
     const pluginPWA = require("eleventy-plugin-pwa");
@@ -95,7 +96,12 @@ module.exports = function (eleventyConfig) {
       permalinkClass: "direct-link",
       permalinkSymbol: "#",
     })
-    .use(markdownItAttributes);
+    .use(markdownItAttributes)
+    .use(markdownItExternalLinks, {
+      internalDomains: [ "fabiomrbarbosa.com", "localhost" ],
+      externalTarget: "_blank",
+      externalRel: "noopener noreferrer"
+    });
   eleventyConfig.setLibrary("md", markdownLibrary);
 
   return {

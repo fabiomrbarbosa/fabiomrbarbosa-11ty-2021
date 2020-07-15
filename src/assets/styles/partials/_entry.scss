@@ -38,6 +38,13 @@
 
   a {
     font-weight: bold;
+
+    &.external-link:after {
+      position: relative;
+      content: '\2197';
+      font-family: var(--font-sans);
+      font-size: 65%;
+    }
   }
 
   @include breakpoint($desktop) {
