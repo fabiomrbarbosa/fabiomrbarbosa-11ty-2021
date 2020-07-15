@@ -55,7 +55,7 @@
   &__title {
     font-family: var(--font-serif);
     font-size: calc(var(--size-step-5) * 1.25);
-    line-height: 1;
+    line-height: calc(var(--size-step-4) * 1.25);
     letter-spacing: -0.075rem;
   }
 
