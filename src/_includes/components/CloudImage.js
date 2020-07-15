@@ -11,7 +11,7 @@ module.exports = function (title = "", description = "") {
     "g_south_west",
     "x_480",
     "y_254",
-    "l_text:fonts:fmrb-title.ttf_64_letter_spacing_-2_line_spacing_-10:",
+    "l_text:fonts:fmrb-title.ttf_86_letter_spacing_-2_line_spacing_-15:",
   ].join(",");
   const titleUrl = encodeURIComponent(title)
     .replace("%2C%20", "%252C%20")
