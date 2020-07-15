@@ -11,17 +11,6 @@ module.exports = function (eleventyConfig) {
   const markdownItAttributes = require("markdown-it-attrs");
   const markdownItExternalLinks = require("markdown-it-external-links");
 
-  if (process.env.NODE_ENV === "production") {
-    const pluginPWA = require("eleventy-plugin-pwa");
-
-    eleventyConfig.addPlugin(pluginPWA, {
-      cleanupOutdatedCaches: true,
-      modifyUrlPrefix: {
-        "": "/",
-      },
-    });
-  }
-
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
