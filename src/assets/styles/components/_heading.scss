@@ -73,7 +73,6 @@
 
   @include breakpoint($mobile) {
     &__image {
-
       img {
         max-width: 22.5rem;
       }
