@@ -45,7 +45,7 @@
 <link rel="mask-icon" href="/assets/images/favicon.svg" color="#fff" media="(prefers-color-scheme: dark)" />
 
 {# RSS Feed #}
-<link rel="alternate" href="{{ '/' + locale + metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+<link rel="alternate" href="/{{ locale + metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
 
 {# Manifest + Service Worker #}
 <link rel="manifest" href="/{{ locale }}/manifest.webmanifest">

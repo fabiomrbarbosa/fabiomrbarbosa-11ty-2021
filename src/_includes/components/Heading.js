@@ -13,7 +13,7 @@ module.exports = function ({
   return /*html*/ `
     <div class="heading ${headingClass}">
       <div class="heading__content">
-        ${image && /*html*/ `<div class="heading__image"><img src="${image}" alt=""></div>`}
+        ${image && /*html*/ `<div class="heading__image"><img src="/${image}" alt=""></div>`}
         <div class="heading__text">
           <h1 class="heading__title">${title}</h1>
           ${
