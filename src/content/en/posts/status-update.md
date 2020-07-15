@@ -21,7 +21,7 @@ At a time when the information wars lead us to ever greater problems of transpar
 
 Even knowing the rules of the speciality manuals and the buzzwords that populate lectures and workshops in the so-called "creativity festivals", I find myself refusing them when it comes to my own online space, signed with my name on the address bar. I refuse to try to promote a ready-made, packaged and labelled version of who I am. I refuse to believe that my presence in the world should be governed by the dogma of sterile perfectionism and uninterrupted productivity.
 
-In this digital space, I don't want the code behind each page to be its only open-source component. I also want the development process of my own self and my presence in the world to happen in an open and, I hope, interactive way. A tool of personal construction and deconstruction shared with those who read me.
+In this digital space, I don't want [the code behind each page](https://github.com/fabiomrbarbosa/fabiomrbarbosa.com) to be its only open-source component. I also want the development process of my own self and my presence in the world to happen in an open and, I hope, interactive way. A tool of personal construction and deconstruction shared with those who read me.
 
 This implies that I intend to write about a diversity of interests that may or may not be linked to my everyday professional activity, but which all share the core themes of presence, authenticity, and conscious communication. I have often regretted not having a place to react to the various events that influence our collective life, a place where I could perhaps even propose new ways of seeing and intervening in the world. May this no longer be a problem. All of this will be part of this site, just as it is part of me.
 
