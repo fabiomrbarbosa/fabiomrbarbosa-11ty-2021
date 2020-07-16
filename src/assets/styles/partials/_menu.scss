@@ -10,7 +10,7 @@
   &__item {
     & a {
       @extend %altText;
-      line-height: var(--size-step-2);
+      line-height: 2;
       display: block;
       text-decoration: none;
     }
