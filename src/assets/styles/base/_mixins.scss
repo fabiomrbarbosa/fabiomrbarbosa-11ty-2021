@@ -50,6 +50,7 @@ $widescreen: "min-width: 100rem";
 
 %altTextUnderline {
   text-decoration: none;
+  line-height: 2;
   border-bottom: .15em solid var(--color-link);
 
   &:focus,
