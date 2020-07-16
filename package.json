@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Fábio M.R. Barbosa's official website, built with Eleventy, hosted on Netlify",
   "scripts": {
-    "sass": "sass src/assets/styles/main.scss:src/_includes/inlines/styles/main.min.css --style=compressed",
+    "sass": "sass src/assets/styles/main.scss:src/_includes/inlines/styles/main.min.css --source-map-urls=relative --style=compressed",
     "build": "npm run sass && npx eleventy && workbox generateSW workbox-config.js",
     "develop": "concurrently \"npm run sass -- --watch\" \"npx eleventy --serve\"",
     "serve": "eleventy --serve",
