@@ -37,6 +37,7 @@
 
     & a {
       border-bottom: 0;
+      line-height: var(--size-step-2);
 
       &:after {
         content: "" !important;
