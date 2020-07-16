@@ -52,8 +52,13 @@
     text-transform: none;
     padding-top: var(--size-step-2);
     border-top: 1px solid var(--color-border);
+  }
 
-    @include breakpoint($desktop) {
+  @include breakpoint($desktop) {
+    .logo {
+      margin-top: 0.6rem; // magic number
+    }
+    .copyright {
       grid-column: 2/3;
     }
   }
