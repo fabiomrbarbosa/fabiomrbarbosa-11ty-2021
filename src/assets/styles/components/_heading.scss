@@ -38,7 +38,7 @@
   }
 
   @media (prefers-reduced-motion:no-preference) {
-    &__image img {
+    &__image svg {
       animation: floating 3s infinite ease-in-out;
     }
   }
@@ -74,8 +74,9 @@
 
   @include breakpoint($mobile) {
     &__image {
-      img {
+      svg {
         max-width: 22.5rem;
+        height: auto;
       }
     }
   }
