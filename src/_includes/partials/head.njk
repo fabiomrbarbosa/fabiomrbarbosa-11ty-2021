@@ -36,6 +36,9 @@
 <meta name="twitter:creator" content="@fabiomrbarbosa" />
 
 {# Assets #}
+<link rel="preload" href="/assets/fonts/IBMPlexSansVar-Roman.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/CrimsonPro-Roman-VF.ttf" as="font" type="font/ttf" crossorigin>
+
 {% set css %}{%- include "inlines/styles/main.min.css" | url -%}{% endset %}
 <style>{{ css | safe }}</style>
 

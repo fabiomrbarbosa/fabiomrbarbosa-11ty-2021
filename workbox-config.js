@@ -2,10 +2,10 @@ module.exports = {
   "cacheId": "fabiomrbarbosa-pwa",
   "globDirectory": "dist/",
   "globPatterns": [
-    "**/*.{html,svg,css,webmanifest,ttf,woff2}"
+    "**/*.{html,svg,css,webmanifest}"
   ],
   "globIgnores": [
-    "**/blog/**/*",
+    //"**/blog/**/*",
     "**/tags/**/*",
     "**/node_modules/**/*",
     "sw.js",
