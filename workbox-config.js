@@ -2,7 +2,7 @@ module.exports = {
   "cacheId": "fabiomrbarbosa-pwa",
   "globDirectory": "dist/",
   "globPatterns": [
-    "**/*.{html,svg,css,webmanifest}"
+    "**/*.{html,css,webmanifest}"
   ],
   "globIgnores": [
     //"**/blog/**/*",
