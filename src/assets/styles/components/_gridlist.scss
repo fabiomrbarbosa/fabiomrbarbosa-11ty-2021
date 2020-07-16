@@ -1,4 +1,5 @@
 .gridlist {
+  --color-link-hover: var(--color-accent);
   @extend %container;
 
   &__inner {

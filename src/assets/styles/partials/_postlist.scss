@@ -1,4 +1,6 @@
 .postlist {
+  --color-accent: var(--color-red);
+  --color-link-hover: var(--color-accent);
   list-style: none;
   padding: 0;
   margin: 0;
@@ -24,7 +26,6 @@
   }
 
   &__link {
-    --color-link-hover: var(--color-accent);
     display: block;
     font-family: var(--font-serif);
     font-size: calc(var(--size-step-1) * 1.25);

@@ -12,15 +12,12 @@
 
   .feed {
     --color-bg: var(--color-accent-light);
+    --color-accent: var(--color-red);
 
     .gridlist__inner {
       border-bottom: none !important;
       padding-top: calc(var(--size-step-2) * 1.75);
       padding-bottom: calc(var(--size-step-2) * 2);
-    }
-
-    .gridlist__link {
-      --color-link-hover: var(--color-accent);
     }
   }
 

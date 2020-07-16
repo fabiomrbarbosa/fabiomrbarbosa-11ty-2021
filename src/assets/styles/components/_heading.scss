@@ -1,6 +1,5 @@
 .heading {
   @extend %container;
-  --color-bg: var(--color-accent-light);
 
   &__content {
     @extend %content;
