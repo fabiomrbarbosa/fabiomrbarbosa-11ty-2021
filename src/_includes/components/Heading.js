@@ -10,14 +10,20 @@ module.exports = function ({
   image = "",
   className = "",
 } = {}) {
+  // Check if the linked image is in fact an SVG
+  function getFileExtension(filename) {
+    return filename.slice((filename.lastIndexOf(".") - 1 >>> 0) + 2);
+  }
+
   const headingClass = className ? ` ${className}` : "";
-  const imagePath = image ? path.resolve(__dirname, "../../", image) : '';
-  const returnSVG = image ? readFileSync(imagePath).toString() : '';
+  const imageExt = image ? getFileExtension(image) : '';
+  const imagePath = imageExt ? path.resolve(__dirname, "../../", image) : '';
+  const returnSVG = imageExt ? readFileSync(imagePath).toString() : '';
 
   return /*html*/ `
     <div class="heading ${headingClass}">
       <div class="heading__content">
-        ${image && /*html*/ `<div class="heading__image">${returnSVG}</div>`}
+        ${returnSVG && /*html*/ `<div class="heading__image">${returnSVG}</div>`}
         <div class="heading__text">
           <h1 class="heading__title">${title}</h1>
           ${
