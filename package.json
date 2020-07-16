@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Fábio M.R. Barbosa's official website, built with Eleventy, hosted on Netlify",
   "scripts": {
-    "sass": "npx sass src/assets/styles/main.scss:src/_includes/inlines/styles/main.min.css --style=compressed",
+    "sass": "sass src/assets/styles/main.scss:src/_includes/inlines/styles/main.min.css --style=compressed",
     "build": "npm run sass && npx eleventy && workbox generateSW workbox-config.js",
     "develop": "concurrently \"npm run sass -- --watch\" \"npx eleventy --serve\"",
     "serve": "eleventy --serve",
@@ -29,7 +29,6 @@
     "@11ty/eleventy-plugin-rss": "^1.0.7",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "concurrently": "^5.2.0",
-    "dart-sass": "^1.25.0",
     "eleventy-plugin-embed-everything": "^1.7.0",
     "eleventy-plugin-i18n": "^0.1.0",
     "image-size": "^0.8.3",
@@ -38,6 +37,7 @@
     "markdown-it-anchor": "^5.3.0",
     "markdown-it-attrs": "^3.0.3",
     "markdown-it-external-links": "0.0.6",
+    "sass": "^1.26.10",
     "workbox-cli": "^5.1.3"
   }
 }
