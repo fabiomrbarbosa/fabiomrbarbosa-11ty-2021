@@ -72,7 +72,7 @@
   @include breakpoint($mobile) {
     &__image {
       svg {
-        max-width: 22.5rem;
+        max-width: 20rem;
         height: auto;
       }
     }
