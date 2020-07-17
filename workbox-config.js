@@ -14,7 +14,7 @@ module.exports = {
   "runtimeCaching": [
     {
       "urlPattern": "/^.*\.(webp|jpg|png|svg|html|css|ttf|woff2)$/",
-      "handler": "StaleWhileRevalidate"
+      "handler": "NetworkFirst"
     },
   ],
   "swDest": "dist/sw.js"
