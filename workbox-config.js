@@ -14,5 +14,6 @@ module.exports = {
       handler: "StaleWhileRevalidate",
     },
   ],
+  skipWaiting: true,
   swDest: "dist/sw.js"
 };
