@@ -37,14 +37,14 @@
   }
 
   a {
-    --color-link: var(--color-accent);
+    --color-link: var(--color-red-dark);
     --color-link-hover: var(--color-red);
 
     &.external-link {
       &:after {
         display: inline-block;
         content: "\2197";
-        font-weight: bold;
+        font-weight: 700;
         font-family: var(--font-sans);
         font-size: 65%;
         line-height: 1;

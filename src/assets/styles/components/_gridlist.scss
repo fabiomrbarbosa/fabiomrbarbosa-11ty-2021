@@ -16,7 +16,7 @@
     @extend %altText;
     @extend %altTextUnderline;
     position: relative;
-    font-weight: bold;
+    font-weight: 700;
 
     &:focus,
     &:hover,

@@ -19,7 +19,7 @@
     @extend %altText;
     @extend %altTextUnderline;
     --color-link-hover: var(--color-accent);
-    font-weight: bold;
+    font-weight: 700;
     position: relative;
 
     &:after {

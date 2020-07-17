@@ -11,7 +11,7 @@
     @extend %altText;
     display: inline-block;
     position: relative;
-    font-weight: bold;
+    font-weight: 700;
 
     &:not(:last-child) {
       margin-right: $size-step-2;
