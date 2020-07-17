@@ -9,4 +9,9 @@
     --color-link: var(--color-white);
     --color-link-hover: var(--color-accent);
   }
+
+  .entry-body,
+  .postnav {
+    --color-bg: var(--color-white);
+  }
 }
