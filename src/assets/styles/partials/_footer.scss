@@ -14,7 +14,7 @@
 
   &__links {
     display: flex;
-    column-gap: var(--size-step-1);
+    column-gap: $size-step-1;
   }
 
   .logo,
@@ -47,10 +47,10 @@
 
   .copyright {
     font-weight: bold;
-    font-size: var(--size-step--1);
+    font-size: $size-step--1;
     font-family: var(--font-sans);
     text-transform: none;
-    padding-top: var(--size-step-2);
+    padding-top: $size-step-2;
     border-top: 1px solid var(--color-border);
   }
 

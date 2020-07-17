@@ -6,13 +6,13 @@
   }
 
   &:first-of-type {
-    padding-top: var(--size-step-2);
+    padding-top: $size-step-2;
     border-top: 1px solid var(--color-border);
   }
 
   &:not(:last-child) {
-    margin-bottom: var(--size-step-2);
-    padding-bottom: var(--size-step-2);
+    margin-bottom: $size-step-2;
+    padding-bottom: $size-step-2;
     border-bottom: 1px solid var(--color-border);
   }
 

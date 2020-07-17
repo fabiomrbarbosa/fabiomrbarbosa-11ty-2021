@@ -13,7 +13,7 @@
 }
 
 .overlay {
-  margin-top: calc(var(--size-step-5) * -1);
+  margin-top: calc(#{$size-step-5} * -1);
 }
 
 .borderless {

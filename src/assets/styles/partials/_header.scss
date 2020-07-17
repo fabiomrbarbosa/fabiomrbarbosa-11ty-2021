@@ -7,9 +7,9 @@
     @extend %content;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-column-gap: var(--size-step-4);
-    padding-top: var(--size-step-2);
-    padding-bottom: var(--size-step-2);
+    grid-column-gap: $size-step-4;
+    padding-top: $size-step-2;
+    padding-bottom: $size-step-2;
   }
 
   &__title {
@@ -48,8 +48,8 @@
 
     @include breakpoint($desktop) {
       position: absolute;
-      left: calc(var(--size-step-4) * 1.6);
-      top: calc(var(--size-step-3) * 2);
+      left: calc(#{$size-step-4} * 1.6);
+      top: calc(#{$size-step-3} * 2);
     }
   }
 

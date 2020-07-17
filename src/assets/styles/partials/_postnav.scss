@@ -15,7 +15,7 @@
     @include breakpoint($desktop) {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-column-gap: var(--size-step-4);
+      grid-column-gap: $size-step-4;
     }
   }
 
@@ -24,7 +24,7 @@
 
     @include breakpoint($mobile) {
       &:not(:last-child) {
-        margin-bottom: var(--size-step-2);
+        margin-bottom: $size-step-2;
       }
     }
 

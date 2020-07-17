@@ -14,7 +14,7 @@
     font-weight: bold;
 
     &:not(:last-child) {
-      margin-right: var(--size-step-2);
+      margin-right: $size-step-2;
     }
 
     & a {

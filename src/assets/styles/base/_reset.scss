@@ -60,8 +60,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: var(--font-sans);
-  font-size: var(--size-step-0);
-  line-height: var(--size-step-2);
+  font-size: $size-step-0;
+  line-height: $size-step-2;
   background-color: white; // set a default for those browsers that don't
   box-sizing: border-box;
   overflow-x: hidden;
@@ -93,18 +93,18 @@ h6 {
 }
 h2,
 h3 {
-  font-size: var(--size-step-0);
-  line-height: var(--size-step-2);
+  font-size: $size-step-0;
+  line-height: $size-step-2;
   margin-top: 0;
-  margin-bottom: var(--size-step-2);
+  margin-bottom: $size-step-2;
 }
 p,
 ol,
 ul,
 figure {
-  line-height: var(--size-step-2);
+  line-height: $size-step-2;
   margin-top: 0;
-  margin-bottom: var(--size-step-2);
+  margin-bottom: $size-step-2;
   &:last-child {
     margin-bottom: 0;
   }
@@ -117,7 +117,7 @@ figure {
 
 p {
   font-family: var(--font-serif);
-  font-size: calc(var(--size-step-0) * 1.25); // Necessary for Crimson Pro
+  font-size: calc(#{$size-step-0} * 1.25); // Necessary for Crimson Pro
 }
 
 img {
@@ -136,11 +136,11 @@ a {
   &:active {color: var(--color-link-hover); }
 }
 table {
-  margin: var(--size-step-0) 0;
+  margin: $size-step-0 0;
 }
 table td,
 table th {
-  padding-right: var(--size-step-0);
+  padding-right: $size-step-0;
 }
 
 pre,

@@ -10,17 +10,17 @@
   }
 
   &__item {
-    padding-bottom: var(--size-step-1);
+    padding-bottom: $size-step-1;
 
     &:not(:last-of-type) {
-      margin-bottom: var(--size-step-1);
+      margin-bottom: $size-step-1;
       border-bottom: 1px solid var(--color-border);
     }
   }
 
   &__date {
     @extend %altText;
-    font-size: var(--size-step--2);
+    font-size: $size-step--2;
     font-weight: bold;
     margin-right: .5rem;
   }
@@ -28,7 +28,7 @@
   &__link {
     display: block;
     font-family: var(--font-serif);
-    font-size: calc(var(--size-step-1) * 1.25);
+    font-size: calc(#{$size-step-1} * 1.25);
     font-weight: bold;
   }
   &__item--active &__link {

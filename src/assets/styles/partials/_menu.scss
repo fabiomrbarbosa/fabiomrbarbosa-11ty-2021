@@ -25,6 +25,6 @@
 .langswitch {
   @include breakpoint($desktop) {
     position: absolute;
-    right: var(--size-step-4);
+    right: $size-step-4;
   }
 }

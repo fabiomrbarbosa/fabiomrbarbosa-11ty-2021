@@ -45,5 +45,5 @@
 }
 
 .feed .gridlist__inner {
-  padding-top: calc(var(--size-step-2) * 2);
+  padding-top: calc(#{$size-step-2} * 2);
 }
