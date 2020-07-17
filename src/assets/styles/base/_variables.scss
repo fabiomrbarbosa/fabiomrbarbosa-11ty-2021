@@ -1,6 +1,6 @@
 :root {
   // Font families
-  --font-serif: "IBM-Plex-Serif", Georgia, Athelas, Times, "Times New Roman", serif;
+  --font-serif: "EB-Garamond", Georgia, Athelas, Times, "Times New Roman", serif;
   --font-sans: "IBM-Plex-Sans", system-ui, "Helvetica Neue", Helvetica, Arial,
     sans-serif;
 
@@ -119,6 +119,15 @@ $fluid-max-size-5: ($fluid-max-size * $fluid-max-scale-4) / 16;
 $fluid-size-diff-5: $fluid-max-size-5 - $fluid-min-size-5;
 $size-step-5: calc(
   (#{$fluid-min-size-5} * 1rem) + #{$fluid-size-diff-5} * #{$fluid-bp}
+);
+
+$fluid-min-scale-6: $fluid-min-scale-5 * $fluid-min-ratio;
+$fluid-max-scale-6: $fluid-max-scale-5 * $fluid-max-ratio;
+$fluid-min-size-6: ($fluid-min-size * $fluid-min-scale-5) / 16;
+$fluid-max-size-6: ($fluid-max-size * $fluid-max-scale-5) / 16;
+$fluid-size-diff-6: $fluid-max-size-6 - $fluid-min-size-6;
+$size-step-6: calc(
+  (#{$fluid-min-size-6} * 1rem) + #{$fluid-size-diff-6} * #{$fluid-bp}
 );
 
 // Breakpoints
