@@ -1,6 +1,6 @@
 ---
 title: 'Capitulares, edição revista (mas ainda remendada)'
-description: 'O confuso estado da situação na Web quanto a um floreado tipográfico intemporal.'
+description: 'O confuso estado da situação na Web de um floreado tipográfico intemporal.'
 date: 2020-07-17
 tags:
   - webdev
