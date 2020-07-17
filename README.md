@@ -20,13 +20,13 @@ npm i
 `npm run build`
 
 ## To Do
-- Improve accessibility on navigation links
 - Go Indie Web; add Webmentions
 - Conditionally merge and serve CSS partials
-- Inline heading graphics
 - Animate heading graphics
+- Run more accessibility checks (WAI-ARIA, tab order, skip links, etc.)
 
 ## Blog Posts to come
 - How I built this website (SCSS, Eleventy, Netlify) series
 - The current state of affairs on drop caps
 - Adding a reply link to your RSS feed (on Nunjucks/Eleventy)
+- Creating a type scale mixin a la utopia.fyi in SCSS
