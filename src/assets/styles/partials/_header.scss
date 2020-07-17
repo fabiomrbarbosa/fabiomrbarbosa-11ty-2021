@@ -18,7 +18,7 @@
 
   &__logo {
     position: relative;
-    top: 2.6rem;
+    top: 2.25rem;
 
     & a:after {
       content: "";
@@ -49,7 +49,7 @@
     @include breakpoint($desktop) {
       position: absolute;
       left: calc(#{$size-step-4} * 1.6);
-      top: calc(#{$size-step-3} * 2);
+      top: calc(#{$size-step-4} * 1.45);
     }
   }
 
