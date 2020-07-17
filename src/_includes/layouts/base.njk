@@ -1,11 +1,10 @@
 <!doctype html>
-<html lang="{{ locale }}" dir="{{ dir }}">
+<html lang="{{ locale }}" dir="{{ dir }}"
+  {% if templateClass %} class="{{ templateClass }}"{% endif %}>
   <head>
     {%- include "partials/head.njk" -%}
   </head>
-  <body
-    {% if templateClass %} class="{{ templateClass }}"{% endif %}
-    {% if color %} style="--color-accent: var(--color-{{color}});" {% endif %}>
+  <body>
 
     {%- include "partials/header.njk" -%}
     <main class="site-main">{{ content | safe }}</main>

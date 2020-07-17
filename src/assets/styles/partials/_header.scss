@@ -23,7 +23,7 @@
     @include breakpoint($desktop) {
       position: absolute;
       left: calc(#{$size-step-4} * 1.6);
-      top: calc(#{$size-step-4} * 1.6);
+      top: calc(#{$size-step-2} * 2.45);
     }
   }
 

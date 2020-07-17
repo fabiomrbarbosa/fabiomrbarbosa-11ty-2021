@@ -20,17 +20,28 @@ html,
 body {
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
+}
+
+html {
+  --color-bg: var(--color-white);
   font-family: var(--font-serif);
   font-size: $size-step-0;
   line-height: $size-step-1;
-  background-color: white; // set a default for those browsers that don't
+  background-color: var(--color-bg); // set a default for those browsers that don't
   box-sizing: border-box;
-  overflow-x: hidden;
 
-  @media screen and (min-width: 90em) {
-    html {
-      font-size: $fluid-max-size * 1px;
-    }
+  @include breakpoint($maxscreen) {
+    font-size: $fluid-max-size * 1px;
+  }
+}
+
+body {
+  position: relative;
+
+  @include breakpoint($desktop) {
+    margin: 2%;
+    border-radius: 21px;
   }
 }
 

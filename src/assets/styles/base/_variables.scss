@@ -136,4 +136,5 @@ $size-step-6: calc(
 // Breakpoints
 $mobile: "max-width: 56.25rem";
 $desktop: "min-width: 56.25rem";
+$maxscreen: "min-width: calc(#{$fluid-max-width} / 16 * 1rem)";
 $widescreen: "min-width: 100rem";
