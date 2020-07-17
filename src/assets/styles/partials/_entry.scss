@@ -17,9 +17,9 @@
       margin-right: 0.25rem;
 
       // Caution: here be magic numbers.
-      font-size: 500%; // Using percentages seems to be the most harmonious approach for Firefox, Chrome and Android browsers
-      margin-top: 0.7rem; // First we set a baseline with this value. Drop cap size works immediately on desktop FF.
-      line-height: 0.45em; // Desktop FF seems to not know what to do with this value, but it helps with Chrome
+      font-size: 520%; // Using percentages seems to be the most harmonious approach for Firefox, Chrome and Android browsers
+      margin-top: 0.6rem; // First we set a baseline with this value. Drop cap size works immediately on desktop FF.
+      line-height: 0.65em; // Desktop FF seems to not know what to do with this value, but it helps with Chrome
 
       // And now let's pray that all browsers implement this as soon as possible:
       -webkit-initial-letter: 3; // Safari seems to be fine with this regardless of previous properties.
