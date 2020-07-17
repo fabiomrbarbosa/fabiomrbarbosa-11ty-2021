@@ -32,7 +32,7 @@ body {
   margin: 0;
   font-family: var(--font-sans);
   font-size: $size-step-0;
-  line-height: $size-step-2;
+  line-height: $size-step-1;
   background-color: white; // set a default for those browsers that don't
   box-sizing: border-box;
   overflow-x: hidden;
@@ -70,7 +70,7 @@ h6 {
 }
 h2,
 h3 {
-  font-size: $size-step-0;
+  font-size: $size-step-1;
   line-height: $size-step-2;
   margin-top: 0;
   margin-bottom: $size-step-2;
@@ -79,6 +79,7 @@ p,
 ol,
 ul,
 figure {
+  font-size: $size-step-1;
   line-height: $size-step-2;
   margin-top: 0;
   margin-bottom: $size-step-2;
@@ -94,7 +95,6 @@ figure {
 
 p {
   font-family: var(--font-serif);
-  font-size: $size-step-1;
 }
 
 img {
