@@ -29,10 +29,7 @@
     display: block;
     font-family: var(--font-serif);
     font-size: $size-step-1;
-    font-weight: bold;
-  }
-  &__item--active &__link {
-    font-weight: bold;
+    font-weight: 600;
   }
 
   &__description {
