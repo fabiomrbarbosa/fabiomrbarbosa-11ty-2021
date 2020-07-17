@@ -3,7 +3,11 @@
     display: inline-block;
     vertical-align: middle;
 
-    svg {
+    .logo__monogram {
+      display: block;
+      width: 3rem;
+      height: auto;
+
       fill: var(--color-link);
       transition: fill 0.3s ease;
     }
@@ -11,15 +15,23 @@
     &:focus,
     &:hover,
     &:active {
-      svg {
+      .logo__monogram {
         fill: var(--color-accent);
       }
     }
   }
 
-  svg {
-    display: block;
-    width: 3rem;
-    height: auto;
+  &__rays {
+    position: absolute;
+    width: 9rem;
+    height: 9rem;
+    top: -3.35rem;
+    left: -3rem;
+    pointer-events: none;
+
+    @media (prefers-reduced-motion:no-preference) {
+      transform-origin: center;
+      animation: rotating 77s linear infinite;
+    }
   }
 }

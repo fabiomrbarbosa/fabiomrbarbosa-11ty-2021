@@ -20,32 +20,6 @@
     position: relative;
     top: 2.65rem;
 
-    & a:after {
-      content: "";
-      position: absolute;
-      width: 9rem;
-      height: 9rem;
-      top: -3.35rem;
-      left: -3rem;
-      pointer-events: none;
-      background: url('/assets/images/logo_rays.svg') 50% no-repeat;
-
-      @media (prefers-reduced-motion:no-preference) {
-        transform-origin: center;
-        animation: rotating 77s linear infinite;
-      }
-    }
-
-    a {
-      &:focus,
-      &:hover,
-      &:active {
-        svg {
-          fill: var(--color-accent);
-        }
-      }
-    }
-
     @include breakpoint($desktop) {
       position: absolute;
       left: calc(#{$size-step-4} * 1.6);
