@@ -72,9 +72,14 @@ figure {
   font-size: $size-step-0;
   line-height: $size-step-1;
   margin-top: 0;
-  margin-bottom: $size-step-2;
+  margin-bottom: $size-step-1;
   &:last-child {
     margin-bottom: 0;
+  }
+
+  code {
+    font-size: .8em;
+    line-height: 1;
   }
 }
 
@@ -108,17 +113,18 @@ table th {
 
 pre,
 code {
-  font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono",
+  font-family: 'Cascadia Mono', Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono",
     "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono",
     "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L",
     "Courier New", Courier, monospace;
   line-height: 1.5;
 }
 pre {
-  font-size: 14px;
-  line-height: 1.375;
+  font-size: $size-step--1;
+  line-height: $size-step--2;
   direction: ltr;
   text-align: left;
+  overflow-x: auto;
   white-space: pre;
   word-spacing: normal;
   word-break: normal;
@@ -130,7 +136,7 @@ pre {
   -ms-hyphens: none;
   hyphens: none;
   padding: 1em;
-  margin: 0.5em 0;
+  margin: 0 0 $size-step-1;
   background-color: #f6f6f6;
 }
 /*.highlight-line {

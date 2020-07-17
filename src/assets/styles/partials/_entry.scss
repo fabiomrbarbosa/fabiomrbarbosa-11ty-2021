@@ -57,6 +57,10 @@
       margin-left: calc(33.3% + #{$size-step-2});
     }
 
+    pre {
+      margin-left: auto;
+    }
+
     figure.onethird {
       margin-left: 0;
       width: calc(33.3% - #{$size-step-1});
