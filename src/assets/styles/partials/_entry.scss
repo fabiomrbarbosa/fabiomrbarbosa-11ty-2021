@@ -17,8 +17,8 @@
       margin-right: 0.25rem;
 
       // Caution: here be magic numbers.
-      font-size: 450%; // Using percentages seems to be the most harmonious approach for Firefox, Chrome and Android browsers
-      margin-top: .75rem; // First we set a baseline with this value. Drop cap size works immediately on desktop FF.
+      font-size: 425%; // Using percentages seems to be the most harmonious approach for Firefox, Chrome and Android browsers
+      margin-top: .7rem; // First we set a baseline with this value. Drop cap size works immediately on desktop FF.
       line-height: 0.6em; // Desktop FF seems to not know what to do with this value, but it helps with Chrome
 
       // And now let's pray that all browsers implement this as soon as possible:
