@@ -99,6 +99,6 @@
   }
 }
 
-body:not(.tmpl-home) .heading__content {
+html:not(.tmpl-home) .heading__content {
   --color-border: transparent; // preferrable to overriding
 }
