@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Crimson-Pro';
-  src: url('/assets/fonts/CrimsonPro-Roman-VF.woff2') format("woff2");
+  font-family: "Crimson-Pro";
+  src: url("/assets/fonts/CrimsonPro-Roman-VF.woff2") format("woff2");
   font-style: normal;
   font-display: swap;
   font-weight: 300 700;
@@ -8,8 +8,8 @@
 }
 
 @font-face {
-  font-family: 'Crimson-Pro';
-  src: url('/assets/fonts/CrimsonPro-Italic-VF.woff2') format("woff2");
+  font-family: "Crimson-Pro";
+  src: url("/assets/fonts/CrimsonPro-Italic-VF.woff2") format("woff2");
   font-style: italic;
   font-display: swap;
   font-weight: 300 700;
@@ -28,7 +28,9 @@ html {
   font-family: var(--font-serif);
   font-size: $size-step-0;
   line-height: $size-step-1;
-  background-color: var(--color-bg); // set a default for those browsers that don't
+  background-color: var(
+    --color-bg
+  ); // set a default for those browsers that don't
   box-sizing: border-box;
 
   @include breakpoint($maxscreen) {
@@ -89,7 +91,7 @@ figure {
   }
 
   code {
-    font-size: .8em;
+    font-size: 0.8em;
     line-height: 1;
   }
 }
@@ -106,13 +108,16 @@ img {
 }
 
 a {
-  transition: color 0.25s ease-out, border-color 0.25s ease-out, box-shadow 0.25s ease-out;
+  transition: color 0.25s ease-out, border-color 0.25s ease-out,
+    box-shadow 0.25s ease-out;
   color: var(--color-link);
   // &:visited {color: var(--color-link); }
   // &:visited {color: var(--color-link-visited); }
   &:focus,
   &:hover,
-  &:active {color: var(--color-link-hover); }
+  &:active {
+    color: var(--color-link-hover);
+  }
 }
 table {
   margin: $size-step-0 0;
@@ -124,10 +129,10 @@ table th {
 
 pre,
 code {
-  font-family: 'Cascadia Mono', Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono",
-    "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono",
-    "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L",
-    "Courier New", Courier, monospace;
+  font-family: "Cascadia Mono", Consolas, Menlo, Monaco, "Andale Mono WT",
+    "Andale Mono", "Lucida Console", "Lucida Sans Typewriter",
+    "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono",
+    "Nimbus Mono L", "Courier New", Courier, monospace;
   line-height: 1.5;
 }
 pre {
@@ -154,7 +159,7 @@ pre {
   display: block;
   padding: 0.125em 1em;
   text-decoration: none; /* override del, ins, mark defaults */
-  /*color: inherit;
+/*color: inherit;
 }*/
 
 /* allow highlighting empty lines */

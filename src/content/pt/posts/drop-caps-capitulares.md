@@ -8,7 +8,7 @@ tags:
 translationKey: drop-caps
 ---
 
-Estamos em 2020 e, apesar de tudo o que está a acontecer *lá fora*, ao menos podemos sempre contar com os nossos padrões Web em constante evolução para salvar o nosso dia de trabalho, certo? Hmm? O que é que disse? As capitulares em CSS ainda são uma confusão? Os navegadores não conseguem decidir-se sobre como alinhar a tipografia? Bem, isso é um facto, mas em breve poderemos simplesmente declarar a propriedade `initial-letter` e dar o dia por terminado.
+Estamos em 2020 e, apesar de tudo o que está a acontecer *lá fora*, ao menos podemos sempre contar com os nossos padrões Web em constante evolução para salvar o nosso dia de trabalho, certo? Hmm? O que é que disse? Criar capitulares, ou *drop caps*, em CSS ainda é uma confusão? Os navegadores não conseguem decidir-se sobre como alinhar a tipografia? Bem, isso é um facto, mas em breve poderemos simplesmente declarar a propriedade `initial-letter` e dar o dia por terminado.
 
 Só que esse *brevemente* ainda vai [demorar a chegar](https://caniuse.com/#feat=css-initial-letter).
 
@@ -36,4 +36,4 @@ p:first-of-type:first-letter {
 }
 ````
 
-Espero que isto lhe possa ser útil a si também.
+Espero que isto lhe possa ser útil também.
