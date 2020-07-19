@@ -48,7 +48,7 @@ If any of this sounds good to you, how about we work together? Just [send me a n
 - Logo design
 - Visual identity design
 - Brand guidelines
-- Stationary design
+- Stationery design
 - Print collateral design
 - Editorial design
 - Iconography
