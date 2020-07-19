@@ -26,9 +26,9 @@ p:first-of-type:first-letter {
   margin-right: 0.25rem;
 
   /* Caution: here be magic numbers. */
-  font-size: 480%; // The most harmonious approach for major browsers
-  margin-top: .7rem; // Drop cap size works immediately on desktop FF
-  line-height: 0.5em; // Desktop FF seems to not know what to do with this value, but it helps with Chrome
+  font-size: 480%; /* The most harmonious approach for major browsers  */
+  margin-top: .7rem; /* Drop cap size works immediately on desktop FF */
+  line-height: 0.5em; /* Desktop FF seems to not know what to do with this value, but it helps with Chrome */
 
   /* And now let's pray that all browsers implement this as soon as possible: */
   -webkit-initial-letter: 3;
