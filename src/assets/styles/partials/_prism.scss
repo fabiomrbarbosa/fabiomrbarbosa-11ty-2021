@@ -37,7 +37,8 @@ pre {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: #75715e;
+  color: var(--color-gray);
+  font-style: italic;
 }
 .token.punctuation {
   color: #f8f8f2;
