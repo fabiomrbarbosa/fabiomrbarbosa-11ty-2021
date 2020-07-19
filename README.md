@@ -27,6 +27,4 @@ npm i
 
 ## Blog Posts to come
 - How I built this website (SCSS, Eleventy, Netlify) series
-- The current state of affairs on drop caps
 - Adding a reply link to your RSS feed (on Nunjucks/Eleventy)
-- Creating a type scale mixin a la utopia.fyi in SCSS
