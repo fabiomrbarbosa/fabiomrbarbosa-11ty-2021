@@ -8,16 +8,20 @@
 
     <div class="postnav__links">
       {% if previousPost %}
+      <div class="postnav__block">
         <a class="postnav__link" href="{{ previousPost.url }}">
           <p class="postnav__heading">{{ 'dict.postnav.previous' | i18n }}</p>
           <p class="postnav__description">{{ previousPost.data.title }}</p>
         </a>
+      </div>
       {% endif %}
       {% if nextPost %}
+      <div class="postnav__block">
         <a class="postnav__link" href="{{ nextPost.url }}">
           <p class="postnav__heading">{{ 'dict.postnav.next' | i18n }}</p>
           <p class="postnav__description">{{ nextPost.data.title }}</p>
         </a>
+      </div>
       {% endif %}
     </div>
   </div>

@@ -19,7 +19,7 @@
     }
   }
 
-  &__link {
+  &__block {
     display: block;
 
     @include breakpoint($mobile) {
@@ -27,10 +27,10 @@
         margin-bottom: $size-step-2;
       }
     }
+  }
 
-    &[href]:not(:hover) {
-      text-decoration: none;
-    }
+  &__link:not(:hover) {
+    text-decoration: none;
   }
 
   &__heading,
