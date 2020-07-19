@@ -20,20 +20,20 @@ Parece que, nas versões mais recentes de todos os principais navegadores em que
 
 No fim de contas, foi este o resultado.
 
-````
+```css
 p:first-of-type:first-letter {
   float: left;
   margin-right: 0.25rem;
 
-  // Cautela com os números mágicos.
+  /* Cautela que vêm aí números mágicos. */
   font-size: 480%; // A abordagem mais harmoniosa entre os navegadores principais
   margin-top: .7rem; // As capitulares funcionam desde logo no Firefox para desktops
   line-height: 0.5em; // O Firefox para desktops parece não saber o que fazer com isto, mas sempre ajuda com o Chrome
 
-  // E agora oremos para que todos os navegadores implementem isto o mais breve possível:
+  /* E agora oremos para que todos os navegadores implementem isto o mais breve possível: */
   -webkit-initial-letter: 3;
   initial-letter: 3;
 }
-````
+```
 
 Espero que isto lhe possa ser útil também.
