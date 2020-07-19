@@ -39,6 +39,7 @@
   a {
     --color-link: var(--color-red-dark);
     --color-link-hover: var(--color-red);
+    font-weight: 700;
 
     &.external-link {
       &:after {
