@@ -103,8 +103,6 @@ img {
 }
 
 a {
-  transition: color 0.25s ease-out, border-color 0.25s ease-out,
-    box-shadow 0.25s ease-out, background-position 0.5s ease-in-out, background-image 0.25s ease-in-out;
   color: var(--color-link);
   // &:visited {color: var(--color-link); }
   // &:visited {color: var(--color-link-visited); }
@@ -112,6 +110,12 @@ a {
   &:hover,
   &:active {
     color: var(--color-link-hover);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    transition: color 0.25s ease-out, border-color 0.25s ease-out,
+      box-shadow 0.25s ease-out, background-position 0.5s ease-in-out,
+      background-image 0.25s ease-in-out;
   }
 }
 table {
