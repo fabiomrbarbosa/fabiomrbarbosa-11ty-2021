@@ -24,7 +24,34 @@ code, pre {
 pre {
 	padding: $size-step-0;
 	margin: 0 0 $size-step-0;
-	overflow: auto;
+  overflow: auto;
+
+  &[class*="language-"] {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: .25rem .5rem;
+      font-size: $size-step--2;
+      font-family: var(--font-sans);
+      color: var(--color-white);
+      background-color: var(--color-purple);
+      border-radius: 0 0 0 0.3em;
+    }
+  }
+
+  // This is messy. We need to figure how to add a data- attribute instead
+  &.language-svg::before {
+    content: 'SVG';
+  }
+  &.language-css::before {
+    content: 'CSS';
+  }
+  &.language-js::before {
+    content: 'JS';
+  }
 }
 :not(pre) > code {
   padding: 0.1em .25em;

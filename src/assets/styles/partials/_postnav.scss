@@ -11,7 +11,7 @@
     margin-bottom: 0;
   }
 
-  &__links {
+  &__items {
     @include breakpoint($desktop) {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -19,7 +19,7 @@
     }
   }
 
-  &__block {
+  &__item {
     display: block;
 
     @include breakpoint($mobile) {
