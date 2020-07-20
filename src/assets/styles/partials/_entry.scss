@@ -5,6 +5,7 @@
 .entry-content {
   @extend %content;
   --color-link-hover: var(--color-accent);
+  position: relative; // We're adding this to help with absolute positioning inside overflow: auto e.g.: <pre>
   padding-top: $size-step-5;
   padding-bottom: $size-step-5;
 
