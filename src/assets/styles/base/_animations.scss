@@ -27,9 +27,9 @@
 
 @keyframes stretching {
   from {
-    stroke-dashoffset: -110;
+    stroke-dashoffset: 120;
   }
   to {
-    stroke-dashoffset: 110;
+    stroke-dashoffset: -110;
   }
 }

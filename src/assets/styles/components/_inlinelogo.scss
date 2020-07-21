@@ -47,19 +47,21 @@
     animation: rotating 77s linear infinite;
 
     & path {
-      animation: stretching 9s linear infinite forwards;
+      animation: stretching 9s linear infinite;
     }
 
     & path:nth-of-type(2n) {
-      animation-duration: 3s;
-    }
-
-    & path:nth-of-type(3n) {
       animation-duration: 5s;
     }
 
+    & path:nth-of-type(3n) {
+      animation-duration: 4s;
+      animation-direction: reverse;
+    }
+
     & path:nth-of-type(4n) {
-      animation-duration: 7s;
+      animation-duration: 3s;
+      animation-direction: reverse;
     }
   }
 }
