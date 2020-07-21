@@ -12,6 +12,7 @@
       .logo__hover path {
         stroke-dasharray: 1715;
         stroke-dashoffset: 1715;
+        transform: translateZ(0);
       }
 
       .logo__trace path {
@@ -43,6 +44,7 @@
         stroke: var(--color-gold);
         stroke-dasharray: 110;
         transition: stroke-dasharray 1s ease;
+        transform: translateZ(0);
       }
     }
 
