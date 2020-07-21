@@ -19,7 +19,7 @@
   }
 }
 
-@keyframes drawing {
+@keyframes drawingin {
   to {
     stroke-dashoffset: 0;
   }
@@ -38,7 +38,16 @@
   }
 }
 
-@keyframes stretching {
+@keyframes stretchingin {
+  from {
+    stroke-dashoffset: -110;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes stretchingover {
   from {
     stroke-dashoffset: 0;
   }
