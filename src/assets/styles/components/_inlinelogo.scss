@@ -12,7 +12,6 @@
       .logo__hover path {
         stroke-dasharray: 1715;
         stroke-dashoffset: 1715;
-        transition: opacity .5s ease-out;
       }
 
       .logo__trace path {
@@ -25,62 +24,55 @@
       }
 
       .logo__hover path {
-        opacity: 0;
         stroke: var(--color-accent);
+      }
+    }
+
+    .logo__rays {
+      position: absolute;
+      width: 9rem;
+      height: 9rem;
+      top: -3.35rem;
+      left: -3rem;
+      pointer-events: none;
+
+      transform-origin: center;
+      animation: rotating 77s linear infinite;
+
+      & path {
+        stroke: var(--color-gold);
+        stroke-dasharray: 110;
+        transition: stroke-dasharray 1s ease;
       }
     }
 
     &:focus,
     &:hover,
     &:active {
-      .logo__trace path {
-        opacity: 0;
-        transition-duration: 2s;
-      }
-
       .logo__hover path {
-        opacity: 1;
-        animation: drawing 1s cubic-bezier(0.83, 0, 0.17, 1) forwards;
+        animation: drawingover 3s cubic-bezier(0.83, 0, 0.17, 1) forwards infinite;
 
         & + path {
-          animation-delay: .5s;
-          animation-duration: 2.5s;
+          animation-delay: .7s;
+          animation-timing-function: linear;
         }
       }
-    }
-  }
 
-  &__rays {
-    position: absolute;
-    width: 9rem;
-    height: 9rem;
-    top: -3.35rem;
-    left: -3rem;
-    pointer-events: none;
+      .logo__rays path {
+        animation: stretching 11s linear infinite;
 
-    stroke: var(--color-gold);
-    stroke-dasharray: 110;
-    stroke-dashoffset: 110;
+        &:nth-of-type(2n) {
+          animation-duration: 7s;
+        }
 
-    transform-origin: center;
-    animation: rotating 77s linear infinite;
+        &:nth-of-type(3n) {
+          animation-duration: 6s;
+        }
 
-    & path {
-      animation: stretching 9s linear infinite;
-      animation-direction: reverse;
-    }
-
-    & path:nth-of-type(2n) {
-      animation-duration: 5s;
-    }
-
-    & path:nth-of-type(3n) {
-      animation-duration: 4s;
-      animation-direction: reverse;
-    }
-
-    & path:nth-of-type(4n) {
-      animation-duration: 3s;
+        &:nth-of-type(4n) {
+          animation-duration: 5s;
+        }
+      }
     }
   }
 }

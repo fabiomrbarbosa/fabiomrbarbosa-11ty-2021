@@ -25,11 +25,33 @@
   }
 }
 
+@keyframes drawingover {
+  from {
+    stroke-dashoffset: 1715;
+  }
+  25%,
+  50% {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: -1715;
+  }
+}
+
 @keyframes stretching {
   from {
+    stroke-dashoffset: 0;
+  }
+  25% {
+    stroke-dashoffset: 120;
+  }
+  50% {
+    stroke-dashoffset: -110;
+  }
+  75% {
     stroke-dashoffset: 120;
   }
   to {
-    stroke-dashoffset: -110;
+    stroke-dashoffset: 0;
   }
 }
