@@ -8,17 +8,25 @@
       width: 3rem;
       height: auto;
 
-      fill: var(--color-link);
-      @media (prefers-reduced-motion: no-preference) {
-        transition: fill 0.3s ease;
+      .logo__line {
+        stroke: var(--color-link);
+        stroke-dasharray: 1715;
+        stroke-dashoffset: 1715;
+
+        transition: stroke 0.3s ease;
+        animation: drawing 2.5s cubic-bezier(0.83, 0, 0.17, 1) forwards;
+      }
+
+      .logo__line + .logo__line {
+        animation-delay: 1.5s;
       }
     }
 
     &:focus,
     &:hover,
     &:active {
-      .logo__monogram {
-        fill: var(--color-accent);
+      .logo__line {
+        stroke: var(--color-accent);
       }
     }
   }
@@ -31,9 +39,27 @@
     left: -3rem;
     pointer-events: none;
 
-    @media (prefers-reduced-motion:no-preference) {
-      transform-origin: center;
-      animation: rotating 77s linear infinite;
+    stroke: var(--color-gold);
+    stroke-dasharray: 110;
+    stroke-dashoffset: 110;
+
+    transform-origin: center;
+    animation: rotating 77s linear infinite;
+
+    & path {
+      animation: stretching 9s linear infinite forwards;
+    }
+
+    & path:nth-of-type(2n) {
+      animation-duration: 3s;
+    }
+
+    & path:nth-of-type(3n) {
+      animation-duration: 5s;
+    }
+
+    & path:nth-of-type(4n) {
+      animation-duration: 7s;
     }
   }
 }

@@ -18,3 +18,18 @@
     transform: translate(0, 0);
   }
 }
+
+@keyframes drawing {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes stretching {
+  from {
+    stroke-dashoffset: -110;
+  }
+  to {
+    stroke-dashoffset: 110;
+  }
+}
