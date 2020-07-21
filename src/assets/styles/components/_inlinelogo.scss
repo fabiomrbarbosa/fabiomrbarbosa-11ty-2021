@@ -62,11 +62,11 @@
         animation: stretching 13s linear infinite;
 
         &:nth-of-type(2n) {
-          animation-duration: 9s;
+          animation-duration: 12s;
         }
 
         &:nth-of-type(3n) {
-          animation-duration: 8s;
+          animation-duration: 11s;
         }
 
         &:nth-of-type(3n+1) {
@@ -74,7 +74,7 @@
         }
 
         &:nth-of-type(4n) {
-          animation-duration: 7s;
+          animation-duration: 10s;
         }
       }
     }
