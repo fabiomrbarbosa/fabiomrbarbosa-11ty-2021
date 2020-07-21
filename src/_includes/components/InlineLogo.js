@@ -10,8 +10,8 @@ module.exports = function ( location = "" ) {
   ).toString();
 
   const monogramPos = monogram.replace(
-    /site__logo/g,
-    "site-" + location + "__logo"
+    /LOCATION/g,
+    location
   );
 
   if (location == "header") {
