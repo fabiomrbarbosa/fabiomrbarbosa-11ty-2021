@@ -2,8 +2,8 @@
   "dict": {
     "site": {
       "subtitle": {
-        "en": "Mystic, writer and creative consultant.",
-        "pt": "Místico, escritor e consultor criativo."
+        "en": "Creative consultant + developer, writer, mystic, traveller.",
+        "pt": "Consultor + developer criativo, escritor, místico, viajante."
       }
     },
     "feed": {
@@ -18,8 +18,8 @@
         "pt": "Boas-vindas!"
       },
       "title": {
-        "en": "My name is Fábio and I am a [pilgrim in the world](/en/about/) who also [writes](/en/blog/) and works as a [creative consultant.](/en/services/)",
-        "pt": "Chamo-me Fábio e sou um [peregrino no mundo](/pt/quem-sou) que também [escreve](/pt/blog/) e trabalha como [consultor criativo.](/pt/servicos/)"
+        "en": "My name is [Fábio](/en/about/) and I am a [creative consultant + developer](/en/services/), [writer](/en/blog/), mystic and traveller.",
+        "pt": "Chamo-me [Fábio](/pt/quem-sou/) e sou um [consultor + developer criativo](/pt/servicos/), [escritor](/pt/blog/), místico e viajante."
       },
       "contacts": {
         "en": "Keep in touch.",
