@@ -1,7 +1,7 @@
 <nav class="menu">
   <ul class="menu__list">
     {%- for entry in collections['site_' + locale] | eleventyNavigation -%}
-    <li class="menu__item{% if page.url.includes(entry.url) %} menu__item--active{% endif %}">
+    <li class="menu__item"{% if page.url.includes(entry.url) %} aria-current="page"{% endif %}>
       <a href="{{ entry.url | url }}">{{ entry.title }}</a>
     </li>
     {%- endfor -%}

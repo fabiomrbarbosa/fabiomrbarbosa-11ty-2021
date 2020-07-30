@@ -15,11 +15,13 @@
       text-decoration: none;
     }
 
+    &[aria-current] a,
     &--active a {
       font-weight: 700;
       color: var(--color-link-hover);
     }
   }
+
 }
 
 .langswitch {
