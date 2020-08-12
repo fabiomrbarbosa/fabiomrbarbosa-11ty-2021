@@ -1,5 +1,6 @@
 module.exports = function (eleventyConfig) {
   const { DateTime } = require("luxon");
+  const { PurgeCSS } = require("purgecss");
   const pluginRss = require("@11ty/eleventy-plugin-rss");
   const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
   const pluginNavigation = require("@11ty/eleventy-navigation");
@@ -69,6 +70,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("./src/assets/images");
   eleventyConfig.addPassthroughCopy("./src/assets/fonts");
+  eleventyConfig.addPassthroughCopy("./src/assets/styles");
   eleventyConfig.addPassthroughCopy("./src/**/manifest.webmanifest");
 
   /* Markdown Overrides */
@@ -87,11 +89,34 @@ module.exports = function (eleventyConfig) {
     })
     .use(markdownItAttributes)
     .use(markdownItExternalLinks, {
-      internalDomains: [ "fabiomrbarbosa.com", "localhost" ],
+      internalDomains: ["fabiomrbarbosa.com", "localhost"],
       externalTarget: "_blank",
-      externalRel: "noopener noreferrer"
+      externalRel: "noopener noreferrer",
     });
   eleventyConfig.setLibrary("md", markdownLibrary);
+
+  eleventyConfig.addTransform(
+    "purge-and-inline-css",
+    async (content, outputPath) => {
+      /*if (
+        process.env.ELEVENTY_ENV !== "production" ||
+        !outputPath.endsWith(".html")
+      ) {
+        return content;
+      }*/
+
+      const purgeCSSResults = await new PurgeCSS().purge({
+        content: [{ raw: content }],
+        css: ["src/assets/styles/main.min.css"],
+        keyframes: true,
+      });
+
+      return content.replace(
+        "<!-- INLINE CSS-->",
+        "<style>" + purgeCSSResults[0].css + "</style>"
+      );
+    }
+  );
 
   return {
     templateFormats: ["md", "njk", "html", "liquid"],

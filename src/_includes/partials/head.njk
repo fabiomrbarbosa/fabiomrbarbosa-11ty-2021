@@ -13,6 +13,10 @@
 {% endif %}
 {% set pageImageAlt = socialImageAlt or pageDescription %}
 
+{% set devCss %}
+  {% include "../../assets/styles/main.min.css" %}
+{% endset %}
+
 {# Meta tags #}
 <meta charset="utf-8">
 <title>{{ pageTitle + ' |' if pageTitle }} {{ metadata.title }}</title>
@@ -36,9 +40,11 @@
 <meta name="twitter:creator" content="@fabiomrbarbosa" />
 
 {# Assets #}
-
-{% set css %}{%- include "inlines/styles/main.min.css" | url -%}{% endset %}
-<style>{{ css | safe }}</style>
+{% if project.environment === 'production' %}
+  <!-- INLINE CSS-->
+{% else %}
+  <style>{{ devCss | safe }}</style>
+{% endif %}
 
 <link rel="icon" href="/assets/images/favicon.svg">
 <link rel="apple-touch-icon" href="/assets/images/icon-192x192.png">
