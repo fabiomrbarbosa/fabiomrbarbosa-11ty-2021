@@ -70,7 +70,6 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("./src/assets/images");
   eleventyConfig.addPassthroughCopy("./src/assets/fonts");
-  eleventyConfig.addPassthroughCopy("./src/assets/styles");
   eleventyConfig.addPassthroughCopy("./src/**/manifest.webmanifest");
 
   /* Markdown Overrides */
