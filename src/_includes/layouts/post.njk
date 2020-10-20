@@ -1,16 +1,17 @@
 ---
 layout: layouts/base.njk
 templateClass: tmpl-post
-permalink: /{{ locale }}/blog/{{ page.fileSlug }}/
+permalink: /{{ subDir }}blog/{{ page.fileSlug }}/
 ---
+{% import "components/macros.njk" as macro %}
 
-{% Heading {
-  title: title,
-  subtitle: description,
-  dateTime: date | htmlDateString,
-  dateReadable: date | readableDate(locale),
-  className: 'heading--post'
-} %}
+{{ macro.heading (
+  title = title,
+  subtitle = description,
+  dateTime = date | htmlDateString,
+  dateReadable = date | readableDate(locale),
+  className = 'heading--post'
+) }}
 
 <div class="entry-body">
   <div class="entry-content">

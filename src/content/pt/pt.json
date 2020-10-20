@@ -1,6 +1,7 @@
 {
   "dir": "ltr",
   "locale": "pt",
+  "subDir": "pt/",
   "tags": [
     "site_pt"
   ]

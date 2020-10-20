@@ -1,23 +1,23 @@
 ---
-permalink: /{{ locale }}/tags/
+permalink: /{{ subDir }}tags/
 layout: layouts/base.njk
 translationKey: tags
 ---
+{% import "components/macros.njk" as macro %}
 
-{% Heading {
-  title: 'Tags'
-} %}
+{{ macro.heading (
+  title = 'Tags'
+) }}
 
-{% GridList {
-  className: 'tags--archive'
-} %}
+{% call macro.gridlist (
+  className = 'tags--archive'
+) %}
 
-<div class="taglist">
-{% for tag in collections.tagList %}
-  {% set tagUrl %}/{{ locale }}/tags/{{ tag | slug }}/{% endset %}
-  <a href="{{ tagUrl }}" class="tag">{{ tag }}</a>
-{% endfor %}
-</div>
+  <div class="taglist">
+  {% for tag in collections.tagList %}
+    {% set tagUrl %}/{{ subDir }}tags/{{ tag | slug }}/{% endset %}
+    <a href="{{ tagUrl }}" class="tag">{{ tag }}</a>
+  {% endfor %}
+  </div>
 
-{% endGridList %}
-
+{% endcall %}

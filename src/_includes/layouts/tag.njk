@@ -14,28 +14,28 @@ pagination:
     - tagList
   addAllPagesToCollections: true
 layout: layouts/base.njk
-renderData:
+eleventyComputed:
   title: 'Tag: {{ tag }}'
-  bodyTitle: 'Tag:<br> {{ tag }}'
-permalink: /{{ locale }}/tags/{{ tag | slug }}/
+permalink: /{{ subDir }}tags/{{ tag | slug }}/
 templateClass: tmpl-archive
 translationKey: tags
 ---
+{% import "components/macros.njk" as macro %}
 
-{% Heading {
-  title: renderData.bodyTitle,
-  className: 'heading--archive'
-} %}
+{{ macro.heading (
+  title = title,
+  className = 'heading--archive'
+) }}
 
-{% GridList {
-  className: 'feed',
-  linkText: 'dict.tag.link' | i18n,
-  linkTarget: '/' + locale + '/tags/'
-} %}
+{% call macro.gridlist (
+  linkText = dictionary.tag.link[ locale ],
+  linkTarget = '/' + subDir + 'tags/',
+  className = 'feed'
+) %}
 
   {% set postlist = collections[ tag ] %}
   {%- include "partials/postlist.njk" -%}
 
-{% endGridList %}
+{% endcall %}
 
 {%- include "partials/subscribe.njk" -%}

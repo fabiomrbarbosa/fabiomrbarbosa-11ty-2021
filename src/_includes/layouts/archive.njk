@@ -2,21 +2,21 @@
 layout: layouts/base.njk
 templateClass: tmpl-archive
 ---
+{% import "components/macros.njk" as macro %}
 
-{% Heading {
-  title: 'dict.archive.title' | i18n,
-  subtitle: 'dict.archive.subtitle' | i18n,
-  className: 'heading--archive',
-  image: 'assets/images/heading_archive.svg'
-} %}
+{{ macro.heading (
+  title = dictionary.archive.title[ locale ],
+  subtitle = dictionary.archive.subtitle[ locale ],
+  className = 'heading--archive'
+) }}
 
-{% GridList {
-  className: 'feed'
-} %}
+{% call macro.gridlist (
+  className = 'feed'
+) %}
 
   {% set postlist = collections["posts_" + locale] %}
   {%- include "partials/postlist.njk" -%}
 
-{% endGridList %}
+{% endcall %}
 
 {%- include "partials/subscribe.njk" -%}

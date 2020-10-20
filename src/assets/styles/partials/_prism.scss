@@ -3,8 +3,8 @@ code, pre {
     "Andale Mono", "Lucida Console", "Lucida Sans Typewriter",
     "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono",
     "Nimbus Mono L", "Courier New", Courier, monospace;
-  font-size: $size-step--2;
-  line-height: $size-step-0;
+  font-size: $size-step--1;
+  line-height: $size-step-1;
 	direction: ltr;
 	text-align: left;
 	white-space: pre;
@@ -50,11 +50,9 @@ pre {
   }
 }
 :not(pre) > code {
-  padding: 0.1em .25em;
-  font-size: 75%;
-  color: var(--color-purple);
-  background-color: var(--color-beige);
-  box-shadow: inset 0 0 1px var(--color-accent);
+  padding: 0em .25em 0.1em;
+  color: var(--color-white);
+  background-color: var(--color-accent);
 }
 .token.comment,
 .token.prolog,

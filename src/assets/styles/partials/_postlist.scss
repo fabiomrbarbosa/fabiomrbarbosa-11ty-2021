@@ -1,6 +1,4 @@
 .postlist {
-  --color-accent: var(--color-red-dark);
-  --color-link-hover: var(--color-accent);
   list-style: none;
   padding: 0;
   margin: 0;
@@ -10,10 +8,10 @@
   }
 
   &__item {
-    padding-bottom: $size-step-1;
+    padding-bottom: $size-step-2;
 
     &:not(:last-of-type) {
-      margin-bottom: $size-step-1;
+      margin-bottom: $size-step-2;
       border-bottom: 1px solid var(--color-border);
     }
   }
@@ -29,12 +27,12 @@
   &__link {
     display: block;
     font-size: $size-step-1;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: .5rem;
   }
 
   &__description {
-    font-size: $size-step-1;
+    font-size: $size-step-0;
     margin-bottom: .5rem;
   }
 }

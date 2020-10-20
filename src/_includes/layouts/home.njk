@@ -1,35 +1,35 @@
 ---
 layout: layouts/base.njk
 templateClass: tmpl-home
-permalink: /{{ locale }}/
+permalink: /{{ subDir }}
 ---
-{% Heading {
-  title: 'dict.home.welcome' | i18n,
-  subtitle: 'dict.home.title' | i18n,
-  className: 'heading--home',
-  image: 'assets/images/heading_home.svg'
-} %}
+{% import "components/macros.njk" as macro %}
 
+{{ macro.heading (
+  title = dictionary.home.welcome[ locale ],
+  subtitle = dictionary.home.title[ locale ],
+  className = 'heading--home'
+) }}
 
-{% GridList {
-  title: 'dict.home.contacts' | i18n,
-  className: 'contacts'
-} %}
+{% call macro.gridlist (
+  title = dictionary.home.contacts[ locale ],
+  className = 'contacts'
+) %}
 
-{%- include "partials/contact.njk" -%}
+  {%- include "partials/contact.njk" -%}
 
-{% endGridList %}
+{% endcall %}
 
-{% GridList {
-  title: 'dict.postlist.title' | i18n,
-  linkText: 'dict.postlist.link' | i18n,
-  linkTarget: '/' + locale + '/blog/',
-  className: 'feed'
-} %}
+{% call macro.gridlist (
+  title = dictionary.postlist.title[ locale ],
+  linkText = dictionary.postlist.link[ locale ],
+  linkTarget = '/' + subDir + 'blog/',
+  className = 'feed'
+) %}
 
   {% set postlist = collections["posts_" + locale] | head(-3) %}
   {%- include "partials/postlist.njk" -%}
 
-{% endGridList %}
+{% endcall %}
 
 {%- include "partials/subscribe.njk" -%}

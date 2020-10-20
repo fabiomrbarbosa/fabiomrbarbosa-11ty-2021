@@ -1,20 +1,21 @@
 {# Variables #}
-{% set pageTitle = renderData.title or title %}
+{% import "components/macros.njk" as macro %}
+{% set pageTitle = eleventyComputed.title or title %}
 {% set pageTitleSocial = publicTitle or pageTitle or metadata.title %}
-{% set pageDescription = renderData.description or description or 'dict.site.subtitle' | i18n %}
+{% set pageDescription = eleventyComputed.description or description or dictionary.site.subtitle[ locale ] %}
 {% set pageType = 'article' if tags.includes('posts_pt' or 'posts_en') else 'website' %}
 
 {% if socialImage %}
   {% set pageImage = socialImage | url %}
 {% else %}
   {% set pageImage %}
-    {%- CloudImage pageTitleSocial, pageDescription -%}
+    {{ macro.cloudImage (title = pageTitleSocial, description = pageDescription ) }}
   {% endset %}
 {% endif %}
 {% set pageImageAlt = socialImageAlt or pageDescription %}
 
 {% set devCss %}
-  {% include "../../assets/styles/main.min.css" %}
+  {% include "styles/main.min.css" %}
 {% endset %}
 
 {# Meta tags #}
@@ -52,7 +53,7 @@
 <link rel="mask-icon" href="/assets/images/favicon.svg" color="#fff" media="(prefers-color-scheme: dark)" />
 
 {# RSS Feed #}
-<link rel="alternate" href="/{{ locale + metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+<link rel="alternate" href="/{{ subDir + metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
 
 {# Manifest + Service Worker #}
-<link rel="manifest" href="/{{ locale }}/manifest.webmanifest">
+<link rel="manifest" href="/{{ subDir }}manifest.webmanifest">

@@ -6,5 +6,5 @@ translationKey: writing
 eleventyNavigation:
   key: Writing
   order: 3
-permalink: /en/blog/
+permalink: /{{ subDir }}blog/
 ---

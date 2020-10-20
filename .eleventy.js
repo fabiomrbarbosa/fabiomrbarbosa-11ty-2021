@@ -5,8 +5,6 @@ module.exports = function (eleventyConfig) {
   const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
   const pluginNavigation = require("@11ty/eleventy-navigation");
   const pluginEmbeds = require("eleventy-plugin-embed-everything");
-  const plugini18n = require("eleventy-plugin-i18n");
-  const translations = require("./src/_data/dictionary.json");
   const markdownIt = require("markdown-it");
   const markdownItAnchor = require("markdown-it-anchor");
   const markdownItAttributes = require("markdown-it-attrs");
@@ -16,30 +14,32 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
   eleventyConfig.addPlugin(pluginEmbeds);
-  eleventyConfig.addPlugin(plugini18n, {
-    translations,
-    fallbackLocales: {
-      "*": "en",
-    },
-  });
 
   const componentsDir = `./src/_includes/components`;
   const Image = require(`${componentsDir}/Image.js`);
-  const CloudImage = require(`${componentsDir}/CloudImage.js`);
   const InlineLogo = require(`${componentsDir}/InlineLogo.js`);
-  const Heading = require(`${componentsDir}/Heading.js`);
-  const GridList = require(`${componentsDir}/GridList.js`);
   const ServicesList = require(`${componentsDir}/ServicesList.js`);
 
   eleventyConfig.addShortcode("Image", Image);
-  eleventyConfig.addShortcode("CloudImage", CloudImage);
   eleventyConfig.addShortcode("InlineLogo", InlineLogo);
-  eleventyConfig.addShortcode("Heading", Heading);
-  eleventyConfig.addPairedShortcode("GridList", GridList);
   eleventyConfig.addPairedShortcode("ServicesList", ServicesList);
 
   eleventyConfig.setDataDeepMerge(true);
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
+
+  // allow markdown renderInline inside of nunjucks
+  eleventyConfig.addFilter("mdInline", function (value) {
+    let md = require("markdown-it")({
+      html: true,
+    });
+    return md.renderInline(value);
+  });
+
+  eleventyConfig.addFilter("fixedEncodeURIComponent", function (str) {
+    return escape(encodeURIComponent(str).replace(/[!'()*]/g, function(c) {
+      return '%' + c.charCodeAt(0).toString(16);
+    }));
+  });
 
   eleventyConfig.addFilter("readableDate", (dateObj, locale) => {
     // .toLocaleString returns a natural language phrase instead of just translating the month names etc.
@@ -106,7 +106,7 @@ module.exports = function (eleventyConfig) {
 
       const purgeCSSResults = await new PurgeCSS().purge({
         content: [{ raw: content }],
-        css: ["src/assets/styles/main.min.css"],
+        css: ["src/_includes/styles/main.min.css"],
         keyframes: true,
       });
 

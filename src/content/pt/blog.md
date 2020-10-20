@@ -6,5 +6,5 @@ translationKey: writing
 eleventyNavigation:
   key: Artigos
   order: 3
-permalink: /pt/blog/
+permalink: /{{ subDir }}blog/
 ---

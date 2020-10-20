@@ -23,10 +23,3 @@
   }
 
 }
-
-.langswitch {
-  @include breakpoint($desktop) {
-    position: absolute;
-    right: $size-step-4;
-  }
-}

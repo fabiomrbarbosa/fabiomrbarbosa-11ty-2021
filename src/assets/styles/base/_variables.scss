@@ -1,21 +1,41 @@
 :root {
   // Font families
-  --font-serif: "Crimson-Pro", Georgia, Athelas, Times, "Times New Roman", serif;
-  --font-sans: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial,
+  --font-serif: "JuniusX Var", Georgia, Athelas, Times, "Times New Roman", serif;
+  --font-sans: "Inter Var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial,
     sans-serif;
 
   // Colours
   --color-black: #13111e;
   --color-gray-dark: #2a2834;
-  --color-gray: #88808e;
+  --color-gray: #888;
   --color-gray-light: #b9b3a7;
-  --color-white: #fbfbfb;
-  --color-beige: #f0ece2;
+  --color-gray-verylight: #f2f2f2;
+  --color-white: #fff;
 
   --color-purple: #444153;
   --color-red: #a33b20;
   --color-red-dark: #7b2814;
   --color-gold: #aa7d47;
+  --color-gold-light: #f0ece2;
+
+  // New Pastels
+
+  --color-lemon: hsl(57, 77%, 45%);
+  --color-lemon-light: hsl(57, 77%, 90%);
+  --color-ginger: hsl(33, 76%, 45%);
+  --color-ginger-light: hsl(33, 76%, 90%);
+  --color-rhubarb: hsl(4, 75%, 45%);
+  --color-rhubarb-light: hsl(4, 75%, 90%);
+  --color-strawberry: hsl(344, 75%, 45%);
+  --color-strawberry-light: hsl(344, 75%, 90%);
+  --color-raspberry: hsl(303, 47%, 45%);
+  --color-raspberry-light: hsl(303, 47%, 90%);
+  --color-lime: hsl(152, 53%, 45%);
+  --color-lime-light: hsl(152, 53%, 90%);
+  --color-sky: hsl(205, 53%, 45%);
+  --color-sky-light: hsl(205, 53%, 90%);
+
+
 
   // Associations
   --color-bg: var(--color-white);
@@ -24,9 +44,9 @@
   --color-link: var(--color-gray-dark);
   // --color-link-visited: var(--color-gray-darker);
   --color-link-hover: var(--color-black);
-  --color-border: var(--color-gray-light);
+  --color-border: rgba(136, 136, 136, .5);
   --color-accent: var(--color-gold);
-  --color-accent-light: var(--color-beige);
+  --color-accent-light: var(--color-gold-light);
 }
 
 // Size steps
@@ -131,7 +151,7 @@ $size-step-6: calc(
 );
 
 // Breakpoints
-$mobile: "max-width: 56.25rem";
-$desktop: "min-width: 56.25rem";
+$mobile: "max-width: 65rem";
+$desktop: "min-width: 65rem";
 $maxscreen: "min-width: calc(#{$fluid-max-width} / 16 * 1rem)";
 $widescreen: "min-width: 100rem";

@@ -1,4 +1,4 @@
-const site = require("../../_data/metadata.json");
+const site = require("../../_data/metadata.js");
 const imageSize = require("image-size");
 const markdownIt = require("markdown-it");
 const md = new markdownIt();

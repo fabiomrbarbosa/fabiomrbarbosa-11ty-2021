@@ -64,3 +64,57 @@
     stroke-dashoffset: 0;
   }
 }
+
+@keyframes tangramBig {
+  0% {
+    clip-path: polygon(100% 100%, 0% 100%, 100% 0);
+  }
+  25% {
+    clip-path: polygon(0 100%, 0 0, 100% 100%);
+  }
+  50% {
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+  }
+  75% {
+    clip-path: polygon(100% 100%, 0 0, 100% 0);
+  }
+  100% {
+    clip-path: polygon(100% 100%, 0% 100%, 100% 0);
+  }
+}
+
+@keyframes tangramSmall {
+  0% {
+    clip-path: polygon(100% 100%, 0 0, 0 100%);
+  }
+  25% {
+    clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  }
+  50% {
+    clip-path: polygon(100% 100%, 0 0, 100% 0);
+  }
+  75% {
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+  }
+  100% {
+    clip-path: polygon(100% 100%, 0 0, 0 100%);
+  }
+}
+
+@keyframes tangramRectangle {
+  0% {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+  25% {
+    clip-path: polygon(0 100%, 50% 0, 0 0);
+  }
+  50% {
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+  }
+  75% {
+    clip-path: polygon(100% 100%, 50% 100%, 100% 0);
+  }
+  100% {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+}

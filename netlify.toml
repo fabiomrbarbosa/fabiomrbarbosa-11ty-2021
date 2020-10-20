@@ -14,8 +14,3 @@
   to = "/pt/:splat"
   status = 302
   conditions = {Language = ["pt", "pt-PT", "pt-BR"]}
-
-[[redirects]]
-  from = "/*"
-  to = "/en/:splat"
-  status = 302

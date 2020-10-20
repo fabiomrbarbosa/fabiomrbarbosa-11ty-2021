@@ -1,0 +1,97 @@
+{# Heading #}
+
+{% macro heading(
+  title="",
+  subtitle="",
+  dateTime="",
+  dateReadable="",
+  className="") %}
+
+  <div class="heading {{ className if className }}">
+    <div class="heading__content">
+      <div class="heading__text">
+        <h1 class="heading__title">{{ title }}</h1>
+
+        {% if subtitle %}
+          <p class="heading__subtitle">{{ subtitle | mdInline | safe }}</p>
+        {% endif %}
+
+        {% if datetime %}
+          <time class="heading__datetime" datetime="{{ dateTime }}">
+            {{ dateReadable }}
+          </time>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+{% endmacro %}
+
+{# GridList #}
+
+{% macro gridlist (
+  level = 2,
+  title = "",
+  linkText = "",
+  linkTarget = "",
+  className = ""
+) %}
+  {% set hx = 'h' + level %}
+
+  <div class="gridlist {{ className if className }}">
+    <div class="gridlist__inner">
+      {% if title %}
+      <{{ hx }} class="gridlist__title">{{ title }}</{{ hx }}>
+      {% endif %}
+
+      {{ caller() }}
+
+      {% if linkTarget %}
+      <div class="gridlist__footer">
+        <a class="gridlist__link" href="{{ linkTarget }}">
+          {{ linkText }}
+        </a>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+
+{% endmacro %}
+
+{# CloudImage #}
+
+{% macro cloudImage (title = "", description = "") %}
+
+  {% set cloudName = "https://res.cloudinary.com/fabiomrbarbosa/image/upload/" %}
+  {% set imageConfig = ["w_1280", "h_669", "c_fill", "q_auto", "f_auto"] | join(",") %}
+  {% set titleConfig = [
+    "/w_740",
+    "c_fit",
+    "co_rgb:fbfbfb",
+    "g_south_west",
+    "x_480",
+    "y_254",
+    "l_text:fonts:fmrb-title.ttf_86_letter_spacing_-2_line_spacing_-15:"
+  ] | join(",") %}
+  {% set titleUrl = title | fixedEncodeURIComponent %}
+  {% set taglineConfig = [
+    "/w_740",
+    "c_fit",
+    "co_rgb:fbfbfb",
+    "g_north_west",
+    "x_480",
+    "y_445",
+    "l_text:fonts:fmrb-tagline.ttf_56_letter_spacing_-1_line_spacing_-5:"
+  ] | join(",") %}
+  {% set taglineUrl = description | fixedEncodeURIComponent %}
+  {% set imagePublicID = "/socialMediaCard" %}
+
+  {{ cloudName +
+    imageConfig +
+    titleConfig +
+    titleUrl +
+    taglineConfig +
+    taglineUrl +
+    imagePublicID }}
+
+{% endmacro %}

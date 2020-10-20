@@ -1,9 +1,5 @@
 .subscribe {
   @extend %container;
-  --color-fg-display: var(--color-black);
-  --color-bg: var(--color-white);
-  --color-link: var(--color-fg);
-  --color-link-hover: var(--color-accent);
 
   &__inner {
     @extend %content;
@@ -12,13 +8,13 @@
 
   &__title {
     @extend %altText;
+    margin-top: 0;
     margin-bottom: 0;
   }
 
   &__link {
     @extend %altText;
     @extend %altTextUnderline;
-    --color-link-hover: var(--color-accent);
     font-weight: 700;
     position: relative;
 

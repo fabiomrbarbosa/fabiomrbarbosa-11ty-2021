@@ -1,12 +1,12 @@
 ---
-permalink: /{{ locale }}/feed/rss.xml
+permalink: /{{ subDir }}feed/rss.xml
 eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>{{ metadata.title }}</title>
-	<subtitle>{{ 'dict.site.subtitle' | i18n }}</subtitle>
-	{% set absoluteUrl %}{{ [locale + metadata.feed.path] | absoluteUrl(metadata.url) }}{% endset %}
+	<subtitle>{{ dictionary.site.subtitle[ locale ] }} }}</subtitle>
+	{% set absoluteUrl %}{{ [subDir + metadata.feed.path] | absoluteUrl(metadata.url) }}{% endset %}
 	<link href="{{ absoluteUrl }}" rel="self"/>
 	<link href="{{ metadata.url }}"/>
 	<updated>{{ collections["posts_" + locale] | rssLastUpdatedDate }}</updated>
@@ -24,7 +24,7 @@ eleventyExcludeFromCollections: true
 		<id>{{ absolutePostUrl }}</id>
 		<content type="html">
       {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}
-      {{ "<hr/><p><a href='mailto:" | e }}{{ metadata.author.email }}{{ "?subject=Re: " | e }}{{ post.data.title }}{{ "'>" | e }}{{ 'dict.feed.reply' | i18n }}{{ "</a></p>" | e }}
+      {{ "<hr/><p><a href='mailto:" | e }}{{ metadata.author.email }}{{ "?subject=Re: " | e }}{{ post.data.title }}{{ "'>" | e }}{{ dictionary.feed.reply[ locale ] }} }}{{ "</a></p>" | e }}
     </content>
 	</entry>
 	{%- endfor %}

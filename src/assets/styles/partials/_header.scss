@@ -1,15 +1,14 @@
 .site-header {
   @extend %container;
-  --color-bg: var(--color-accent-light);
+  @include breakpoint($desktop) {
+    padding-left: $size-step-4;
+  }
+  background-color: var(--color-gray-verylight);
 
   &__inner {
     --color-border: transparent; // temp
     @extend %content;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-column-gap: $size-step-4;
-    padding-top: $size-step-2;
-    padding-bottom: $size-step-2;
+    @extend %grid;
   }
 
   &__title {
@@ -18,24 +17,20 @@
 
   &__logo {
     position: relative;
-    top: 2.65rem;
 
     @include breakpoint($desktop) {
-      position: absolute;
-      left: calc(#{$size-step-4} * 1.6);
-      top: calc(#{$size-step-2} * 2.45);
+      top: $size-step-4;
     }
   }
 
   &__navigation {
     --color-link-hover: var(--color-accent);
+    margin-top: $size-step-6;
     display: flex;
-    flex: 1.5;
     justify-content: space-between;
 
     @include breakpoint($desktop) {
-      grid-column: 2/3;
+      margin-top: 0;
     }
   }
 }
-

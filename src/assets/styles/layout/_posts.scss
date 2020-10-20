@@ -1,17 +1,5 @@
 .tmpl-post {
-  --color-bg: var(--color-beige);
+  .site-main {
 
-  .site-header,
-  .heading {
-    --color-fg: var(--color-white);
-    --color-fg-display: var(--color-white);
-    --color-bg: var(--color-black);
-    --color-link: var(--color-white);
-    --color-link-hover: var(--color-accent);
-  }
-
-  .entry-body,
-  .postnav {
-    --color-bg: var(--color-white);
   }
 }

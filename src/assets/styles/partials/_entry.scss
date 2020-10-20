@@ -10,17 +10,16 @@
   padding-bottom: $size-step-5;
 
   p {
-    max-width: 37.5rem; /* 600px /16 */
+    max-width: 37.5em; /* 600px /16 */
 
     &:first-of-type:first-letter {
-      color: var(--color-accent);
       float: left;
       margin-right: 0.25rem;
 
       // Caution: here be magic numbers.
-      font-size: 480%; // Using percentages seems to be the most harmonious approach for Firefox, Chrome and Android browsers
+      font-size: 520%; // Using percentages seems to be the most harmonious approach for Firefox, Chrome and Android browsers
       margin-top: 0.7rem; // First we set a baseline with this value. Drop cap size works immediately on desktop FF.
-      line-height: 0.5em; // Desktop FF seems to not know what to do with this value, but it helps with Chrome
+      line-height: .68em; // Desktop FF seems to not know what to do with this value, but it helps with Chrome
 
       // And now let's pray that all browsers implement this as soon as possible:
       -webkit-initial-letter: 3; // Safari seems to be fine with this regardless of previous properties.
@@ -40,27 +39,12 @@
   a {
     --color-link: var(--color-fg);
     --color-link-hover: var(--color-fg);
-    font-weight: 700;
-    text-decoration: none;
-    background-image: linear-gradient(90deg, var(--color-bg), var(--color-bg)),
-      linear-gradient(90deg, var(--color-accent), var(--color-accent));
-    background-repeat: no-repeat;
-    background-size: 50px 3px, 100% 3px;
-    background-position: -50px 100%, 0 100%;
-
-    &:focus,
-    &:hover,
-    &:active {
-      background-image: linear-gradient(90deg, var(--color-bg), var(--color-bg)),
-        linear-gradient(90deg, var(--color-red), var(--color-red));
-      background-position: calc(100% + 50px) 100%, 0 100%;
-    }
+    @extend %linkText;
 
     &.external-link {
       &:after {
         display: inline-block;
         content: "\2197";
-        font-family: var(--font-sans);
         font-size: 65%;
         line-height: 1;
       }
