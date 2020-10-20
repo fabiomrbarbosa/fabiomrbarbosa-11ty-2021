@@ -21,10 +21,9 @@ npm i
 
 ## To Do
 - Go Indie Web; add Webmentions
-- Conditionally merge and serve CSS partials
-- Animate heading graphics
+- Create new headers
+- Dark mode
+- Digital Garden and Canon
 - Run more accessibility checks (WAI-ARIA, tab order, skip links, etc.)
 
 ## Blog Posts to come
-- How I built this website (SCSS, Eleventy, Netlify) series
-- Adding a reply link to your RSS feed (on Nunjucks/Eleventy)
