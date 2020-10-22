@@ -30,7 +30,7 @@ module.exports = function ({
     twothirds: {
       fallbackWidth: 480,
       minWidth: 320,
-      maxWidth: 920,
+      maxWidth: 925,
       sizes: "(max-width: 56.25rem) 90vw, (max-width: 90rem) 66vw, 57.5rem",
       classes: ["twothirds"],
     },
