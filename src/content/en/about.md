@@ -24,4 +24,4 @@ In my work, I’ve come to develop the necessary expertise to deliver turn-key c
 
 In my spare time, I am an amateur researcher and author in the fields of mythology and spirituality, interested in the intersection of the Perennial Wisdom and the many earth-based and mystery traditions. I have published several articles in like-minded media, in which I expound on our urgent need for a non-dualistic and empathic way of living.
 
-Besides that, I am also a poet, a fountain pen nerd, an incorrigible Eurovision fan and a budding polyglot, currently working my way through German tongue-twisters and Japanese kanji.
+Besides that, I am also a poet, a fountain pen nerd, an incorrigible Eurovision fan and a budding polyglot, currently working my way through German tongue-twisters and Swedish vowels.
