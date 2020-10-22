@@ -6,7 +6,7 @@ description: I provide creative and media solutions that help you manifest the b
 templateClass: tmpl-page
 translationKey: creative
 eleventyNavigation:
-  key: Creative
+  key: Creativity
   order: 2
 ---
 
