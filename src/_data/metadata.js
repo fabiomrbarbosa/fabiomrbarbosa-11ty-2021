@@ -3,7 +3,7 @@ module.exports = {
   url: 'https://fabiomrbarbosa.com/',
   feed: {
     filename: 'rss.xml',
-    path: '/feed/rss.xml',
+    path: 'feed/rss.xml',
     id: 'https://fabiomrbarbosa.com/'
   },
   author: {

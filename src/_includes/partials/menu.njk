@@ -6,7 +6,7 @@
     </li>
     {%- endfor -%}
     <li class="menu__item menu__item--rss">
-      <a href="/{{ locale + metadata.feed.path }}">RSS</a>
+      <a href="/{{ subDir + metadata.feed.path | url }}">RSS</a>
     </li>
   </ul>
 </nav>

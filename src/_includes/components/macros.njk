@@ -5,23 +5,46 @@
   subtitle="",
   dateTime="",
   dateReadable="",
-  className="") %}
+  className="",
+  image="") %}
 
-  <div class="heading {{ className if className }}">
+  <div class="heading
+    {{ className if className }}
+    heading--{{ 'post' if dateTime else 'page' }}">
     <div class="heading__content">
-      <div class="heading__text">
-        <h1 class="heading__title">{{ title }}</h1>
 
-        {% if subtitle %}
-          <p class="heading__subtitle">{{ subtitle | mdInline | safe }}</p>
-        {% endif %}
-
-        {% if datetime %}
-          <time class="heading__datetime" datetime="{{ dateTime }}">
-            {{ dateReadable }}
-          </time>
-        {% endif %}
+      {% if image %}
+      <div class="heading__img">
+        <img
+        loading="lazy"
+        alt=""
+        src="https://res.cloudinary.com/fabiomrbarbosa/image/fetch/q_auto,f_auto,w_480/https://fabiomrbarbosa.com/assets/images/{{ image }}.jpg"
+        srcset="https://res.cloudinary.com/fabiomrbarbosa/image/fetch/q_auto,f_auto,w_440/https://fabiomrbarbosa.com/assets/images/{{ image }}.jpg 440w,
+                https://res.cloudinary.com/fabiomrbarbosa/image/fetch/q_auto,f_auto,w_520/https://fabiomrbarbosa.com/assets/images/{{ image }}.jpg 520w,
+                https://res.cloudinary.com/fabiomrbarbosa/image/fetch/q_auto,f_auto,w_620/https://fabiomrbarbosa.com/assets/images/{{ image }}.jpg 620w,
+                https://res.cloudinary.com/fabiomrbarbosa/image/fetch/q_auto,f_auto,w_820/https://fabiomrbarbosa.com/assets/images/{{ image }}.jpg 820w,
+                https://res.cloudinary.com/fabiomrbarbosa/image/fetch/q_auto,f_auto,w_920/https://fabiomrbarbosa.com/assets/images/{{ image }}.jpg 920w"
+        sizes="(max-width: 56.25rem) 90vw, (max-width: 90rem) 66vw, 57.5rem"
+        width="1800"
+        height="1012"/>
       </div>
+      {% endif %}
+
+      <h1 class="heading__title
+      {{ 'heading__title--post' if dateTime else 'heading__title--page' }}">
+        {{ title | mdInline | safe }}
+      </h1>
+
+      {% if subtitle %}
+        <p class="heading__subtitle">{{ subtitle | mdInline | safe }}</p>
+      {% endif %}
+
+      {% if dateTime %}
+        <time class="heading__datetime" datetime="{{ dateTime }}">
+          {{ dateReadable }}
+        </time>
+      {% endif %}
+
     </div>
   </div>
 

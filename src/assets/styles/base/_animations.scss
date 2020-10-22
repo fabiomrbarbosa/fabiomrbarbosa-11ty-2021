@@ -3,19 +3,7 @@
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(1turn);
-  }
-}
-
-@keyframes floating {
-  from {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(0, -21px);
-  }
-  to {
-    transform: translate(0, 0);
+    transform: rotate(360deg);
   }
 }
 
@@ -65,56 +53,28 @@
   }
 }
 
-@keyframes tangramBig {
-  0% {
-    clip-path: polygon(100% 100%, 0% 100%, 100% 0);
-  }
-  25% {
-    clip-path: polygon(0 100%, 0 0, 100% 100%);
-  }
-  50% {
-    clip-path: polygon(0 0, 100% 0, 0 100%);
-  }
-  75% {
-    clip-path: polygon(100% 100%, 0 0, 100% 0);
-  }
-  100% {
-    clip-path: polygon(100% 100%, 0% 100%, 100% 0);
-  }
+@keyframes headingPicture {
+  0% { opacity: 0; }
+  50% { opacity: 0; }
+  51% { opacity: 1; }
+  100% { opacity: 1;transform: translate(-50%, -50%) scale(1); }
 }
 
-@keyframes tangramSmall {
+@keyframes headingOverlay {
   0% {
-    clip-path: polygon(100% 100%, 0 0, 0 100%);
-  }
-  25% {
-    clip-path: polygon(0 100%, 100% 0, 100% 100%);
+    transform: scaleX(0);
+    transform-origin: 0% 50%;
   }
   50% {
-    clip-path: polygon(100% 100%, 0 0, 100% 0);
+    transform: scaleX(1);
+    transform-origin: 0% 50%;
   }
-  75% {
-    clip-path: polygon(0 0, 100% 0, 0 100%);
-  }
-  100% {
-    clip-path: polygon(100% 100%, 0 0, 0 100%);
-  }
-}
-
-@keyframes tangramRectangle {
-  0% {
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  }
-  25% {
-    clip-path: polygon(0 100%, 50% 0, 0 0);
-  }
-  50% {
-    clip-path: polygon(50% 100%, 0 0, 100% 0);
-  }
-  75% {
-    clip-path: polygon(100% 100%, 50% 100%, 100% 0);
+  51% {
+    transform: scaleX(1);
+    transform-origin: 100% 50%;
   }
   100% {
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform: scaleX(0);
+    transform-origin: 100% 50%;
   }
 }

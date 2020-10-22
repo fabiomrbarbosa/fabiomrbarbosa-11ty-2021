@@ -1,8 +1,8 @@
 module.exports = {
   site: {
     subtitle: {
-      en: "Creative consultant + developer, writer, mystic, traveller.",
-      pt: "Consultor + developer criativo, escritor, místico, viajante.",
+      en: "Creative consultant, writer, mystic, traveller.",
+      pt: "Consultor criativo, escritor, místico, viajante.",
     },
   },
   feed: {
@@ -13,14 +13,14 @@ module.exports = {
   },
   home: {
     welcome: {
-      en: "Welcome!",
-      pt: "Boas-vindas!",
+      en: "Welcome! My name is Fábio and I'm an author, creative + mystic.",
+      pt: "Boas-vindas! Chamo-me Fábio e sou um autor, criativo + místico.",
     },
     title: {
       en:
-        "My name is [Fábio](/about/) and I am a [creative consultant + developer](/services/), [writer](/blog/), mystic and traveller.",
+        "I develop [media and creative solutions](/services/) for people and brands with a conscious outlook, and seek to promote healing and empathy through poetry and prose, myth and ritual. Find out more [about me](/about/), or [read some of my thoughts](/blog/).",
       pt:
-        "Chamo-me [Fábio](/pt/quem-sou/) e sou um [consultor + developer criativo](/pt/servicos/), [escritor](/pt/blog/), místico e viajante.",
+        "Eu desenvolvo [soluções de media e criatividade](/pt/servicos/) para pessoas e marcas com uma visão consciente, e procuro promover a cura e a empatia através da poesia e da prosa, do rito e do mito. Descubra mais [acerca de mim](/pt/quem-sou/), ou [leia sobre aquilo que penso](/pt/blog/).",
     },
     contacts: {
       en: "Keep in touch.",
