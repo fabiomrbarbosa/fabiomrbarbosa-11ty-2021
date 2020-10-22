@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
 templateClass: tmpl-page
-permalink: /{{ subDir }}{{ title | slug }}/
+permalink: /{{ subDir }}{{ eleventyNavigation.key | slug }}/
 ---
 {% import "components/macros.njk" as macro %}
 

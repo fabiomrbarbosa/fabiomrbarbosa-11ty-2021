@@ -1,12 +1,12 @@
 ---
 layout: layouts/page.njk
-title: Serviços
+title: Soluções Criativas
 publicTitle: E que tal trabalharmos juntos?
 description: Forneço soluções de media e criatividade que ajudam a manifestar uma visão maior.
 templateClass: tmpl-page
-translationKey: services
+translationKey: creative
 eleventyNavigation:
-  key: Serviços
+  key: Criatividade
   order: 2
 ---
 
