@@ -9,6 +9,10 @@
     border-bottom: transparent !important;
   }
 
+  &--post &__content {
+    grid-row-gap: 1rem;
+  }
+
   & a {
     @extend %linkText;
   }
