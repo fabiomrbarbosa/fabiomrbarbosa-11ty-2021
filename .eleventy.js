@@ -27,18 +27,12 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setDataDeepMerge(true);
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
 
-  // allow markdown renderInline inside of nunjucks
-  eleventyConfig.addFilter("mdInline", function (value) {
-    let md = require("markdown-it")({
-      html: true,
-    });
-    return md.renderInline(value);
-  });
-
   eleventyConfig.addFilter("fixedEncodeURIComponent", function (str) {
-    return escape(encodeURIComponent(str).replace(/[!'()*]/g, function(c) {
-      return '%' + c.charCodeAt(0).toString(16);
-    }));
+    return escape(
+      encodeURIComponent(str).replace(/[!'()*]/g, function (c) {
+        return "%" + c.charCodeAt(0).toString(16);
+      })
+    );
   });
 
   eleventyConfig.addFilter("readableDate", (dateObj, locale) => {
@@ -93,6 +87,12 @@ module.exports = function (eleventyConfig) {
       externalRel: "noopener noreferrer",
     });
   eleventyConfig.setLibrary("md", markdownLibrary);
+
+  // allow markdown renderInline inside of nunjucks
+  eleventyConfig.addFilter("mdInline", function (value) {
+    let md = markdownLibrary;
+    return md.renderInline(value);
+  });
 
   eleventyConfig.addTransform(
     "purge-and-inline-css",
