@@ -22,6 +22,6 @@ After dropping out of Journalism and Media Studies, I started my career as a pod
 
 In my work, I’ve come to develop the necessary expertise to deliver turn-key creative solutions for television and digital media. Nowadays, I intend to focus on sustainable, higher awareness projects that target structural change.
 
-In my spare time, I am an amateur researcher and author in the fields of mythology and spirituality, interested in the intersection of the Perennial Wisdom and the many earth-based and mystery traditions. I have published several articles in like-minded media, in which I expound on our urgent need for a non-dualistic and empathic way of living.
+In my spare time, I am an amateur researcher and author in the fields of mythology and spirituality, interested in the intersection of the Perennial Wisdom and the many earth-based and mystery traditions. I have published several articles in like-minded media, in which I expound on our urgent need for a non-dualistic and empathic way of living. I am also the editor of the *Ophiusa* magazine, the Order of Bards, Ovates and Druids' periodical publication for Portuguese speakers.
 
-Besides that, I am also a poet, a fountain pen nerd, an incorrigible Eurovision fan and a budding polyglot, currently working my way through German tongue-twisters and Swedish vowels.
+Besides that, I am a poet, a fountain pen nerd, an incorrigible Eurovision fan and a budding polyglot, currently working my way through German tongue-twisters and Swedish pitch tone.
