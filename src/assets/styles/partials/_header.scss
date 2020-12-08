@@ -6,11 +6,7 @@
     --color-border: transparent; // temp
     @extend %content;
     @extend %grid;
-
-    @include breakpoint($desktop) {
-      padding-top: $size-step-6;
-      grid-template-columns: 2fr 1fr 2fr;
-    }
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   &__title {
@@ -18,34 +14,43 @@
   }
 
   &__logo {
+    grid-column: 2/3;
     position: relative;
     justify-self: center;
+    margin-top: $size-step-4;
     margin-bottom: $size-step-6;
-
-    @include breakpoint($desktop) {
-      grid-column: 2/3;
-    }
   }
 
   &__navigation {
     --color-link-hover: var(--color-accent);
-    display: flex;
-    justify-content: space-between;
+    display: contents;
 
-    @include breakpoint($desktop) {
-      display: contents;
+    & .menu {
+      grid-row: 1;
+      grid-column: 1/2;
+    }
 
+    & .langswitch {
+      grid-row: 1;
+      grid-column: 3/4;
+      justify-self: right;
+    }
+  }
+
+  @include breakpoint($desktop) {
+    &__inner {
+      padding-top: $size-step-6;
+      grid-template-columns: 2fr 1fr 2fr;
+    }
+
+    &__logo {
+      margin-top: 0;
+    }
+
+    &__navigation {
       & .menu {
-        grid-row: 1;
-        grid-column: 1/2;
         display: flex;
         column-gap: $size-step-3;
-      }
-
-      & .langswitch {
-        grid-row: 1;
-        grid-column: 3/4;
-        justify-self: right;
       }
     }
   }
