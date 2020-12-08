@@ -47,7 +47,7 @@
 
     & img {
       max-width: 40rem;
-      margin-top: calc(#{$size-step-6} * -1);
+      margin-top: calc(#{$size-step-6} * -.5);
       margin-bottom: calc(#{$size-step-6} * .5);
     }
   }
