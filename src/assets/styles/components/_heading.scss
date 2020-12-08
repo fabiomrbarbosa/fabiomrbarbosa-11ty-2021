@@ -63,14 +63,14 @@
 }
 
 .heading--home {
-  background-image: url('/assets/images/heading_signature.svg');
-  background-repeat: no-repeat;
-  background-position-y: 12vh;
-  background-position-x: center;
-  background-size: 300%;
+  & .heading__title,
+  & .heading__subtitle {
+    text-align: center;
 
-  @include breakpoint($desktop) {
-    background-position-y: 17vh;
-    background-size: 100%;
+    @include breakpoint($desktop) {
+      max-width: 65%;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
