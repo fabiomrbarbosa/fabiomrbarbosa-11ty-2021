@@ -1,12 +1,16 @@
 <nav class="menu">
   <ul class="menu__list">
     {%- for entry in collections['site_' + locale] | eleventyNavigation -%}
+
     <li class="menu__item"{% if page.url == entry.url %} aria-current="page"{% endif %}>
       <a href="{{ entry.url | url }}">{{ entry.title }}</a>
     </li>
+
+    {% if loop.index == 1 %}
+      </ul>
+      <ul class="menu__list">
+    {% endif %}
+
     {%- endfor -%}
-    <li class="menu__item menu__item--rss">
-      <a href="/{{ subDir + metadata.feed.path | url }}">RSS</a>
-    </li>
   </ul>
 </nav>

@@ -18,9 +18,9 @@ module.exports = {
     },
     title: {
       en:
-        "I develop [media and creative solutions](/creativity/) for people and brands with a conscious outlook, and create content in order to promote healing and empathy through poetry and prose, myth and ritual. Find out more [about me](/about/), or [read some of my thoughts](/blog/).",
+        "I develop media and creative solutions for people and brands with a conscious outlook, and create content that seeks to promote healing and empathy through poetry and prose, myth and ritual. Find out more [about me](/about/), or [read some of my thoughts](/blog/).",
       pt:
-        "Eu desenvolvo [soluções de media e criatividade](/pt/criatividade/) para pessoas e marcas com uma visão consciente, e crio conteúdo com vista a promover a cura e a empatia através da poesia e da prosa, do rito e do mito. Descubra mais [acerca de mim](/pt/quem-sou/), ou [leia sobre aquilo que penso](/pt/blog/).",
+        "Eu desenvolvo soluções de media e criatividade para pessoas e marcas com uma visão consciente, e crio conteúdo que pretende promover a cura e a empatia através da poesia e da prosa, do rito e do mito. Descubra mais [acerca de mim](/pt/quem-sou/), ou [leia sobre aquilo que penso](/pt/blog/).",
     },
     contacts: {
       en: "Keep in touch.",

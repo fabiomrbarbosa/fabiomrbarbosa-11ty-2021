@@ -6,6 +6,11 @@
     --color-border: transparent; // temp
     @extend %content;
     @extend %grid;
+
+    @include breakpoint($desktop) {
+      padding-top: $size-step-6;
+      grid-template-columns: 2fr 1fr 2fr;
+    }
   }
 
   &__title {
@@ -14,20 +19,34 @@
 
   &__logo {
     position: relative;
+    justify-self: center;
+    margin-bottom: $size-step-6;
 
     @include breakpoint($desktop) {
-      top: $size-step-3;
+      grid-column: 2/3;
     }
   }
 
   &__navigation {
     --color-link-hover: var(--color-accent);
-    margin-top: $size-step-6;
     display: flex;
     justify-content: space-between;
 
     @include breakpoint($desktop) {
-      margin-top: 0;
+      display: contents;
+
+      & .menu {
+        grid-row: 1;
+        grid-column: 1/2;
+        display: flex;
+        column-gap: $size-step-3;
+      }
+
+      & .langswitch {
+        grid-row: 1;
+        grid-column: 3/5;
+        justify-self: right;
+      }
     }
   }
 }

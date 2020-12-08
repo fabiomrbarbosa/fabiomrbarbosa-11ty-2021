@@ -5,6 +5,6 @@ description: Pensamentos e ensaios sobre o Espírito, a sociedade, a Web e outro
 translationKey: writing
 eleventyNavigation:
   key: Artigos
-  order: 3
+  order: 2
 permalink: /{{ subDir }}blog/
 ---

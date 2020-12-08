@@ -1,10 +1,12 @@
 <header class="site-header">
   <div class="site-header__inner">
     <div class="logo site-header__logo">
-      <a href="{{ [ '/', subDir ] | join | url }}" aria-label="Home link">
+      <a href="{{ '/' + subDir | url }}" aria-label="Home link">
         {% InlineLogo 'header' %}
       </a>
-      <p class="site-header__title">{{ metadata.title }}</p>
+      <p class="site-header__title">
+        {{ metadata.title }}
+      </p>
     </div>
 
     <div class="site-header__navigation">
