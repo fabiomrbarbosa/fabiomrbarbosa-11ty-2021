@@ -6,10 +6,7 @@
     @extend %content;
     position: relative;
     border-bottom: transparent !important;
-  }
-
-  &--post &__content {
-    grid-row-gap: 1rem;
+    padding-bottom: $size-step-6;
   }
 
   & a {
@@ -53,10 +50,6 @@
   }
 
   @include breakpoint($desktop) {
-    &__content {
-      padding-bottom: $size-step-6;
-    }
-
     &__title--page {
       max-width: 75%;
     }
