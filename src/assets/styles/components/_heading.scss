@@ -28,6 +28,7 @@
     line-height: $size-step-6;
     letter-spacing: -0.25rem;
     color: var(--color-accent);
+    margin-bottom: 2rem;
   }
 
   &__subtitle {
@@ -51,10 +52,6 @@
   }
 
   @include breakpoint($desktop) {
-    display: grid;
-    min-height: 60vh;
-    align-content: center;
-
     &__content {
       padding-bottom: $size-step-6;
     }
