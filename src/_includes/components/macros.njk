@@ -11,28 +11,29 @@
   <div class="heading
     {{ className if className }}
     heading--{{ 'post' if dateTime else 'page' }}">
-    <div class="heading__content">
+
+    <div class="heading__inner">
+
+      <h1 class="heading__title
+      {{ 'heading__title--post' if dateTime else 'heading__title--page' }}">
+        {{ title | mdInline | safe }}
+      </h1>
 
       {% if image %}
       <div class="heading__img">
         <img
         alt=""
         src="https://res.cloudinary.com/fabiomrbarbosa/image/fetch/q_auto,f_auto,w_480/https://fabiomrbarbosa.com/assets/images/{{ image }}"
-        srcset="https://res.cloudinary.com/fabiomrbarbosa/image/fetch/q_auto,f_auto,w_440/https://fabiomrbarbosa.com/assets/images/{{ image }} 440w,
-                https://res.cloudinary.com/fabiomrbarbosa/image/fetch/q_auto,f_auto,w_520/https://fabiomrbarbosa.com/assets/images/{{ image }} 520w,
+        srcset="https://res.cloudinary.com/fabiomrbarbosa/image/fetch/q_auto,f_auto,w_520/https://fabiomrbarbosa.com/assets/images/{{ image }} 520w,
                 https://res.cloudinary.com/fabiomrbarbosa/image/fetch/q_auto,f_auto,w_620/https://fabiomrbarbosa.com/assets/images/{{ image }} 620w,
                 https://res.cloudinary.com/fabiomrbarbosa/image/fetch/q_auto,f_auto,w_820/https://fabiomrbarbosa.com/assets/images/{{ image }} 820w,
-                https://res.cloudinary.com/fabiomrbarbosa/image/fetch/q_auto,f_auto,w_920/https://fabiomrbarbosa.com/assets/images/{{ image }} 925w"
-        sizes="(max-width: 56.25rem) 90vw, (max-width: 90rem) 66vw, 57.5rem"
-        width="920"
-        height="517"/>
+                https://res.cloudinary.com/fabiomrbarbosa/image/fetch/q_auto,f_auto,w_920/https://fabiomrbarbosa.com/assets/images/{{ image }} 920w,
+                https://res.cloudinary.com/fabiomrbarbosa/image/fetch/q_auto,f_auto,w_1220/https://fabiomrbarbosa.com/assets/images/{{ image }} 1220w"
+        sizes="(max-width: 56.25rem) 90vw, (max-width: 90rem) 66vw, 76.25rem"
+        width="1220"
+        height="685"/>
       </div>
       {% endif %}
-
-      <h1 class="heading__title
-      {{ 'heading__title--post' if dateTime else 'heading__title--page' }}">
-        {{ title | mdInline | safe }}
-      </h1>
 
       {% if subtitle %}
         <p class="heading__subtitle">{{ subtitle | mdInline | safe }}</p>
@@ -43,15 +44,14 @@
           {{ dateReadable }}
         </time>
       {% endif %}
-
     </div>
   </div>
 
 {% endmacro %}
 
-{# GridList #}
+{# archivelist #}
 
-{% macro gridlist (
+{% macro archivelist (
   level = 2,
   title = "",
   linkText = "",
@@ -60,17 +60,17 @@
 ) %}
   {% set hx = 'h' + level %}
 
-  <div class="gridlist {{ className if className }}">
-    <div class="gridlist__inner">
+  <div class="archivelist {{ className if className }}">
+    <div class="archivelist__inner">
       {% if title %}
-      <{{ hx }} class="gridlist__title">{{ title }}</{{ hx }}>
+      <{{ hx }} class="archivelist__title">{{ title }}</{{ hx }}>
       {% endif %}
 
       {{ caller() }}
 
       {% if linkTarget %}
-      <div class="gridlist__footer">
-        <a class="gridlist__link" href="{{ linkTarget }}">
+      <div class="archivelist__footer">
+        <a class="archivelist__link" href="{{ linkTarget }}">
           {{ linkText }}
         </a>
       </div>

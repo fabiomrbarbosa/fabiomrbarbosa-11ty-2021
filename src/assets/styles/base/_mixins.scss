@@ -5,43 +5,50 @@
 }
 
 %container {
-  padding-left: $size-step-2;
-  padding-right: $size-step-2;
-
-  &:not(:last-child) > div {
-    border-bottom: 1px solid var(--color-border);
-  }
+  padding-top: $size-step-2;
+  padding-bottom: $size-step-2;
 
   @include breakpoint($desktop) {
-    padding-left: $size-step-4;
-    padding-right: $size-step-4;
+    padding-top: $size-step-4;
+    padding-bottom: $size-step-4;
   }
 }
 
 %content {
-  margin: 0 auto;
-  width: 100%;
-  max-width: $fluid-max-width * 1px;
-  padding-top: $size-step-2;
-  padding-bottom: $size-step-2;
-}
-
-%grid {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: $size-step-4;
+  grid-template-columns: $size-step-2 1fr 1fr $size-step-2;
+  row-gap: 0;
+
+  margin: 0 auto;
+  max-width: calc(#{$fluid-max-width} * 1px);
+
+  > * {
+    grid-column: 2/4;
+  }
+
+  &:not(:last-child) {
+    border-bottom: 1px solid var(--color-border);
+  }
 
   @include breakpoint($desktop) {
-    grid-template-columns: 1fr 2fr;
+    margin-left: 20vw;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    column-gap: $size-step-2;
+
+    > * {
+      grid-column: 4/11;
+    }
   }
 }
 
 %altText {
-  // font-family: var(--font-sans);
+  font-family: var(--font-sans);
   font-size: $size-step--2;
   line-height: $size-step-2;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 %altTextUnderline {
@@ -69,7 +76,11 @@
   &:hover,
   &:active {
     background-image: linear-gradient(90deg, var(--color-bg), var(--color-bg)),
-      linear-gradient(90deg, var(--color-complementary), var(--color-complementary));
+      linear-gradient(
+        90deg,
+        var(--color-complementary),
+        var(--color-complementary)
+      );
     background-position: calc(100% + 50px) 100%, 0 100%;
   }
 }

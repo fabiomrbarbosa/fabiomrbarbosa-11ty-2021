@@ -1,12 +1,9 @@
 .heading {
   @extend %container;
-  background-color: var(--color-gray-verylight) !important;
+  --color-fg-display: var(--color-accent);
 
-  &__content {
+  &__inner {
     @extend %content;
-    position: relative;
-    border-bottom: transparent !important;
-    padding-bottom: $size-step-6;
   }
 
   & a {
@@ -23,8 +20,7 @@
     font-weight: 300;
     font-size: $size-step-6;
     line-height: $size-step-6;
-    letter-spacing: -0.25rem;
-    color: var(--color-accent);
+    letter-spacing: -0.01em;
     margin-bottom: 2rem;
   }
 
@@ -40,31 +36,27 @@
   }
 
   &__img {
-    text-align: center;
-
-    & img {
-      max-width: 40rem;
-      margin-top: calc(#{$size-step-6} * -.5);
-      margin-bottom: calc(#{$size-step-6} * .5);
-    }
+    margin-top: calc(#{$size-step-6} * .5);
+    margin-bottom: calc(#{$size-step-6} * .5);
   }
 
   @include breakpoint($desktop) {
-    &__title--page {
-      max-width: 75%;
+    padding-bottom: $size-step-6;
+
+    &__img {
+      grid-column: 4/13;
     }
   }
 }
 
 .heading--home {
-  & .heading__title,
-  & .heading__subtitle {
-    text-align: center;
+  @include breakpoint($desktop) {
+    .heading__title {
+      grid-column: 1/11;
+    }
 
-    @include breakpoint($desktop) {
-      max-width: 65%;
-      margin-left: auto;
-      margin-right: auto;
+    .heading__subtitle {
+      grid-column: 4/11;
     }
   }
 }

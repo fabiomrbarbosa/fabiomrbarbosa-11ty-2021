@@ -1,15 +1,14 @@
 .subscribe {
   @extend %container;
+  --color-bg: var(--color-accent-light);
 
   &__inner {
     @extend %content;
-    @extend %grid;
   }
 
   &__title {
-    @extend %altText;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: $size-step-2;
   }
 
   &__link {

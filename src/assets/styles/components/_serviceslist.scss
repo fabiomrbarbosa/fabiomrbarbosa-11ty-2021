@@ -1,9 +1,8 @@
 .services__list {
-  @extend %grid;
+  @extend %content;
 
   h2 {
     margin-top: 0;
-    margin-bottom: 0;
   }
 
   &:first-of-type {
@@ -21,5 +20,18 @@
     list-style: none;
     padding-left: 0;
     columns: 2;
+  }
+
+  @include breakpoint($desktop) {
+    margin-left: 0;
+    grid-column: 1/13;
+
+    h2 {
+      grid-column: 1/4;
+    }
+
+    ul {
+      grid-column: 4/13;
+    }
   }
 }

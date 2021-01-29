@@ -6,11 +6,6 @@
       <a href="{{ entry.url | url }}">{{ entry.title }}</a>
     </li>
 
-    {% if loop.index == 1 %}
-      </ul>
-      <ul class="menu__list">
-    {% endif %}
-
     {%- endfor -%}
   </ul>
 </nav>

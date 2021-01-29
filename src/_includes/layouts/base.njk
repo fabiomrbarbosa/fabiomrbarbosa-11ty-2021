@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="{{ locale }}" dir="{{ dir }}"
-  {% if templateClass %} class="{{ templateClass }}"{% endif %}>
+  class="
+  {% if templateClass %}{{ templateClass }}{% endif %}
+  {% if translationKey %}page-{{ translationKey }}{% endif %}
+  {% if slug %}page-{{ slug }}{% endif %}>">
   <head>
     {%- include "partials/head.njk" -%}
   </head>

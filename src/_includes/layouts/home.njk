@@ -8,11 +8,11 @@ permalink: /{{ subDir }}
 {{ macro.heading (
   title = dictionary.home.welcome[ locale ],
   subtitle = dictionary.home.title[ locale ],
-  image = 'heading_home_20201208.png',
+  image = 'heading_home.jpg',
   className = 'heading--home'
 ) }}
 
-{% call macro.gridlist (
+{% call macro.archivelist (
   title = dictionary.home.contacts[ locale ],
   className = 'contacts'
 ) %}
@@ -21,7 +21,7 @@ permalink: /{{ subDir }}
 
 {% endcall %}
 
-{% call macro.gridlist (
+{% call macro.archivelist (
   title = dictionary.postlist.title[ locale ],
   linkText = dictionary.postlist.link[ locale ],
   linkTarget = '/' + subDir + 'blog/',
