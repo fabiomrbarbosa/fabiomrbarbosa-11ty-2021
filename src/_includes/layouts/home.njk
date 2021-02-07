@@ -3,34 +3,33 @@ layout: layouts/base.njk
 templateClass: tmpl-home
 permalink: /{{ subDir }}
 ---
-{% import "components/macros.njk" as macro %}
+{% Heading {
+  title: dictionary.home.welcome[ locale ],
+  subtitle: dictionary.home.title[ locale ],
+  image: "assets/images/heading_home.jpg",
+  imageAlt: "Fábio Barbosa's portrait",
+  className: "heading--home"
+} %}
 
-{{ macro.heading (
-  title = dictionary.home.welcome[ locale ],
-  subtitle = dictionary.home.title[ locale ],
-  image = 'heading_home.jpg',
-  className = 'heading--home'
-) }}
-
-{% call macro.archivelist (
-  title = dictionary.home.contacts[ locale ],
-  className = 'contacts'
-) %}
+{% ArchiveList {
+  title: dictionary.home.contacts[ locale ],
+  className: 'contacts'
+} %}
 
   {%- include "partials/contact.njk" -%}
 
-{% endcall %}
+{% endArchiveList %}
 
-{% call macro.archivelist (
-  title = dictionary.postlist.title[ locale ],
-  linkText = dictionary.postlist.link[ locale ],
-  linkTarget = '/' + subDir + 'blog/',
-  className = 'feed'
-) %}
+{% ArchiveList {
+  title: dictionary.postlist.title[ locale ],
+  linkText: dictionary.postlist.link[ locale ],
+  linkTarget: '/' + subDir + 'blog/',
+  className: 'feed'
+} %}
 
   {% set postlist = collections["posts_" + locale] | head(-3) %}
   {%- include "partials/postlist.njk" -%}
 
-{% endcall %}
+{% endArchiveList %}
 
 {%- include "partials/subscribe.njk" -%}

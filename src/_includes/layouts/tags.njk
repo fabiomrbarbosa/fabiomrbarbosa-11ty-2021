@@ -3,15 +3,13 @@ permalink: /{{ subDir }}tags/
 layout: layouts/base.njk
 translationKey: tags
 ---
-{% import "components/macros.njk" as macro %}
+{% Heading {
+  title: 'Tags'
+} %}
 
-{{ macro.heading (
-  title = 'Tags'
-) }}
-
-{% call macro.archivelist (
-  className = 'tags--archive'
-) %}
+{% ArchiveList {
+  className: 'tags--archive'
+} %}
 
   <div class="taglist">
   {% for tag in collections.tagList %}
@@ -20,4 +18,4 @@ translationKey: tags
   {% endfor %}
   </div>
 
-{% endcall %}
+{% endArchiveList %}

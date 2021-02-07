@@ -3,15 +3,13 @@ layout: layouts/base.njk
 templateClass: tmpl-post
 permalink: /{{ subDir }}blog/{{ page.fileSlug }}/
 ---
-{% import "components/macros.njk" as macro %}
-
-{{ macro.heading (
-  title = title,
-  subtitle = description,
-  dateTime = date | htmlDateString,
-  dateReadable = date | readableDate(locale),
-  className = 'heading--post'
-) }}
+{% Heading {
+  title: title,
+  subtitle: description,
+  dateTime: date | htmlDateString,
+  dateReadable: date | readableDate(locale),
+  className: 'heading--post'
+} %}
 
 <div class="entry-body">
   <div class="entry-content">

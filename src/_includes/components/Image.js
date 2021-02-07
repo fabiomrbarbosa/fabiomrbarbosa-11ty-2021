@@ -4,6 +4,7 @@ const markdownIt = require("markdown-it");
 const md = new markdownIt();
 
 module.exports = function ({
+  lazy = true,
   image = "",
   alt = "",
   caption = "",
@@ -26,6 +27,7 @@ module.exports = function ({
       minWidth: 320,
       maxWidth: 1440,
       sizes: "(max-width: 90rem) 90vw, 90rem",
+      classes: ["full"],
     },
     twothirds: {
       fallbackWidth: 480,
@@ -54,9 +56,9 @@ module.exports = function ({
   }
 
   return /*html*/ `
-  <figure class="${imageSettings[size].classes}${extraClass}">
+  <figure class=" ${imageSettings[size].classes} ${extraClass} ">
     <img
-      loading="lazy"
+      loading=${lazy == true ? "lazy" : "eager"}
       alt="${alt}"
       src="${imageFetch(imageUrl, imageSettings[size].fallbackWidth)}"
       srcset="${imageSrcsetList.join(", ")}"

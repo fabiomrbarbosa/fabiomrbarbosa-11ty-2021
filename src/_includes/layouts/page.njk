@@ -3,13 +3,11 @@ layout: layouts/base.njk
 templateClass: tmpl-page
 permalink: /{{ subDir }}{{ eleventyNavigation.key | slug }}/
 ---
-{% import "components/macros.njk" as macro %}
-
-{{ macro.heading (
-  title = publicTitle,
-  subtitle = description,
-  className = 'heading--page'
-) }}
+{% Heading {
+  title: publicTitle,
+  subtitle: description,
+  className: 'heading--page'
+} %}
 
 <div class="entry-body">
   <div class="entry-content">

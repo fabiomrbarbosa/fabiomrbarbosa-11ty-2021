@@ -20,22 +20,20 @@ permalink: /{{ subDir }}tags/{{ tag | slug }}/
 templateClass: tmpl-archive
 translationKey: tags
 ---
-{% import "components/macros.njk" as macro %}
+{% Heading {
+  title: title,
+  className: 'heading--archive'
+} %}
 
-{{ macro.heading (
-  title = title,
-  className = 'heading--archive'
-) }}
-
-{% call macro.archivelist (
-  linkText = dictionary.tag.link[ locale ],
-  linkTarget = '/' + subDir + 'tags/',
-  className = 'feed'
-) %}
+{% ArchiveList {
+  linkText: dictionary.tag.link[ locale ],
+  linkTarget: '/' + subDir + 'tags/',
+  className: 'feed'
+} %}
 
   {% set postlist = collections[ tag ] %}
   {%- include "partials/postlist.njk" -%}
 
-{% endcall %}
+{% endArchiveList %}
 
 {%- include "partials/subscribe.njk" -%}

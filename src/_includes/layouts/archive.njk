@@ -2,21 +2,19 @@
 layout: layouts/base.njk
 templateClass: tmpl-archive
 ---
-{% import "components/macros.njk" as macro %}
+{% Heading {
+  title: dictionary.archive.title[ locale ],
+  subtitle: dictionary.archive.subtitle[ locale ],
+  className: 'heading--archive'
+} %}
 
-{{ macro.heading (
-  title = dictionary.archive.title[ locale ],
-  subtitle = dictionary.archive.subtitle[ locale ],
-  className = 'heading--archive'
-) }}
-
-{% call macro.archivelist (
-  className = 'feed'
-) %}
+{% ArchiveList {
+  className: 'feed'
+} %}
 
   {% set postlist = collections["posts_" + locale] %}
   {%- include "partials/postlist.njk" -%}
 
-{% endcall %}
+{% endArchiveList %}
 
 {%- include "partials/subscribe.njk" -%}

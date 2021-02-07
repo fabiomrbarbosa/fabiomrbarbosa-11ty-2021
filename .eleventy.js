@@ -17,11 +17,17 @@ module.exports = function (eleventyConfig) {
 
   const componentsDir = `./src/_includes/components`;
   const Image = require(`${componentsDir}/Image.js`);
+  const CloudImage = require(`${componentsDir}/CloudImage.js`);
+  const Heading = require(`${componentsDir}/Heading.js`);
   const InlineLogo = require(`${componentsDir}/InlineLogo.js`);
+  const ArchiveList = require(`${componentsDir}/ArchiveList.js`);
   const ServicesList = require(`${componentsDir}/ServicesList.js`);
 
   eleventyConfig.addShortcode("Image", Image);
+  eleventyConfig.addShortcode("CloudImage", CloudImage);
+  eleventyConfig.addShortcode("Heading", Heading);
   eleventyConfig.addShortcode("InlineLogo", InlineLogo);
+  eleventyConfig.addPairedShortcode("ArchiveList", ArchiveList);
   eleventyConfig.addPairedShortcode("ServicesList", ServicesList);
 
   eleventyConfig.setDataDeepMerge(true);
