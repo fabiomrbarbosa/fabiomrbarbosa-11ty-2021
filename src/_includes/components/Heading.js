@@ -1,6 +1,12 @@
 const imageComp = require("./Image");
 const markdownIt = require("markdown-it");
-const md = new markdownIt();
+const md = new markdownIt({
+  html: true,
+  breaks: true,
+  linkify: true,
+  typographer: true,
+  quotes: "“”‘’",
+});
 
 module.exports = function ({
   title = "",

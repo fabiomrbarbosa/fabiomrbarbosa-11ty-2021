@@ -21,6 +21,12 @@
     line-height: $size-step-6;
     letter-spacing: -0.01em;
     margin-bottom: 2rem;
+
+    & span {
+      /* creative + mystic line */
+      display: inline-block;
+      word-spacing: -.2em;
+    }
   }
 
   &__subtitle {
@@ -51,7 +57,8 @@
 .heading--home {
   @include breakpoint($desktop) {
     .heading__title {
-      grid-column: 1/11;
+      text-align: center;
+      grid-column: 2/12;
     }
 
     .heading__subtitle {

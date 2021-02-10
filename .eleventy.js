@@ -96,8 +96,7 @@ module.exports = function (eleventyConfig) {
 
   // allow markdown renderInline inside of nunjucks
   eleventyConfig.addFilter("mdInline", function (value) {
-    let md = markdownLibrary;
-    return md.renderInline(value);
+    return markdownLibrary.renderInline(value);
   });
 
   eleventyConfig.addTransform(

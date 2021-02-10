@@ -13,8 +13,8 @@ module.exports = {
   },
   home: {
     welcome: {
-      en: "Welcome! My name is Fábio and I'm an author, creative + mystic.",
-      pt: "Boas-vindas! Chamo-me Fábio e sou um autor, criativo + místico.",
+      en: "Welcome!<br> My name is Fábio and I'm an author, <span>creative + mystic.</span>",
+      pt: "Boas-vindas!<br> Chamo-me Fábio e sou um autor, <span>criativo + místico.</span>",
     },
     title: {
       en:

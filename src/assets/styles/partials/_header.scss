@@ -1,6 +1,7 @@
 .site-header {
   @extend %container;
   --color-bg: transparent;
+  padding-bottom: 0 !important;
 
   &__inner {
     display: flex;
@@ -17,8 +18,8 @@
   &__logo {
     flex: 1;
     position: relative;
-    margin-top: $size-step-4;
-    margin-bottom: $size-step-6;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
   }
 
   &__navigation {
@@ -30,7 +31,8 @@
     & .menu__list,
     & .langswitch__list {
       display: flex;
-      column-gap: $size-step-3;
+      flex-wrap: wrap;
+      column-gap: $size-step-1;
     }
   }
 }
