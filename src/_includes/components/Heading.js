@@ -29,7 +29,7 @@ module.exports = function ({
           className: "heading__img",
           image: image, alt:
           imageAlt,
-          size: "wide", })
+          size: "full", })
       }
 
       ${
