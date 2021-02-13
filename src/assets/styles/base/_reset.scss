@@ -30,6 +30,10 @@ html {
   background-color: var(
     --color-bg
   ); // set a default for those browsers that don't
+  background-image: url('../../assets/images/hero_bg.svg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 1586px 934px;
   box-sizing: border-box;
 }
 
@@ -47,6 +51,7 @@ body {
 .site-footer,
 .site-main,
 .site-main > div {
+  --color-bg: transparent;
   color: var(--color-fg);
   background-color: var(--color-bg);
 }

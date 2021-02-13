@@ -29,7 +29,7 @@ module.exports = function ({
       sizes: "(max-width: 90rem) 90vw, 90rem",
       classes: ["full"],
     },
-    twothirds: {
+    wide: {
       fallbackWidth: 480,
       minWidth: 320,
       maxWidth: 920,
