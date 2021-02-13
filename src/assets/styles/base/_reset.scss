@@ -51,7 +51,7 @@ body {
 .site-footer,
 .site-main,
 .site-main > div {
-  --color-bg: transparent;
+  --color-bg: none;
   color: var(--color-fg);
   background-color: var(--color-bg);
 }

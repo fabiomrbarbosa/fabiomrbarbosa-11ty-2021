@@ -1,6 +1,5 @@
 .site-header {
   @extend %container;
-  --color-bg: transparent;
   padding-bottom: 0 !important;
 
   &__inner {
