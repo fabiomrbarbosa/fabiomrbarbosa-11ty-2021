@@ -6,7 +6,7 @@
     "clean": "npx del dist",
     "sass": "node-sass src/assets/styles/main.scss src/_includes/styles/main.min.css --output-style compressed",
     "build": "npm run sass && npx eleventy && npx workbox generateSW workbox-config.js",
-    "develop": "concurrently \"npm run sass -- --watch\" \"npx eleventy --serve\"",
+    "develop": "npm run clean && concurrently \"npm run sass -- --watch\" \"npx eleventy --serve\"",
     "serve": "npx eleventy --serve",
     "debug": "DEBUG=* npx eleventy"
   },
