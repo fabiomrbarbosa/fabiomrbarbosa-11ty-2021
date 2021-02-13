@@ -68,6 +68,8 @@ h5,
 h6 {
   color: var(--color-fg-display);
   font-family: var(--font-display);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 p,
 ol,
