@@ -8,7 +8,7 @@
   &__title {
     @extend %altText;
     @include breakpoint($desktop) {
-      grid-column: 1/4;
+      grid-column: 2/4;
     }
   }
 
