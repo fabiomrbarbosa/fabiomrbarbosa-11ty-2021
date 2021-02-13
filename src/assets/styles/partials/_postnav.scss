@@ -1,11 +1,13 @@
 .postnav {
   @extend %container;
+  border-top: 1px solid var(--color-border);
 
   &__inner {
     @extend %content;
   }
 
   &__title {
+    margin-bottom: $size-step-1;
     @extend %altText;
     @include breakpoint($desktop) {
       grid-column: 2/4;
