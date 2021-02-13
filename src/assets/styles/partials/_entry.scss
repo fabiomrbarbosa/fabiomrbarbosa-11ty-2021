@@ -1,6 +1,5 @@
 .entry-body {
   @extend %container;
-  --color-bg: var(--color-accent-light) !important;
   --color-link-hover: var(--color-accent);
   padding-top: $size-step-5;
   padding-bottom: $size-step-5;
