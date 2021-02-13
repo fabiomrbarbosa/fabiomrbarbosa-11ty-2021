@@ -1,6 +1,4 @@
 .services__list {
-  @extend %content;
-
   h2 {
     margin-top: 0;
   }
@@ -23,15 +21,17 @@
   }
 
   @include breakpoint($desktop) {
-    margin-left: 0;
-    grid-column: 1/13;
+    display: grid;
+    grid-template-columns: $size-step-2 1fr 1fr 5fr 1fr 1fr $size-step-2;
+    grid-column: 1/-1;
+    column-gap: $size-step-2;
 
     h2 {
-      grid-column: 1/4;
+      grid-column: 2/4;
     }
 
     ul {
-      grid-column: 4/13;
+      grid-column: 4/7;
     }
   }
 }

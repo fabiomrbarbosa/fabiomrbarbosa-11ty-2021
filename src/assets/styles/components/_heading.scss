@@ -41,6 +41,7 @@
   }
 
   &__img {
+    grid-column: 1/-1;
     margin-top: calc(#{$size-step-6} * .5);
     margin-bottom: calc(#{$size-step-6} * .5);
   }
@@ -49,20 +50,14 @@
     padding-bottom: $size-step-6;
 
     &__img {
-      grid-column: 4/13;
+      grid-column: 4/8;
     }
   }
 }
 
 .heading--home {
-  @include breakpoint($desktop) {
-    .heading__title {
-      text-align: center;
-      grid-column: 2/12;
-    }
-
-    .heading__subtitle {
-      grid-column: 4/11;
-    }
+  .heading__title {
+    text-align: center;
+    grid-column: 2/-2;
   }
 }
