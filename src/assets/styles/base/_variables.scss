@@ -1,9 +1,8 @@
 :root {
   // Font families
-  --font-display: "DM Serif Display", Georgia, Athelas, Times, "Times New Roman", serif;
-  --font-sans: "Inter Var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial,
-    sans-serif;
-
+  --font-display: "DM Serif Display", "Source Serif", "Roboto Serif", Georgia, Athelas, Times, "Times New Roman", serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-serif: "Source Serif", "Roboto Serif", Georgia, Athelas, Times, "Times New Roman", serif;
   // Colours
   --color-black: #13111e;
   --color-gray-dark: #2a2834;
