@@ -3,11 +3,12 @@
   "version": "2.1.0",
   "description": "Fábio M.R. Barbosa's official website, built with Eleventy, hosted on Netlify",
   "scripts": {
+    "clean": "npx del dist",
     "sass": "node-sass src/assets/styles/main.scss src/_includes/styles/main.min.css --output-style compressed",
-    "build": "npm run sass && npx eleventy && workbox generateSW workbox-config.js",
+    "build": "npm run sass && npx eleventy && npx workbox generateSW workbox-config.js",
     "develop": "concurrently \"npm run sass -- --watch\" \"npx eleventy --serve\"",
-    "serve": "eleventy --serve",
-    "debug": "DEBUG=* eleventy"
+    "serve": "npx eleventy --serve",
+    "debug": "DEBUG=* npx eleventy"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
     "@11ty/eleventy-plugin-rss": "^1.1.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.6",
     "concurrently": "^5.3.0",
+    "del-cli": "^3.0.1",
     "eleventy-plugin-embed-everything": "^1.10.0",
     "image-size": "^0.9.3",
     "luxon": "^1.25.0",
