@@ -2,7 +2,7 @@ module.exports = {
   cacheId: "fabiomrbarbosa-pwa",
   globDirectory: "dist/",
   globPatterns: [
-    "**/*.{html,js,webmanifest}"
+    "**/*.{html,js,woff2,webmanifest}"
   ],
   globIgnores: [
     //"**/blog/**/*",
