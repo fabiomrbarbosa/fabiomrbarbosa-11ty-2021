@@ -14,7 +14,7 @@ module.exports = function ({
   dateTime = "",
   dateReadable = "",
   className = "",
-  image = "",
+  imageSrc = "",
   imageAlt = ""
 } = {}) {
   return /*html*/ `
@@ -23,11 +23,11 @@ module.exports = function ({
 
       <h1 class="heading__title">${md.renderInline(title)}</h1>
 
-      ${image &&
+      ${imageSrc &&
         imageComp({
           lazy: false,
           className: "heading__img",
-          image: image, alt:
+          imageSrc: image, alt:
           imageAlt,
           size: "full", })
       }

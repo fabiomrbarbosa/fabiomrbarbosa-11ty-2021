@@ -4,7 +4,7 @@ permalink: /{{ subDir }}feed/rss.xml
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>{{ metadata.title }}</title>
-	<subtitle>{{ dictionary.site.subtitle[ locale ] }} }}</subtitle>
+	<subtitle>{{ dictionary.site.subtitle[ locale ] }}</subtitle>
 	{% set absoluteUrl %}{{ [subDir + metadata.feed.path] | absoluteUrl(metadata.url) }}{% endset %}
 	<link href="{{ absoluteUrl }}" rel="self"/>
 	<link href="{{ metadata.url }}"/>
@@ -23,7 +23,7 @@ permalink: /{{ subDir }}feed/rss.xml
 		<id>{{ absolutePostUrl }}</id>
 		<content type="html">
       {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}
-      {{ "<hr/><p><a href='mailto:" | e }}{{ metadata.author.email }}{{ "?subject=Re: " | e }}{{ post.data.title }}{{ "'>" | e }}{{ dictionary.feed.reply[ locale ] }} }}{{ "</a></p>" | e }}
+      {{ "<hr/><p><a href='mailto:" | e }}{{ metadata.author.email }}{{ "?subject=Re: " | e }}{{ post.data.title }}{{ "'>" | e }}{{ dictionary.feed.reply[ locale ] }} {{ "</a></p>" | e }}
     </content>
 	</entry>
 	{%- endfor %}
