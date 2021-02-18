@@ -27,8 +27,8 @@ module.exports = function ({
         imageComp({
           lazy: false,
           className: "heading__img",
-          imageSrc: image, alt:
-          imageAlt,
+          image: imageSrc,
+          alt: imageAlt,
           size: "full", })
       }
 
