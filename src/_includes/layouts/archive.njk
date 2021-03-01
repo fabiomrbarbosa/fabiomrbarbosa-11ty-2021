@@ -12,7 +12,7 @@ templateClass: tmpl-archive
   className: 'feed'
 } %}
 
-  {% set postlist = collections["posts_" + locale] %}
+  {% set postlist = collections[locale] | includes('data.contentType', 'article') %}
   {%- include "partials/postlist.njk" -%}
 
 {% endArchiveList %}

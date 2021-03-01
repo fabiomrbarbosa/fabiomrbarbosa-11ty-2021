@@ -12,7 +12,7 @@ translationKey: tags
 } %}
 
   <div class="taglist">
-  {% for tag in collections.tagList %}
+  {% for tag in collections['tags_' + locale] %}
     {% set tagUrl %}/{{ subDir }}tags/{{ tag | slug }}/{% endset %}
     <a href="{{ tagUrl }}" class="tag">{{ tag }}</a>
   {% endfor %}

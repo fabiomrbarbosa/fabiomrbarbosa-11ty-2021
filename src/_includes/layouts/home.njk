@@ -27,7 +27,7 @@ permalink: /{{ subDir }}
   className: 'feed'
 } %}
 
-  {% set postlist = collections["posts_" + locale] | head(-3) %}
+  {% set postlist = collections[locale] | includes('data.contentType', 'article') | head(-3) %}
   {%- include "partials/postlist.njk" -%}
 
 {% endArchiveList %}

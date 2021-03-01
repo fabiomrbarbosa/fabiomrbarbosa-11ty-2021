@@ -6,7 +6,7 @@
     "clean": "npx del dist",
     "sass": "node-sass src/assets/styles/main.scss src/_includes/styles/main.min.css --output-style compressed",
     "build": "npm run sass && npx eleventy && npx workbox generateSW workbox-config.js",
-    "develop": "npm run clean && concurrently \"npm run sass -- --watch\" \"npx eleventy --serve\"",
+    "dev": "npm run clean && concurrently \"npm run sass -- --watch\" \"npx eleventy --serve\"",
     "serve": "npx eleventy --serve",
     "debug": "DEBUG=* npx eleventy"
   },
@@ -29,17 +29,17 @@
     "@11ty/eleventy-navigation": "^0.1.6",
     "@11ty/eleventy-plugin-rss": "^1.1.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.6",
-    "concurrently": "^5.3.0",
+    "concurrently": "^6.0.0",
     "del-cli": "^3.0.1",
-    "eleventy-plugin-embed-everything": "^1.10.0",
-    "image-size": "^0.9.3",
-    "luxon": "^1.25.0",
+    "eleventy-plugin-embed-everything": "^1.11.0",
+    "image-size": "^0.9.4",
+    "luxon": "^1.26.0",
     "markdown-it": "^12.0.4",
     "markdown-it-anchor": "^7.0.2",
     "markdown-it-attrs": "^4.0.0",
     "markdown-it-external-links": "0.0.6",
     "node-sass": "^5.0.0",
-    "purgecss": "^4.0.0",
-    "workbox-cli": "^6.1.0"
+    "purgecss": "^4.0.2",
+    "workbox-cli": "^6.1.1"
   }
 }

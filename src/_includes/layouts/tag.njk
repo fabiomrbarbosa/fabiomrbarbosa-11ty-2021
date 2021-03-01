@@ -5,13 +5,10 @@ pagination:
   alias: tag
   filter:
     - all
-    - nav
-    - post
-    - posts_en
-    - posts_pt
-    - site_en
-    - site_pt
-    - tagList
+    - en
+    - pt
+    - tags_en
+    - tags_pt
   addAllPagesToCollections: true
 layout: layouts/base.njk
 eleventyComputed:
@@ -31,7 +28,7 @@ translationKey: tags
   className: 'feed'
 } %}
 
-  {% set postlist = collections[ tag ] %}
+  {% set postlist = collections[tag] %}
   {%- include "partials/postlist.njk" -%}
 
 {% endArchiveList %}

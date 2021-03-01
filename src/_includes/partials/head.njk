@@ -1,8 +1,8 @@
 {# Variables #}
-{% set pageTitle = eleventyComputed.title or title %}
+{% set pageTitle = computedData.title or title %}
 {% set pageTitleSocial = publicTitle or pageTitle or metadata.title %}
-{% set pageDescription = eleventyComputed.description or description or dictionary.site.subtitle[ locale ] %}
-{% set pageType = 'article' if tags.includes('posts_pt' or 'posts_en') else 'website' %}
+{% set pageDescription = computedData.description or description or dictionary.site.subtitle[ locale ] %}
+{% set pageType = 'article' if contentType == 'article' else 'webpage' %}
 
 {% if socialImage %}
   {% set pageImage = socialImage | url %}

@@ -1,6 +1,7 @@
 module.exports = function (eleventyConfig) {
   const { DateTime } = require("luxon");
   const { PurgeCSS } = require("purgecss");
+  const lodash = require("lodash");
   const pluginRss = require("@11ty/eleventy-plugin-rss");
   const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
   const pluginNavigation = require("@11ty/eleventy-navigation");
@@ -19,19 +20,58 @@ module.exports = function (eleventyConfig) {
   const Image = require(`${componentsDir}/Image.js`);
   const CloudImage = require(`${componentsDir}/CloudImage.js`);
   const Heading = require(`${componentsDir}/Heading.js`);
-  const InlineLogo = require(`${componentsDir}/InlineLogo.js`);
+  const InlineIcon = require(`${componentsDir}/InlineIcon.js`);
   const ArchiveList = require(`${componentsDir}/ArchiveList.js`);
   const ServicesList = require(`${componentsDir}/ServicesList.js`);
+
+  const getTagList = require("./src/_utils/getTagList");
 
   eleventyConfig.addShortcode("Image", Image);
   eleventyConfig.addShortcode("CloudImage", CloudImage);
   eleventyConfig.addShortcode("Heading", Heading);
-  eleventyConfig.addShortcode("InlineLogo", InlineLogo);
+  eleventyConfig.addShortcode("InlineIcon", InlineIcon);
   eleventyConfig.addPairedShortcode("ArchiveList", ArchiveList);
   eleventyConfig.addPairedShortcode("ServicesList", ServicesList);
 
   eleventyConfig.setDataDeepMerge(true);
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
+
+  eleventyConfig.addFilter("includes", function (array, keyPath, value) {
+    return array.filter((item) => {
+      let data = item;
+      for (const key of keyPath.split(".")) {
+        data = data[key];
+      }
+
+      // If data doesn’t exist, abort
+      if (!data) {
+        return false;
+      }
+
+      // If data is a Date, reformat as ISO 8601
+      if (data instanceof Date) {
+        data = data.toISOString();
+      }
+
+      return data.includes(value) ? item : false;
+    });
+  });
+
+  eleventyConfig.addFilter("excludes", function (array, keyPath, value) {
+    return array.filter((item) => {
+      let data = item;
+      for (const key of keyPath.split(".")) {
+        data = data[key];
+      }
+
+      // If data doesn’t exist, abort
+      if (!data) {
+        return false;
+      }
+
+      return data === value ? false : item;
+    });
+  });
 
   eleventyConfig.addFilter("fixedEncodeURIComponent", function (str) {
     return escape(
@@ -66,7 +106,52 @@ module.exports = function (eleventyConfig) {
     return array.slice(0, n);
   });
 
-  eleventyConfig.addCollection("tagList", require("./src/_utils/getTagList"));
+
+  eleventyConfig.addCollection("en", (collection) => {
+    return collection.getAll().filter((page) => page.data.locale === "en");
+  });
+
+  eleventyConfig.addCollection("pt", (collection) => {
+    return collection.getAll().filter((page) => page.data.locale === "pt");
+  });
+
+  eleventyConfig.addCollection("tags_en", (collection) => {
+    let tagSet = new Set();
+    collection
+      .getAll()
+      .filter((page) => page.data.locale === "en")
+      .forEach(function (item) {
+        if ("tags" in item.data) {
+          let tags = item.data.tags;
+
+          for (const tag of tags) {
+            tagSet.add(tag);
+          }
+        }
+      });
+
+    // returning an array in addCollection works in Eleventy 0.5.3
+    return [...tagSet];
+  });
+
+  eleventyConfig.addCollection("tags_pt", (collection) => {
+    let tagSet = new Set();
+    collection
+      .getAll()
+      .filter((page) => page.data.locale === "pt")
+      .forEach(function (item) {
+        if ("tags" in item.data) {
+          let tags = item.data.tags;
+
+          for (const tag of tags) {
+            tagSet.add(tag);
+          }
+        }
+      });
+
+    // returning an array in addCollection works in Eleventy 0.5.3
+    return [...tagSet];
+  });
 
   eleventyConfig.addPassthroughCopy("./src/assets/images");
   eleventyConfig.addPassthroughCopy("./src/assets/fonts");
