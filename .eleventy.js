@@ -25,7 +25,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("excludes", require(`${filters}/excludes.js`));
   eleventyConfig.addFilter("fixedEncodeURIComponent", require(`${filters}/fixedEncodeURIComponent.js`));
   eleventyConfig.addFilter("head", require(`${filters}/head.js`));
-  eleventyConfig.addFilter("htmlDateString", require(`${filters}/htmlDateString.js`));
+  eleventyConfig.addFilter("machineDate", require(`${filters}/machineDate.js`));
   eleventyConfig.addFilter("readableDate", require(`${filters}/readableDate.js`));
   eleventyConfig.addFilter("mdInline", require(`${filters}/mdInline.js`));
 
