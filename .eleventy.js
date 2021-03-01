@@ -1,124 +1,46 @@
 module.exports = function (eleventyConfig) {
-  const { DateTime } = require("luxon");
-  const { PurgeCSS } = require("purgecss");
-  const lodash = require("lodash");
-  const pluginRss = require("@11ty/eleventy-plugin-rss");
-  const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-  const pluginNavigation = require("@11ty/eleventy-navigation");
-  const pluginEmbeds = require("eleventy-plugin-embed-everything");
-  const markdownIt = require("markdown-it");
-  const markdownItAnchor = require("markdown-it-anchor");
-  const markdownItAttributes = require("markdown-it-attrs");
-  const markdownItExternalLinks = require("markdown-it-external-links");
 
-  eleventyConfig.addPlugin(pluginRss);
-  eleventyConfig.addPlugin(pluginSyntaxHighlight);
-  eleventyConfig.addPlugin(pluginNavigation);
-  eleventyConfig.addPlugin(pluginEmbeds);
-
-  const componentsDir = `./src/_includes/components`;
-  const Image = require(`${componentsDir}/Image.js`);
-  const CloudImage = require(`${componentsDir}/CloudImage.js`);
-  const Heading = require(`${componentsDir}/Heading.js`);
-  const InlineIcon = require(`${componentsDir}/InlineIcon.js`);
-  const ArchiveList = require(`${componentsDir}/ArchiveList.js`);
-  const ServicesList = require(`${componentsDir}/ServicesList.js`);
+  const components = `./src/_includes/components`;
+  const filters = `./src/_utils/filters`;
+  const libraries = `./src/_utils/libraries`;
 
   const getTagList = require("./src/_utils/getTagList");
 
-  eleventyConfig.addShortcode("Image", Image);
-  eleventyConfig.addShortcode("CloudImage", CloudImage);
-  eleventyConfig.addShortcode("Heading", Heading);
-  eleventyConfig.addShortcode("InlineIcon", InlineIcon);
-  eleventyConfig.addPairedShortcode("ArchiveList", ArchiveList);
-  eleventyConfig.addPairedShortcode("ServicesList", ServicesList);
+  eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-rss"));
+  eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-syntaxhighlight"));
+  eleventyConfig.addPlugin(require("@11ty/eleventy-navigation"));
+  eleventyConfig.addPlugin(require("eleventy-plugin-embed-everything"));
 
-  eleventyConfig.setDataDeepMerge(true);
-  eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
+  eleventyConfig.setLibrary("md", require(`${libraries}/markdown.js`));
 
-  eleventyConfig.addFilter("includes", function (array, keyPath, value) {
-    return array.filter((item) => {
-      let data = item;
-      for (const key of keyPath.split(".")) {
-        data = data[key];
-      }
+  eleventyConfig.addShortcode("Image", require(`${components}/Image.js`));
+  eleventyConfig.addShortcode("CloudImage", require(`${components}/CloudImage.js`));
+  eleventyConfig.addShortcode("Heading", require(`${components}/Heading.js`));
+  eleventyConfig.addShortcode("InlineIcon", require(`${components}/InlineIcon.js`));
+  eleventyConfig.addPairedShortcode("ArchiveList", require(`${components}/ArchiveList.js`));
+  eleventyConfig.addPairedShortcode("ServicesList", require(`${components}/ServicesList.js`));
 
-      // If data doesn’t exist, abort
-      if (!data) {
-        return false;
-      }
-
-      // If data is a Date, reformat as ISO 8601
-      if (data instanceof Date) {
-        data = data.toISOString();
-      }
-
-      return data.includes(value) ? item : false;
-    });
-  });
-
-  eleventyConfig.addFilter("excludes", function (array, keyPath, value) {
-    return array.filter((item) => {
-      let data = item;
-      for (const key of keyPath.split(".")) {
-        data = data[key];
-      }
-
-      // If data doesn’t exist, abort
-      if (!data) {
-        return false;
-      }
-
-      return data === value ? false : item;
-    });
-  });
-
-  eleventyConfig.addFilter("fixedEncodeURIComponent", function (str) {
-    return escape(
-      encodeURIComponent(str).replace(/[!'()*]/g, function (c) {
-        return "%" + c.charCodeAt(0).toString(16);
-      })
-    );
-  });
-
-  eleventyConfig.addFilter("readableDate", (dateObj, locale) => {
-    // .toLocaleString returns a natural language phrase instead of just translating the month names etc.
-    return DateTime.fromJSDate(dateObj, { zone: "utc" })
-      .setLocale(locale)
-      .toLocaleString(DateTime.DATE_FULL);
-  });
-
-  // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
-  eleventyConfig.addFilter("htmlDateString", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
-  });
-
-  // Get the first `n` elements of a collection.
-  eleventyConfig.addFilter("head", (array, n) => {
-    if (!array || !array.length) {
-      return;
-    }
-
-    if (n < 0) {
-      return array.slice(n);
-    }
-
-    return array.slice(0, n);
-  });
+  eleventyConfig.addFilter("includes", require(`${filters}/includes.js`));
+  eleventyConfig.addFilter("excludes", require(`${filters}/excludes.js`));
+  eleventyConfig.addFilter("fixedEncodeURIComponent", require(`${filters}/fixedEncodeURIComponent.js`));
+  eleventyConfig.addFilter("head", require(`${filters}/head.js`));
+  eleventyConfig.addFilter("htmlDateString", require(`${filters}/htmlDateString.js`));
+  eleventyConfig.addFilter("readableDate", require(`${filters}/readableDate.js`));
+  eleventyConfig.addFilter("mdInline", require(`${filters}/mdInline.js`));
 
 
   eleventyConfig.addCollection("en", (collection) => {
-    return collection.getAll().filter((page) => page.data.locale === "en");
+    return collection.getAllSorted().filter((page) => page.data.locale === "en");
   });
 
   eleventyConfig.addCollection("pt", (collection) => {
-    return collection.getAll().filter((page) => page.data.locale === "pt");
+    return collection.getAllSorted().filter((page) => page.data.locale === "pt");
   });
 
   eleventyConfig.addCollection("tags_en", (collection) => {
     let tagSet = new Set();
     collection
-      .getAll()
+      .getAllSorted()
       .filter((page) => page.data.locale === "en")
       .forEach(function (item) {
         if ("tags" in item.data) {
@@ -137,7 +59,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("tags_pt", (collection) => {
     let tagSet = new Set();
     collection
-      .getAll()
+      .getAllSorted()
       .filter((page) => page.data.locale === "pt")
       .forEach(function (item) {
         if ("tags" in item.data) {
@@ -157,55 +79,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/assets/fonts");
   eleventyConfig.addPassthroughCopy("./src/**/manifest.webmanifest");
 
-  /* Markdown Overrides */
-  // This might be useful for filtering elements in MD
-  let markdownLibrary = markdownIt({
-    html: true,
-    breaks: true,
-    linkify: true,
-    typographer: true,
-    quotes: "“”‘’",
-  })
-    .use(markdownItAnchor, {
-      permalink: true,
-      permalinkClass: "direct-link",
-      permalinkSymbol: "#",
-    })
-    .use(markdownItAttributes)
-    .use(markdownItExternalLinks, {
-      internalDomains: ["fabiomrbarbosa.com", "localhost"],
-      externalTarget: "_blank",
-      externalRel: "noopener noreferrer",
-    });
-  eleventyConfig.setLibrary("md", markdownLibrary);
+  eleventyConfig.addTransform("purgeInlineCSS", require('./src/_utils/transforms/purgeInlineCSS.js'));
 
-  // allow markdown renderInline inside of nunjucks
-  eleventyConfig.addFilter("mdInline", function (value) {
-    return markdownLibrary.renderInline(value);
-  });
-
-  eleventyConfig.addTransform(
-    "purge-and-inline-css",
-    async (content, outputPath) => {
-      if (
-        process.env.ELEVENTY_ENV !== "production" ||
-        !outputPath.endsWith(".html")
-      ) {
-        return content;
-      }
-
-      const purgeCSSResults = await new PurgeCSS().purge({
-        content: [{ raw: content }],
-        css: ["src/_includes/styles/main.min.css"],
-        keyframes: true,
-      });
-
-      return content.replace(
-        "<!-- INLINE CSS-->",
-        "<style>" + purgeCSSResults[0].css + "</style>"
-      );
-    }
-  );
+  eleventyConfig.setDataDeepMerge(true);
 
   return {
     templateFormats: ["md", "njk", "html", "liquid"],
