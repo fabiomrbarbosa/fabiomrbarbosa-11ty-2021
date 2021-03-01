@@ -3,6 +3,7 @@ module.exports = function (eleventyConfig) {
   const components = `./src/_includes/components`;
   const filters = `./src/_utils/filters`;
   const libraries = `./src/_utils/libraries`;
+  const transforms = `./src/_utils/transforms`;
 
   const getTagList = require("./src/_utils/getTagList");
 
@@ -27,6 +28,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("htmlDateString", require(`${filters}/htmlDateString.js`));
   eleventyConfig.addFilter("readableDate", require(`${filters}/readableDate.js`));
   eleventyConfig.addFilter("mdInline", require(`${filters}/mdInline.js`));
+
+  eleventyConfig.addTransform("purgeInlineCSS", require(`${transforms}/purgeInlineCSS.js`));
 
 
   eleventyConfig.addCollection("en", (collection) => {
@@ -79,23 +82,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/assets/fonts");
   eleventyConfig.addPassthroughCopy("./src/**/manifest.webmanifest");
 
-  eleventyConfig.addTransform("purgeInlineCSS", require('./src/_utils/transforms/purgeInlineCSS.js'));
-
   eleventyConfig.setDataDeepMerge(true);
 
   return {
     templateFormats: ["md", "njk", "html", "liquid"],
-
-    // If your site lives in a different subdirectory, change this.
-    // Leading or trailing slashes are all normalized away, so don’t worry about those.
-
-    // If you don’t have a subdirectory, use "" or "/" (they do the same thing)
-    // This is only used for link URLs (it does not affect your file structure)
-    // Best paired with the `url` filter: https://www.11ty.io/docs/filters/url/
-
-    // You can also pass this in on the command line using `--pathprefix`
     pathPrefix: "/",
-
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
     dataTemplateEngine: "njk",
