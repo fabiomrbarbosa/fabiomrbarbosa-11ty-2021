@@ -14,7 +14,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.setLibrary("md", require(`${libraries}/markdown.js`));
 
-  eleventyConfig.addShortcode("Image", require(`${components}/Image.js`));
+  eleventyConfig.addShortcode("Figure", require(`${components}/Figure.js`));
   eleventyConfig.addShortcode("CloudImage", require(`${components}/CloudImage.js`));
   eleventyConfig.addShortcode("Heading", require(`${components}/Heading.js`));
   eleventyConfig.addShortcode("InlineIcon", require(`${components}/InlineIcon.js`));
@@ -78,9 +78,9 @@ module.exports = function (eleventyConfig) {
     return [...tagSet];
   });
 
+  eleventyConfig.addPassthroughCopy("./src/admin");
   eleventyConfig.addPassthroughCopy("./src/assets/images");
   eleventyConfig.addPassthroughCopy("./src/assets/fonts");
-  eleventyConfig.addPassthroughCopy("./src/**/manifest.webmanifest");
 
   eleventyConfig.setDataDeepMerge(true);
 

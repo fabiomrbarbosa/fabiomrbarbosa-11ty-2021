@@ -1,3 +1,4 @@
 {
+  "contentType": "article",
   "layout": "layouts/post.njk"
 }

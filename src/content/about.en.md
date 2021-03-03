@@ -8,9 +8,12 @@ templateClass: tmpl-page
 eleventyNavigation:
   key: About
   order: 1
+dir: ltr
+locale: en
+subDir: ""
 ---
 
-{% Image {
+{% Figure {
   image: 'assets/images/main_headshot.jpg',
   alt: "Fábio Barbosa's headshot",
   size: 'onethird'
