@@ -3,7 +3,7 @@ title: Backlit
 date: 2016-12-21
 tags:
   - spirit
-translationKey: contra-luz
+translationKey: backlit
 ---
 
 For now, you must rest.
