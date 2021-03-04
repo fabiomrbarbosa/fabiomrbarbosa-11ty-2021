@@ -23,11 +23,6 @@
         widget: "string"
         },
       ],
-      {% Figure {
-  image: 'assets/images/main_headshot.jpg',
-  alt: "Fábio Barbosa's headshot",
-  size: 'onethird'
-} %}
       pattern: /{% Figure { image: '([a-zA-Z0-9-_ ]+)', alt: '([a-zA-Z0-9-_ ]+)', caption: '([a-zA-Z0-9-_ ]+)', attribution: '([a-zA-Z0-9-_ ]+)', size: '([a-zA-Z0-9-_ ]+)' } %}/,
       fromBlock: function(match) {
         return {
