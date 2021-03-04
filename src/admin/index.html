@@ -12,15 +12,31 @@
     CMS.registerEditorComponent({
       id: "figure",
       label: "Figure",
-      fields: [{
-        name: "title",
-        label: "Figure Title",
-        widget: "string"
-      },
-      {
-        name: "src",
-        label: "Figure SRC",
-        widget: "string"
+      fields: [
+        {
+          name: "src",
+          label: "Image src",
+          widget: "string"
+          },
+        {
+          name: "alt",
+          label: "Alt Text",
+          widget: "string"
+        },
+        {
+          name: "caption",
+          label: "Caption",
+          widget: "string"
+        },
+        {
+          name: "attribution",
+          label: "Attribution",
+          widget: "string"
+        },
+        {
+          name: "size",
+          label: "Size",
+          widget: "string"
         },
       ],
       pattern: /{% Figure { image: '([a-zA-Z0-9-_ ]+)', alt: '([a-zA-Z0-9-_ ]+)', caption: '([a-zA-Z0-9-_ ]+)', attribution: '([a-zA-Z0-9-_ ]+)', size: '([a-zA-Z0-9-_ ]+)' } %}/,
