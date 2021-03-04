@@ -1,10 +1,12 @@
 ---
-title: 'Estado: Actualizado'
-description: 'Passemos às apresentações deste novo site.'
+title: "Estado: Actualizado"
+description: Passemos às apresentações deste novo site.
+translationKey: status-update
 date: 2020-07-09
 tags:
   - novidades
-translationKey: status-update
+featured: false
+status: evergreen
 ---
 
 Quem trabalha nas áreas criativas já terá decerto ouvido alguém dizer que nós somos os nossos piores clientes. Quando somos o nosso próprio cliente, não raro falta-nos a distância necessária para nos analisarmos enquanto *produto*. Um produto com um público-alvo e uma dada estratégia com vista a uma marca que, neste caso, consiste numa *persona* ou "máscara" profissional com as características e valores que escolhemos exibir ou, se necessário for, fingir até que dêem resultado. A tarefa complica-se quanto mais diversificados forem os interesses e as competências que nos caracterizam. E chega a ser quase impossível caso nos atrevamos a desafiar as normas do *marketing* pessoal e profissional porque, francamente, somos seres humanos e nem tudo acerca de nós precisa de ser um *selling point*.

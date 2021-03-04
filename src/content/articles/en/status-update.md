@@ -1,10 +1,12 @@
 ---
-title: 'Status Update'
-description: 'Allow me to introduce you to this new website.'
+title: Status Update
+description: Allow me to introduce you to this new website.
+translationKey: status-update
 date: 2020-07-09
 tags:
   - updates
-translationKey: status-update
+featured: false
+status: evergreen
 ---
 
 Anyone working in the creative field must have already heard someone say that we are our own worst clients. When we are our own client, we often lack the distance needed to analyse ourselves as a *product*. One with a target audience and a given strategy to give rise to a brand which, in this case, consists of a professional *persona* or "mask" with the qualities and values we choose to display or, if necessary, fake until we make it. The task becomes more complicated the more diverse our interests and skills are. And it becomes almost impossible if we dare to challenge the norms of personal and professional marketing because, frankly, we are human beings and not everything about us needs to be a selling point.
