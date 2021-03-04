@@ -8,5 +8,43 @@
 <body>
   <!-- Include the script that builds the page and powers Netlify CMS -->
   <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+  <script>
+    CMS.registerEditorComponent({
+      id: "figure",
+      label: "Figure",
+      fields: [{
+        name: "title",
+        label: "Figure Title",
+        widget: "string"
+      },
+      {
+        name: "src",
+        label: "Figure SRC",
+        widget: "string"
+        },
+      ],
+      {% Figure {
+  image: 'assets/images/main_headshot.jpg',
+  alt: "Fábio Barbosa's headshot",
+  size: 'onethird'
+} %}
+      pattern: /{% Figure { image: '([a-zA-Z0-9-_ ]+)', alt: '([a-zA-Z0-9-_ ]+)', caption: '([a-zA-Z0-9-_ ]+)', attribution: '([a-zA-Z0-9-_ ]+)', size: '([a-zA-Z0-9-_ ]+)' } %}/,
+      fromBlock: function(match) {
+        return {
+          src: match[1],
+          alt: match[2],
+          caption: match[3],
+          attribution: match[4],
+          size: match[5],
+        };
+      },
+      toBlock: function(obj) {
+        return `{% Figure { image: ${obj.src}, alt: ${obj.alt}, caption: ${obj.caption}, caption: ${obj.attribution}, size: ${obj.size} } %}`;
+      },
+      toPreview: function(obj) {
+        return `<figure><img src=${obj.src} alt=${obj.alt}><figcaption>${obj.caption}<span>${obj.attribution}</span></figcaption></figure>`;
+      },
+    });
+  </script>
 </body>
 </html>
