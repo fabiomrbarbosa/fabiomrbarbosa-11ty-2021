@@ -34,7 +34,7 @@
         };
       },
       toBlock: function(obj) {
-        return `{% Figure { image: ${obj.src}, alt: ${obj.alt}, caption: ${obj.caption}, caption: ${obj.attribution}, size: ${obj.size} } %}`;
+        return `{% Figure { image: ${obj.src}, alt: ${obj.alt}, caption: ${obj.caption}, attribution: ${obj.attribution}, size: ${obj.size} } %}`;
       },
       toPreview: function(obj) {
         return `<figure><img src=${obj.src} alt=${obj.alt}><figcaption>${obj.caption}<span>${obj.attribution}</span></figcaption></figure>`;
