@@ -85,7 +85,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setDataDeepMerge(true);
 
   return {
-    templateFormats: ["md", "njk", "html", "liquid"],
+    templateFormats: ["md", "njk", "liquid"],
     pathPrefix: "/",
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
