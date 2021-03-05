@@ -1,12 +1,13 @@
 ---
 title: Earth & Nature
 description: An invitation for us to become a Home.
+translationKey: terra-natureza
 date: 2017-06-03
 tags:
   - spirit
-translationKey: terra-natureza
+featured: false
+status: evergreen
 ---
-
 And if the Song of the World places us on the same level as all other beings, capable of building up or damaging their surroundings and of living the consequences in their respective worlds, what are the boundaries of this "Nature" we talk about?
 
 One of the foundations of earth spirituality consists of developing an increasingly just relationship with the earth that serves us as our home. But, as I wrote on another occasion, I think that this practice also invites us to make ourselves a Home, both for those around us and for our very own individuality.
