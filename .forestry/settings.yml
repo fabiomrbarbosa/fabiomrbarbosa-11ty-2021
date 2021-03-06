@@ -10,12 +10,16 @@ sections:
   create: documents
   match: "**/*"
   exclude: "**/*.json"
+  templates:
+  - post
 - type: directory
   path: src/content/pt/articles
   label: Artigos PT
   create: documents
   match: "**/*"
   exclude: "**/*.json"
+  templates:
+  - post
 upload_dir: ''
 public_path: "/uploads"
 front_matter_path: ''
