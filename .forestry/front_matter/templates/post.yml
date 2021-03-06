@@ -26,7 +26,7 @@ fields:
   - name: alt
     type: text
     config:
-      required: true
+      required: false
     label: Alt Text
   - name: caption
     type: text
