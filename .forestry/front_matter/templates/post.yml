@@ -11,6 +11,9 @@ fields:
 - type: datetime
   name: date
   label: date
+  config:
+    date_format: YYYY-MM-DD
+    display_utc: true
 - type: list
   name: tags
   label: tags
