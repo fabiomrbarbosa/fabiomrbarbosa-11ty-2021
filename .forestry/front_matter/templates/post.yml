@@ -43,6 +43,10 @@ fields:
   type: tag_list
   default: []
   label: Tags
+- name: isFeatured
+  type: boolean
+  label: Featured Post?
+  default: false
 - type: text
   name: translationKey
   label: Translation Key
