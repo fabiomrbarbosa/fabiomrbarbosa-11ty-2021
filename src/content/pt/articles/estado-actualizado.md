@@ -5,7 +5,7 @@ date: 2020-07-08T22:00:00Z
 tags:
 - novidades
 translationKey: status-update
-coverImage: https://res.cloudinary.com/fabiomrbarbosa/v1615037188/cristina-gottardi-CSpjU6hYo_0-unsplash_j3us1m.jpg
+coverImage: "/uploads/cristina-gottardi-cspju6hyo_0-unsplash.jpg"
 coverImageAlt: Testing Cover Image Alt
 
 ---
