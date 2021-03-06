@@ -8,8 +8,8 @@ permalink: /{{ subDir }}blog/{{ page.fileSlug }}/
 {% Heading {
   title: title,
   subtitle: description,
-  dateTime: date | machineDate,
-  dateReadable: date | readableDate(locale),
+  machineDate: date | machineDate,
+  readableDate: date | readableDate(locale),
   className: 'heading--post'
 } %}
 
