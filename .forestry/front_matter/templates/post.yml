@@ -8,22 +8,37 @@ fields:
 - type: text
   name: description
   label: Description
-- name: coverImage
-  type: file
-  config:
-    maxSize: 64
-  label: Cover Image
-- name: coverImageAlt
-  type: text
-  config:
-    required: false
-  label: Cover Image Alt Text
 - type: datetime
   name: date
   label: Date
   config:
     date_format: YYYY-MM-DD
     display_utc: true
+- name: coverImage
+  type: field_group
+  config: {}
+  fields:
+  - name: src
+    type: file
+    config:
+      maxSize: 64
+    label: Source
+  - name: alt
+    type: text
+    config:
+      required: true
+    label: Alt Text
+  - name: caption
+    type: text
+    config:
+      required: false
+    label: Caption
+  - name: attribution
+    type: text
+    config:
+      required: false
+    label: Attribution
+  label: Cover Image
 - name: tags
   type: tag_list
   default: []
