@@ -3,7 +3,7 @@ layout: layouts/base.njk
 templateClass: tmpl-post
 contentType:
   - article
-permalink: /{{ subDir }}blog/{{ page.fileSlug }}/
+permalink: /{{ subDir }}{{ dictionary.content.articles.slug[locale] }}/{{ page.fileSlug }}/
 ---
 {% Heading {
   title: title,

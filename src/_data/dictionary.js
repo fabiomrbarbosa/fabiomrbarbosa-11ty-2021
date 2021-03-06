@@ -27,9 +27,21 @@ module.exports = {
       pt: "Mantenha-se em contacto.",
     },
   },
+  content: {
+    articles: {
+      title: {
+        en: "Articles",
+        pt: "Artigos",
+      },
+      slug: {
+        en: "articles",
+        pt: "artigos",
+      }
+    }
+  },
   postlist: {
     title: {
-      en: "Check out my latest posts.",
+      en: "Check out my latest articles.",
       pt: "Leia os meus mais recentes artigos.",
     },
     link: {
@@ -53,15 +65,15 @@ module.exports = {
   },
   archive: {
     permalink: {
-      en: "/blog",
-      pt: "/pt/blog",
+      en: "/articles",
+      pt: "/pt/artigos",
     },
     key: {
-      en: "Writings",
+      en: "Articles",
       pt: "Artigos",
     },
     title: {
-      en: "Selected writings",
+      en: "Selected articles",
       pt: "Artigos seleccionados",
     },
     subtitle: {

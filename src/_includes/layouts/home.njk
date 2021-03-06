@@ -23,7 +23,7 @@ permalink: /{{ subDir }}
 {% ArchiveList {
   title: dictionary.postlist.title[ locale ],
   linkText: dictionary.postlist.link[ locale ],
-  linkTarget: '/' + subDir + 'blog/',
+  linkTarget: '/' + subDir + dictionary.content.articles.slug[locale] + '/',
   className: 'feed'
 } %}
 

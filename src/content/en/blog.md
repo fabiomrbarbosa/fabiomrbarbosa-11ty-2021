@@ -1,10 +1,10 @@
 ---
 layout: layouts/archive.njk
-title: Writing
+title: Articles
 description: Thoughts and essays about Spirit, society, the Web and other media.
-translationKey: writing
+translationKey: articles
 eleventyNavigation:
-  key: Writing
+  key: Articles
   order: 2
-permalink: /{{ subDir }}blog/
+permalink: /{{ subDir }}{{ dictionary.content.articles.slug.en }}/
 ---
