@@ -21,7 +21,7 @@ sections:
   templates:
   - post
 upload_dir: ''
-public_path: "/uploads"
+public_path: https://res.cloudinary.com/fabiomrbarbosa
 front_matter_path: ''
 use_front_matter_path: 
 file_template: ":filename:"
