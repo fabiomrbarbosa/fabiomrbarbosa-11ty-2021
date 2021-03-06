@@ -10,7 +10,7 @@ eleventyNavigation:
   order: 1
 ---
 
-{% Image {
+{% Figure {
   image: 'assets/images/main_headshot.jpg',
   alt: "Fábio Barbosa's headshot",
   size: 'onethird'
