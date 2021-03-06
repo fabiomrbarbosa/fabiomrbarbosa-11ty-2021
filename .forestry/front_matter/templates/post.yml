@@ -8,6 +8,16 @@ fields:
 - type: text
   name: description
   label: Description
+- name: coverImage
+  type: file
+  config:
+    maxSize: 64
+  label: Cover Image
+- name: coverImageAlt
+  type: text
+  config:
+    required: false
+  label: Cover Image Alt Text
 - type: datetime
   name: date
   label: Date
