@@ -1,4 +1,4 @@
-const figureComp = require("./Figure");
+const imageComp = require("./Image");
 const markdownIt = require("markdown-it");
 const md = new markdownIt({
   html: true,
@@ -11,8 +11,8 @@ const md = new markdownIt({
 module.exports = function ({
   title = "",
   subtitle = "",
-  machineDate = "",
-  readableDate = "",
+  dateTime = "",
+  dateReadable = "",
   className = "",
   imageSrc = "",
   imageAlt = ""
@@ -24,7 +24,7 @@ module.exports = function ({
       <h1 class="heading__title">${md.renderInline(title)}</h1>
 
       ${imageSrc &&
-        figureComp({
+        imageComp({
           lazy: false,
           className: "heading__img",
           image: imageSrc,
@@ -38,9 +38,9 @@ module.exports = function ({
       }
 
       ${
-        machineDate &&
-        /*html*/ `<time class="heading__datetime" datetime="${machineDate}">
-        ${readableDate}
+        dateTime &&
+        /*html*/ `<time class="heading__datetime" datetime="${dateTime}">
+        ${dateReadable}
         </time>`
       }
 

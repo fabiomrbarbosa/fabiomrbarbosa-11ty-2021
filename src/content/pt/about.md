@@ -8,12 +8,9 @@ translationKey: about
 eleventyNavigation:
   key: Quem sou
   order: 1
-dir: ltr
-locale: pt
-subDir: pt/
 ---
 
-{% Figure {
+{% Image {
   image: 'assets/images/main_headshot.jpg',
   alt: 'Foto de Fábio Barbosa',
   size: 'onethird'

@@ -3,7 +3,7 @@ title: Contra-Luz
 date: 2016-12-21
 tags:
   - espírito
-translationKey: backlit
+translationKey: contra-luz
 ---
 
 Por agora tens que descansar.

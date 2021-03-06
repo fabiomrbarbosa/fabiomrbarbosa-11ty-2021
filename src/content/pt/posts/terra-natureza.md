@@ -1,10 +1,10 @@
 ---
 title: Terra e Natureza
 description: Um convite a fazermo-nos Casa.
-translationKey: terra-natureza
 date: 2017-06-03
 tags:
   - espírito
+translationKey: terra-natureza
 ---
 
 E se a Canção do Mundo nos coloca no mesmo patamar que todos os demais seres, capazes de construir ou de causar dano e de viver as consequências nos seus respectivos mundos, quais as fronteiras dessa tal de "Natureza"?

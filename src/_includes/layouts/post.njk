@@ -1,14 +1,15 @@
 ---
 layout: layouts/base.njk
 templateClass: tmpl-post
-contentType: article
+contentType:
+  - article
 permalink: /{{ subDir }}blog/{{ page.fileSlug }}/
 ---
 {% Heading {
   title: title,
   subtitle: description,
-  machineDate: date | machineDate,
-  readableDate: date | readableDate(locale),
+  dateTime: date | machineDate,
+  dateReadable: date | readableDate(locale),
   className: 'heading--post'
 } %}
 
@@ -19,4 +20,5 @@ permalink: /{{ subDir }}blog/{{ page.fileSlug }}/
 </div>
 
 {%- include "partials/postnav.njk" -%}
+
 {%- include "partials/subscribe.njk" -%}
