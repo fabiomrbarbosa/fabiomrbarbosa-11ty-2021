@@ -4,14 +4,14 @@
 {% set pageDescription = computedData.description or description or dictionary.site.subtitle[ locale ] %}
 {% set pageType = 'article' if contentType == 'article' else 'webpage' %}
 
-{% if socialImage %}
-  {% set pageImage = socialImage | url %}
+{% if coverImage %}
+  {% set pageImage = coverImage | url %}
 {% else %}
   {% set pageImage %}
     {% CloudImage {title: pageTitleSocial, description: pageDescription } %}
   {% endset %}
 {% endif %}
-{% set pageImageAlt = socialImageAlt or pageDescription %}
+{% set pageImageAlt = coverImageAlt or pageDescription %}
 
 {% set devCss %}
   {% include "styles/main.min.css" %}
