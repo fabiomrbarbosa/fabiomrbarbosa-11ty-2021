@@ -78,6 +78,7 @@ module.exports = function (eleventyConfig) {
     return [...tagSet];
   });
 
+  eleventyConfig.addPassthroughCopy("./src/uploads");
   eleventyConfig.addPassthroughCopy("./src/assets/images");
   eleventyConfig.addPassthroughCopy("./src/assets/fonts");
 
