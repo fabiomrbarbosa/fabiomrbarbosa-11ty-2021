@@ -5,12 +5,6 @@ date: 2020-07-08T22:00:00.000+00:00
 tags:
 - novidades
 translationKey: status-update
-coverImage:
-  src: "/uploads/cristina-gottardi-cspju6hyo_0-unsplash.jpg"
-  alt: Testing Alt text
-  caption: Testing Caption
-  attribution: And this is an attribution.
-coverImageAlt: ''
 status: Seedling
 
 ---

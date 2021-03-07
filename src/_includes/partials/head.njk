@@ -5,13 +5,13 @@
 {% set pageType = 'article' if contentType == 'article' else 'webpage' %}
 
 {% if coverImage %}
-  {% set pageImage = coverImage | url %}
+  {% set pageImage = coverImage.src | url %}
 {% else %}
   {% set pageImage %}
     {% CloudImage {title: pageTitleSocial, description: pageDescription } %}
   {% endset %}
 {% endif %}
-{% set pageImageAlt = coverImageAlt or pageDescription %}
+{% set pageImageAlt = coverImage.alt or pageDescription %}
 
 {% set devCss %}
   {% include "styles/main.min.css" %}
