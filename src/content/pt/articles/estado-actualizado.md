@@ -13,7 +13,7 @@ Quem trabalha nas áreas criativas já terá decerto ouvido alguém dizer que n�
 A minha carreira como consultor atravessa várias competências, desde a escrita para publicidade à programação. Além disso, também escrevo poesia, desenvolvo artigos e palestras sobre espiritualidade telúrica, estou à frente de uma revista sobre temas druídicos, interesso-me por \[algumas\] terapêuticas alternativas e formas de divinação, e nos tempos livres ainda me ponho a investigar sobre assuntos mais mundanos, como a linguística ou a cultura pop. Eu podia ter optado por me esconder atrás de um panfleto com uma ou duas mensagens, como se estivesse a tentar caber num anúncio de 30 segundos. Mas a minha caminhada pessoal, que pretendo partilhar neste espaço, tem-me guiado numa direcção de cada vez maior autenticidade e vulnerabilidade. Mais importante que isso, já que estamos a discutir "marcas pessoais" e os valores que as caracterizam, muitos dos meus valores actuais estão em desacordo com algumas das melhores práticas das indústrias onde me movimento.
 
 {% Figure {
-image: 'full/path/to/image.jpg',
+image: '/uploads/tj-holowaychuk-igrsa9rl11o-unsplash.jpg',
 alt: 'Alternative Text',
 caption: 'Image caption',
 attribution: 'Image attribution',
