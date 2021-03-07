@@ -15,7 +15,9 @@ module.exports = function ({
   readableDate = "",
   className = "",
   imageSrc = "",
-  imageAlt = ""
+  imageAlt = "",
+  imageCaption = "",
+  imageAttribution = ""
 } = {}) {
   return /*html*/ `
   <div class="heading ${className} ">
@@ -29,6 +31,8 @@ module.exports = function ({
           className: "heading__img",
           image: imageSrc,
           alt: imageAlt,
+          caption: imageCaption,
+          attribution: imageAttribution,
           size: "full", })
       }
 

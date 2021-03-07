@@ -10,8 +10,10 @@ permalink: /{{ subDir }}{{ dictionary.content.articles.slug[locale] }}/{{ page.f
   subtitle: description,
   machineDate: date | machineDate,
   readableDate: date | readableDate(locale),
-  imageSrc: coverImage,
-  imageAlt: coverImageAlt,
+  imageSrc: coverImage.src,
+  imageAlt: coverImage.alt,
+  imageCaption: coverImage.caption,
+  imageAttribution: coverImage.attribution,
   className: 'heading--post'
 } %}
 
