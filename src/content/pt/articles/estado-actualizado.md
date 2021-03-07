@@ -5,8 +5,13 @@ date: 2020-07-08T22:00:00.000+00:00
 tags:
 - novidades
 translationKey: status-update
-coverImage: ''
+coverImage:
+  src: "/uploads/cristina-gottardi-cspju6hyo_0-unsplash.jpg"
+  alt: Testing Alt text
+  caption: Testing Caption
+  attribution: And this is an attribution.
 coverImageAlt: ''
+status: Seedling
 
 ---
 Quem trabalha nas áreas criativas já terá decerto ouvido alguém dizer que nós somos os nossos piores clientes. Quando somos o nosso próprio cliente, não raro falta-nos a distância necessária para nos analisarmos enquanto _produto_. Um produto com um público-alvo e uma dada estratégia com vista a uma marca que, neste caso, consiste numa _persona_ ou "máscara" profissional com as características e valores que escolhemos exibir ou, se necessário for, fingir até que dêem resultado. A tarefa complica-se quanto mais diversificados forem os interesses e as competências que nos caracterizam. E chega a ser quase impossível caso nos atrevamos a desafiar as normas do _marketing_ pessoal e profissional porque, francamente, somos seres humanos e nem tudo acerca de nós precisa de ser um _selling point_.
