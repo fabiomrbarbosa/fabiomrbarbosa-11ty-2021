@@ -39,14 +39,29 @@ fields:
       required: false
     label: Attribution
   label: Cover Image
-- name: tags
-  type: tag_list
-  default: []
-  label: Tags
 - name: isFeatured
   type: boolean
   label: Featured Post?
   default: false
+- name: status
+  type: select
+  default: Seedling
+  config:
+    required: true
+    options:
+    - Seedling
+    - Budding
+    - Evergreen
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Status
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
 - type: text
   name: translationKey
   label: Translation Key
