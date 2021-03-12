@@ -58,6 +58,7 @@ module.exports = function ({
   return /*html*/ `
   <figure class=" ${imageSettings[size].classes} ${extraClass} ">
     <img
+      decoding="async"
       loading=${lazy == true ? "lazy" : "eager"}
       alt="${alt}"
       src="${imageFetch(imageUrl, imageSettings[size].fallbackWidth)}"
