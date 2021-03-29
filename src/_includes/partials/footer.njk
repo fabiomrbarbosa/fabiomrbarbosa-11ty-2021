@@ -1,7 +1,17 @@
 <footer class="site-footer" role="contentinfo">
   <div class="site-footer__inner">
     <div class="site-footer__links">
-      {%- include "partials/menu.njk" -%}
+      <nav class="menu" aria-label="footer-navigation">
+        <ul class="menu__list">
+          {%- for entry in collections[locale] | eleventyNavigation -%}
+
+          <li class="menu__item"{% if page.url == entry.url %} aria-current="page"{% endif %}>
+            <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+          </li>
+
+          {%- endfor -%}
+        </ul>
+      </nav>
       {%- include "partials/contact.njk" -%}
     </div>
 
