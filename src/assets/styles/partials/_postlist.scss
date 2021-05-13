@@ -18,10 +18,9 @@
 
   &__link {
     @extend %linkText;
-    display: inline-block;
-    font-family: var(--font-display);
     font-size: $size-step-1;
-    letter-spacing: 0.01em;
+    line-height: $size-step-2;
+    display: inline-block;
     margin-right: .5rem;
     margin-bottom: .5rem;
   }

@@ -1,6 +1,6 @@
 .subscribe {
   @extend %container;
-  --color-bg: var(--color-accent-light);
+  --color-bg: var(--color-gray-verylight);
 
   &__inner {
     @extend %content;

@@ -8,8 +8,7 @@
 
   &__title {
     --color-fg-display: var(--color-accent);
-    font-size: $size-step-4;
-    line-height: $size-step-4;
+    @extend %titleText;
     margin-top: 0;
   }
 

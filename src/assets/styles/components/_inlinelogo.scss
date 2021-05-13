@@ -25,7 +25,7 @@
       }
 
       .logo__hover path {
-        stroke: var(--color-gold);
+        stroke: var(--color-accent);
       }
     }
 
@@ -41,7 +41,7 @@
       animation: stretchingin 4.5s cubic-bezier(0.83, 0, 0.17, 1) forwards;
 
       & path {
-        stroke: var(--color-gold);
+        stroke: var(--color-gray-light);
         stroke-dasharray: 110;
         transform: translateZ(0);
       }

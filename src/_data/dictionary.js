@@ -17,8 +17,8 @@ module.exports = {
       pt: "Boas-vindas!",
     },
     subtitle: {
-      en: "My name is Fábio and I'm an author, creative + mystic.",
-      pt: "Chamo-me Fábio e sou um autor, criativo + místico.",
+      en: "My name is Fábio <br>and I'm an author, creative + mystic.",
+      pt: "Chamo-me Fábio <br>e sou um autor, criativo + místico.",
     },
     lede: {
       en:
