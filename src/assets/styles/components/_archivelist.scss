@@ -10,6 +10,7 @@
     --color-fg-display: var(--color-accent);
     @extend %titleText;
     margin-top: 0;
+    margin-bottom: $size-step--2;
   }
 
   &__footer {

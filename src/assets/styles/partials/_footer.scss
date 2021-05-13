@@ -2,10 +2,9 @@
   @extend %container;
   --color-bg: var(--color-black);
   --color-fg: var(--color-gray-light);
-  --color-link: var(--color-accent-light);
+  --color-link: var(--color-gray-verylight);
   --color-link-hover: var(--color-accent);
   --color-border: var(--color-gray-dark);
-  --color-accent: var(--color-gold);
 
   &__inner {
     @extend %content;
@@ -36,7 +35,8 @@
 
     & a {
       border-bottom: 0;
-      line-height: 2.25;
+      font-size: $size-step--1;
+      line-height: $size-step-2;
 
       &:after {
         content: "" !important;

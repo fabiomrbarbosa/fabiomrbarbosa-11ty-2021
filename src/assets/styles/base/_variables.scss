@@ -1,8 +1,9 @@
 :root {
   // Font families
   --font-display: "DM Serif Display", "Source Serif", "Roboto Serif", Athelas, Times, "Times New Roman", serif;
-  --font-sans: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-sans: "Inter Var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-serif: "Source Serif", "Roboto Serif", Georgia, Athelas, Times, "Times New Roman", serif;
+
   // Colours
   --color-black: #13111e;
   --color-gray-dark: #2a2834;
@@ -10,9 +11,6 @@
   --color-gray-light: #b9b3a7;
   --color-gray-verylight: #f2f2f2;
   --color-white: #fff;
-
-  --color-gold: #b4a270;
-  --color-gold-light: #f0ece2;
 
   // New Pastels
 
