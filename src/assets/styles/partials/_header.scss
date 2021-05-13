@@ -3,11 +3,8 @@
   padding-bottom: 0 !important;
 
   &__inner {
-    display: flex;
-    flex-direction: column;
+    @extend %content;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 $size-step-2;
   }
 
   &__title {
@@ -15,10 +12,12 @@
   }
 
   &__logo {
-    flex: 1;
+    grid-column: 2;
     position: relative;
     margin-top: 4rem;
     margin-bottom: 4rem;
+    margin-left: 2rem;
+    width: 3rem;
   }
 
   &__navigation {

@@ -41,7 +41,7 @@
       animation: stretchingin 4.5s cubic-bezier(0.83, 0, 0.17, 1) forwards;
 
       & path {
-        stroke: var(--color-accent);
+        stroke: var(--color-gold);
         stroke-dasharray: 110;
         transform: translateZ(0);
       }

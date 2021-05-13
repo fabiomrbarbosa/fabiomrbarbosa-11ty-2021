@@ -44,7 +44,7 @@
   // --color-link-visited: var(--color-gray-darker);
   --color-link-hover: var(--color-black);
   --color-border: rgba(136, 136, 136, .5);
-  --color-accent: var(--color-gold);
+  --color-accent: var(--color-red);
   --color-accent-light: var(--color-gold-light);
   --color-complementary: var(--color-purple);
 }
@@ -153,6 +153,6 @@ $size-step-6: calc(
 // Breakpoints
 $mobile: "max-width: 37.5rem";
 $tablet: "min-width: 37.5rem";
-$desktop: "min-width: 65rem";
+$desktop: "min-width: 57.5rem";
 $maxscreen: "min-width: calc(#{$fluid-max-width} / 16 * 1rem)";
 $widescreen: "min-width: 100rem";

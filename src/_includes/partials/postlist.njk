@@ -6,13 +6,13 @@
 
     <a href="{{ post.url | url }}" class="postlist__link">{{ post.data.title }}</a>
 
-    {% if post.data.description %}<p class="postlist__description">{{ post.data.description }}</p>{% endif %}
-    <time class="postlist__date" datetime="{{ post.date | machineDate }}">{{ post.date | readableDate(locale) }}</time>
-
     {% for tag in post.data.tags %}
       {% set tagUrl %}/{{ subDir }}tags/{{ tag | slug }}/{% endset %}
       <a href="{{ tagUrl }}" class="tag">{{ tag }}</a>
     {% endfor %}
+
+    {% if post.data.description %}<p class="postlist__description">{{ post.data.description }}</p>{% endif %}
+    <time class="postlist__date" datetime="{{ post.date | machineDate }}">{{ post.date | readableDate(locale) }}</time>
 
   </li>
 
