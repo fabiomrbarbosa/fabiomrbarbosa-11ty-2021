@@ -17,7 +17,7 @@
 %content {
   display: grid;
   grid-template-columns: $size-step-2 1fr $size-step-2;
-  row-gap: 0;
+  grid-gap: 0;
 
   margin: 0 auto;
 
@@ -26,8 +26,8 @@
   }
 
   @include breakpoint($desktop) {
-    grid-template-columns: $size-step-3 repeat(5, 1fr) $size-step-3;
-    column-gap: $size-step-5;
+    grid-template-columns: 0 repeat(5, 1fr) 0;
+    grid-column-gap: $size-step-5;
 
     > * {
       grid-column: 4 / 7;
@@ -36,6 +36,20 @@
 
   &:not(:last-child) {
     border-bottom: 1px solid var(--color-border);
+  }
+}
+
+%content--float {
+  padding-left: $size-step-2;
+  padding-right: $size-step-2;
+
+  @include breakpoint($desktop) {
+    padding-left: $size-step-3;
+    padding-right: $size-step-3;
+
+    > * {
+      margin-left: calc(40% + #{$size-step-5});
+    }
   }
 }
 

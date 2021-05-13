@@ -11,6 +11,7 @@ const md = new markdownIt({
 module.exports = function ({
   title = "",
   subtitle = "",
+  lede = "",
   machineDate = "",
   readableDate = "",
   className = "",
@@ -20,10 +21,11 @@ module.exports = function ({
   imageAttribution = ""
 } = {}) {
   return /*html*/ `
-  <div class="heading ${className} ">
-    <div class="heading__inner">
+  <div class="heading ${className}">
+    <div class="heading__inner ${imageSrc == "" && `heading--no-picture`}">
 
       <h1 class="heading__title">${md.renderInline(title)}</h1>
+      ${subtitle && /*html*/ `<h2 class="heading__subtitle">${md.renderInline(subtitle)}</h2>`}
 
       ${imageSrc &&
         figureComp({
@@ -37,8 +39,8 @@ module.exports = function ({
       }
 
       ${
-        subtitle &&
-        /*html*/ `<p class="heading__subtitle">${md.renderInline(subtitle)}</p>`
+        lede &&
+        /*html*/ `<p class="heading__lede">${md.renderInline(lede)}</p>`
       }
 
       ${

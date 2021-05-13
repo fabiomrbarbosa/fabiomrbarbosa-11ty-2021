@@ -12,11 +12,15 @@ module.exports = {
     },
   },
   home: {
-    welcome: {
-      en: "Welcome!<br> My name is Fábio and I'm an author, creative + mystic.",
-      pt: "Boas-vindas!<br> Chamo-me Fábio e sou um autor, criativo + místico.",
-    },
     title: {
+      en: "Welcome!",
+      pt: "Boas-vindas!",
+    },
+    subtitle: {
+      en: "My name is Fábio and I'm an author, creative + mystic.",
+      pt: "Chamo-me Fábio e sou um autor, criativo + místico.",
+    },
+    lede: {
       en:
         "I develop media and creative solutions for people and brands with a conscious outlook, and create content that seeks to promote healing and empathy through poetry and prose, myth and ritual. Find out more [about me](/about/), or [read some of my thoughts](/blog/).",
       pt:

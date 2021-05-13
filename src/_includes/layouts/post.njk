@@ -7,7 +7,7 @@ permalink: /{{ subDir }}{{ dictionary.content.articles.slug[locale] }}/{{ page.f
 ---
 {% Heading {
   title: title,
-  subtitle: description,
+  lede: description,
   machineDate: date | machineDate,
   readableDate: date | readableDate(locale),
   imageSrc: coverImage.src,
