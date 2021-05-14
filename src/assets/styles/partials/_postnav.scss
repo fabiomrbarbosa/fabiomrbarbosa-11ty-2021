@@ -8,7 +8,7 @@
 
   &__title {
     margin-bottom: $size-step-1;
-    @extend %altText;
+    @extend %titleText;
     @include breakpoint($desktop) {
       grid-column: 2/4;
     }

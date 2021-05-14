@@ -13,6 +13,7 @@
   }
   
   &__logo {
+    margin-bottom: $size-step-2;
     @include breakpoint($desktop) {
       grid-column: 2/4;
     }
