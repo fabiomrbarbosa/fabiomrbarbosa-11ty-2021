@@ -10,7 +10,6 @@
   &__item {
     & a {
       @extend %altText;
-      font-weight: bold;
       font-size: $size-step--1;
       line-height: $size-step-2;
       display: block;
