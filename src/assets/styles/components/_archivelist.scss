@@ -35,4 +35,10 @@
       right: -0.25rem;
     }
   }
+
+  @include breakpoint($desktop) {
+    &__title {
+      grid-column: 2/4;
+    }
+  }
 }

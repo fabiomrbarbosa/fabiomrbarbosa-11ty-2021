@@ -32,10 +32,6 @@ body {
   position: relative;
   font-size: $size-step-0;
   line-height: $size-step-2;
-
-  @include breakpoint($maxscreen) {
-    font-size: $fluid-max-size * 1px;
-  }
 }
 
 .site-header,
