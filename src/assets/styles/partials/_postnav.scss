@@ -1,6 +1,7 @@
 .postnav {
   @extend %container;
   border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
 
   &__inner {
     @extend %content;
