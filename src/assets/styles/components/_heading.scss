@@ -45,7 +45,8 @@
   }
 
   @include breakpoint($desktop) {
-    &--no-picture > &__title {
+    &--no-picture > &__title,
+    &--no-picture > &__datetime {
       grid-column: 2/4;
     }
 
