@@ -45,8 +45,8 @@
   }
 
   @include breakpoint($desktop) {
-    &--no-picture > * {
-      grid-column: 2/6;
+    &--no-picture > &__title {
+      grid-column: 2/4;
     }
 
     &__img {
