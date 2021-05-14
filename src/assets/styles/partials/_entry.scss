@@ -9,6 +9,11 @@
   @extend %content;
   // font-family: var(--font-serif);
 
+  h2,
+  h3 {
+    @extend %titleText;
+  }
+
   p {
     max-width: 37.5em;
 
