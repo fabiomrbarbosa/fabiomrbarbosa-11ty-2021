@@ -5,10 +5,17 @@
   --color-link: var(--color-gray-verylight);
   --color-link-hover: var(--color-accent);
   --color-border: var(--color-gray-dark);
+  --color-accent: var(--color-accent-light);
 
   &__inner {
     @extend %content;
     border-bottom: none !important;
+  }
+  
+  &__logo {
+    @include breakpoint($desktop) {
+      grid-column: 2/4;
+    }
   }
 
   &__links {

@@ -1,6 +1,10 @@
 .subscribe {
   @extend %container;
-  --color-bg: var(--color-gray-verylight);
+  --color-bg: var(--color-accent);
+  --color-fg: var(--color-white);
+  --color-fg-display: var(--color-white);
+  --color-link: var(--color-white);
+  --color-link-hover: var(--color-black);
 
   &__inner {
     @extend %content;

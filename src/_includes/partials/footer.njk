@@ -1,5 +1,13 @@
 <footer class="site-footer" role="contentinfo">
   <div class="site-footer__inner">
+    <div class="logo site-footer__logo">
+      <a href="{{ '/' + subDir | url }}" aria-label="Home link">
+        {% InlineIcon {
+          file: "../../assets/images/logo_monogram.svg",
+          location: "footer"
+        } %}
+      </a>
+    </div>
     <div class="site-footer__links">
       <nav class="menu" aria-label="footer-navigation">
         <ul class="menu__list">

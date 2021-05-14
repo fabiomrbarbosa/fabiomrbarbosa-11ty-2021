@@ -20,6 +20,7 @@
   grid-gap: 0;
 
   margin: 0 auto;
+  max-width: calc(#{$fluid-max-width} / 16 * 1rem);
 
   > * {
     grid-column: 2 / -2;
