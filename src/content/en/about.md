@@ -24,7 +24,7 @@ Throughout the years I have had the opportunity to work with both local and inte
 
 I have also pitched and authored several entertainment and documentary formats for all screens, and have been asked to code, curate and manage a number of interactive media platforms.
 
-As a consultant, I work with brands and people with a transformative vision to help them tell their story in their most authentic voice, and design immersive experiences to engage their audiences.I approach my work as a craft, and I believe my wide range of skills allows me to bring a more holistic point of view to any project in which I’m involved.
+As a consultant, I work with brands and people with a transformative vision to help them tell their story in their most authentic voice, and design immersive experiences to engage their audiences. I approach my work as a craft, and I believe my wide range of skills allows me to bring a more holistic point of view to any project in which I’m involved.
 
 In my spare time, I am an amateur researcher and author in the fields of mythology and spirituality, interested in the intersection of the Perennial Wisdom and the many earth-based and mystery traditions. I have published several articles in like-minded media, in which I expound on our urgent need for a non-dualistic and empathic way of living. I am also the editor of the *Ophiusa* magazine, the Order of Bards, Ovates and Druids' periodical publication for Portuguese speakers.
 
