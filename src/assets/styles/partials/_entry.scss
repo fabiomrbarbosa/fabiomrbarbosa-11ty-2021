@@ -7,7 +7,7 @@
 
 .entry-content {
   @extend %content;
-  // font-family: var(--font-serif);
+  position: relative;
 
   h2,
   h3 {
@@ -48,8 +48,10 @@
     }
 
     figure.onethird {
-      grid-column: 2/4;
-      grid-row: span 3;
+      position: absolute;
+      left: 0;
+      grid-column: 2;
+      width: 34%;
     }
   }
 }

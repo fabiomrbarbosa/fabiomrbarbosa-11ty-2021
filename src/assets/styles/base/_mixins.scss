@@ -40,20 +40,6 @@
   }
 }
 
-%content--float {
-  padding-left: $size-step-2;
-  padding-right: $size-step-2;
-
-  @include breakpoint($desktop) {
-    padding-left: $size-step-3;
-    padding-right: $size-step-3;
-
-    > * {
-      margin-left: calc(40% + #{$size-step-5});
-    }
-  }
-}
-
 %titleText {
   font-weight: 600;
   font-size: $size-step-1;
