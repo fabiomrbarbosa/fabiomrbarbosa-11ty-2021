@@ -1,10 +1,10 @@
 ---
 layout: layouts/archive.njk
-title: Articles
+title: Blog
 description: Thoughts and essays about Spirit, society, the Web and other media.
-translationKey: articles
+translationKey: blog
 eleventyNavigation:
-  key: Articles
+  key: blog
   order: 2
-permalink: /{{ subDir }}{{ dictionary.content.articles.slug.en }}/
+permalink: /{{ subDir }}/blog/
 ---

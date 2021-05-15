@@ -1,10 +1,10 @@
 ---
 layout: layouts/archive.njk
-title: Artigos
+title: Blog
 description: Pensamentos e ensaios sobre o Espírito, a sociedade, a Web e outros media.
-translationKey: articles
+translationKey: blog
 eleventyNavigation:
-  key: Artigos
+  key: Blog
   order: 2
-permalink: /{{ subDir }}{{ dictionary.content.articles.slug.pt }}/
+permalink: /{{ subDir }}/blog/
 ---

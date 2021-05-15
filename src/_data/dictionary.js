@@ -31,18 +31,6 @@ module.exports = {
       pt: "Mantenha-se em contacto.",
     },
   },
-  content: {
-    articles: {
-      title: {
-        en: "Articles",
-        pt: "Artigos",
-      },
-      slug: {
-        en: "articles",
-        pt: "artigos",
-      }
-    }
-  },
   postlist: {
     title: {
       en: "Check out my latest articles.",
@@ -69,8 +57,8 @@ module.exports = {
   },
   archive: {
     permalink: {
-      en: "/articles",
-      pt: "/pt/artigos",
+      en: "/blog",
+      pt: "/pt/blog",
     },
     key: {
       en: "Articles",
