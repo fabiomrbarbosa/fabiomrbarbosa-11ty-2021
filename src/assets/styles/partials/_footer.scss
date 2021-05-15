@@ -5,7 +5,7 @@
   --color-link: var(--color-gray-verylight);
   --color-link-hover: var(--color-accent);
   --color-border: var(--color-gray-dark);
-  --color-accent: var(--color-accent-light);
+  --color-accent: var(--color-gray-light);
 
   &__inner {
     @extend %content;
