@@ -61,8 +61,8 @@ module.exports = {
       pt: "/pt/blog",
     },
     key: {
-      en: "Articles",
-      pt: "Artigos",
+      en: "Blog",
+      pt: "Blog",
     },
     title: {
       en: "Selected articles",

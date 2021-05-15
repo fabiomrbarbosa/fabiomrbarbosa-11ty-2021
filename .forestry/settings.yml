@@ -5,16 +5,16 @@ admin_path: src/admin
 webhook_url: ''
 sections:
 - type: directory
-  path: src/content/en/articles
-  label: Articles EN
+  path: src/content/en/blog
+  label: Blog EN
   create: documents
   match: "**/*"
   exclude: "**/*.json"
   templates:
   - post
 - type: directory
-  path: src/content/pt/articles
-  label: Artigos PT
+  path: src/content/pt/blog
+  label: Blog PT
   create: documents
   match: "**/*"
   exclude: "**/*.json"
