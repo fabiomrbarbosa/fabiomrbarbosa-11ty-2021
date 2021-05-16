@@ -5,42 +5,34 @@
   --font-serif: "Newsreader", "Roboto Serif", Georgia, Athelas, Times, "Times New Roman", serif;
 
   // Colours
-  --color-black: #13111e;
-  --color-gray-dark: #2a2834;
-  --color-gray: #949399;
-  --color-gray-light: #bfbec2;
-  --color-gray-verylight: #f2f2f2;
+  --color-black: #151a21;
+  --color-gray-darkest: #1e2630;
+  --color-gray-dark: #4a5159;
+  --color-gray: #8e9297;
+  --color-gray-light: #bbbdc0;
+  --color-gray-lightest: #f2f2f2;
   --color-white: #fff;
 
-  // New Pastels
 
-  --color-lemon: hsl(57, 77%, 45%);
-  --color-lemon-light: hsl(57, 77%, 90%);
-  --color-ginger: hsl(33, 76%, 45%);
-  --color-ginger-light: hsl(33, 76%, 90%);
-  --color-rhubarb: hsl(4, 75%, 45%);
-  --color-rhubarb-light: hsl(4, 75%, 90%);
-  --color-strawberry: hsl(344, 75%, 45%);
-  --color-strawberry-light: hsl(344, 75%, 90%);
-  --color-raspberry: hsl(303, 47%, 45%);
-  --color-raspberry-light: hsl(303, 47%, 90%);
-  --color-lime: hsl(152, 53%, 45%);
-  --color-lime-light: hsl(152, 53%, 90%);
-  --color-sky: hsl(205, 53%, 45%);
-  --color-sky-light: hsl(205, 53%, 90%);
+  --color-beige: #F4F0EA;
 
+  --color-terracota: #B33B0E;
+  --color-olive: #806B35;
+  --color-ocean: #2F435B;
+  --color-forest: #4E6F6C;
+  --color-earth: #65422E;
+  --color-rose: #A55559;
 
+  --color-brightred: hsl(4, 75%, 45%);
 
   // Associations
+  --color-accent: var(--color-terracota);
   --color-bg: none;
-  --color-fg: var(--color-gray-dark);
+  --color-fg: var(--color-gray-darkest);
   --color-fg-display: var(--color-black);
-  --color-link: var(--color-gray-dark);
-  // --color-link-visited: var(--color-gray-darker);
-  --color-link-hover: var(--color-black);
+  --color-link: var(--color-fg);
+  --color-link-hover: var(--color-accent);
   --color-border: rgba(136, 136, 136, .5);
-  --color-accent: var(--color-rhubarb);
-  --color-accent-light: var(--color-rhubarb-light);
 }
 
 // Size steps

@@ -1,8 +1,8 @@
 module.exports = {
   site: {
     subtitle: {
-      en: "Author, creative + mystic.",
-      pt: "Autor, criativo + místico.",
+      en: "Designer, developer, copywriter, author + mystic.",
+      pt: "Designer, developer, copywriter, autor + místico.",
     },
   },
   feed: {
@@ -17,14 +17,14 @@ module.exports = {
       pt: "Boas-vindas!",
     },
     subtitle: {
-      en: "My name is Fábio <br>and I'm an author, creative + mystic.",
-      pt: "Chamo-me Fábio <br>e sou um autor, criativo + místico.",
+      en: "My name is Fábio and I'm a designer, developer, copywriter, author + mystic.",
+      pt: "Chamo-me Fábio e sou um designer, developer, copywriter, autor + místico.",
     },
     lede: {
       en:
-        "I develop media and creative solutions for people and brands with a conscious outlook. Here is where I explore topics such as non-duality and healing through poetry and prose, myth and ritual. Find out more [about me](/about/), or [read some of my thoughts](/blog/).",
+        "I develop media and creative solutions for people and brands with a conscious outlook. This is my digital garden where I express myself through poetry and prose, myth and ritual. Find out more [about me](/about/) or [read some of my thoughts](/blog/).",
       pt:
-        "Eu desenvolvo soluções de media e criatividade para pessoas e marcas com uma visão consciente. Este é o lugar onde exploro temas como o não-dualismo e a cura através da poesia e da prosa, do rito e do mito. Descubra mais [acerca de mim](/pt/quem-sou/), ou [leia sobre aquilo que penso](/pt/blog/).",
+        "Eu desenvolvo soluções de media e criatividade para pessoas e marcas com uma visão consciente. Este é o meu jardim digital, onde me exprimo através da poesia e da prosa, do rito e do mito. Fique a [conhecer-me melhor](/pt/acerca/) ou [leia algumas das minhas reflexões](/pt/blog/).",
     },
     contacts: {
       en: "Keep in touch.",

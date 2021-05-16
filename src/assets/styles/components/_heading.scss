@@ -9,7 +9,6 @@
 
   & a {
     @extend %linkText;
-    --color-link-hover: var(--color-accent);
   }
 
   &__title,
@@ -41,9 +40,8 @@
 
   &__img {
     grid-column: 1/-1;
-    margin-top: calc(#{$size-step-6} * .5);
-    margin-bottom: calc(#{$size-step-6} * .5);
-    clip-path: polygon(0 0, 62% 0, 62% 100%, 100% 0%, 100% 100%, 0 100%);
+    margin-top: $size-step-3;
+    margin-bottom: $size-step-3;
   }
 
   @include breakpoint($desktop) {
@@ -54,6 +52,8 @@
 
     &__img {
       grid-column: 2/7;
+      margin-top: $size-step-6;
+      margin-bottom: $size-step-6;
     }
   }
 }

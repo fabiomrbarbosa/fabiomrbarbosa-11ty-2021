@@ -1,6 +1,5 @@
 .entry-body {
   @extend %container;
-  --color-link-hover: var(--color-accent);
   padding-top: $size-step-5;
   padding-bottom: $size-step-5;
 }
@@ -28,8 +27,6 @@
   }
 
   a {
-    --color-link: var(--color-fg);
-    --color-link-hover: var(--color-accent);
     @extend %linkText;
 
     &.external-link {

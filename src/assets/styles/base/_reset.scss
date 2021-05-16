@@ -32,16 +32,16 @@ body {
 }
 
 html {
-  --color-bg: var(--color-white);
   font-family: var(--font-serif);
   font-size: 1rem;
-  background-color: var(
-    --color-bg
-  );
   box-sizing: border-box;
 }
 
 body {
+  --color-bg: var(--color-beige);
+  background-color: var(
+    --color-bg
+  );
   position: relative;
   font-size: $size-step-0;
   line-height: $size-step-2;
@@ -101,10 +101,8 @@ img {
 }
 
 a {
-  --color-bg: var(--color-white);
   color: var(--color-link);
-  // &:visited {color: var(--color-link); }
-  // &:visited {color: var(--color-link-visited); }
+  
   &:focus,
   &:hover,
   &:active {

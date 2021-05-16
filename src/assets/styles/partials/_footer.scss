@@ -2,10 +2,8 @@
   @extend %container;
   --color-bg: var(--color-black);
   --color-fg: var(--color-gray-light);
-  --color-link: var(--color-gray-verylight);
-  --color-link-hover: var(--color-accent);
+  --color-link: var(--color-white);
   --color-border: var(--color-gray-dark);
-  --color-accent: var(--color-gray-light);
 
   &__inner {
     @extend %content;

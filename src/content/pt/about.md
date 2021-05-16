@@ -2,7 +2,7 @@
 layout: layouts/page.njk
 title: Acerca
 publicTitle: Muito gosto!
-description: Fique a saber um pouco mais acerca de mim.
+description: Fique a conhecer-me melhor.
 templateClass: tmpl-page
 translationKey: about
 eleventyNavigation:

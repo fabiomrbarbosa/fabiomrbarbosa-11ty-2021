@@ -1,6 +1,6 @@
 .postnav {
   @extend %container;
-  --color-bg: var(--color-gray-verylight);
+  --color-bg: var(--color-gray-lightest);
 
   &__inner {
     @extend %content;
