@@ -1,7 +1,6 @@
 const site = require("../../_data/metadata.js");
+const md = require("../../_utils/libraries/markdown");
 const imageSize = require("image-size");
-const markdownIt = require("markdown-it");
-const md = new markdownIt();
 
 module.exports = function ({
   lazy = true,
