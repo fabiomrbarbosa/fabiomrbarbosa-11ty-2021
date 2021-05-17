@@ -3,14 +3,15 @@ layout: layouts/base.njk
 templateClass: tmpl-home
 permalink: /{{ subDir }}
 ---
-{% Heading {
+{%- from "components/init.njk" import component -%}
+{{ component('heading', {
   title: dictionary.home.title[ locale ],
   subtitle: dictionary.home.subtitle[ locale ],
   lede: dictionary.home.lede[ locale ],
   imageSrc: "assets/images/heading_home_202105.jpg",
   imageAlt: "Fábio Barbosa's portrait",
   className: "heading--home"
-} %}
+}) }}
 
 {% ArchiveList {
   title: dictionary.home.contacts[ locale ],

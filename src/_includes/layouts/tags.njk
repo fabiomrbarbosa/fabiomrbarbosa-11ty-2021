@@ -3,9 +3,12 @@ permalink: /{{ subDir }}tags/
 layout: layouts/base.njk
 translationKey: tags
 ---
-{% Heading {
-  title: 'Tags'
-} %}
+
+{%- from "components/init.njk" import component -%}
+{{ component('heading', {
+  title: 'Tags',
+  className: 'heading--archive'
+}) }}
 
 {% ArchiveList {
   className: 'tags--archive'

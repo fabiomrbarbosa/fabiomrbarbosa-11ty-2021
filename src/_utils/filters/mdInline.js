@@ -1,3 +1,5 @@
+const md = require("../libraries/markdown");
+
 module.exports = (value) => {
-  return this.md.renderInline(value);
+  return md.renderInline(value);
 }

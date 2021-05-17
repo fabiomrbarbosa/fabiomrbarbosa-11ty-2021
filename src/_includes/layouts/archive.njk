@@ -2,11 +2,12 @@
 layout: layouts/base.njk
 templateClass: tmpl-archive
 ---
-{% Heading {
+{%- from "components/init.njk" import component -%}
+{{ component('heading', {
   title: dictionary.archive.title[ locale ],
   lede: dictionary.archive.subtitle[ locale ],
   className: 'heading--archive'
-} %}
+}) }}
 
 {% ArchiveList {
   className: 'feed'

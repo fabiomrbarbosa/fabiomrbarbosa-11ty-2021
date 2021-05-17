@@ -7,8 +7,12 @@
     position: relative;
   }
 
-  & a {
+  & a:not(.tag) {
     @extend %linkText;
+  }
+
+  &__tags {
+    margin-bottom: .5rem;
   }
 
   &__title,
@@ -45,6 +49,7 @@
   }
 
   @include breakpoint($desktop) {
+    &--no-picture > &__tags,
     &--no-picture > &__title,
     &--no-picture > &__datetime {
       grid-column: 2/4;

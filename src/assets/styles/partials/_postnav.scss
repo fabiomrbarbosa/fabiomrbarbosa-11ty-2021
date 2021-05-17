@@ -1,9 +1,11 @@
 .postnav {
   @extend %container;
-  --color-bg: var(--color-gray-lightest);
+  padding-top: 0;
 
   &__inner {
     @extend %content;
+    padding-top: $size-step-2;
+    border-top: 1px solid var(--color-border);
   }
 
   &__title {

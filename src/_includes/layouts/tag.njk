@@ -17,10 +17,11 @@ permalink: /{{ subDir }}tags/{{ tag | slug }}/
 templateClass: tmpl-archive
 translationKey: tags
 ---
-{% Heading {
+{%- from "components/init.njk" import component -%}
+{{ component('heading', {
   title: title,
   className: 'heading--archive'
-} %}
+}) }}
 
 {% ArchiveList {
   linkText: dictionary.tag.link[ locale ],
