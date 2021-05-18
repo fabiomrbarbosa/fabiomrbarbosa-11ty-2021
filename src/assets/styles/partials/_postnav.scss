@@ -1,11 +1,13 @@
 .postnav {
   @extend %container;
-  padding-top: 0;
+  border-top: 0.5px solid var(--color-border);
 
   &__inner {
     @extend %content;
-    padding-top: $size-step-2;
-    border-top: 1px solid var(--color-border);
+
+    @include breakpoint($desktop) {
+      align-items: center;
+    }
   }
 
   &__title {
@@ -36,7 +38,6 @@
   }
 
   &__link {
-    --color-accent: var(--color-fg);
     @extend %linkText;
     display: inline-block;
   }

@@ -4,16 +4,17 @@
 
   <li class="postlist__item{% if post.url == url %} postlist__item--active{% endif %}">
 
-    <a href="{{ post.url | url }}" class="postlist__link">{{ post.data.title }}</a>
-
-    {% for tag in post.data.tags %}
-      {% set tagUrl %}/{{ subDir }}tags/{{ tag | slug }}/{% endset %}
-      <a href="{{ tagUrl }}" class="tag">{{ tag }}</a>
-    {% endfor %}
-
+    <p class="postlist__title"><a href="{{ post.url | url }}" class="postlist__link">{{ post.data.title }}</a></p>
     {% if post.data.description %}<p class="postlist__description">{{ post.data.description }}</p>{% endif %}
-    <time class="postlist__date" datetime="{{ post.date | machineDate }}">{{ post.date | readableDate(locale) }}</time>
+    
+    <div class="postlist__meta postmeta">
+      {% for tag in post.data.tags %}
+        {% set tagUrl %}/{{ subDir }}tags/{{ tag | slug }}/{% endset %}
+        <a href="{{ tagUrl }}" class="tag">{{ tag }}</a>
+      {% endfor %}
 
+      <time class="date" datetime="{{ post.date | machineDate }}">{{ post.date | readableDate(locale) }}</time>
+    </div>
   </li>
 
 {% endfor %}

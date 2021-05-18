@@ -4,7 +4,7 @@
   margin: 0;
 
   &:not(:last-child) {
-    border-bottom: 1px solid var(--color-border);
+    border-bottom: 0.5px solid var(--color-border);
   }
 
   &__item {
@@ -12,8 +12,12 @@
 
     &:not(:last-of-type) {
       margin-bottom: $size-step-2;
-      border-bottom: 1px solid var(--color-border);
+      border-bottom: 0.5px solid var(--color-border);
     }
+  }
+
+  &__title {
+    margin-bottom: 0;
   }
 
   &__link {
@@ -27,12 +31,5 @@
   &__description {
     font-size: $size-step-0;
     margin-bottom: 0;
-  }
-
-  &__date {
-    @extend %altText;
-    display: block;
-    font-size: $size-step--2;
-    color: var(--color-gray-dark);
   }
 }

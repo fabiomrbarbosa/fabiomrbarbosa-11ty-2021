@@ -41,3 +41,12 @@
     }
   }
 }
+
+.taglist {
+  display: flex;
+  column-gap: .5rem;
+  
+  @include breakpoint($desktop) {
+    grid-column: 4/7;
+  }
+}

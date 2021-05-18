@@ -25,6 +25,8 @@
   &__subtitle,
   &__lede {
     @extend %titleText;
+    font-size: $size-step-2;
+    line-height: $size-step-3;
     margin-bottom: 0;
   }
 
@@ -38,10 +40,6 @@
     max-width: 37.5em;
   }
 
-  &__datetime {
-    @extend %altText;
-  }
-
   &__img {
     grid-column: 1/-1;
     margin-top: $size-step-3;
@@ -49,9 +47,8 @@
   }
 
   @include breakpoint($desktop) {
-    &--no-picture > &__tags,
     &--no-picture > &__title,
-    &--no-picture > &__datetime {
+    &--no-picture > &__meta {
       grid-column: 2/4;
     }
 

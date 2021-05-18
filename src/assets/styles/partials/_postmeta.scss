@@ -1,0 +1,40 @@
+.postmeta {
+  display: flex;
+  margin-top: $size-step--2;
+}
+
+a.tag {
+  @extend %altText;
+  --color-link: var(--color-accent);
+  --color-link-hover: var(--color-bg);
+  display: block;
+  font-weight: 600;
+
+  position: relative;
+  padding: 0 .75rem 0 1.5rem;
+  border: 0.5px solid var(--color-link);
+  text-decoration: none;
+
+  &:before {
+    content: '#';
+    position: absolute;
+    left: .75rem;
+  }
+
+  &:focus,
+  &:hover,
+  &:active {
+    background-color: var(--color-link);
+  }
+}
+
+
+.date {
+  @extend %altText;
+  display: block;
+  font-size: $size-step--2;
+  color: var(--color-gray-dark);
+  padding: 0 .75rem;
+  border: 0.5px solid var(--color-gray-dark);
+  border-left: none;
+}

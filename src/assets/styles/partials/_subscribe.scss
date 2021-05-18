@@ -1,10 +1,10 @@
 .subscribe {
   @extend %container;
-  --color-bg: var(--color-accent);
-  --color-fg: var(--color-white);
-  --color-fg-display: var(--color-white);
-  --color-link: var(--color-white);
+  --color-fg: var(--color-accent);
+  --color-fg-display: var(--color-accent);
+  --color-link: var(--color-accent);
   --color-link-hover: var(--color-black);
+  border-top: 0.5px solid var(--color-border);
 
   &__inner {
     @extend %content;
