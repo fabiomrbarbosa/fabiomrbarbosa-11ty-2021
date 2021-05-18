@@ -23,7 +23,7 @@
   @include breakpoint($desktop) {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-column: 2/-2;
+    grid-column: 1/-1;
     column-gap: $size-step-4;
     margin-left: 0;
 

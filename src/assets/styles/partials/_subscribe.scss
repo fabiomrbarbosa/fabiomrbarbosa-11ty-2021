@@ -35,7 +35,7 @@
 
   @include breakpoint($desktop) {
     &__title {
-      grid-column: 2/4;
+      grid-column: 1/3;
     }
   }
 }

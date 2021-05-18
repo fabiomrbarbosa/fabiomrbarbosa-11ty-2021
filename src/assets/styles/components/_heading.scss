@@ -41,21 +41,28 @@
   }
 
   &__img {
-    grid-column: 1/-1;
     margin-top: $size-step-3;
     margin-bottom: $size-step-3;
+    margin-left: calc( #{$size-step-2} * -1 );
+    margin-right: calc( #{$size-step-2} * -1 );
   }
 
   @include breakpoint($desktop) {
     &--no-picture > &__title,
     &--no-picture > &__meta {
-      grid-column: 2/4;
+      grid-column: 1/3;
+    }
+
+    &--no-picture > &__lede {
+      grid-row: span 2;
     }
 
     &__img {
-      grid-column: 2/7;
+      grid-column: 1/6;
       margin-top: $size-step-6;
       margin-bottom: $size-step-6;
+      margin-left: 0;
+      margin-right: 0;
     }
   }
 }

@@ -15,7 +15,7 @@
     margin-bottom: $size-step-1;
     @extend %titleText;
     @include breakpoint($desktop) {
-      grid-column: 2/4;
+      grid-column: 1/3;
     }
   }
 

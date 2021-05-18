@@ -37,7 +37,7 @@
 
   @include breakpoint($desktop) {
     &__title {
-      grid-column: 2/4;
+      grid-column: 1/3;
     }
   }
 }
@@ -45,8 +45,8 @@
 .taglist {
   display: flex;
   column-gap: .5rem;
-  
+
   @include breakpoint($desktop) {
-    grid-column: 4/7;
+    grid-column: 3/6;
   }
 }
