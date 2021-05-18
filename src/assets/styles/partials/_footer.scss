@@ -1,9 +1,10 @@
 .site-footer {
   @extend %container;
-  --color-bg: var(--color-black);
-  --color-fg: var(--color-gray-light);
-  --color-link: var(--color-white);
-  --color-border: var(--color-gray-dark);
+  --color-bg: var(--color-accent);
+  --color-fg: var(--color-beige);
+  --color-link: var(--color-beige);
+  --color-link-hover: var(--color-white);
+  --color-border: rgba(0,0,0,.25);
 
   &__inner {
     @extend %content;
@@ -11,6 +12,7 @@
   }
   
   &__logo {
+    --color-accent: var(--color-white);
     margin-bottom: $size-step-2;
     @include breakpoint($desktop) {
       grid-column: 1/3;
