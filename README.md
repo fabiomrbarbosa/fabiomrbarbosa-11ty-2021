@@ -3,6 +3,7 @@
 Fábio M.R. Barbosa's official website, built with [Eleventy](https://github.com/11ty/eleventy) and hosted on [Netlify](https://netlify.com).
 
 ## License
+
 Open sourced under the MIT license.
 
 ## Installation
@@ -14,16 +15,9 @@ npm i
 ```
 
 ## Development
-`npm run develop`
+
+`npm run dev`
 
 ## Build
+
 `npm run build`
-
-## To Do
-- Go Indie Web; add Webmentions
-- Create new headers
-- Dark mode
-- Digital Garden and Canon
-- Run more accessibility checks (WAI-ARIA, tab order, skip links, etc.)
-
-## Blog Posts to come
