@@ -1,8 +1,11 @@
 :root {
   // Font families
-  --font-display: "DM Serif Display", "Source Serif", "Roboto Serif", Athelas, Times, "Times New Roman", serif;
-  --font-sans: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-serif: "Newsreader", "Roboto Serif", Georgia, Athelas, Times, "Times New Roman", serif;
+  --font-display: "DM Serif Display", "Source Serif", "Roboto Serif", Athelas,
+    Times, "Times New Roman", serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  --font-serif: "Newsreader", "Roboto Serif", Georgia, Athelas, Times,
+    "Times New Roman", serif;
 
   // Colours
   --color-black: #151a21;
@@ -13,15 +16,17 @@
   --color-gray-lightest: #f2f2f2;
   --color-white: #fff;
 
+  --color-gold: #f8cd5f;
+  --color-gold-light: #fef5df;
+  --color-gray-warm: #e2ddca;
+  --color-beige: #f9f8f4;
 
-  --color-beige: #F4F0EA;
-
-  --color-terracota: #B33B0E;
-  --color-olive: #806B35;
-  --color-ocean: #2F435B;
-  --color-forest: #4E6F6C;
-  --color-earth: #65422E;
-  --color-rose: #A55559;
+  --color-terracota: #b33b0e;
+  --color-olive: #806b35;
+  --color-ocean: #2f435b;
+  --color-forest: #4e6f6c;
+  --color-earth: #65422e;
+  --color-rose: #a55559;
 
   --color-brightred: hsl(4, 75%, 45%);
 
@@ -32,7 +37,7 @@
   --color-fg-display: var(--color-black);
   --color-link: var(--color-fg);
   --color-link-hover: var(--color-accent);
-  --color-border: rgba(136, 136, 136, .5);
+  --color-border: rgba(136, 136, 136, 0.5);
 }
 
 // Size steps
