@@ -7,12 +7,12 @@
       display: block;
       width: 3rem;
       height: auto;
-      overflow-y: visible;
+      overflow: visible;
 
       .logo__trace path,
       .logo__hover path {
-        stroke-dasharray: 1715;
-        stroke-dashoffset: 1715;
+        stroke-dasharray: 1870;
+        stroke-dashoffset: 1870;
         transform: translateZ(0);
       }
 
@@ -55,10 +55,11 @@
         opacity: 0;
       }
       .logo__hover path {
-        animation: drawingover 5s cubic-bezier(0.83, 0, 0.17, 1) forwards infinite;
+        animation: drawingover 5s cubic-bezier(0.83, 0, 0.17, 1) forwards
+          infinite;
 
         & + path {
-          animation-delay: .75s;
+          animation-delay: 0.75s;
           animation-timing-function: linear;
         }
       }

@@ -17,7 +17,7 @@
   "author": {
     "name": "Fábio M.R. Barbosa",
     "email": "hello@fabiomrbarbosa.com",
-    "url": "https://fabiomrbarbosa.com/"
+    "url": "https://www.fabiomrbarbosa.com/"
   },
   "license": "MIT",
   "bugs": {
@@ -26,20 +26,20 @@
   "homepage": "https://github.com/fabiomrbarbosa/fabiomrbarbosa#readme",
   "dependencies": {
     "@11ty/eleventy": "^0.12.1",
-    "@11ty/eleventy-navigation": "^0.2.0",
+    "@11ty/eleventy-navigation": "^0.3.2",
     "@11ty/eleventy-plugin-rss": "^1.1.1",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.0",
-    "concurrently": "^6.1.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.2",
+    "concurrently": "^6.2.1",
     "dart-sass": "latest",
-    "del-cli": "^3.0.1",
-    "eleventy-plugin-embed-everything": "^1.13.1",
+    "del-cli": "^4.0.1",
+    "eleventy-plugin-embed-everything": "^1.13.3",
     "image-size": "^1.0.0",
-    "luxon": "^1.26.0",
-    "markdown-it": "^12.0.6",
-    "markdown-it-anchor": "^7.1.0",
+    "luxon": "^2.0.2",
+    "markdown-it": "^12.2.0",
+    "markdown-it-anchor": "^8.1.2",
     "markdown-it-attrs": "^4.0.0",
     "markdown-it-external-links": "0.0.6",
     "purgecss": "^4.0.3",
-    "workbox-cli": "^6.1.5"
+    "workbox-cli": "^6.2.4"
   }
 }

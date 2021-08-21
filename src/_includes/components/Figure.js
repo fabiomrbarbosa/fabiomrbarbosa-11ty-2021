@@ -60,6 +60,7 @@ module.exports = function ({
       decoding="async"
       loading=${lazy == true ? "lazy" : "eager"}
       alt="${alt}"
+      data-fallback="/${image}"
       src="${imageFetch(imageUrl, imageSettings[size].fallbackWidth)}"
       srcset="${imageSrcsetList.join(", ")}"
       sizes="${imageSettings[size].sizes}"
