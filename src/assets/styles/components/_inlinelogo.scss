@@ -8,28 +8,34 @@
       width: 3rem;
       height: auto;
 
-      .logo__trace path,
-      .logo__hover path {
+      .logo__trace path {
         stroke-dasharray: 1870;
         stroke-dashoffset: 1870;
         transform: translateZ(0);
-      }
 
-      .logo__trace path {
-        stroke: var(--color-link);
+        stroke: var(--color-fg);
         animation: drawingin 2.5s cubic-bezier(0.83, 0, 0.17, 1) forwards;
 
         & + path {
-          animation-delay: 2s;
+          animation-delay: 1.5s;
         }
-      }
-
-      .logo__hover path {
-        stroke: var(--color-accent);
       }
     }
 
-    .logo__rays {
+    &:focus,
+    &:hover,
+    &:active {
+      .logo__trace path {
+        animation: drawingover 2.5s cubic-bezier(0.83, 0, 0.17, 1) forwards;
+
+        & + path {
+          animation-delay: 0s;
+          animation-duration: 3s;
+        }
+      }
+    }
+
+    /*.logo__rays {
       position: absolute;
       width: 370%;
       height: 370%;
@@ -45,23 +51,6 @@
         stroke-dasharray: 110;
         transform: translateZ(0);
       }
-    }
-
-    &:focus,
-    &:hover,
-    &:active {
-      .logo__trace {
-        opacity: 0;
-      }
-      .logo__hover path {
-        animation: drawingover 5s cubic-bezier(0.83, 0, 0.17, 1) forwards
-          infinite;
-
-        & + path {
-          animation-delay: 0.75s;
-          animation-timing-function: linear;
-        }
-      }
-    }
+    }*/
   }
 }

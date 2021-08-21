@@ -1,5 +1,4 @@
 .contact {
-
   &__list {
     padding: 0;
     margin: 0;
@@ -11,18 +10,22 @@
     display: inline-block;
     position: relative;
     font-weight: 700;
+  }
+}
 
-    &:not(:last-child) {
+.site-main {
+  & .contact {
+    &__item:not(:last-child) {
       margin-right: $size-step-2;
     }
 
     & a {
-      @extend %altTextUnderline;
+      @extend %linkText;
 
       &:after {
         content: "\20\2197";
         position: relative;
-        right: -.25rem;
+        right: -0.25rem;
       }
     }
   }

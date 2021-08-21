@@ -1,9 +1,5 @@
 .subscribe {
   @extend %container;
-  --color-fg: var(--color-accent);
-  --color-fg-display: var(--color-accent);
-  --color-link: var(--color-accent);
-  --color-link-hover: var(--color-black);
   border-top: 0.5px solid var(--color-border);
 
   &__inner {
@@ -18,7 +14,7 @@
 
   &__link {
     @extend %altText;
-    @extend %altTextUnderline;
+    @extend %linkText;
     font-weight: 700;
     position: relative;
 

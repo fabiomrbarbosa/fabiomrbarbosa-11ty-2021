@@ -6,7 +6,6 @@
   }
 
   &__title {
-    --color-fg-display: var(--color-accent);
     @extend %titleText;
     margin-top: 0;
     margin-bottom: $size-step--2;
@@ -18,7 +17,7 @@
 
   &__link {
     @extend %altText;
-    @extend %altTextUnderline;
+    @extend %linkText;
     position: relative;
     font-weight: 700;
 
@@ -44,7 +43,7 @@
 
 .taglist {
   display: flex;
-  column-gap: .5rem;
+  column-gap: 0.5rem;
 
   @include breakpoint($desktop) {
     grid-column: 3/6;

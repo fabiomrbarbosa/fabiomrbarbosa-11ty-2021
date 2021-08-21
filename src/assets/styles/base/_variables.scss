@@ -8,34 +8,24 @@
     "Times New Roman", serif;
 
   // Colours
-  --color-black: #151a21;
+  /*--color-black: #151a21;
   --color-gray-darkest: #1e2630;
   --color-gray-dark: #4a5159;
   --color-gray: #8e9297;
   --color-gray-light: #bbbdc0;
   --color-gray-lightest: #f2f2f2;
-  --color-white: #fff;
-
-  // a from jamesclear.com
-  // background-image: linear-gradient(to bottom, #FEF5DF 0%, #FEF5DF 100%);
-  // background-repeat: no-repeat;
-  // background-size: 100% 0;
-  // background-position: 0 111%;
-  // transition: all 0.3s;
-
-  // a: hover from jamesclear.com
-  // background-size: 100% 88%;
-  // cursor: pointer;
-  // border-bottom: 2px solid #f8cd5f;
+  --color-white: #fff;*/
 
   --color-gold: #f8cd5f;
   --color-gold-light: #fef5df;
-  --color-gray-warm: #e2ddca;
   --color-beige: #f9f8f4;
-  // --color-black: #000;
-  // --color-gray-darkest: #111;
-  // --color-gray-dark: #999;
-  // --color-gray: #757575;
+  --color-black: #000;
+  --color-gray-darkest: #111;
+  --color-gray-dark: #757575;
+  --color-gray: #999;
+  --color-gray-light: #e2ddca;
+  --color-gray-lightest: #edeade;
+  --color-white: #fff;
 
   --color-terracota: #b33b0e;
   --color-olive: #806b35;
@@ -47,13 +37,14 @@
   --color-brightred: hsl(4, 75%, 45%);
 
   // Associations
-  --color-accent: var(--color-terracota);
+  --color-accent: var(--color-gold);
+  --color-accent-light: var(--color-gold-light);
   --color-bg: none;
   --color-fg: var(--color-gray-darkest);
   --color-fg-display: var(--color-black);
-  --color-link: var(--color-fg);
-  --color-link-hover: var(--color-accent);
-  --color-border: rgba(136, 136, 136, 0.5);
+  --color-link: inherit;
+  --color-link-hover: inherit;
+  --color-border: var(--color-gray-lightest);
 }
 
 // Size steps

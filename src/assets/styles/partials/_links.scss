@@ -14,13 +14,13 @@
 }
 
 .direct-link {
-  margin-left: .25rem;
+  margin-left: 0.25rem;
 
   &:link {
-    color: var(--color-accent);
+    color: var(--color-gray-light);
   }
   &:hover,
   &:active {
-    color: var(--color-red);
+    color: var(--color-gray);
   }
 }

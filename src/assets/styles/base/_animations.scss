@@ -15,14 +15,14 @@
 
 @keyframes drawingover {
   from {
-    stroke-dashoffset: 1715;
+    stroke-dashoffset: 0;
   }
   25%,
   50% {
-    stroke-dashoffset: 0;
+    stroke-dashoffset: 1870;
   }
   to {
-    stroke-dashoffset: -1715;
+    stroke-dashoffset: 0;
   }
 }
 
@@ -54,10 +54,19 @@
 }
 
 @keyframes headingPicture {
-  0% { opacity: 0; }
-  50% { opacity: 0; }
-  51% { opacity: 1; }
-  100% { opacity: 1;transform: translate(-50%, -50%) scale(1); }
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  51% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
 }
 
 @keyframes headingOverlay {

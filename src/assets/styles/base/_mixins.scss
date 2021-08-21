@@ -52,7 +52,7 @@
   margin-bottom: 0;
 }
 
-%altTextUnderline {
+/*%altTextUnderline {
   text-decoration: none;
   line-height: 2;
   border-bottom: 0.15em solid var(--color-link);
@@ -83,6 +83,30 @@
         var(--color-accent)
       );
     background-position: calc(100% + 50px) 100%, 0 100%;
+  }
+}*/
+
+%linkText {
+  --color-border: var(--color-gray-light);
+  background-image: linear-gradient(
+    to bottom,
+    var(--color-accent-light) 0%,
+    var(--color-accent-light) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 0;
+  background-position: 0 111%;
+  transition: background-size 0.25s ease-in;
+  padding: 2px 2px 0px 0;
+  border-bottom: 2px solid var(--color-border);
+  transition: all 0.3s;
+
+  &:focus,
+  &:hover,
+  &:active {
+    background-size: 100% 88%;
+    cursor: pointer;
+    border-bottom: 2px solid var(--color-accent);
   }
 }
 

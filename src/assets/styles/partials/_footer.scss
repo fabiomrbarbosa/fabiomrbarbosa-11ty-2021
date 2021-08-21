@@ -1,16 +1,16 @@
 .site-footer {
   @extend %container;
-  --color-bg: var(--color-accent);
-  --color-fg: var(--color-beige);
+  --color-bg: var(--color-black);
+  --color-fg: var(--color-gray);
   --color-link: var(--color-beige);
   --color-link-hover: var(--color-white);
-  --color-border: rgba(0,0,0,.25);
+  --color-border: var(--color-gray-darkest);
 
   &__inner {
     @extend %content;
     border-bottom: none !important;
   }
-  
+
   &__logo {
     --color-accent: var(--color-white);
     margin-bottom: $size-step-2;
@@ -29,12 +29,19 @@
     flex: 1;
   }
 
+  .menu__list {
+    // override header flex direction
+    flex-direction: column;
+  }
+
   .menu__item,
   .contact__item {
     display: block;
 
     & a {
       display: block;
+      font-size: $size-step--1;
+      line-height: $size-step-2;
     }
   }
 
@@ -42,10 +49,6 @@
     font-weight: normal;
 
     & a {
-      border-bottom: 0;
-      font-size: $size-step--1;
-      line-height: $size-step-2;
-
       &:after {
         content: "" !important;
       }

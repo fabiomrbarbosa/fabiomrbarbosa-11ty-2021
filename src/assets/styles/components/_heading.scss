@@ -1,6 +1,6 @@
 .heading {
   @extend %container;
-  --color-fg-display: var(--color-accent);
+  --color-bg: var(--color-beige);
 
   &__inner {
     @extend %content;
@@ -12,7 +12,7 @@
   }
 
   &__tags {
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
   }
 
   &__title,
@@ -33,6 +33,7 @@
   &__subtitle {
     color: var(--color-fg);
     margin-bottom: 0;
+    font-style: italic;
   }
 
   &__lede {
@@ -43,8 +44,8 @@
   &__img {
     margin-top: $size-step-3;
     margin-bottom: $size-step-3;
-    margin-left: calc( #{$size-step-2} * -1 );
-    margin-right: calc( #{$size-step-2} * -1 );
+    margin-left: calc(#{$size-step-2} * -1);
+    margin-right: calc(#{$size-step-2} * -1);
   }
 
   @include breakpoint($desktop) {

@@ -7,21 +7,29 @@
 }*/
 
 @font-face {
-  font-family: 'Newsreader';
+  font-family: "Newsreader";
   font-weight: 1 999;
   font-style: regular;
   font-display: swap;
-  src: url('/assets/fonts/Newsreader.woff2') format('woff2-variations');
-  unicode-range: U+0000-007F,U+00A0-0100,U+0131,U+0152-0154,U+02BB-02BD,U+02C6,U+02DA,U+02DC,U+2000-200C,U+2010-2028,U+202F-2060,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+FEFF;
+  src: url("/assets/fonts/Newsreader.woff2") format("woff2-variations");
+  unicode-range: U+0000-007F, U+00A0-0100, U+0131, U+0152-0154, U+02BB-02BD,
+    U+02C6, U+02DA, U+02DC, U+2000-200C, U+2010-2028, U+202F-2060, U+2074,
+    U+20AC, U+2122, U+2191, U+2193, U+2212, U+FEFF;
 }
 
 @font-face {
-  font-family: 'Newsreader';
+  font-family: "Newsreader";
   font-weight: 1 999;
   font-style: italic;
   font-display: swap;
-  src: url('/assets/fonts/Newsreader-Italic.woff2') format('woff2-variations');
-  unicode-range: U+0000-007F,U+00A0-0100,U+0131,U+0152-0154,U+02BB-02BD,U+02C6,U+02DA,U+02DC,U+2000-200C,U+2010-2028,U+202F-2060,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+FEFF;
+  src: url("/assets/fonts/Newsreader-Italic.woff2") format("woff2-variations");
+  unicode-range: U+0000-007F, U+00A0-0100, U+0131, U+0152-0154, U+02BB-02BD,
+    U+02C6, U+02DA, U+02DC, U+2000-200C, U+2010-2028, U+202F-2060, U+2074,
+    U+20AC, U+2122, U+2191, U+2193, U+2212, U+FEFF;
+}
+
+::selection {
+  background: var(--color-accent-light);
 }
 
 html,
@@ -38,10 +46,8 @@ html {
 }
 
 body {
-  --color-bg: var(--color-beige);
-  background-color: var(
-    --color-bg
-  );
+  --color-bg: var(--color-white);
+  background-color: var(--color-bg);
   position: relative;
   font-size: $size-step-0;
   line-height: $size-step-2;
@@ -102,20 +108,19 @@ img {
 
 a {
   color: var(--color-link);
-  
+  text-decoration: none;
+
   &:focus,
   &:hover,
   &:active {
     color: var(--color-link-hover);
   }
-
-  transition: color 0.25s ease-out, border-color 0.25s ease-out,
-  box-shadow 0.25s ease-out, background-position 0.5s ease-in-out,
-  background-image 0.25s ease-in-out;
 }
+
 table {
   margin: $size-step-0 0;
 }
+
 table td,
 table th {
   padding-right: $size-step-0;
