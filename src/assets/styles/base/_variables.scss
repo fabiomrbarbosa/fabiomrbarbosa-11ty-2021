@@ -1,52 +1,3 @@
-:root {
-  // Font families
-  --font-display: "DM Serif Display", "Source Serif", "Roboto Serif", Athelas,
-    Times, "Times New Roman", serif;
-  --font-sans: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica,
-    Arial, sans-serif;
-  --font-serif: "Newsreader", "Roboto Serif", Georgia, Athelas, Times,
-    "Times New Roman", serif;
-
-  // Colours
-  /*--color-black: #151a21;
-  --color-gray-darkest: #1e2630;
-  --color-gray-dark: #4a5159;
-  --color-gray: #8e9297;
-  --color-gray-light: #bbbdc0;
-  --color-gray-lightest: #f2f2f2;
-  --color-white: #fff;*/
-
-  --color-gold: #f8cd5f;
-  --color-gold-light: #fef5df;
-  --color-beige: #f9f8f4;
-  --color-black: #000;
-  --color-gray-darkest: #111;
-  --color-gray-dark: #757575;
-  --color-gray: #999;
-  --color-gray-light: #e2ddca;
-  --color-gray-lightest: #edeade;
-  --color-white: #fff;
-
-  --color-terracota: #b33b0e;
-  --color-olive: #806b35;
-  --color-ocean: #2f435b;
-  --color-forest: #4e6f6c;
-  --color-earth: #65422e;
-  --color-rose: #a55559;
-
-  --color-brightred: hsl(4, 75%, 45%);
-
-  // Associations
-  --color-accent: var(--color-gold);
-  --color-accent-light: var(--color-gold-light);
-  --color-bg: none;
-  --color-fg: var(--color-gray-darkest);
-  --color-fg-display: var(--color-black);
-  --color-link: inherit;
-  --color-link-hover: inherit;
-  --color-border: var(--color-gray-lightest);
-}
-
 // Size steps
 $fluid-min-width: 320;
 $fluid-min-width-rel: $fluid-min-width / 16;
@@ -154,3 +105,56 @@ $tablet: "min-width: 37.5rem";
 $desktop: "min-width: 57.5rem";
 $maxscreen: "min-width: calc(#{$fluid-max-width} / 16 * 1rem)";
 $widescreen: "min-width: 100rem";
+
+:root {
+  // Font families
+  --font-display: "DM Serif Display", "Source Serif", "Roboto Serif", Athelas,
+    Times, "Times New Roman", serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  --font-serif: "Crimson", "Newsreader", Garamond, Georgia, Athelas, Times,
+    "Times New Roman", serif;
+
+  // Colours
+  /*--color-black: #151a21;
+  --color-gray-darkest: #1e2630;
+  --color-gray-dark: #4a5159;
+  --color-gray: #8e9297;
+  --color-gray-light: #bbbdc0;
+  --color-gray-lightest: #f2f2f2;
+  --color-white: #fff;*/
+
+  --color-red: #d70f0f;
+
+  --color-gold: #f8cd5f;
+  --color-gold-light: #fef5df;
+  --color-beige: #f9f8f4;
+  --color-black: #000;
+  --color-gray-darkest: #111;
+  --color-gray-dark: #757575;
+  --color-gray: #999;
+  --color-gray-light: #e2ddca;
+  --color-gray-lightest: #edeade;
+  --color-white: #fff;
+
+  --color-terracota: #b33b0e;
+  --color-terracota-light: #f7f0e6;
+  --color-olive: #806b35;
+  --color-ocean: #2f435b;
+  --color-forest: #4e6f6c;
+  --color-earth: #65422e;
+  --color-rose: #a55559;
+
+  // Associations
+  --color-accent: var(--color-terracota);
+  --color-accent-light: var(--color-terracota-light);
+  --color-bg: none;
+  --color-fg: var(--color-gray-darkest);
+  --color-fg-display: var(--color-black);
+  --color-link: inherit;
+  --color-link-hover: inherit;
+  --color-border: var(--color-gray-lightest);
+
+  // Paddings, gutters
+  --margin-lateral: #{$size-step-2};
+}

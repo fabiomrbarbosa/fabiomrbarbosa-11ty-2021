@@ -4,28 +4,28 @@
   margin: 0;
 
   &:not(:last-child) {
-    border-bottom: 0.5px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
   }
 
   &__item {
-    padding-bottom: $size-step-2;
+    padding-bottom: $size-step-1;
 
     &:not(:last-of-type) {
-      margin-bottom: $size-step-2;
-      border-bottom: 0.5px solid var(--color-border);
+      margin-bottom: $size-step-1;
+      border-bottom: 1px solid var(--color-border);
     }
   }
 
   &__title {
-    margin-bottom: 0;
+    font-weight: bold;
+    margin-bottom: 0rem;
   }
 
   &__link {
-    @extend %titleText;
     @extend %linkText;
     display: inline-block;
-    margin-right: .5rem;
-    margin-bottom: .5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 
   &__description {

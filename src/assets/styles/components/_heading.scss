@@ -2,6 +2,10 @@
   @extend %container;
   --color-bg: var(--color-beige);
 
+  &--with-picture {
+    padding-bottom: 0;
+  }
+
   &__inner {
     @extend %content;
     position: relative;
@@ -33,7 +37,7 @@
   &__subtitle {
     color: var(--color-fg);
     margin-bottom: 0;
-    font-style: italic;
+    font-weight: normal;
   }
 
   &__lede {
@@ -49,19 +53,29 @@
   }
 
   @include breakpoint($desktop) {
-    &--no-picture > &__title,
-    &--no-picture > &__meta {
+    &--with-picture {
+      background: linear-gradient(
+        0deg,
+        var(--color-white) 0%,
+        var(--color-white) 25%,
+        var(--color-bg) 25%,
+        var(--color-bg) 100%
+      );
+    }
+
+    &--no-picture &__title,
+    &--no-picture &__meta {
       grid-column: 1/3;
     }
 
-    &--no-picture > &__lede {
+    &--no-picture &__lede {
       grid-row: span 2;
     }
 
     &__img {
       grid-column: 1/6;
       margin-top: $size-step-6;
-      margin-bottom: $size-step-6;
+      margin-bottom: $size-step-4;
       margin-left: 0;
       margin-right: 0;
     }

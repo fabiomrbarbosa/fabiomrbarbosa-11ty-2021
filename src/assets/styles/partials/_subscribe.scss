@@ -1,9 +1,19 @@
 .subscribe {
   @extend %container;
-  border-top: 0.5px solid var(--color-border);
+  position: relative;
 
   &__inner {
     @extend %content;
+
+    &:before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: var(--margin-lateral);
+      right: var(--margin-lateral);
+      height: 1px;
+      background-color: var(--color-border);
+    }
   }
 
   &__title {
@@ -15,6 +25,7 @@
   &__link {
     @extend %altText;
     @extend %linkText;
+    display: inline-block;
     font-weight: 700;
     position: relative;
 

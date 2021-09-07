@@ -1,6 +1,7 @@
 .site-header {
   @extend %container;
   --color-bg: var(--color-beige);
+  padding-bottom: 0;
 
   &__inner {
     @extend %content;

@@ -1,9 +1,19 @@
 .postnav {
   @extend %container;
-  border-top: 0.5px solid var(--color-border);
+  position: relative;
 
   &__inner {
     @extend %content;
+
+    &:before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: var(--margin-lateral);
+      right: var(--margin-lateral);
+      height: 1px;
+      background-color: var(--color-border);
+    }
 
     @include breakpoint($desktop) {
       align-items: center;
@@ -13,7 +23,7 @@
   &__title {
     margin-top: 0;
     margin-bottom: $size-step-1;
-    @extend %titleText;
+    @extend %altText;
     @include breakpoint($desktop) {
       grid-column: 1/3;
     }

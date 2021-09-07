@@ -1,23 +1,5 @@
-<div class="heading {{ params.className if params.className }}">
-  <div class="heading__inner {{ 'heading--with-picture' if params.imageSrc else 'heading--no-picture' }}">
-
-    <h1 class="heading__title">{{ params.title }}</h1>
-    {% if params.subtitle %}<h2 class="heading__subtitle">{{ params.subtitle }}</h2>{% endif %}
-
-    {% if params.imageSrc %}
-      {% Figure {
-        lazy: false,
-        className: "heading__img",
-        image: params.imageSrc,
-        alt: params.imageAlt,
-        caption: params.imageCaption,
-        attribution: params.imageAttribution,
-        size: "full"
-      } %}
-    {% endif %}
-
-    {% if params.lede %}<p class="heading__lede">{{ params.lede | mdInline | safe }}</p>{% endif %}
-
+<div class="heading {{ params.className if params.className }} {{ 'heading--with-picture' if params.imageSrc else 'heading--no-picture' }}">
+  <div class="heading__inner">
     {% if params.date %}
     <div class="heading__meta postmeta">
       {% for tag in params.tags %}
@@ -31,5 +13,19 @@
     </div>
     {% endif %}
 
+    <h1 class="heading__title">{{ params.title }}</h1>
+    {% if params.lede %}<p class="heading__lede">{{ params.lede | mdInline | safe }}</p>{% endif %}
+
+    {% if params.imageSrc %}
+      {% Figure {
+        lazy: false,
+        className: "heading__img",
+        image: params.imageSrc,
+        alt: params.imageAlt,
+        caption: params.imageCaption,
+        attribution: params.imageAttribution,
+        size: "full"
+      } %}
+    {% endif %}
   </div>
 </div>

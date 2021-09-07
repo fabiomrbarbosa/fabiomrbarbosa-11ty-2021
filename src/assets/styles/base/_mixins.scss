@@ -16,14 +16,14 @@
 
 %content {
   margin: 0 auto;
-  padding: 0 $size-step-2;
+  padding: 0 var(--margin-lateral);
   max-width: calc(#{$fluid-max-width} / 16 * 1rem);
 
   @include breakpoint($desktop) {
+    --margin-lateral: #{$size-step-5};
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-column-gap: $size-step-5;
-    padding: 0 $size-step-5;
+    grid-column-gap: var(--margin-lateral);
 
     > * {
       grid-column: 3 / 6;
@@ -31,7 +31,7 @@
   }
 
   &:not(:last-child) {
-    border-bottom: 0.5px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
   }
 }
 
