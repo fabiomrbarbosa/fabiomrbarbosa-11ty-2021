@@ -16,6 +16,15 @@
   p {
     max-width: 37.5em;
 
+    &:first-of-type {
+      &::first-letter {
+        font-size: 3em;
+        line-height: calc(16px * 1.5 * 2);
+        float: left;
+        margin: 0.1em 0.2em 0 0;
+      }
+    }
+
     &:last-of-type:after {
       display: inline-block;
       content: "";

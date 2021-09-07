@@ -1,3 +1,27 @@
-.heading--home img {
-  clip-path: polygon(0% 0%, 62% 0, 62% 50%, 82% 0, 100% 0%, 100% 100%, 0 100%);
+.tmpl-home {
+  .heading {
+    --color-bg: var(--color-beige);
+
+    &--with-picture {
+      background: linear-gradient(
+        0deg,
+        var(--color-white) 0%,
+        var(--color-white) 25%,
+        var(--color-bg) 25%,
+        var(--color-bg) 100%
+      );
+    }
+
+    & img {
+      clip-path: polygon(
+        0% 0%,
+        62% 0,
+        62% 50%,
+        82% 0,
+        100% 0%,
+        100% 100%,
+        0 100%
+      );
+    }
+  }
 }

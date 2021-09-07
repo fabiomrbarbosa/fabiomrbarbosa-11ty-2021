@@ -1,5 +1,16 @@
 .tmpl-post {
-  .site-main {
-
+  .heading {
+    --color-bg: var(--color-white);
+    &__title {
+      font-size: $size-step-5;
+      font-weight: normal;
+      line-height: 1;
+      padding-top: $size-step-4;
+      padding-bottom: $size-step-2;
+    }
+    &__lede {
+      font-size: $size-step-1;
+      font-style: italic;
+    }
   }
 }

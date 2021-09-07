@@ -1,7 +1,6 @@
 .site-header {
   @extend %container;
   --color-bg: var(--color-beige);
-  padding-bottom: 0;
 
   &__inner {
     @extend %content;
@@ -13,8 +12,8 @@
 
   &__logo {
     grid-column: 1;
-    margin-bottom: $size-step-2;
     width: 2.5rem;
+    margin-bottom: $size-step-2;
   }
 
   &__navigation {
@@ -24,6 +23,12 @@
 
     & .menu {
       flex: 1;
+    }
+  }
+
+  @include breakpoint($desktop) {
+    &__logo {
+      margin-bottom: 0;
     }
   }
 }
