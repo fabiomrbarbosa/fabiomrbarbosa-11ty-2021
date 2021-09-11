@@ -12,6 +12,10 @@ module.exports = {
     },
   },
   home: {
+    permalink: {
+      en: "",
+      pt: "pt/",
+    },
     title: {
       en: "Welcome!",
       pt: "Boas-vindas!",
@@ -55,16 +59,16 @@ module.exports = {
   },
   archive: {
     permalink: {
-      en: "/blog",
-      pt: "/pt/blog",
+      en: "/articles",
+      pt: "/pt/artigos",
     },
     key: {
-      en: "Blog",
-      pt: "Blog",
+      en: "Articles",
+      pt: "Artigos",
     },
     title: {
-      en: "Selected articles",
-      pt: "Artigos seleccionados",
+      en: "Articles",
+      pt: "Artigos",
     },
     subtitle: {
       en: "Thoughts and essays about Spirit, society, the Web and other media. Also subscribe the [RSS feed](/feed/rss.xml) and join the [newsletter.](http://eepurl.com/gNzLRz)",

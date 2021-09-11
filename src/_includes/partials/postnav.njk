@@ -2,7 +2,7 @@
 {% set nextPost = collections[locale] | includes('data.contentType', 'article') | getNextCollectionItem(page) %}
 
 {% if previousPost or nextPost %}
-<div class="postnav">
+<div class="postnav block">
   <div class="postnav__inner">
     <h3 class="postnav__title">{{ dictionary.postnav.title[ locale ] }}</h3>
 

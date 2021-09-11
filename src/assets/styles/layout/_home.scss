@@ -1,6 +1,7 @@
 .tmpl-home {
   .heading {
     & img {
+      background-color: var(--color-accent);
       clip-path: polygon(
         0% 0%,
         62% 0,

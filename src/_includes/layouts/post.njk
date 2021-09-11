@@ -3,7 +3,7 @@ layout: layouts/base.njk
 templateClass: tmpl-post
 contentType:
   - article
-permalink: /{{ subDir }}blog/{{ page.fileSlug }}/
+permalink: /{{ dictionary.archive.permalink[ locale ] }}/{{ page.fileSlug }}/
 ---
 
 {%- from "components/init.njk" import component -%}
@@ -19,7 +19,7 @@ permalink: /{{ subDir }}blog/{{ page.fileSlug }}/
   className: "heading--post"
 }) }}
 
-<div class="entry-body">
+<div class="entry-body block">
   <div class="entry-content">
     {{ content | safe }}
   </div>

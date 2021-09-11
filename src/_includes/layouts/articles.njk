@@ -1,6 +1,7 @@
 ---
 layout: layouts/base.njk
-templateClass: tmpl-archive
+templateClass: tmpl-articles
+permalink: /{{ dictionary.archive.permalink[ locale ] }}
 ---
 {%- from "components/init.njk" import component -%}
 {{ component('heading', {
@@ -10,7 +11,7 @@ templateClass: tmpl-archive
 }) }}
 
 {% ArchiveList {
-  className: 'feed'
+  className: 'feed block'
 } %}
 
   {% set postlist = collections[locale] | includes('data.contentType', 'article') %}

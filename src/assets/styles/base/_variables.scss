@@ -160,5 +160,6 @@ $widescreen: "min-width: 100rem";
   --color-border: var(--color-gray-light);
 
   // Paddings, gutters
-  --margin-lateral: #{$size-step-2};
+  --margin-horizontal: #{$size-step-2};
+  --margin-vertical: #{$size-step-2};
 }

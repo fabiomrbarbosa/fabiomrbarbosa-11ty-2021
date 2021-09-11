@@ -5,23 +5,31 @@
 }
 
 %container {
-  padding-top: $size-step-2;
-  padding-bottom: $size-step-2;
+  padding-top: var(--margin-vertical);
+  padding-bottom: var(--margin-vertical);
+
+  &.block {
+    padding-bottom: 0;
+
+    > div {
+      padding-bottom: var(--margin-vertical);
+      border-bottom: 1px solid var(--color-border);
+    }
+  }
 
   display: grid;
   grid-template-columns:
-    var(--margin-lateral)
+    var(--margin-horizontal)
     1fr
-    var(--margin-lateral);
+    var(--margin-horizontal);
 
   @include breakpoint($desktop) {
-    --margin-lateral: #{$size-step-5};
+    --margin-horizontal: #{$size-step-5};
+    --margin-vertical: #{$size-step-4};
     grid-template-columns:
-      minmax(var(--margin-lateral), auto)
+      minmax(var(--margin-horizontal), auto)
       minmax(300px, calc(#{$fluid-max-width} / 16 * 1rem))
-      minmax(var(--margin-lateral), auto);
-    padding-top: $size-step-4;
-    padding-bottom: $size-step-4;
+      minmax(var(--margin-horizontal), auto);
   }
 }
 
@@ -29,18 +37,14 @@
   grid-column: 2;
 
   @include breakpoint($desktop) {
-    --margin-lateral: #{$size-step-5};
+    --margin-horizontal: #{$size-step-5};
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-column-gap: var(--margin-lateral);
+    grid-column-gap: var(--margin-horizontal);
 
     > * {
       grid-column: 3 / 7;
     }
-  }
-
-  &:not(:last-child) {
-    border-bottom: 1px solid var(--color-border);
   }
 }
 

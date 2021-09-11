@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
 templateClass: tmpl-home
-permalink: /{{ subDir }}
+permalink: /{{ dictionary.home.permalink[ locale ] }}
 ---
 {%- from "components/init.njk" import component -%}
 {{ component('heading', {
@@ -14,7 +14,7 @@ permalink: /{{ subDir }}
 
 {% ArchiveList {
   title: dictionary.home.contacts[ locale ],
-  className: 'contacts'
+  className: 'contacts block'
 } %}
 
   {%- include "partials/contact.njk" -%}
@@ -25,7 +25,7 @@ permalink: /{{ subDir }}
   title: dictionary.postlist.title[ locale ],
   linkText: dictionary.postlist.link[ locale ],
   linkTarget: dictionary.archive.permalink[locale] + '/',
-  className: 'feed'
+  className: 'feed block'
 } %}
 
   {% set postlist = collections[locale] | includes('data.contentType', 'article') | head(-3) %}

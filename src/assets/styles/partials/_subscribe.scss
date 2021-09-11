@@ -1,19 +1,8 @@
 .subscribe {
   @extend %container;
-  position: relative;
 
   &__inner {
     @extend %content;
-
-    &:before {
-      position: absolute;
-      content: "";
-      top: 0;
-      left: var(--margin-lateral);
-      right: var(--margin-lateral);
-      height: 1px;
-      background-color: var(--color-border);
-    }
   }
 
   &__title {
@@ -37,7 +26,7 @@
   }
 
   p {
-    margin-bottom: 0;
+    margin-bottom: 1rem;
   }
 
   @include breakpoint($desktop) {

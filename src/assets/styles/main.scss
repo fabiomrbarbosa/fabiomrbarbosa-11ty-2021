@@ -1,28 +1,28 @@
 @charset 'utf-8';
 
-@import 'base/variables';
-@import 'base/mixins';
-@import 'base/reset';
-@import 'base/animations';
+@import "base/variables";
+@import "base/mixins";
+@import "base/reset";
+@import "base/animations";
 
-@import 'layout/home';
-@import 'layout/posts';
-@import 'layout/pages';
-@import 'layout/archive';
+@import "layout/home";
+@import "layout/posts";
+@import "layout/pages";
+@import "layout/articles";
 
-@import 'partials/links';
-@import 'partials/header';
-@import 'partials/footer';
-@import 'partials/menu'; // includes langswitch
-@import 'partials/entry';
-@import 'partials/postlist';
-@import 'partials/postnav';
-@import 'partials/postmeta';
-@import 'partials/contact';
-@import 'partials/prism';
-@import 'partials/subscribe';
+@import "partials/links";
+@import "partials/header";
+@import "partials/footer";
+@import "partials/menu"; // includes langswitch
+@import "partials/entry";
+@import "partials/postlist";
+@import "partials/postnav";
+@import "partials/postmeta";
+@import "partials/contact";
+@import "partials/prism";
+@import "partials/subscribe";
 
-@import 'components/inlinelogo';
-@import 'components/heading';
-@import 'components/archivelist';
-@import 'components/serviceslist';
+@import "components/inlinelogo";
+@import "components/heading";
+@import "components/archivelist";
+@import "components/serviceslist";

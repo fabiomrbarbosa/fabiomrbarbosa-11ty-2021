@@ -10,7 +10,6 @@ a.tag {
   --color-link-hover: var(--color-accent);
   display: block;
   font-weight: 600;
-  line-height: 1.4;
 
   position: relative;
   padding: 0 0 0 1rem;
@@ -48,7 +47,6 @@ a.tag {
   display: block;
   position: relative;
   font-size: $size-step--2;
-  line-height: 1.4;
   color: var(--color-gray-dark);
   padding-left: 1rem;
 
