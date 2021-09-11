@@ -1,9 +1,16 @@
 .heading {
   @extend %container;
-  --color-bg: var(--color-accent);
-  --color-fg: var(--color-white);
-  --color-fg-display: var(--color-white);
-  --color-accent-alt: var(--color-accent-dark);
+  &:not(.heading--post) {
+    --color-bg: var(--color-accent);
+    --color-fg: var(--color-white);
+    --color-fg-display: var(--color-white);
+    --color-accent-alt: var(--color-accent-dark);
+
+    & a.tag {
+      --color-link: var(--color-fg);
+      --color-link-hover: var(--color-fg);
+    }
+  }
 
   &--with-picture {
     padding-bottom: 0;
@@ -21,14 +28,14 @@
     position: relative;
   }
 
+  &__meta {
+    padding-top: $size-step-4;
+    padding-bottom: 0;
+  }
+
   & a:not(.tag) {
     @extend %linkText;
     border-bottom-width: 2px;
-  }
-
-  & a.tag {
-    --color-link: var(--color-fg);
-    --color-link-hover: var(--color-fg);
   }
 
   & .date {
@@ -59,6 +66,7 @@
   &__lede {
     font-weight: 400;
     max-width: 37.5em;
+    letter-spacing: -0.025em;
   }
 
   &__img {

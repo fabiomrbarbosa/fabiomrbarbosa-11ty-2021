@@ -1,5 +1,9 @@
 <div class="heading {{ params.className if params.className }} {{ 'heading--with-picture' if params.imageSrc else 'heading--no-picture' }}">
   <div class="heading__inner">
+   
+    <h1 class="heading__title">{{ params.title }}</h1>
+    {% if params.lede %}<p class="heading__lede">{{ params.lede | mdInline | safe }}</p>{% endif %}
+
     {% if params.date %}
     <div class="heading__meta postmeta">
       {% for tag in params.tags %}
@@ -12,9 +16,6 @@
       </time>
     </div>
     {% endif %}
-
-    <h1 class="heading__title">{{ params.title }}</h1>
-    {% if params.lede %}<p class="heading__lede">{{ params.lede | mdInline | safe }}</p>{% endif %}
 
     {% if params.imageSrc %}
       {% Figure {

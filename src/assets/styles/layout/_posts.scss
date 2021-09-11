@@ -1,5 +1,12 @@
 .tmpl-post {
   .heading {
+    padding-bottom: 0;
+
+    &__inner {
+      padding-bottom: $size-step-5;
+      border-bottom: 1px solid var(--color-border);
+    }
+
     &__title {
       font-size: $size-step-5;
       font-weight: normal;
