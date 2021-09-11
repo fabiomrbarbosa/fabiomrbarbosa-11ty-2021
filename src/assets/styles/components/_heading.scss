@@ -1,8 +1,19 @@
 .heading {
   @extend %container;
+  --color-bg: var(--color-accent);
+  --color-fg: var(--color-white);
+  --color-fg-display: var(--color-white);
+  --color-accent-alt: var(--color-accent-dark);
 
   &--with-picture {
     padding-bottom: 0;
+    background: linear-gradient(
+      0deg,
+      var(--color-white) 0%,
+      var(--color-white) 25%,
+      var(--color-bg) 25%,
+      var(--color-bg) 100%
+    );
   }
 
   &__inner {
@@ -12,16 +23,23 @@
 
   & a:not(.tag) {
     @extend %linkText;
+    border-bottom-width: 2px;
   }
 
-  &__tags {
-    margin-bottom: 0.5rem;
+  & a.tag {
+    --color-link: var(--color-fg);
+    --color-link-hover: var(--color-fg);
+  }
+
+  & .date {
+    color: var(--color-fg);
   }
 
   &__title,
   &__subtitle,
   &__lede {
     margin-top: 0;
+    margin-bottom: 0;
   }
 
   &__title,
@@ -30,7 +48,6 @@
     @extend %titleText;
     font-size: $size-step-2;
     line-height: $size-step-3;
-    margin-bottom: 0;
   }
 
   &__subtitle {
@@ -46,18 +63,12 @@
 
   &__img {
     margin-top: $size-step-3;
-    margin-bottom: $size-step-3;
-    margin-left: calc(#{$size-step-2} * -1);
-    margin-right: calc(#{$size-step-2} * -1);
   }
 
   @include breakpoint($desktop) {
     &__img {
-      grid-column: 1/6;
-      margin-top: $size-step-6;
-      margin-bottom: $size-step-4;
-      margin-left: 0;
-      margin-right: 0;
+      grid-column: 1/7;
+      margin-top: $size-step-5;
     }
   }
 }

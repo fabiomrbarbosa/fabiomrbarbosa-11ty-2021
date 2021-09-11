@@ -1,6 +1,7 @@
 .site-header {
   @extend %container;
-  --color-bg: var(--color-beige);
+  --color-bg: var(--color-accent);
+  --color-fg: var(--color-white);
 
   &__inner {
     @extend %content;

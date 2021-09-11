@@ -1,5 +1,9 @@
 .tmpl-archive {
   .site-main {
-
+    .heading {
+      &__title {
+        grid-column: 1/3;
+      }
+    }
   }
 }

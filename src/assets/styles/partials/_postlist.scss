@@ -23,13 +23,13 @@
 
   &__link {
     @extend %linkText;
-    display: inline-block;
-    margin-right: 0.5rem;
-    margin-bottom: 0.5rem;
+    font-size: $size-step-0;
+    line-height: $size-step-2;
   }
 
   &__description {
-    font-size: $size-step-0;
+    font-size: $size-step--1;
+    letter-spacing: 0;
     margin-bottom: 0;
   }
 }

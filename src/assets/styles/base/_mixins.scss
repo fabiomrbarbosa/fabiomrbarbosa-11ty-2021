@@ -8,25 +8,34 @@
   padding-top: $size-step-2;
   padding-bottom: $size-step-2;
 
+  display: grid;
+  grid-template-columns:
+    var(--margin-lateral)
+    1fr
+    var(--margin-lateral);
+
   @include breakpoint($desktop) {
+    --margin-lateral: #{$size-step-5};
+    grid-template-columns:
+      minmax(var(--margin-lateral), auto)
+      minmax(300px, calc(#{$fluid-max-width} / 16 * 1rem))
+      minmax(var(--margin-lateral), auto);
     padding-top: $size-step-4;
     padding-bottom: $size-step-4;
   }
 }
 
 %content {
-  margin: 0 auto;
-  padding: 0 var(--margin-lateral);
-  max-width: calc(#{$fluid-max-width} / 16 * 1rem);
+  grid-column: 2;
 
   @include breakpoint($desktop) {
     --margin-lateral: #{$size-step-5};
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-column-gap: var(--margin-lateral);
 
     > * {
-      grid-column: 3 / 6;
+      grid-column: 3 / 7;
     }
   }
 
@@ -52,53 +61,19 @@
   margin-bottom: 0;
 }
 
-/*%altTextUnderline {
-  text-decoration: none;
-  line-height: 2;
-  border-bottom: 0.15em solid var(--color-link);
-
-  &:focus,
-  &:hover,
-  &:active {
-    border-bottom-color: var(--color-link-hover);
-  }
-}
-
-%linkText {
-  font-weight: 600;
-  text-decoration: none;
-  background-image: linear-gradient(90deg, var(--color-bg), var(--color-bg)),
-    linear-gradient(90deg, var(--color-fg), var(--color-fg));
-  background-repeat: no-repeat;
-  background-size: 50px 2px, 100% 2px;
-  background-position: -50px 100%, 0 100%;
-
-  &:focus,
-  &:hover,
-  &:active {
-    background-image: linear-gradient(90deg, var(--color-bg), var(--color-bg)),
-      linear-gradient(
-        90deg,
-        var(--color-accent),
-        var(--color-accent)
-      );
-    background-position: calc(100% + 50px) 100%, 0 100%;
-  }
-}*/
-
 %linkText {
   --color-border: var(--color-gray-light);
   background-image: linear-gradient(
     to bottom,
-    var(--color-accent-light) 0%,
-    var(--color-accent-light) 100%
+    var(--color-accent-alt) 0%,
+    var(--color-accent-alt) 100%
   );
   background-repeat: no-repeat;
   background-size: 100% 0;
   background-position: 0 111%;
   transition: background-size 0.25s ease-in;
   padding: 2px 2px 0px 0;
-  border-bottom: 2px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
   transition: all 0.3s;
 
   &:focus,
@@ -106,7 +81,7 @@
   &:active {
     background-size: 100% 88%;
     cursor: pointer;
-    border-bottom: 2px solid var(--color-accent);
+    border-bottom-color: var(--color-accent);
   }
 }
 

@@ -1,7 +1,7 @@
 // Size steps
 $fluid-min-width: 320;
 $fluid-min-width-rel: $fluid-min-width / 16;
-$fluid-max-width: 1440;
+$fluid-max-width: 1200;
 $fluid-max-width-rel: $fluid-max-width / 16;
 $fluid-width-rel-diff: $fluid-max-width-rel - $fluid-min-width-rel;
 $fluid-min-size: 19;
@@ -128,18 +128,19 @@ $widescreen: "min-width: 100rem";
 
   --color-gold: #f8cd5f;
   --color-gold-light: #fef5df;
-  --color-beige: #f9f8f4;
   --color-black: #000;
   --color-gray-darkest: #111;
   --color-gray-darker: #333;
   --color-gray-dark: #757575;
   --color-gray: #999;
-  --color-gray-light: #e2ddca;
-  --color-gray-lightest: #edeade;
+  --color-gray-light: #e5e7e7;
+  --color-gray-lightest: #f2f3f3;
   --color-white: #fff;
 
-  --color-terracota: #b33b0e;
-  --color-terracota-light: #f7f0e6;
+  --color-terracota: #7b2601;
+  --color-monacored: #cd3700;
+  --color-coral: #e7503e;
+  --color-blush: #faebe5;
   --color-olive: #806b35;
   --color-ocean: #2f435b;
   --color-forest: #4e6f6c;
@@ -147,14 +148,16 @@ $widescreen: "min-width: 100rem";
   --color-rose: #a55559;
 
   // Associations
-  --color-accent: var(--color-terracota);
-  --color-accent-light: var(--color-terracota-light);
+  --color-accent: var(--color-monacored);
+  --color-accent-dark: var(--color-terracota);
+  --color-accent-light: var(--color-blush);
+  --color-accent-alt: var(--color-accent-light);
   --color-bg: none;
   --color-fg: var(--color-gray-darker);
   --color-fg-display: var(--color-gray-darkest);
   --color-link: inherit;
   --color-link-hover: inherit;
-  --color-border: var(--color-gray-lightest);
+  --color-border: var(--color-gray-light);
 
   // Paddings, gutters
   --margin-lateral: #{$size-step-2};
