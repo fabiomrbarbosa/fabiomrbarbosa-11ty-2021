@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
 templateClass: tmpl-home
-permalink: /{{ dictionary.home.permalink[ locale ] }}
+permalink: /{{ subDir }}
 ---
 {%- from "components/init.njk" import component -%}
 {{ component('heading', {
