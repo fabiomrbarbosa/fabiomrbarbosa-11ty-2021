@@ -14,6 +14,10 @@
       <time class="heading__date date" datetime="{{ params.date | machineDate }}">
         {{ params.date | readableDate(params.locale) }} 
       </time>
+
+      <span class="heading__readingtime readingtime">
+        {{ params.readingTime }}
+      </span>
     </div>
     {% endif %}
 

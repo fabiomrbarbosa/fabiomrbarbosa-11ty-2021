@@ -1,5 +1,4 @@
 module.exports = function (eleventyConfig) {
-
   const components = `./src/_includes/components`;
   const filters = `./src/_utils/filters`;
   const libraries = `./src/_utils/libraries`;
@@ -11,32 +10,57 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-syntaxhighlight"));
   eleventyConfig.addPlugin(require("@11ty/eleventy-navigation"));
   eleventyConfig.addPlugin(require("eleventy-plugin-embed-everything"));
+  eleventyConfig.addPlugin(require("eleventy-plugin-time-to-read"));
 
   eleventyConfig.setLibrary("md", require(`${libraries}/markdown.js`));
 
   eleventyConfig.addShortcode("Figure", require(`${components}/Figure.js`));
-  eleventyConfig.addShortcode("CloudImage", require(`${components}/CloudImage.js`));
-  eleventyConfig.addShortcode("InlineIcon", require(`${components}/InlineIcon.js`));
-  eleventyConfig.addPairedShortcode("ArchiveList", require(`${components}/ArchiveList.js`));
-  eleventyConfig.addPairedShortcode("ServicesList", require(`${components}/ServicesList.js`));
+  eleventyConfig.addShortcode(
+    "CloudImage",
+    require(`${components}/CloudImage.js`)
+  );
+  eleventyConfig.addShortcode(
+    "InlineIcon",
+    require(`${components}/InlineIcon.js`)
+  );
+  eleventyConfig.addPairedShortcode(
+    "ArchiveList",
+    require(`${components}/ArchiveList.js`)
+  );
+  eleventyConfig.addPairedShortcode(
+    "ServicesList",
+    require(`${components}/ServicesList.js`)
+  );
 
   eleventyConfig.addFilter("includes", require(`${filters}/includes.js`));
   eleventyConfig.addFilter("excludes", require(`${filters}/excludes.js`));
-  eleventyConfig.addFilter("fixedEncodeURIComponent", require(`${filters}/fixedEncodeURIComponent.js`));
+  eleventyConfig.addFilter(
+    "fixedEncodeURIComponent",
+    require(`${filters}/fixedEncodeURIComponent.js`)
+  );
   eleventyConfig.addFilter("head", require(`${filters}/head.js`));
   eleventyConfig.addFilter("machineDate", require(`${filters}/machineDate.js`));
-  eleventyConfig.addFilter("readableDate", require(`${filters}/readableDate.js`));
+  eleventyConfig.addFilter(
+    "readableDate",
+    require(`${filters}/readableDate.js`)
+  );
   eleventyConfig.addFilter("mdInline", require(`${filters}/mdInline.js`));
 
-  eleventyConfig.addTransform("purgeInlineCSS", require(`${transforms}/purgeInlineCSS.js`));
-
+  eleventyConfig.addTransform(
+    "purgeInlineCSS",
+    require(`${transforms}/purgeInlineCSS.js`)
+  );
 
   eleventyConfig.addCollection("en", (collection) => {
-    return collection.getAllSorted().filter((page) => page.data.locale === "en");
+    return collection
+      .getAllSorted()
+      .filter((page) => page.data.locale === "en");
   });
 
   eleventyConfig.addCollection("pt", (collection) => {
-    return collection.getAllSorted().filter((page) => page.data.locale === "pt");
+    return collection
+      .getAllSorted()
+      .filter((page) => page.data.locale === "pt");
   });
 
   eleventyConfig.addCollection("tags_en", (collection) => {

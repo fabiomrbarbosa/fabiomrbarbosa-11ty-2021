@@ -33,6 +33,12 @@ module.exports = {
       pt: "Mantenha-se em contacto.",
     },
   },
+  post: {
+    readingtime: {
+      en: "Reading time: ",
+      pt: "Tempo de leitura: ",
+    },
+  },
   postlist: {
     title: {
       en: "Check out my latest articles.",

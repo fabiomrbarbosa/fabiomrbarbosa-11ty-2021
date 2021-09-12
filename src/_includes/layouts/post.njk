@@ -17,6 +17,7 @@ permalink: /{{ dictionary.archive.permalink[ locale ] }}/{{ page.fileSlug }}/
   imageCaption: coverImage.caption,
   imageAttribution: coverImage.attribution,
   className: "heading--post",
+  readingTime: dictionary.post.readingtime[ locale ] + content | timeToRead(locale),
   locale: locale
 }) }}
 

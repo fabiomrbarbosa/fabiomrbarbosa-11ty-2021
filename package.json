@@ -33,6 +33,7 @@
     "dart-sass": "latest",
     "del-cli": "^4.0.1",
     "eleventy-plugin-embed-everything": "^1.13.3",
+    "eleventy-plugin-time-to-read": "^1.1.0",
     "image-size": "^1.0.0",
     "luxon": "^2.0.2",
     "markdown-it": "^12.2.0",
