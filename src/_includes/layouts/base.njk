@@ -23,12 +23,6 @@
     function setCookie(cname, cvalue) {
       document.cookie = cname + "=" + cvalue + ";path=/;secure;samesite=strict";
     }
-
-    document.addEventListener('error', function setImageFallback(event) {
-      if (event.target.tagName.toLowerCase() !== 'img') return;
-      event.target.src = event.target.getAttribute('data-fallback');
-      event.target.srcset = '';
-    }, true);
     </script>
     
     <!-- Matomo -->
