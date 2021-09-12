@@ -14,7 +14,7 @@ module.exports = function ({
   const siteUrl = site.url;
   const imageUrl = encodeURIComponent(siteUrl + image);
   const imageFetch = (src, width) =>
-    `https://res.cloudinary.com/fabiomrbarbosa/image/fetch/q_100,f_auto,w_${width}/${src}`;
+    `https://res.cloudinary.com/fabiomrbarbosa/image/fetch/q_100%2f_auto%2w_${width}/${src}`;
   const imageDimensions = imageSize("./src/" + image);
   const imageSteps = 5;
   const imageSrcsetList = [];
