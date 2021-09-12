@@ -42,7 +42,7 @@ When the jury vote was reintroduced back in ESC Moscow 2009, it was seen as a we
 
 Sure, the judges helped protect the show from quite a few cheap/expensive tricks, although only partially — “Heroes” won in 2015, but its logical evolution, “You Are The Only One”, did not in 2016. However, by now it is not sure whether their influence has done anything to improve the quality of the show that the natural evolution of tastes and trends couldn’t do. They are as susceptible, if not more, of being corrupted by geographic proximity and other, less licit, manoeuvres. And there’s been more than a few examples in recent years where radio-friendly, Americanised songs were favoured instead of more experimental tunes (“Telemóveis” being one of the most egregious cases in 2019) or even entries inspired by traditional genres, regardless of the country.
 
-Things seem to have evened out somewhat nicely in 2021, but countries like Italy, Ukraine and, frankly, Albania, were still undervalued. Against all stereotypes, the public seemed to be able to recognise the quality of both France’s \*chanson**\*and** Switzerland’s _mise en scène_ in the same evening. What would the Contest look like if we trusted the audience’s vote once more?
+Things seem to have evened out somewhat nicely in 2021, but countries like Italy, Ukraine and, frankly, Albania, were still undervalued. Against all stereotypes, the public seemed to be able to recognise the quality of both France’s _chanson_ **and** Switzerland’s _mise en scène_ in the same evening. What would the Contest look like if we trusted the audience’s vote once more?
 
 ## 5. Breaking news: yes, you can win with a song in your own language
 
