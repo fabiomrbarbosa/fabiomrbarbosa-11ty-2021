@@ -13,7 +13,16 @@
   }
 }
 
-.direct-link {
+.header-anchor {
+  &:before {
+    content: "#";
+    margin-left: -1em;
+    margin-right: 0.5em;
+    color: var(--color-border);
+  }
+}
+
+/*.header-anchor {
   margin-left: 0.25rem;
 
   &:link {
@@ -23,4 +32,8 @@
   &:active {
     color: var(--color-gray);
   }
-}
+
+  & .visually-hidden {
+    @extend %visuallyHidden;
+  }
+}*/

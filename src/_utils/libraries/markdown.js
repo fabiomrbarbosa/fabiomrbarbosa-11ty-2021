@@ -1,4 +1,5 @@
 const markdownIt = require("markdown-it");
+const anchor = require("markdown-it-anchor");
 const markdownItAnchor = require("markdown-it-anchor");
 const markdownItAttributes = require("markdown-it-attrs");
 const markdownItExternalLinks = require("markdown-it-external-links");
@@ -11,9 +12,7 @@ module.exports = markdownIt({
   quotes: "“”‘’",
 })
   .use(markdownItAnchor, {
-    permalink: true,
-    permalinkClass: "direct-link",
-    permalinkSymbol: "#",
+    permalink: anchor.permalink.headerLink(),
   })
   .use(markdownItAttributes)
   .use(markdownItExternalLinks, {

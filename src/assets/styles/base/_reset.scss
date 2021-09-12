@@ -94,8 +94,9 @@ blockquote {
 blockquote {
   background: var(--color-gray-lightest);
   border-left: 0.5rem solid var(--color-gray-light);
-  margin-left: 0.5rem;
-  padding: 1rem 1.5rem;
+  margin-left: 0;
+  margin-right: 0;
+  padding: $size-step-1 $size-step-2;
   quotes: "\201C""\201D""\2018""\2019";
 
   &:before {
