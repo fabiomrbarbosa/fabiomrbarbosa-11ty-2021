@@ -115,19 +115,6 @@ $widescreen: "min-width: 100rem";
   --font-serif: "Crimson", "Newsreader", Garamond, Georgia, Athelas, Times,
     "Times New Roman", serif;
 
-  // Colours
-  /*--color-black: #151a21;
-  --color-gray-darkest: #1e2630;
-  --color-gray-dark: #4a5159;
-  --color-gray: #8e9297;
-  --color-gray-light: #bbbdc0;
-  --color-gray-lightest: #f2f2f2;
-  --color-white: #fff;*/
-
-  --color-red: #d70f0f;
-
-  --color-gold: #f8cd5f;
-  --color-gold-light: #fef5df;
   --color-black: #000;
   --color-gray-darkest: #111;
   --color-gray-darker: #333;
@@ -137,20 +124,26 @@ $widescreen: "min-width: 100rem";
   --color-gray-lightest: #f2f3f3;
   --color-white: #fff;
 
-  --color-terracota: #7b2601;
-  --color-monacored: #cd3700;
+  --color-red-dark: #7b2601;
+  --color-red: #cd3700;
+  --color-red-light: #faebe5;
   --color-coral: #e7503e;
-  --color-blush: #faebe5;
-  --color-olive: #806b35;
-  --color-ocean: #2f435b;
-  --color-forest: #4e6f6c;
+  --color-ocean-dark: #101929;
+  --color-ocean: #2d9eb3;
+  --color-forest-dark: #1a2d27;
+  --color-forest: #5c8f66;
+  --color-forest-light: #9bce97;
+  --color-teal: #15847b;
+  --color-teal-light: #e5f8f8;
   --color-earth: #65422e;
   --color-rose: #a55559;
+  --color-royal: #2c2753;
+  --color-royal-light: #a594c0;
 
   // Associations
-  --color-accent: var(--color-monacored);
-  --color-accent-dark: var(--color-terracota);
-  --color-accent-light: var(--color-blush);
+  --color-accent: var(--color-red);
+  --color-accent-dark: var(--color-red-dark);
+  --color-accent-light: var(--color-red-light);
   --color-accent-alt: var(--color-accent-light);
   --color-bg: none;
   --color-fg: var(--color-gray-darker);

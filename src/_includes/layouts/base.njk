@@ -3,7 +3,11 @@
   class="
   {% if templateClass %}{{ templateClass }}{% endif %}
   {% if translationKey %}page-{{ translationKey }}{% endif %}
-  {% if slug %}page-{{ slug }}{% endif %}">
+  {% if slug %}page-{{ slug }}{% endif %}"
+  {% if accentColor %} 
+    style="--color-accent: var(--color-{{ accentColor }}); 
+    --color-accent-light: var(--color-{{accentColor}}-light)" 
+  {% endif %}>
   <head>
     {%- include "partials/head.njk" -%}
   </head>
@@ -23,7 +27,7 @@
     function setCookie(cname, cvalue) {
       document.cookie = cname + "=" + cvalue + ";path=/;secure;samesite=strict";
     }
-    
+
     document.addEventListener('error', function setImageFallback(event) {
        if (event.target.tagName.toLowerCase() !== 'img') return;
        event.target.src = event.target.getAttribute('data-fallback');
