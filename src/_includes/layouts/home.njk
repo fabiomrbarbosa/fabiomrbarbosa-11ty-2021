@@ -21,6 +21,13 @@ permalink: /{{ subDir }}
 
 {% endArchiveList %}
 
+<div class="entry-body whoami block">
+  <div class="entry-content">
+    <h2 class="whoami__title">{{ dictionary.home.whoami[ locale ] }}</h2>
+    {{ content | safe }}
+  </div>
+</div>
+
 {% ArchiveList {
   title: dictionary.postlist.title[ locale ],
   linkText: dictionary.postlist.link[ locale ],

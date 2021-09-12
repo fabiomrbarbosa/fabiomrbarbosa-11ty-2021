@@ -82,7 +82,8 @@ h6 {
 p,
 ol,
 ul,
-figure {
+figure,
+blockquote {
   margin-top: 0;
   margin-bottom: $size-step-2;
   &:last-child {
@@ -90,6 +91,29 @@ figure {
   }
 }
 
+blockquote {
+  background: var(--color-gray-lightest);
+  border-left: 0.5rem solid var(--color-gray-light);
+  margin-left: 0.5rem;
+  padding: 1rem 1.5rem;
+  quotes: "\201C""\201D""\2018""\2019";
+
+  &:before {
+    color: #ccc;
+    font-size: 3.6em;
+    line-height: 0.1em;
+    vertical-align: -0.5em;
+    content: open-quote;
+    margin-right: 0.5rem;
+  }
+  &:after {
+    content: close-quote;
+    font-size: 0;
+  }
+  & p {
+    display: inline;
+  }
+}
 figure {
   margin-left: 0;
   margin-right: 0;

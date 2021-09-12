@@ -2,7 +2,7 @@
 title: The Goddess is in the Other
 date: 2016-02-03
 tags:
-  - spirit
+  - druidry
 translationKey: goddess-in-the-other
 ---
 
@@ -22,9 +22,9 @@ Otherness then becomes a land of dark goddesses (where even their skin indicts t
 
 Otherness, however, is actually a deep and rich stream of pulsating rawness. Where gender is dismantled like the fragile piece of machinery it is, where many different cultures and traditions come alive, away from the cruel grasp of the Empire. Where the diversity of bodily abilities is embraced as a reflection of the inherent worth of Being. Where the wonder of the body needs not to be disguised with far more underwhelming possessions. Where losses can be gains. Where our full potential awaits, both feared and longed for. The potential for life and death, of bringing about and tearing apart. This shadow, of which Carl Jung used to talk, gathers the spoils of our ever-lost war on Self, all the many treasures neglected by our alienation and the violence we perpetuate on others.
 
-"This shadow holds so many colours".
+“This shadow holds so many colours”.
 
-Regardless of one’s gender, within or without the binary, I feel that reconciling with the Shadow is about this path of unlearning, this persistent and restless fight with each and every god of taboo until they capitulate and, in death, impart their plentiful wisdom. It implies letting go of useless judgment, denouncing inhumane morals and doctrines, and deepening empathy towards the minority, the oddity, the Other. Starting with oneself. It implies letting go of words and of the violence in our speech. The violence there is when taking time to speak in the name of, or instead of those whose voices we've muffled. Starting with the Earth herself, ever speaking, ever ignored. In solidarity and in active listening, there is wisdom and the voice of the Dark Goddess.
+Regardless of one’s gender, within or without the binary, I feel that reconciling with the Shadow is about this path of unlearning, this persistent and restless fight with each and every god of taboo until they capitulate and, in death, impart their plentiful wisdom. It implies letting go of useless judgment, denouncing inhumane morals and doctrines, and deepening empathy towards the minority, the oddity, the Other. Starting with oneself. It implies letting go of words and of the violence in our speech. The violence there is when taking time to speak in the name of, or instead of those whose voices we’ve muffled. Starting with the Earth herself, ever speaking, ever ignored. In solidarity and in active listening, there is wisdom and the voice of the Dark Goddess.
 
 The myths speak of a union between the God and his female counterpart. I suggest that the Feminine, whichever shade of Otherness it reflects in each one of us, is the greatest revealer of who we are, whence we came from and where we shall return. Otherness reminds us of this primordial identity every being shares, beyond all structures of oppression, way before the first split of the tribes. Back when everything was gleefully diverse and the same all at once. That is a power the rulers of the world cannot take away. The Sun has no becoming; it is the Moon that goes through motions. And in movement, all life and poetry, all joy and pain and even truth itself, truth to oneself, becomes manifest.
 

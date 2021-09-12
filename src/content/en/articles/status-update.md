@@ -3,10 +3,10 @@ title: Status Update
 description: Allow me to introduce you to this new website.
 date: 2020-07-09
 tags:
-- updates
+  - dev
 translationKey: status-update
-
 ---
+
 Anyone working in the creative field must have already heard someone say that we are our own worst clients. When we are our own client, we often lack the distance needed to analyse ourselves as a _product_. One with a target audience and a given strategy to give rise to a brand which, in this case, consists of a professional _persona_ or "mask" with the qualities and values we choose to display or, if necessary, fake until we make it. The task becomes more complicated the more diverse our interests and skills are. And it becomes almost impossible if we dare to challenge the norms of personal and professional marketing because, frankly, we are human beings and not everything about us needs to be a selling point.
 
 My career as a consultant spans many skills, from writing for advertising to programming. I also happen to write poetry, I develop articles and lectures on telluric spirituality, and act as the editor-in-chief of a magazine on Druidry. I am interested in \[some\] alternative therapies and forms of divination, and in my free time, I turn into investigating more mundane issues such as linguistics or pop culture. I could have chosen to hide behind a pamphlet with one or two messages as if I were trying to fit in a 30-second ad. But my personal journey, which I intend to share in this space, has guided me towards an ever-increasing authenticity and vulnerability. More importantly, since we are discussing "personal brands" and the values that inform them, many of my current values are at odds with some of the best practices in the industries where I operate.

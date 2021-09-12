@@ -24,9 +24,9 @@ module.exports = {
       en: "My name is Fábio and I'm a designer, developer, copywriter, author + mystic.",
       pt: "Chamo-me Fábio e sou um designer, developer, copywriter, autor + místico.",
     },
-    intro: {
-      en: "I develop media and creative solutions for people and brands with a conscious outlook. This is my digital garden where I express myself through poetry and prose, myth and ritual. Find out more [about me](/about/) or [read some of my thoughts](/blog/).",
-      pt: "Eu desenvolvo soluções de media e criatividade para pessoas e marcas com uma visão consciente. Este é o meu jardim digital, onde me exprimo através da poesia e da prosa, do rito e do mito. Fique a [conhecer-me melhor](/pt/acerca/) ou [leia algumas das minhas reflexões](/pt/blog/).",
+    whoami: {
+      en: "Who am I?",
+      pt: "Quem sou eu?",
     },
     contacts: {
       en: "Keep in touch.",
@@ -71,8 +71,8 @@ module.exports = {
       pt: "Artigos",
     },
     subtitle: {
-      en: "Thoughts and essays about Spirit, society, the Web and other media. Also subscribe the [RSS feed](/feed/rss.xml) and join the [newsletter.](http://eepurl.com/gNzLRz)",
-      pt: "Pensamentos e ensaios sobre o Espírito, a sociedade, a Web e outros media. Subscreva também o [feed RSS](/pt/feed/rss.xml) e junte-se à [newsletter.](http://eepurl.com/gNzLRz)",
+      en: "On Spirit, the web of interdependence, the World Wide Web and other media. Also subscribe the [RSS feed](/feed/rss.xml) and join the [newsletter.](http://eepurl.com/gNzLRz)",
+      pt: "Sobre o Espírito, a rede de interdependência, a Web e outros media. Subscreva também o [feed RSS](/pt/feed/rss.xml) e junte-se à [newsletter.](http://eepurl.com/gNzLRz)",
     },
   },
   subscribe: {

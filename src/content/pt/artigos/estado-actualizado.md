@@ -1,13 +1,13 @@
 ---
-title: 'Estado: Actualizado'
+title: "Estado: Actualizado"
 description: Passemos às apresentações deste novo site.
 date: 2020-07-08T22:00:00.000+00:00
 tags:
-- novidades
+  - dev
 translationKey: status-update
 status: Evergreen
-
 ---
+
 Quem trabalha nas áreas criativas já terá decerto ouvido alguém dizer que nós somos os nossos piores clientes. Quando somos o nosso próprio cliente, não raro falta-nos a distância necessária para nos analisarmos enquanto _produto_. Um produto com um público-alvo e uma dada estratégia com vista a uma marca que, neste caso, consiste numa _persona_ ou "máscara" profissional com as características e valores que escolhemos exibir ou, se necessário for, fingir até que dêem resultado. A tarefa complica-se quanto mais diversificados forem os interesses e as competências que nos caracterizam. E chega a ser quase impossível caso nos atrevamos a desafiar as normas do _marketing_ pessoal e profissional porque, francamente, somos seres humanos e nem tudo acerca de nós precisa de ser um _selling point_.
 
 A minha carreira como consultor atravessa várias competências, desde a escrita para publicidade à programação. Além disso, também escrevo poesia, desenvolvo artigos e palestras sobre espiritualidade telúrica, estou à frente de uma revista sobre temas druídicos, interesso-me por \[algumas\] terapêuticas alternativas e formas de divinação, e nos tempos livres ainda me ponho a investigar sobre assuntos mais mundanos, como a linguística ou a cultura pop. Eu podia ter optado por me esconder atrás de um panfleto com uma ou duas mensagens, como se estivesse a tentar caber num anúncio de 30 segundos. Mas a minha caminhada pessoal, que pretendo partilhar neste espaço, tem-me guiado numa direcção de cada vez maior autenticidade e vulnerabilidade. Mais importante que isso, já que estamos a discutir "marcas pessoais" e os valores que as caracterizam, muitos dos meus valores actuais estão em desacordo com algumas das melhores práticas das indústrias onde me movimento.

@@ -1,38 +1,38 @@
 .entry-body {
   @extend %container;
-  padding-top: $size-step-5;
-  padding-bottom: $size-step-5;
 }
 
 .entry-content {
   @extend %content;
   position: relative;
 
+  &.post-content {
+    > p {
+      max-width: 37.5em;
+
+      &:first-of-type {
+        &::first-letter {
+          font-size: 3em;
+          line-height: calc(16px * 1.5 * 2);
+          float: left;
+          margin: 0.2em 0.2em 0 0;
+        }
+      }
+
+      &:last-of-type:after {
+        display: inline-block;
+        content: "";
+        background-color: var(--color-black);
+        width: 0.5em;
+        height: 0.5em;
+        margin-left: 0.25rem;
+      }
+    }
+  }
+
   h2,
   h3 {
     @extend %titleText;
-  }
-
-  p {
-    max-width: 37.5em;
-
-    &:first-of-type {
-      &::first-letter {
-        font-size: 3em;
-        line-height: calc(16px * 1.5 * 2);
-        float: left;
-        margin: 0.2em 0.2em 0 0;
-      }
-    }
-
-    &:last-of-type:after {
-      display: inline-block;
-      content: "";
-      background-color: var(--color-black);
-      width: 0.5em;
-      height: 0.5em;
-      margin-left: 0.25rem;
-    }
   }
 
   a {
