@@ -1,5 +1,6 @@
 ---
 title: From identity to comm[on]unity
+description: Druidry as an invitation to a just relationship with all beings.
 date: 2017-11-01
 tags:
   - druidry
