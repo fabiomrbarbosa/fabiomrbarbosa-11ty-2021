@@ -14,10 +14,12 @@ module.exports = {
     {
       label: "English",
       code: "en",
+      subDir: "",
     },
     {
       label: "Português",
       code: "pt",
+      subDir: "pt/",
     },
   ],
   contacts: [

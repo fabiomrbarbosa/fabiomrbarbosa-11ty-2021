@@ -5,7 +5,7 @@
   {%- if loop.first -%}<ul class="langswitch__list">{%- endif -%}
 
   {# set translatedUrl to the homepage of that language by default #}
-  {%- set translatedUrl = "/" + lang.code + "/" -%}
+  {%- set translatedUrl = "/" + lang.subDir -%}
 
   {# set current language class #}
   {%- set activeClass = "langswitch__item--active" if lang.code == locale else "" -%}

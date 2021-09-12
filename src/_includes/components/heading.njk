@@ -12,7 +12,7 @@
       {% endfor %}
 
       <time class="heading__date date" datetime="{{ params.date | machineDate }}">
-        {{ params.date | readableDate(locale) }} 
+        {{ params.date | readableDate(params.locale) }} 
       </time>
     </div>
     {% endif %}
