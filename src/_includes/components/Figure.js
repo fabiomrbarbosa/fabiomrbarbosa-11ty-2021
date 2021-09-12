@@ -10,7 +10,7 @@ module.exports = function ({
   size = "",
   className = "",
 } = {}) {
-  const siteUrl = "https://fabiomrbarbosa.com";
+  const siteUrl = "https://fabiomrbarbosa.com/";
   const imageUrl = encodeURIComponent(siteUrl + image);
   const imageFetch = (src, width) =>
     `https://res.cloudinary.com/fabiomrbarbosa/image/fetch/q_100%2f_auto%2w_${width}/${src}`;
