@@ -6,7 +6,7 @@
   }
 
   &__title {
-    @extend %titleText;
+    @extend %altText;
     margin-top: 0;
     margin-bottom: $size-step-2;
   }
