@@ -1,4 +1,3 @@
-const site = require("../../_data/metadata.js");
 const md = require("../../_utils/libraries/markdown");
 const imageSize = require("image-size");
 
@@ -11,7 +10,7 @@ module.exports = function ({
   size = "",
   className = "",
 } = {}) {
-  const siteUrl = site.url;
+  const siteUrl = "https://fabiomrbarbosa.com";
   const imageUrl = encodeURIComponent(siteUrl + image);
   const imageFetch = (src, width) =>
     `https://res.cloudinary.com/fabiomrbarbosa/image/fetch/q_100%2f_auto%2w_${width}/${src}`;
