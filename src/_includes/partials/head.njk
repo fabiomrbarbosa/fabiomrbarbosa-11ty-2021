@@ -60,3 +60,11 @@
 {# Preload critical fonts #}
 <link rel="preload" href="/assets/fonts/crimson-roman.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/crimson-semibold.woff2" as="font" type="font/woff2" crossorigin>
+
+{%- for item in collections.all -%}
+  {%- if item.data.translationKey == translationKey and item.data.locale == "en" -%}
+    <link rel="alternate" hreflang="en" href="https://fabiomrbarbosa.com{{ item.url }}" />
+  {%- elif item.data.translationKey == translationKey and item.data.locale == "pt" -%}
+    <link rel="alternate" hreflang="pt" href="https://fabiomrbarbosa.com{{ item.url }}" />
+  {%- endif -%}
+{%- endfor -%}
