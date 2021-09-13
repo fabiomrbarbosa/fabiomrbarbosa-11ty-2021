@@ -7,12 +7,18 @@
       border-bottom: 1px solid var(--color-border);
     }
 
+    &__title,
+    &__subtitle,
+    &__lede,
+    &__meta {
+      margin-bottom: $size-step-1;
+    }
+
     &__title {
       font-size: $size-step-5;
       font-weight: normal;
       line-height: 1;
       padding-top: $size-step-3;
-      padding-bottom: $size-step-1;
     }
 
     @include breakpoint($desktop) {

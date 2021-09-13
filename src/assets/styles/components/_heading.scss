@@ -28,11 +28,6 @@
     position: relative;
   }
 
-  &__meta {
-    padding-top: $size-step-4;
-    padding-bottom: 0;
-  }
-
   & a:not(.tag) {
     @extend %linkText;
     border-bottom-width: 2px;
@@ -43,8 +38,7 @@
   }
 
   &__title,
-  &__subtitle,
-  &__lede {
+  &__subtitle {
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -59,7 +53,6 @@
 
   &__subtitle {
     color: var(--color-fg);
-    margin-bottom: 0;
     font-weight: normal;
   }
 
@@ -69,14 +62,9 @@
     letter-spacing: -0.025em;
   }
 
-  &__img {
-    margin-top: $size-step-3;
-  }
-
   @include breakpoint($desktop) {
     &__img {
       grid-column: 1/7;
-      margin-top: $size-step-5;
     }
   }
 }

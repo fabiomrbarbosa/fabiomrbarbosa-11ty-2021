@@ -1,6 +1,7 @@
 .tmpl-home {
   .heading {
     &__img {
+      margin-top: var(--margin-vertical);
       background-color: var(--color-accent);
 
       & img {

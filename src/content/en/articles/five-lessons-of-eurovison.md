@@ -1,7 +1,12 @@
 ---
 title: Five lessons to take away from Eurovision 2021
-description: Here is a personal roundup of a few things I believe we could learn from Eurovision 2021 in Rotterdam, where the Contest underwent an exciting reset.
+description: Here is a personal roundup of a few things I believe we could learn from the Eurovision Song Contest 2021 in Rotterdam, where the show just underwent an exciting reset.
 date: 2021-05-23
+coverImage:
+  src: uploads/maneskin_victory_esc2021.jpg
+  alt: Måneskin after their win at the Eurovision Song Contest Rotterdam 2021
+  caption: Måneskin (Italy) after their win at the ESC 2021.
+  attribution: EBU / Andres Putting
 tags:
   - eurovision
 translationKey: five-lessons-of-eurovision
@@ -28,6 +33,16 @@ Then Sanremo rolled in and “La genesi del tuo colore” didn’t win. Karetus 
 
 After a year and a half of repeated lockdowns, the European audience _did_ seek some sort of escapism, only not in the guise of camp & glitz, divas with big tunes or Lady Gaga B-sides. These still have their place in the competition, but they are not leading the conversation anymore. And on that note…
 
+{% Figure {
+  lazy: true,
+  className: "entry__img",
+  image: "uploads/blindchannel_darkside_rotterdam.jpg",
+  alt: "Blind Channel from Finland at the ESC 2021",
+  caption: "Blind Channel (Finland).",
+  attribution: "EBU / Andres Putting",
+  size: "full"
+} %}
+
 ## 3. Yes, there is room for more than _one_ rock song per year.
 
 The history of “nu metal” takes us back to the days immediately after the 9/11 attacks, when the US music industry spotted a collective drop in self-esteem, especially among the male youths of the nation. It found in “nu metal” the right recipe to let their repressed angst out, to the expense, of course, of female talent. For instance, we now know that Evanescence would not have had a deal to release “Bring Me To Life” if Amy Lee hadn’t been forced to share the chorus with rapper/rocker Paul McCoy, because the producers felt the band lacked enough “male energy”.
@@ -36,6 +51,16 @@ So when Finland’s national final unleashed Blind Channel’s “Dark Side” o
 
 Turns out that Europe is quite angry, but also unbearably horny and ready for catharsis. Italy won. Finland was the fourth most voted country in the televote. And Ukraine’s Spring ritual-turned-song, “SHUM” (a word that translates to “Noise”), was second in the popular preference, proving there’s more than enough public for all sorts of, errr, “noisy entries” in the Contest. It’s as if the ESC is finally converging with musical tastes from the real world. Mindblowing.
 
+{% Figure {
+  lazy: true,
+  className: "entry__img",
+  image: "uploads/goa_shum_rotterdam.jpg",
+  alt: "Go_A from Ukraine at the ESC 2021",
+  caption: "Go_A (Ukraine).",
+  attribution: "EBU / Andres Putting",
+  size: "full"
+} %}
+
 ## 4. The juries might also be on their way out (…eventually).
 
 When the jury vote was reintroduced back in ESC Moscow 2009, it was seen as a welcome attempt to rein in the perceived excesses of the previous decade, what with Lordi winning in 2006 and Verka Serduchka almost winning in 2007 — actually, I suspect the main purpose of bringing back the judges was to prevent Eastern Europe from taking over the competition. The newcomers’ creativity and enthusiasm knew no limits when compared to the growing indifference or downright animosity of the Western member broadcasters (case in point: Ireland’s Dustin the Turkey in 2008). The East was obviously bringing something new and appealing to the table, and we just couldn’t have that, now could we?
@@ -43,6 +68,16 @@ When the jury vote was reintroduced back in ESC Moscow 2009, it was seen as a we
 Sure, the judges helped protect the show from quite a few cheap/expensive tricks, although only partially — “Heroes” won in 2015, but its logical evolution, “You Are The Only One”, did not in 2016. However, by now it is not sure whether their influence has done anything to improve the quality of the show that the natural evolution of tastes and trends couldn’t do. They are as susceptible, if not more, of being corrupted by geographic proximity and other, less licit, manoeuvres. And there’s been more than a few examples in recent years where radio-friendly, Americanised songs were favoured instead of more experimental tunes (“Telemóveis” being one of the most egregious cases in 2019) or even entries inspired by traditional genres, regardless of the country.
 
 Things seem to have evened out somewhat nicely in 2021, but countries like Italy, Ukraine and, frankly, Albania, were still undervalued. Against all stereotypes, the public seemed to be able to recognise the quality of both France’s _chanson_ **and** Switzerland’s _mise en scène_ in the same evening. What would the Contest look like if we trusted the audience’s vote once more?
+
+{% Figure {
+  lazy: true,
+  className: "entry__img",
+  image: "uploads/barbarapravi_voila_rotterdam.jpg",
+  alt: "Barbara Pravi at the ESC 2021",
+  caption: "Barbara Pravi (France).",
+  attribution: "EBU / Andres Putting",
+  size: "full"
+} %}
 
 ## 5. Breaking news: yes, you can win with a song in your own language
 
@@ -54,7 +89,17 @@ Yes, the music industry, and therefore the general public’s taste, is largely 
 
 But in the end of the day, authenticity is key. The performers have three minutes to get on stage and win Europe’s hearts, and that emotional connection doesn’t need any translation — although the captions on Australia’s SBS feed do come quite handy. So if you have a band and you were always going to write most of your songs in English anyway, like The Black Mamba, then by all means, the euro-stage is yours. But if you believe you must sound and speak like anybody else to succeed in the competition, think again. Salvador Sobral (yes, him of all people) said it best:
 
-“Be honest with what you’re doing, honest to the audience and honest with yourself. I think people feel that when you’re honest with your art”
+> Be honest with what you’re doing, honest to the audience and honest with yourself. I think people feel that when you’re honest with your art. — Salvador Sobral, live with The Roop @ https://www.instagram.com/tv/CPJAa5uAMtj
+
+{% Figure {
+  lazy: true,
+  className: "entry__img",
+  image: "uploads/jeangu_macrooy_avrotros.jpg",
+  alt: "Jeangu Macrooy from the Netherlands",
+  caption: "Jeangu Macrooy (The Netherlands).",
+  attribution: "AVROTROS / Rinse Fokkema",
+  size: "full"
+} %}
 
 ## AND ALSO: Racism is an issue we still aren’t talking about nearly enough.
 
