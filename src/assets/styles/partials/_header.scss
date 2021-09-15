@@ -20,6 +20,7 @@
   &__navigation {
     flex: 1;
     display: flex;
+    flex-wrap: wrap;
     column-gap: var(--space-m);
 
     & .menu {
