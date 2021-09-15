@@ -8,11 +8,11 @@
   &__title {
     @extend %altText;
     margin-top: 0;
-    margin-bottom: $size-step--2;
+    margin-bottom: var(--step-2);
   }
 
   &__footer {
-    margin-top: $size-step-2;
+    margin-top: var(--step-2);
   }
 
   &__link {

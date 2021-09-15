@@ -41,7 +41,7 @@ a.tag {
   @extend %altText;
   display: block;
   position: relative;
-  font-size: $size-step--2;
+  font-size: var(--step--2);
   color: var(--color-gray-dark);
 
   @include breakpoint($desktop) {
@@ -55,7 +55,7 @@ a.tag {
       left: 0;
       top: 50%;
       transform: translateY(-50%);
-      height: $size-step--2;
+      height: var(--step--2);
       width: 1px;
       background: var(--color-gray-light);
     }

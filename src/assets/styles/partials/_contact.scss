@@ -16,7 +16,7 @@
 .site-main {
   & .contact {
     &__item:not(:last-child) {
-      margin-right: $size-step-2;
+      margin-right: var(--space-s);
     }
 
     & a {

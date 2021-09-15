@@ -8,7 +8,7 @@
   &__title {
     @extend %altText;
     margin-top: 0;
-    margin-bottom: $size-step-2;
+    margin-bottom: var(--space-m);
   }
 
   &__link {

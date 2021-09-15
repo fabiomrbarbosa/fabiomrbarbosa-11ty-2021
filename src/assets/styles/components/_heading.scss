@@ -47,8 +47,8 @@
   &__subtitle,
   &__lede {
     @extend %titleText;
-    font-size: $size-step-2;
-    line-height: $size-step-3;
+    font-size: var(--step-2);
+    line-height: var(--step-3);
   }
 
   &__subtitle {

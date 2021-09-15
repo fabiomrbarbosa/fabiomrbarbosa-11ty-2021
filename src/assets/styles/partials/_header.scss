@@ -14,13 +14,13 @@
   &__logo {
     grid-column: 1;
     width: 2.5rem;
-    margin-bottom: $size-step-2;
+    margin-bottom: var(--space-s);
   }
 
   &__navigation {
     flex: 1;
     display: flex;
-    column-gap: $size-step-3;
+    column-gap: var(--space-m);
 
     & .menu {
       flex: 1;

@@ -1,112 +1,119 @@
-// Size steps
-$fluid-min-width: 320;
-$fluid-min-width-rel: $fluid-min-width / 16;
-$fluid-max-width: 1200;
-$fluid-max-width-rel: $fluid-max-width / 16;
-$fluid-width-rel-diff: $fluid-max-width-rel - $fluid-min-width-rel;
-$fluid-min-size: 18;
-$fluid-max-size: 22;
-$fluid-min-ratio: 1.2;
-$fluid-max-ratio: 1.25;
-$fluid-screen: 100vw;
-$fluid-bp: calc(
-  (#{$fluid-screen} - (#{$fluid-min-width-rel} * 1rem)) / #{$fluid-width-rel-diff}
-);
-
-$fluid-max-negative: (1 / $fluid-max-ratio / $fluid-max-ratio);
-$fluid-min-negative: (1 / $fluid-min-ratio / $fluid-min-ratio);
-
-$fluid-min-scale--1: $fluid-min-ratio * $fluid-min-negative;
-$fluid-max-scale--1: $fluid-max-ratio * $fluid-max-negative;
-$fluid-min-size--1: ($fluid-min-size * $fluid-min-scale--1) / 16;
-$fluid-max-size--1: ($fluid-max-size * $fluid-max-scale--1) / 16;
-$fluid-size-diff--1: $fluid-max-size--1 - $fluid-min-size--1;
-$size-step--1: calc(
-  (#{$fluid-min-size--1} * 1rem) + #{$fluid-size-diff--1} * #{$fluid-bp}
-);
-
-$fluid-min-scale--2: $fluid-min-scale--1 * $fluid-min-ratio *
-  $fluid-min-negative;
-$fluid-max-scale--2: $fluid-min-scale--1 * $fluid-max-ratio *
-  $fluid-max-negative;
-$fluid-min-size--2: ($fluid-min-size * $fluid-min-scale--2) / 16;
-$fluid-max-size--2: ($fluid-max-size * $fluid-max-scale--2) / 16;
-$fluid-size-diff--2: $fluid-max-size--2 - $fluid-min-size--2;
-$size-step--2: calc(
-  (#{$fluid-min-size--2} * 1rem) + #{$fluid-size-diff--2} * #{$fluid-bp}
-);
-
-$fluid-min-scale-0: $fluid-min-ratio;
-$fluid-max-scale-0: $fluid-max-ratio;
-$fluid-min-size-0: $fluid-min-size / 16;
-$fluid-max-size-0: $fluid-max-size / 16;
-$fluid-size-diff-0: $fluid-max-size-0 - $fluid-min-size-0;
-$size-step-0: calc(
-  (#{$fluid-min-size-0} * 1rem) + #{$fluid-size-diff-0} * #{$fluid-bp}
-);
-
-$fluid-min-scale-1: $fluid-min-scale-0 * $fluid-min-ratio;
-$fluid-max-scale-1: $fluid-max-scale-0 * $fluid-max-ratio;
-$fluid-min-size-1: ($fluid-min-size * $fluid-min-scale-0) / 16;
-$fluid-max-size-1: ($fluid-max-size * $fluid-max-scale-0) / 16;
-$fluid-size-diff-1: $fluid-max-size-1 - $fluid-min-size-1;
-$size-step-1: calc(
-  (#{$fluid-min-size-1} * 1rem) + #{$fluid-size-diff-1} * #{$fluid-bp}
-);
-
-$fluid-min-scale-2: $fluid-min-scale-1 * $fluid-min-ratio;
-$fluid-max-scale-2: $fluid-max-scale-1 * $fluid-max-ratio;
-$fluid-min-size-2: ($fluid-min-size * $fluid-min-scale-1) / 16;
-$fluid-max-size-2: ($fluid-max-size * $fluid-max-scale-1) / 16;
-$fluid-size-diff-2: $fluid-max-size-2 - $fluid-min-size-2;
-$size-step-2: calc(
-  (#{$fluid-min-size-2} * 1rem) + #{$fluid-size-diff-2} * #{$fluid-bp}
-);
-
-$fluid-min-scale-3: $fluid-min-scale-2 * $fluid-min-ratio;
-$fluid-max-scale-3: $fluid-max-scale-2 * $fluid-max-ratio;
-$fluid-min-size-3: ($fluid-min-size * $fluid-min-scale-2) / 16;
-$fluid-max-size-3: ($fluid-max-size * $fluid-max-scale-2) / 16;
-$fluid-size-diff-3: $fluid-max-size-3 - $fluid-min-size-3;
-$size-step-3: calc(
-  (#{$fluid-min-size-3} * 1rem) + #{$fluid-size-diff-3} * #{$fluid-bp}
-);
-
-$fluid-min-scale-4: $fluid-min-scale-3 * $fluid-min-ratio;
-$fluid-max-scale-4: $fluid-max-scale-3 * $fluid-max-ratio;
-$fluid-min-size-4: ($fluid-min-size * $fluid-min-scale-3) / 16;
-$fluid-max-size-4: ($fluid-max-size * $fluid-max-scale-3) / 16;
-$fluid-size-diff-4: $fluid-max-size-4 - $fluid-min-size-4;
-$size-step-4: calc(
-  (#{$fluid-min-size-4} * 1rem) + #{$fluid-size-diff-4} * #{$fluid-bp}
-);
-
-$fluid-min-scale-5: $fluid-min-scale-4 * $fluid-min-ratio;
-$fluid-max-scale-5: $fluid-max-scale-4 * $fluid-max-ratio;
-$fluid-min-size-5: ($fluid-min-size * $fluid-min-scale-4) / 16;
-$fluid-max-size-5: ($fluid-max-size * $fluid-max-scale-4) / 16;
-$fluid-size-diff-5: $fluid-max-size-5 - $fluid-min-size-5;
-$size-step-5: calc(
-  (#{$fluid-min-size-5} * 1rem) + #{$fluid-size-diff-5} * #{$fluid-bp}
-);
-
-$fluid-min-scale-6: $fluid-min-scale-5 * $fluid-min-ratio;
-$fluid-max-scale-6: $fluid-max-scale-5 * $fluid-max-ratio;
-$fluid-min-size-6: ($fluid-min-size * $fluid-min-scale-5) / 16;
-$fluid-max-size-6: ($fluid-max-size * $fluid-max-scale-5) / 16;
-$fluid-size-diff-6: $fluid-max-size-6 - $fluid-min-size-6;
-$size-step-6: calc(
-  (#{$fluid-min-size-6} * 1rem) + #{$fluid-size-diff-6} * #{$fluid-bp}
-);
-
-// Breakpoints
-$mobile: "max-width: 37.5rem";
-$tablet: "min-width: 37.5rem";
-$desktop: "min-width: 57.5rem";
-$maxscreen: "min-width: calc(#{$fluid-max-width} / 16 * 1rem)";
-$widescreen: "min-width: 100rem";
-
 :root {
+  --fluid-min-width: 320;
+  --fluid-max-width: 1140;
+
+  --fluid-screen: 100vw;
+  --fluid-bp: calc(
+    (var(--fluid-screen) - var(--fluid-min-width) / 16 * 1rem) /
+      (var(--fluid-max-width) - var(--fluid-min-width))
+  );
+
+  // Space size steps
+  --fc-3xs-min: (var(--fc-s-min) * 0.25);
+  --fc-3xs-max: (var(--fc-s-max) * 0.25);
+
+  --fc-2xs-min: (var(--fc-s-min) * 0.5);
+  --fc-2xs-max: (var(--fc-s-max) * 0.5);
+
+  --fc-xs-min: (var(--fc-s-min) * 0.75);
+  --fc-xs-max: (var(--fc-s-max) * 0.75);
+
+  --fc-s-min: (var(--f-0-min, 21));
+  --fc-s-max: (var(--f-0-max, 24));
+
+  --fc-m-min: (var(--fc-s-min) * 1.5);
+  --fc-m-max: (var(--fc-s-max) * 1.5);
+
+  --fc-l-min: (var(--fc-s-min) * 2);
+  --fc-l-max: (var(--fc-s-max) * 2);
+
+  --fc-xl-min: (var(--fc-s-min) * 3);
+  --fc-xl-max: (var(--fc-s-max) * 3);
+
+  --fc-2xl-min: (var(--fc-s-min) * 4);
+  --fc-2xl-max: (var(--fc-s-max) * 4);
+
+  --fc-3xl-min: (var(--fc-s-min) * 6);
+  --fc-3xl-max: (var(--fc-s-max) * 6);
+
+  /* T-shirt sizes */
+  --space-3xs: calc(
+    ((var(--fc-3xs-min) / 16) * 1rem) + (var(--fc-3xs-max) - var(--fc-3xs-min)) *
+      var(--fluid-bp)
+  );
+  --space-2xs: calc(
+    ((var(--fc-2xs-min) / 16) * 1rem) + (var(--fc-2xs-max) - var(--fc-2xs-min)) *
+      var(--fluid-bp)
+  );
+  --space-xs: calc(
+    ((var(--fc-xs-min) / 16) * 1rem) + (var(--fc-xs-max) - var(--fc-xs-min)) *
+      var(--fluid-bp)
+  );
+  --space-s: calc(
+    ((var(--fc-s-min) / 16) * 1rem) + (var(--fc-s-max) - var(--fc-s-min)) *
+      var(--fluid-bp)
+  );
+  --space-m: calc(
+    ((var(--fc-m-min) / 16) * 1rem) + (var(--fc-m-max) - var(--fc-m-min)) *
+      var(--fluid-bp)
+  );
+  --space-l: calc(
+    ((var(--fc-l-min) / 16) * 1rem) + (var(--fc-l-max) - var(--fc-l-min)) *
+      var(--fluid-bp)
+  );
+  --space-xl: calc(
+    ((var(--fc-xl-min) / 16) * 1rem) + (var(--fc-xl-max) - var(--fc-xl-min)) *
+      var(--fluid-bp)
+  );
+  --space-2xl: calc(
+    ((var(--fc-2xl-min) / 16) * 1rem) + (var(--fc-2xl-max) - var(--fc-2xl-min)) *
+      var(--fluid-bp)
+  );
+  --space-3xl: calc(
+    ((var(--fc-3xl-min) / 16) * 1rem) + (var(--fc-3xl-max) - var(--fc-3xl-min)) *
+      var(--fluid-bp)
+  );
+
+  /* One-up pairs */
+  --space-3xs-2xs: calc(
+    ((var(--fc-3xs-min) / 16) * 1rem) + (var(--fc-2xs-max) - var(--fc-3xs-min)) *
+      var(--fluid-bp)
+  );
+  --space-2xs-xs: calc(
+    ((var(--fc-2xs-min) / 16) * 1rem) + (var(--fc-xs-max) - var(--fc-2xs-min)) *
+      var(--fluid-bp)
+  );
+  --space-xs-s: calc(
+    ((var(--fc-xs-min) / 16) * 1rem) + (var(--fc-s-max) - var(--fc-xs-min)) *
+      var(--fluid-bp)
+  );
+  --space-s-m: calc(
+    ((var(--fc-s-min) / 16) * 1rem) + (var(--fc-m-max) - var(--fc-s-min)) *
+      var(--fluid-bp)
+  );
+  --space-m-l: calc(
+    ((var(--fc-m-min) / 16) * 1rem) + (var(--fc-l-max) - var(--fc-m-min)) *
+      var(--fluid-bp)
+  );
+  --space-l-xl: calc(
+    ((var(--fc-l-min) / 16) * 1rem) + (var(--fc-xl-max) - var(--fc-l-min)) *
+      var(--fluid-bp)
+  );
+  --space-xl-2xl: calc(
+    ((var(--fc-xl-min) / 16) * 1rem) + (var(--fc-2xl-max) - var(--fc-xl-min)) *
+      var(--fluid-bp)
+  );
+  --space-2xl-3xl: calc(
+    ((var(--fc-2xl-min) / 16) * 1rem) + (var(--fc-3xl-max) - var(--fc-2xl-min)) *
+      var(--fluid-bp)
+  );
+
+  /* Custom pairs */
+  --space-s-l: calc(
+    ((var(--fc-s-min) / 16) * 1rem) + (var(--fc-l-max) - var(--fc-s-min)) *
+      var(--fluid-bp)
+  );
+
   // Font families
   --font-display: "DM Serif Display", "Source Serif", "Roboto Serif", Athelas,
     Times, "Times New Roman", serif;
@@ -114,6 +121,17 @@ $widescreen: "min-width: 100rem";
     Arial, sans-serif;
   --font-serif: "Crimson", "Newsreader", Garamond, Georgia, Athelas, Times,
     "Times New Roman", serif;
+
+  // Font size steps
+  --step--2: clamp(0.91rem, 0.89rem + 0.1vw, 0.96rem);
+  --step--1: clamp(1.09rem, 1.05rem + 0.21vw, 1.2rem);
+  --step-0: clamp(1.31rem, 1.24rem + 0.37vw, 1.5rem);
+  --step-1: clamp(1.58rem, 1.46rem + 0.59vw, 1.88rem);
+  --step-2: clamp(1.89rem, 1.71rem + 0.89vw, 2.34rem);
+  --step-3: clamp(2.27rem, 2.01rem + 1.29vw, 2.93rem);
+  --step-4: clamp(2.72rem, 2.36rem + 1.83vw, 3.66rem);
+  --step-5: clamp(3.27rem, 2.75rem + 2.56vw, 4.58rem);
+  --step-6: clamp(3.92rem, 3.22rem + 3.52vw, 5.72rem);
 
   --color-black: #000;
   --color-gray-darkest: #111;
@@ -153,6 +171,32 @@ $widescreen: "min-width: 100rem";
   --color-border: var(--color-gray-light);
 
   // Paddings, gutters
-  --margin-horizontal: #{$size-step-2};
-  --margin-vertical: #{$size-step-2};
+  --margin-horizontal: var(--space-l);
+  --margin-vertical: var(--space-l);
+}
+
+// Breakpoints
+$mobile: "max-width: 57.5rem";
+$tablet: "min-width: 37.5rem";
+$desktop: "min-width: 57.5rem";
+$maxscreen: "min-width: calc(#{var(--fluid-max-width)} / 16 * 1rem)";
+$widescreen: "min-width: 100rem";
+
+@mixin breakpoint($bp) {
+  @media screen and ($bp) {
+    @content;
+  }
+}
+
+@include breakpoint($desktop) {
+  :root {
+    --margin-horizontal: var(--space-xl);
+    --margin-vertical: var(--space-xl);
+  }
+}
+
+@include breakpoint($maxscreen) {
+  :root {
+    --fluid-screen: calc(var(--fluid-max-width) * 1px);
+  }
 }

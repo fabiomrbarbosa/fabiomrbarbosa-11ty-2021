@@ -8,10 +8,10 @@
   }
 
   &__item {
-    padding-bottom: $size-step-1;
+    padding-bottom: var(--space-l);
 
     &:not(:last-of-type) {
-      margin-bottom: $size-step-1;
+      margin-bottom: var(--space-l);
       border-bottom: 1px solid var(--color-border);
     }
   }
@@ -23,13 +23,13 @@
 
   &__link {
     @extend %linkText;
-    font-size: $size-step-0;
-    line-height: $size-step-2;
+    font-size: var(--step-0);
+    line-height: var(--step-2);
   }
 
   &__description {
-    font-size: $size-step--1;
-    line-height: $size-step-0;
+    font-size: var(--step--1);
+    line-height: var(--step-0);
     letter-spacing: 0;
     margin-bottom: 0;
   }
