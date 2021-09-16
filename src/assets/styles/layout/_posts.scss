@@ -28,8 +28,10 @@
       margin-top: var(--space-m);
     }
   }
-  .entry-body {
-    // same as a paragraph space
-    padding-top: var(--step-2);
+
+  @include breakpoint($desktop) {
+    .heading--with-picture .heading__inner {
+      padding-bottom: var(--space-m);
+    }
   }
 }
