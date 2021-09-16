@@ -13,7 +13,7 @@
         stroke-dashoffset: 1870;
         transform: translateZ(0);
 
-        stroke: var(--color-fg);
+        stroke: var(--color-accent);
         animation: drawingin 2.5s cubic-bezier(0.83, 0, 0.17, 1) forwards;
 
         & + path {

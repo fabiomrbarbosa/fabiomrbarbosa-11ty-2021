@@ -8,10 +8,10 @@
   }
 
   &__item {
-    padding-bottom: var(--space-l);
+    padding-bottom: var(--space-m);
 
     &:not(:last-of-type) {
-      margin-bottom: var(--space-l);
+      margin-bottom: var(--space-m);
       border-bottom: 1px solid var(--color-border);
     }
   }

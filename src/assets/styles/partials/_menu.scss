@@ -27,13 +27,13 @@
         &:focus,
         &:active,
         &:hover {
-          --color-border: var(--color-gray-light);
+          --color-border: var(--color-fg);
         }
       }
 
       &[aria-current] a,
       &--active a {
-        --color-border: var(--color-gray-light);
+        --color-border: var(--color-accent);
         font-weight: 700;
       }
     }

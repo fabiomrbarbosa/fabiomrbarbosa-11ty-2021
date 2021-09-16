@@ -1,10 +1,10 @@
 .heading {
   @extend %container;
   &:not(.heading--post) {
-    --color-bg: var(--color-accent);
-    --color-fg: var(--color-white);
-    --color-fg-display: var(--color-white);
-    --color-accent-alt: var(--color-accent-dark);
+    //-color-bg: var(--color-accent);
+    //--color-fg: var(--color-white);
+    --color-fg-display: var(--color-accent);
+    //--color-accent-alt: var(--color-accent-dark);
 
     & a.tag {
       --color-link: var(--color-fg);
@@ -14,13 +14,13 @@
 
   &--home.heading--with-picture {
     padding-bottom: 0;
-    background: linear-gradient(
+    /*background: linear-gradient(
       0deg,
       var(--color-white) 0%,
       var(--color-white) 25%,
       var(--color-bg) 25%,
       var(--color-bg) 100%
-    );
+    );*/
   }
 
   &__inner {
