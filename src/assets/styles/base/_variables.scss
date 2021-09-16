@@ -171,8 +171,8 @@
   --color-border: var(--color-gray-light);
 
   // Paddings, gutters
-  --margin-horizontal: var(--space-l);
-  --margin-vertical: var(--space-l);
+  --margin-horizontal: var(--space-m);
+  --margin-vertical: var(--space-m);
 }
 
 // Breakpoints
@@ -185,6 +185,13 @@ $widescreen: "min-width: 100rem";
 @mixin breakpoint($bp) {
   @media screen and ($bp) {
     @content;
+  }
+}
+
+@include breakpoint($tablet) {
+  :root {
+    --margin-horizontal: var(--space-l);
+    --margin-vertical: var(--space-l);
   }
 }
 

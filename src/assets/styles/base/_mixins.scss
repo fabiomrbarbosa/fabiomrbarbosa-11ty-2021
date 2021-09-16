@@ -20,7 +20,7 @@
   @include breakpoint($desktop) {
     grid-template-columns:
       minmax(var(--margin-horizontal), auto)
-      minmax(300px, calc(#{var(--fluid-max-width)} / 16 * 1rem))
+      minmax(150px, calc(#{var(--fluid-max-width)} / 16 * 1rem))
       minmax(var(--margin-horizontal), auto);
   }
 }
