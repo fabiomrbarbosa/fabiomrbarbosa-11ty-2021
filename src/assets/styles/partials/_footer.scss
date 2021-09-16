@@ -1,10 +1,10 @@
 .site-footer {
   @extend %container;
-  --color-bg: var(--color-black);
-  --color-fg: var(--color-gray);
-  --color-link: var(--color-gray-light);
+  --color-bg: var(--color-accent);
+  --color-fg: var(--color-beige);
+  --color-link: var(--color-beige);
   --color-link-hover: var(--color-white);
-  --color-border: var(--color-gray-darkest);
+  --color-border: var(--color-accent-dark);
 
   &__inner {
     @extend %content;
@@ -12,7 +12,7 @@
   }
 
   &__logo {
-    --color-fg: var(--color-white);
+    --color-accent: var(--color-white);
     margin-bottom: var(--space-m);
     @include breakpoint($desktop) {
       grid-column: 1/3;
