@@ -1,11 +1,14 @@
 .heading {
   @extend %container;
-  &:not(.heading--post) {
-    //-color-bg: var(--color-accent);
-    //--color-fg: var(--color-white);
-    --color-fg-display: var(--color-accent);
-    //--color-accent-alt: var(--color-accent-dark);
+  /*&:not(.heading--post) {
+    -color-bg: var(--color-accent);
+    --color-fg: var(--color-white);
+    --color-accent-alt: var(--color-accent-dark);
+  }*/
 
+  --color-fg-display: var(--color-accent);
+
+  &:not(.heading--post) {
     & a.tag {
       --color-link: var(--color-fg);
       --color-link-hover: var(--color-fg);
