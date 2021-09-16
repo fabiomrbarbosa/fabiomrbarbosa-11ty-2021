@@ -14,17 +14,22 @@
     }
 
     &__title {
-      font-size: var(--step-5);
+      font-size: var(--step-3);
       font-weight: normal;
       line-height: 1;
     }
 
-    @include breakpoint($desktop) {
-      &__meta,
-      &__title,
-      &__lede {
-        grid-column: 1/7;
-      }
+    &__lede {
+      font-size: var(--step-1);
+      line-height: var(--step-2);
     }
+
+    &__img {
+      margin-top: var(--space-m);
+    }
+  }
+  .entry-body {
+    // same as a paragraph space
+    padding-top: var(--step-2);
   }
 }
