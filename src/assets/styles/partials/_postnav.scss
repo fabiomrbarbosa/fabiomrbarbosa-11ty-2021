@@ -3,10 +3,6 @@
 
   &__inner {
     @extend %content;
-
-    @include breakpoint($desktop) {
-      align-items: center;
-    }
   }
 
   &__title {
