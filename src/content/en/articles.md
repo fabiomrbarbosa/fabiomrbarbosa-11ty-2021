@@ -5,7 +5,7 @@ lede: "On Spirit, the web of interdependence, the World Wide Web and other media
 subContentType: article
 translationKey: articles
 eleventyNavigation:
-  key: Blog
+  key: Articles
   order: 2
 permalink: /articles/
 ---
