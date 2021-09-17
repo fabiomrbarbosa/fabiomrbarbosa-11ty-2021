@@ -16,6 +16,6 @@
   conditions = {Language = ["pt", "pt-PT", "pt-BR"]}
 
 [[headers]]
-  for = "/src/assets/fonts/*" 
+  for = "/*.woff2" # font files should be set this way
   [headers.values]
-    Cache-Control = "public, max-age=2592000"
+    Cache-Control = "max-age=365000000,public immutable"
