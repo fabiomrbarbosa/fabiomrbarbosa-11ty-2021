@@ -63,6 +63,7 @@
     font-weight: 400;
     max-width: 37.5em;
     letter-spacing: -0.025em;
+    margin-bottom: 0;
   }
 
   @include breakpoint($desktop) {
