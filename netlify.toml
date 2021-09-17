@@ -16,6 +16,6 @@
   conditions = {Language = ["pt", "pt-PT", "pt-BR"]}
 
 [[headers]]
-  for = "/*.woff2" # font files should be set this way
+  for = "*.woff2" # font files should be set this way
   [headers.values]
     Cache-Control = "max-age=365000000,public immutable"
