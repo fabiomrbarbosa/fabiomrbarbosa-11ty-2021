@@ -48,6 +48,10 @@ module.exports = {
       en: "View all posts",
       pt: "Veja todos os artigos",
     },
+    linkTarget: {
+      en: "/articles",
+      pt: "/pt/artigos",
+    },
   },
   postnav: {
     title: {
