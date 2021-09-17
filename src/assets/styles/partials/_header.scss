@@ -1,5 +1,6 @@
 .site-header {
   @extend %container;
+  --margin-vertical: var(--space-m);
   //--color-bg: var(--color-accent);
   //--color-fg: var(--color-white);
 
@@ -29,8 +30,6 @@
   }
 
   @include breakpoint($desktop) {
-    --margin-vertical: var(--space-l);
-
     &__logo {
       margin-bottom: 0;
     }
