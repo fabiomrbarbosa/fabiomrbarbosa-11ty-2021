@@ -2,6 +2,7 @@
 .langswitch {
   &__list {
     display: flex;
+    flex: wrap;
     column-gap: var(--step-1);
     padding: 0;
     margin: 0;
