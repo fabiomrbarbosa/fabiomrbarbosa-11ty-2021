@@ -14,3 +14,8 @@
   to = "/pt/:splat"
   status = 302
   conditions = {Language = ["pt", "pt-PT", "pt-BR"]}
+
+[[headers]]
+  for = "*.woff2" # font files should be set this way
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
