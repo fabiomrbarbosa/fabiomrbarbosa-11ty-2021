@@ -1,12 +1,11 @@
 ---
 layout: layouts/base.njk
-templateClass: tmpl-articles
-permalink: /{{ dictionary.archive.permalink[ locale ] }}
+templateClass: tmpl-archive
 ---
 {%- from "components/init.njk" import component -%}
 {{ component('heading', {
-  title: dictionary.archive.title[ locale ],
-  lede: dictionary.archive.subtitle[ locale ],
+  title: title,
+  lede: lede,
   className: 'heading--archive'
 }) }}
 
@@ -14,7 +13,7 @@ permalink: /{{ dictionary.archive.permalink[ locale ] }}
   className: 'feed block'
 } %}
 
-  {% set postlist = collections[locale] | includes('data.contentType', 'article') %}
+  {% set postlist = collections[locale] | includes('data.contentType', subContentType) %}
   {%- include "partials/postlist.njk" -%}
 
 {% endArchiveList %}

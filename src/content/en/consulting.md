@@ -4,7 +4,6 @@ title: Consulting
 publicTitle: Creative means to principled ends.
 description: Let's work together.
 translationKey: consulting
-templateClass: tmpl-page
 eleventyNavigation:
   key: Consulting
   order: 3

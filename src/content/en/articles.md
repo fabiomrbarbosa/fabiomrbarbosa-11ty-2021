@@ -1,7 +1,8 @@
 ---
-layout: layouts/articles.njk
+layout: layouts/archive.njk
 title: Articles
-description: Thoughts and essays about Spirit, society, the Web and other media.
+lede: "On Spirit, the web of interdependence, the World Wide Web and other media. Also subscribe the [RSS feed](/feed/rss.xml) and join the [newsletter](http://eepurl.com/gNzLRz)."
+subContentType: article
 translationKey: articles
 eleventyNavigation:
   key: Blog

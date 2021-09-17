@@ -14,7 +14,7 @@ permalink: /{{ subDir }}feed/rss.xml
 		<name>{{ metadata.author.name }}</name>
 		<email>{{ metadata.author.email }}</email>
 	</author>
-  {% set posts = collections[locale] | includes('data.contentType', 'article') %}
+  {% set posts = collections[locale] | excludes('data.contentType', 'page') %}
 	{%- for post in posts -%}
 	{% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
 	<entry>

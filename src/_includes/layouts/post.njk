@@ -1,9 +1,7 @@
 ---
 layout: layouts/base.njk
 templateClass: tmpl-post
-contentType:
-  - article
-permalink: /{{ dictionary.archive.permalink[ locale ] }}/{{ page.fileSlug }}/
+permalink: /{{ subDir }}{{ category }}/{{ page.fileSlug }}/
 ---
 
 {%- from "components/init.njk" import component -%}

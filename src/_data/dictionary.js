@@ -63,24 +63,6 @@ module.exports = {
       pt: "Artigo Seguinte:",
     },
   },
-  archive: {
-    permalink: {
-      en: "/articles",
-      pt: "/pt/artigos",
-    },
-    key: {
-      en: "Articles",
-      pt: "Artigos",
-    },
-    title: {
-      en: "Articles",
-      pt: "Artigos",
-    },
-    subtitle: {
-      en: "On Spirit, the web of interdependence, the World Wide Web and other media. Also subscribe the [RSS feed](/feed/rss.xml) and join the [newsletter.](http://eepurl.com/gNzLRz)",
-      pt: "Sobre o Espírito, a rede de interdependência, a Web e outros media. Subscreva também o [feed RSS](/pt/feed/rss.xml) e junte-se à [newsletter.](http://eepurl.com/gNzLRz)",
-    },
-  },
   subscribe: {
     title: {
       en: "Get updates in your inbox.",

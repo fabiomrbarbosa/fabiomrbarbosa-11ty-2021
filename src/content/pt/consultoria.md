@@ -4,10 +4,9 @@ title: Consultoria
 publicTitle: Soluções criativas com princípios, meios e fins.
 description: Está na hora de trabalharmos juntos.
 translationKey: consulting
-templateClass: tmpl-page
 eleventyNavigation:
   key: Consultoria
-  order: 3
+  order: 4
 ---
 
 Enquanto consultor, trabalho com marcas e pessoas com uma visão transformadora, de forma a ajudá-las a contar a sua história com autenticidade e a desenvolver experiências imersivas e cativantes. Desempenho o meu trabalho como uma forma de arte, e acredito que o meu vasto leque de competências me permite abordar cada projecto segundo uma perspectiva holística.
