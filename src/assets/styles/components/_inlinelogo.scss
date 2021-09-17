@@ -14,10 +14,10 @@
         transform: translateZ(0);
 
         stroke: var(--color-accent);
-        animation: drawingin 2.5s cubic-bezier(0.83, 0, 0.17, 1) forwards;
+        animation: drawingin 1.5s cubic-bezier(0.83, 0, 0.17, 1) forwards;
 
         & + path {
-          animation-delay: 1.5s;
+          animation-delay: 0.75s;
         }
       }
     }
