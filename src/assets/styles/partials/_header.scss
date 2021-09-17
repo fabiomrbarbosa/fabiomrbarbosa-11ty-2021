@@ -29,6 +29,8 @@
   }
 
   @include breakpoint($desktop) {
+    --margin-vertical: var(--space-l);
+
     &__logo {
       margin-bottom: 0;
     }
