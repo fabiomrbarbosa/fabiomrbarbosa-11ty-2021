@@ -1,7 +1,7 @@
 ---
 layout: layouts/archive.njk
 title: Palestras
-lede: "Apresentações em vídeo sobre temas do corpo e do Espírito. Também disponíveis no [feed RSS](/pt/feed/rss.xml)."
+lede: "Apresentações em vídeo sobre temáticas do corpo e do Espírito. Também disponíveis no [feed RSS](/pt/feed/rss.xml)."
 translationKey: talks
 subContentType: talk
 eleventyNavigation:
