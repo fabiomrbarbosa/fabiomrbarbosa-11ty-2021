@@ -1,5 +1,5 @@
-{% set previousPost = collections[locale] | includes('data.contentType', 'article') | getPreviousCollectionItem(page) %}
-{% set nextPost = collections[locale] | includes('data.contentType', 'article') | getNextCollectionItem(page) %}
+{% set previousPost = collections[locale] | excludes('data.contentType', 'page') | getPreviousCollectionItem(page) %}
+{% set nextPost = collections[locale] | excludes('data.contentType', 'page') | getNextCollectionItem(page) %}
 
 {% if previousPost or nextPost %}
 <div class="postnav block">

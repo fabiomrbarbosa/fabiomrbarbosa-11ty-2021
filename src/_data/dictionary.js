@@ -56,11 +56,11 @@ module.exports = {
     },
     previous: {
       en: "Previous Post:",
-      pt: "Artigo Anterior:",
+      pt: "Publicação Anterior:",
     },
     next: {
       en: "Next Post:",
-      pt: "Artigo Seguinte:",
+      pt: "Publicação Seguinte:",
     },
   },
   subscribe: {
@@ -70,7 +70,7 @@ module.exports = {
     },
     body: {
       en: "Be the first to know about the latest posts and other resources.",
-      pt: "Fique a saber de novos artigos e outros recursos em primeira mão.",
+      pt: "Fique a saber de novas publicações e outros recursos em primeira mão.",
     },
     link: {
       en: "Sign up",
