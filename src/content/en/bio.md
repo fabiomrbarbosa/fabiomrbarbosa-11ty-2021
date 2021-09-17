@@ -1,11 +1,11 @@
 ---
 layout: layouts/page.njk
-title: About
+title: Bio
 publicTitle: Nice to meet you!
 description: Here's some info about me.
-translationKey: about
+translationKey: bio
 eleventyNavigation:
-  key: About
+  key: Bio
   order: 1
 ---
 

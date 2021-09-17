@@ -1,11 +1,11 @@
 ---
 layout: layouts/page.njk
-title: Acerca
+title: Bio
 publicTitle: Muito gosto!
 description: Fique a conhecer-me melhor.
-translationKey: about
+translationKey: bio
 eleventyNavigation:
-  key: Acerca
+  key: Bio
   order: 1
 ---
 
