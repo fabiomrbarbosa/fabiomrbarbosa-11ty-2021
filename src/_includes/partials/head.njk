@@ -57,10 +57,6 @@
 {# Manifest + Service Worker #}
 <link rel="manifest" href="/{{ subDir }}manifest.webmanifest">
 
-{# Preload critical fonts #}
-<link rel="preload" href="/assets/fonts/crimson-roman.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/assets/fonts/crimson-semibold.woff2" as="font" type="font/woff2" crossorigin>
-
 {# Serve hreflang links #}
 {%- for item in collections.all -%}
   {%- if item.data.translationKey == translationKey and item.data.locale == "en" -%}
