@@ -10,7 +10,7 @@ coverImage:
 tags:
   - eurovision
 translationKey: five-lessons-of-eurovision
-accentColor: royal
+eleventyExcludeFromCollections: true
 ---
 
 After two years of almost unbearable anticipation, we have just experienced _the birth of a new age_ in the Eurovision Song Contest. Even if with many significant limitations that no amount of clever AR effects can disguise, Rotterdam finally got its shot at hosting the show, one that will certainly stay in our memories as one of the most competitive and nailbiting editions of all time. Cosmic justice, or rather, the televote, finally gathered round Italy to give them their first win since 1990, a trophy that seems to reward Måneskin on Eurovision 2021 as much as it should have the likes of Raphael Gualazzi, Nina Zilli, Mahmood and other Sanremo stars that graced our screens during the last decade.
