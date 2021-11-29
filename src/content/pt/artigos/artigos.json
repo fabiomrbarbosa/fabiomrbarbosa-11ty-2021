@@ -1,0 +1,5 @@
+{
+  "layout": "layouts/post.njk",
+  "contentType": "article",
+  "category": "artigos"
+}
