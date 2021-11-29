@@ -5,7 +5,6 @@ date: 2021-09-12
 tags:
   - druidismo
 translationKey: viver-presente-ancestrais-futuro
-accentColor: teal
 ---
 
 A nossa prática espiritual situa-nos num cosmos habitado pela pluralidade, onde ancestrais, espíritos da terra e do lugar e deidades várias interagem com a nossa realidade visível.

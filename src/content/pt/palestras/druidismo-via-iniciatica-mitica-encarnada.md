@@ -5,7 +5,6 @@ date: 2020-06-15
 tags:
   - druidismo
 translationKey: druidismo-via-iniciatica-mitica-encarnada
-accentColor: forest
 ---
 
 Entre o revivalismo druídico e o momento presente passaram-se já três séculos. Contudo, muitos dos desafios que interpelavam os praticantes de druidismo no passado repetem-se hoje em dia, sob novas manifestações.

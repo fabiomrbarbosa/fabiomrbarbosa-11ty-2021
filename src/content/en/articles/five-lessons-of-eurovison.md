@@ -1,6 +1,6 @@
 ---
 title: Five lessons to take away from Eurovision 2021
-description: Here is a personal roundup of a few things I believe we could learn from the Eurovision Song Contest 2021 in Rotterdam, where the show just underwent an exciting reset.
+description: Here is a personal roundup of a few things I believe we could learn from the Eurovision Song Contest 2021 in Rotterdam.
 date: 2021-05-23
 coverImage:
   src: uploads/maneskin_victory_esc2021.jpg
