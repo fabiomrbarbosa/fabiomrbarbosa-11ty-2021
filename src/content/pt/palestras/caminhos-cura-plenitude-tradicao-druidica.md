@@ -1,11 +1,10 @@
 ---
 title: Caminhos de cura e plenitude na tradição druídica
 description: Uma apresentação realizada no XII Encontro Brasileiro de Druidismo e Reconstrucionismo Celta.
-date: 2021-10-30T00:00:00.000Z
+date: 2021-10-30
 tags:
   - druidismo
 translationKey: caminhos-cura-plenitude-tradicao-druidica
-lastmod: "2021-11-29T10:28:50.818Z"
 ---
 
 Esta apresentação pretende reunir algumas pistas que nos ajudem a compreender a espiritualidade druídica como uma via de reconciliação com o corpo, com a mente e com toda a rede de interdependência.
