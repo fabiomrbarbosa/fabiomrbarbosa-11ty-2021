@@ -1,0 +1,35 @@
+{% set cloudName = 'https://res.cloudinary.com/fabiomrbarbosa/image/upload/' %}
+{% set imageConfig = ['w_1280', 'h_669', 'c_fill', 'q_auto', 'f_auto'] | join(',')  %}
+{% set titleConfig = [
+  '/w_980',
+  'c_fit',
+  'co_rgb:cd3700',
+  'g_north_west',
+  'x_248',
+  'y_75',
+  'l_text:fonts:crimson-roman-webfont.ttf_86_letter_spacing_-4_line_spacing_-6:'
+] | join(',')  %}
+{% set titleUrl = params.title | fixedEncodeURIComponent %}
+{% set taglineConfig = [
+  '/w_980',
+  'c_fit',
+  'co_rgb:111111',
+  'g_north_west',
+  'x_248',
+  'y_290',
+  'l_text:fonts:crimson-roman-webfont.ttf_56_letter_spacing_-3_line_spacing_0:'
+] | join(',')  %}
+{% set taglineUrl = params.description | fixedEncodeURIComponent %}
+{% set imagePublicID = '/socialMediaGraph'  %}
+
+{% set fullURL = [
+  cloudName, 
+  imageConfig,
+  titleConfig,
+  titleUrl,
+  taglineConfig,
+  taglineUrl,
+  imagePublicID 
+] | join %}
+
+{{- fullURL -}}

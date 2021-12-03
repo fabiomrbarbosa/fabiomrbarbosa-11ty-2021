@@ -1,3 +1,5 @@
+{%- from "components/init.njk" import component -%}
+
 {# Variables #}
 {% set pageTitle = computedData.title or title %}
 {% set pageTitleSocial = publicTitle or pageTitle or metadata.title %}
@@ -8,10 +10,13 @@
   {% set pageImage = coverImage.src | url %}
 {% else %}
   {% set pageImage %}
-    {% CloudImage {title: pageTitleSocial, description: pageDescription } %}
+    {{ component('cloudImage', {
+      title: pageTitleSocial,
+      description: pageDescription
+    }) }}
   {% endset %}
 {% endif %}
-{% set pageImageAlt = coverImage.alt or pageDescription %}
+{% set pageImageAlt = coverImage.alt or pageTitleSocial %}
 
 {% set devCss %}
   {% include "styles/main.min.css" %}
@@ -27,9 +32,9 @@
 <meta name="image" content="{{ pageImage }}" />
 
 {# OpenGraph tags #}
-<meta property="og:url" content="https://fabiomrbarbosa.com{{ page.url }}"/>
+<meta property="og:url" content="{{ page.url | absoluteUrl(metadata.url) }}"/>
 <meta property="og:type" content="{{ pageType }}" />
-<meta property="og:title" content="{{ pageTitle }}" />
+<meta property="og:title" content="{{ pageTitleSocial }}" />
 <meta property="og:description" content="{{ pageDescription }}" />
 <meta property="og:image" content="{{ pageImage }}" />
 <meta property="og:image:alt" content="{{ pageImageAlt }}" />
@@ -60,9 +65,9 @@
 
 {# Serve hreflang links #}
 {%- for item in collections.all -%}
-  {%- if item.data.translationKey == translationKey and item.data.locale == "en" -%}
+  {%- if item.data.translationKey == translationKey and item.data.locale == "en" and locale != "en" -%}
     <link rel="alternate" hreflang="en" href="https://fabiomrbarbosa.com{{ item.url }}" />
-  {%- elif item.data.translationKey == translationKey and item.data.locale == "pt" -%}
+  {%- elif item.data.translationKey == translationKey and item.data.locale == "pt" and locale != "pt" -%}
     <link rel="alternate" hreflang="pt" href="https://fabiomrbarbosa.com{{ item.url }}" />
   {%- endif -%}
 {%- endfor -%}
